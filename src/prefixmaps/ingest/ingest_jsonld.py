@@ -7,6 +7,8 @@ from prefixmaps.datamodel.context import Context
 
 AT_CONTEXT = "@context"
 
+PREFIXCC_EXCLUDE = ["bp", "terms", "dc", "ma", "ont", "fb", "obo", "http", "dcterm", "dc11", "uniprot", "go", "gold", "chebi"]
+
 
 def from_jsonld_context_url(
     url: str, name: str, excludes: Optional[List[str]] = None
@@ -50,5 +52,5 @@ def from_jsonld_context(
 
 def from_prefixcc() -> Context:
     return from_jsonld_context_url(
-        "http://prefix.cc/context.jsonld", "prefixcc", ["bp", "terms"]
+        "http://prefix.cc/context.jsonld", "prefixcc", PREFIXCC_EXCLUDE
     )

@@ -2,7 +2,7 @@ import unittest
 
 from bioregistry import curie_from_iri, get_iri, get_prefix_map
 
-from prefixmaps.etl.ingest_bioregistry import from_bioregistry
+from prefixmaps.ingest.ingest_bioregistry import from_bioregistry
 
 OBO = "obo"
 SEMWEB = "semweb"

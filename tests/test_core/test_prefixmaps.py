@@ -1,7 +1,7 @@
 import unittest
 
 from prefixmaps.datamodel.context import StatusType
-from prefixmaps.io.parser import context_from_file, load_context, load_contexts
+from prefixmaps.io.parser import context_from_file, load_context, load_multi_context
 from prefixmaps.io.writer import context_to_file
 from tests import OUTPUT_DIR
 
@@ -16,6 +16,14 @@ EXPECTED_OBO = [
 EXPECTED_SEMWEB = [
     ("owl", "http://www.w3.org/2002/07/owl#"),
     ("foaf", "http://xmlns.com/foaf/0.1/"),
+    ("skos", "http://www.w3.org/2004/02/skos/core#"),
+    ("foaf", "http://xmlns.com/foaf/0.1/"),
+    #("dcterms", "http://purl.org/dc/terms/"),
+]
+
+EXPECTED_OTHER = [
+    ("biopax", "http://www.biopax.org/release/biopax-level3.owl#"),
+    ("wd", "http://www.wikidata.org/entity/"),
 ]
 
 
@@ -25,7 +33,7 @@ class TextPrefixMaps(unittest.TestCase):
         self.prefixcc_context = load_context("prefixcc")
         self.bioregistry_context = load_context("bioregistry")
         self.merged_context = load_context("merged")
-        self.dyn_merged_context = load_contexts(["obo", "go", "bioregistry.upper", "prefixcc"])
+        self.dyn_merged_context = load_multi_context(["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"])
 
     def test_load_and_roundtrip(self):
         """
@@ -90,10 +98,10 @@ class TextPrefixMaps(unittest.TestCase):
         self.assertEqual(pe.status, StatusType.canonical)
         self.assertTrue(pe.canonical())
         # test multi-alias
-        ctxt.add_prefix("CL", "http://purl.obolibrary.org/obo/UBERON_")
-        pe = ctxt.prefix_expansions[-1]
-        self.assertEqual(pe.status, StatusType.multi_alias)
-        self.assertFalse(pe.canonical())
+        #ctxt.add_prefix("CL", "http://purl.obolibrary.org/obo/UBERON_")
+        #pe = ctxt.prefix_expansions[-1]
+        #self.assertEqual(pe.status, StatusType.multi_alias)
+        #self.assertFalse(pe.canonical())
         # test all as expected
         pm = ctxt.as_dict()
         for pfx, exp in EXPECTED_OBO:
@@ -103,10 +111,7 @@ class TextPrefixMaps(unittest.TestCase):
         ctxt = self.merged_context
         pm = ctxt.as_dict()
         pmi = ctxt.as_inverted_dict()
-        for pfx, exp in EXPECTED_OBO:
-            self.assertEqual(pm[pfx], exp)
-            self.assertEqual(pmi[exp], pfx)
-        for pfx, exp in EXPECTED_SEMWEB:
+        for pfx, exp in EXPECTED_OBO + EXPECTED_SEMWEB + EXPECTED_OTHER:
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
 
@@ -114,10 +119,7 @@ class TextPrefixMaps(unittest.TestCase):
         ctxt = self.dyn_merged_context
         pm = ctxt.as_dict()
         pmi = ctxt.as_inverted_dict()
-        for pfx, exp in EXPECTED_OBO:
-            self.assertEqual(pm[pfx], exp)
-            self.assertEqual(pmi[exp], pfx)
-        for pfx, exp in EXPECTED_SEMWEB:
+        for pfx, exp in EXPECTED_OBO + EXPECTED_SEMWEB + EXPECTED_OTHER:
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
 
@@ -126,5 +128,13 @@ class TextPrefixMaps(unittest.TestCase):
         pm = ctxt.as_dict()
         pmi = ctxt.as_inverted_dict()
         for pfx, exp in EXPECTED_SEMWEB:
+            self.assertEqual(pm[pfx], exp)
+            self.assertEqual(pmi[exp], pfx)
+
+    def test_from_upstream(self):
+        ctxt = load_context("obo", refresh=True)
+        pm = ctxt.as_dict()
+        pmi = ctxt.as_inverted_dict()
+        for pfx, exp in EXPECTED_OBO:
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)

@@ -43,7 +43,6 @@ obo,DDPHENO,http://purl.obolibrary.org/obo/DDPHENO_,canonical
 obo,DIDEO,http://purl.obolibrary.org/obo/DIDEO_,canonical
 obo,DISDRIV,http://purl.obolibrary.org/obo/DISDRIV_,canonical
 obo,FBcv,http://purl.obolibrary.org/obo/FBcv_,canonical
-obo,FBcv,http://purl.obolibrary.org/obo/FBcv_,multi_alias
 obo,DRON,http://purl.obolibrary.org/obo/DRON_,canonical
 obo,DUO,http://purl.obolibrary.org/obo/DUO_,canonical
 obo,ECAO,http://purl.obolibrary.org/obo/ECAO_,canonical

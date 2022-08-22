@@ -1,6 +1,6 @@
 import unittest
 
-from prefixmaps.etl.ingest_jsonld import from_prefixcc
+from prefixmaps.ingest.ingest_jsonld import from_prefixcc
 
 EXPECTED = [
     ("owl", "http://www.w3.org/2002/07/owl#"),
@@ -11,8 +11,8 @@ EXPECTED = [
 class TextETLForPrefixCC(unittest.TestCase):
     def test_prefix_cc(self):
         ctxt = from_prefixcc()
-        # for pe in ctxt.prefix_expansions:
-        #    print(pe)
+        for pe in ctxt.prefix_expansions:
+            print(pe)
         pm = ctxt.as_dict()
         pmi = ctxt.as_inverted_dict()
         for pfx, ns in EXPECTED:

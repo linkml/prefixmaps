@@ -21,6 +21,10 @@ This library is designed to satisfy the following requirements
 pip install prefixmaps
 ```
 
-TODO
+## Usage
 
-## 
+```python
+from prefixmaps.io.parser import load_context, load_multi_contexts
+
+ctxt = load_multi_context("obo", "bioregistry.upper", , "prefixcc")
+```

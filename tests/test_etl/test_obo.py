@@ -1,6 +1,6 @@
 import unittest
 
-from prefixmaps.etl.ingest_shacl import from_obo
+from prefixmaps.ingest.ingest_shacl import from_obo
 
 EXPECTED = [
     ("GEO", "http://purl.obolibrary.org/obo/GEO_"),

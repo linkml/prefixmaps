@@ -17,7 +17,7 @@ def context_path(name: CONTEXT) -> Path:
     return data_path / f"{name}.csv"
 
 
-def load_contexts(names: List[CONTEXT]) -> Context:
+def load_multi_context(names: List[CONTEXT]) -> Context:
     """
     Merges multiple contexts
 
@@ -31,15 +31,20 @@ def load_contexts(names: List[CONTEXT]) -> Context:
     return ctxt
 
 
-def load_context(name: CONTEXT) -> Context:
+def load_context(name: CONTEXT, refresh=False) -> Context:
     """
     Loads a context by name from standard location
 
     :param name:
+    :param refresh: if True, fetch from upstream
     :return:
     """
-    with open(data_path / f"{name}.csv", encoding="utf-8") as file:
-        return context_from_file(name, file)
+    if refresh:
+        from prefixmaps.ingest.etl_runner import load_context_from_source
+        return load_context_from_source(name)
+    else:
+        with open(data_path / f"{name}.csv", encoding="utf-8") as file:
+            return context_from_file(name, file)
 
 
 def context_from_file(name: CONTEXT, file: TextIO) -> Context:

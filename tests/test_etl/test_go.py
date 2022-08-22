@@ -1,6 +1,6 @@
 import unittest
 
-from prefixmaps.etl.ingest_go import parse_go_xrefs, parse_go_xrefs_from_remote
+from prefixmaps.ingest.ingest_go import parse_go_xrefs, parse_go_xrefs_from_remote
 from prefixmaps.io.writer import context_to_file
 from tests import INPUT_DIR, OUTPUT_DIR
 

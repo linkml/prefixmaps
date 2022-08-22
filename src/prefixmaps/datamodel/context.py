@@ -96,7 +96,8 @@ class Context:
         namespaces = self.namespaces(lower=True)
         if prefix.lower() in prefixes:
             if namespace.lower() in namespaces:
-                status = StatusType.multi_alias
+                return
+                #status = StatusType.multi_alias
             else:
                 status = StatusType.prefix_alias
         else:
