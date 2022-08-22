@@ -1,7 +1,7 @@
 import unittest
 
 from prefixmaps.datamodel.context import StatusType
-from prefixmaps.io.parser import context_from_file, load_context
+from prefixmaps.io.parser import context_from_file, load_context, load_contexts
 from prefixmaps.io.writer import context_to_file
 from tests import OUTPUT_DIR
 
@@ -25,6 +25,7 @@ class TextPrefixMaps(unittest.TestCase):
         self.prefixcc_context = load_context("prefixcc")
         self.bioregistry_context = load_context("bioregistry")
         self.merged_context = load_context("merged")
+        self.dyn_merged_context = load_contexts(["obo", "go", "bioregistry.upper", "prefixcc"])
 
     def test_load_and_roundtrip(self):
         """
@@ -100,6 +101,17 @@ class TextPrefixMaps(unittest.TestCase):
 
     def test_merged(self):
         ctxt = self.merged_context
+        pm = ctxt.as_dict()
+        pmi = ctxt.as_inverted_dict()
+        for pfx, exp in EXPECTED_OBO:
+            self.assertEqual(pm[pfx], exp)
+            self.assertEqual(pmi[exp], pfx)
+        for pfx, exp in EXPECTED_SEMWEB:
+            self.assertEqual(pm[pfx], exp)
+            self.assertEqual(pmi[exp], pfx)
+
+    def test_dyn_merged(self):
+        ctxt = self.dyn_merged_context
         pm = ctxt.as_dict()
         pmi = ctxt.as_inverted_dict()
         for pfx, exp in EXPECTED_OBO:
