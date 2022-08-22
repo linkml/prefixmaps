@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "prefixmaps"
+version = "0.1.0"
+description = ""
+authors = ["cmungall <cjm@berkeleybop.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+bioregistry = "^0.5.54"
+linkml = "^1.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+slurp-prefixmaps = "prefixmaps.etl.etl_runner:cli"

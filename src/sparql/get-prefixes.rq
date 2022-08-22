@@ -1,0 +1,10 @@
+prefix sh: <http://www.w3.org/ns/shacl#>
+
+SELECT ?context ?prefix ?namespace ?status
+WHERE {
+ bind("obo" AS ?context)
+ bind("canonical" AS ?status)
+[ sh:prefix ?prefix ;
+  sh:namespace ?namespace
+]  
+}

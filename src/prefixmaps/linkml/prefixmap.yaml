@@ -1,0 +1,29 @@
+id: https://w3id.org/linkml/prefixmap
+name: prefixmap
+description: >-
+  data model for prefix maps
+
+classes:
+  NamedContext:
+    name:
+      identifier: true
+    description:
+  PrefixExpansion:
+    attributes:
+      context:
+        range: NamedContext
+      prefix:
+        slot_uri: sh:prefix
+        range: ncname
+      namespace:
+        slot_uri: sh:namespace
+      ambiguity:
+        range: AmbiguityEnum
+
+enums:
+  AmbiguityEnum:
+    permissible_values:
+      unambiguous:
+      prefix_alias:
+      namespace_alias:
+
