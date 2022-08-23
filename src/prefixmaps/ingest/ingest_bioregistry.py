@@ -1,9 +1,17 @@
 import logging
 import re
 
-from prefixmaps.datamodel.context import Context, NAMESPACE_RE
+from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 
-priority = ["obofoundry", "semweb", "miriam", "default", "bioportal", "ols", "n2t"]
+priority = [
+    "obofoundry",
+    "semweb",
+    "miriam",
+    "default",
+    "bioportal",
+    "ols",
+    "n2t",
+]
 
 
 def from_bioregistry_upper(**kwargs) -> Context:
@@ -20,9 +28,11 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
     """
     Creates a Context from the bioregistry
 
-    :param upper: if True, normalize prefix to uppercase unless a preferred form is stated
+    :param upper: if True, normalize prefix to uppercase
+                    unless a preferred form is stated
     :param canonical_idorg: use the original/canonical identifiers.org PURLs
-    :param filter_dubious: skip namespaces that do not match strict namespace regular expression
+    :param filter_dubious: skip namespaces that do not match
+                    strict namespace regular expression
     :return:
     """
     from bioregistry import get_prefix_map
@@ -35,7 +45,9 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         preferred = k not in pm_non_preferred or k not in pm_miriam
         if canonical_idorg:
             v = re.sub(
-                r"^https://identifiers.org/(\S+):$", r"http://identifiers.org/\1/", v
+                r"^https://identifiers.org/(\S+):$",
+                r"http://identifiers.org/\1/",
+                v,
             )
         if filter_dubious and not NAMESPACE_RE.match(v):
             logging.debug(f"Skipping dubious ns {k} => {v}")

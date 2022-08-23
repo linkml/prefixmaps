@@ -1,7 +1,7 @@
 import unittest
 
 from prefixmaps.datamodel.context import StatusType
-from prefixmaps.io.parser import context_from_file, load_context, load_multi_context, load_contexts_meta
+from prefixmaps.io.parser import context_from_file, load_context, load_multi_context
 from prefixmaps.io.writer import context_to_file
 from tests import OUTPUT_DIR
 
@@ -18,7 +18,7 @@ EXPECTED_SEMWEB = [
     ("foaf", "http://xmlns.com/foaf/0.1/"),
     ("skos", "http://www.w3.org/2004/02/skos/core#"),
     ("foaf", "http://xmlns.com/foaf/0.1/"),
-    #("dcterms", "http://purl.org/dc/terms/"),
+    # ("dcterms", "http://purl.org/dc/terms/"),
 ]
 
 EXPECTED_OTHER = [
@@ -33,7 +33,9 @@ class TextPrefixMaps(unittest.TestCase):
         self.prefixcc_context = load_context("prefixcc")
         self.bioregistry_context = load_context("bioregistry")
         self.merged_context = load_context("merged")
-        self.dyn_merged_context = load_multi_context(["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"])
+        self.dyn_merged_context = load_multi_context(
+            ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"]
+        )
 
     def test_load_and_roundtrip(self):
         """
@@ -98,10 +100,10 @@ class TextPrefixMaps(unittest.TestCase):
         self.assertEqual(pe.status, StatusType.canonical)
         self.assertTrue(pe.canonical())
         # test multi-alias
-        #ctxt.add_prefix("CL", "http://purl.obolibrary.org/obo/UBERON_")
-        #pe = ctxt.prefix_expansions[-1]
-        #self.assertEqual(pe.status, StatusType.multi_alias)
-        #self.assertFalse(pe.canonical())
+        # ctxt.add_prefix("CL", "http://purl.obolibrary.org/obo/UBERON_")
+        # pe = ctxt.prefix_expansions[-1]
+        # self.assertEqual(pe.status, StatusType.multi_alias)
+        # self.assertFalse(pe.canonical())
         # test all as expected
         pm = ctxt.as_dict()
         for pfx, exp in EXPECTED_OBO:
@@ -142,6 +144,6 @@ class TextPrefixMaps(unittest.TestCase):
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
 
-    def test_meta(self):
-        ctxts = load_contexts_meta()
-        #print(ctxts)
+    # def test_meta(self):
+    #     ctxts = load_contexts_meta()
+    # print(ctxts)

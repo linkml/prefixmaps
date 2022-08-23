@@ -7,12 +7,25 @@ from prefixmaps.datamodel.context import Context
 
 AT_CONTEXT = "@context"
 
-PREFIXCC_EXCLUDE = ["bp", "terms", "dc", "ma", "ont", "fb", "obo", "http", "dcterm", "dc11", "uniprot", "go", "gold", "chebi"]
+PREFIXCC_EXCLUDE = [
+    "bp",
+    "terms",
+    "dc",
+    "ma",
+    "ont",
+    "fb",
+    "obo",
+    "http",
+    "dcterm",
+    "dc11",
+    "uniprot",
+    "go",
+    "gold",
+    "chebi",
+]
 
 
-def from_jsonld_context_url(
-    url: str, name: str, excludes: Optional[List[str]] = None
-) -> Context:
+def from_jsonld_context_url(url: str, name: str, excludes: Optional[List[str]] = None) -> Context:
     response = requests.get(url=url)
     if name is None:
         name = url
@@ -32,7 +45,9 @@ def from_jsonld_context_file(
 
 
 def from_jsonld_context(
-    jsonld_context: Dict[str, Any], name: str, excludes: Optional[List[str]] = None
+    jsonld_context: Dict[str, Any],
+    name: str,
+    excludes: Optional[List[str]] = None,
 ) -> Context:
     if name is None:
         raise ValueError("Must pass name")
@@ -51,6 +66,4 @@ def from_jsonld_context(
 
 
 def from_prefixcc() -> Context:
-    return from_jsonld_context_url(
-        "http://prefix.cc/context.jsonld", "prefixcc", PREFIXCC_EXCLUDE
-    )
+    return from_jsonld_context_url("http://prefix.cc/context.jsonld", "prefixcc", PREFIXCC_EXCLUDE)
