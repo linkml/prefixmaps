@@ -27,7 +27,6 @@ jobs:
       run: |
         mkdir gh-pages
         touch gh-pages/.nojekyll
-        poetry run make gendoc
         cd docs/
         poetry run sphinx-build -b html . _build
         cp -r _build/* ../gh-pages/
