@@ -20,7 +20,7 @@ coverage = "^6.4.4"
 gilda = ["gilda"]
 docs = [
     "sphinx",
-    "sphinx_rtd_theme",
+    "sphinx-rtd-theme",
     "sphinx-autodoc-typehints",
     "sphinx-click",
     ]

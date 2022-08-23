@@ -1166,7 +1166,7 @@ gilda = []
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b0b72e29d730691fd31299613daa3d5a1cc98c57fa53189eca20325cbd01937a"
+content-hash = "42b655c3258ae0f5108fff995ce31422fd58e4887dc0952e93ed3c34905ec0ab"
 
 [metadata.files]
 alabaster = [
