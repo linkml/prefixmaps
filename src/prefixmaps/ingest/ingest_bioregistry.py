@@ -1,20 +1,28 @@
+import logging
 import re
 
-from prefixmaps.datamodel.context import Context
+from prefixmaps.datamodel.context import Context, NAMESPACE_RE
 
-#priority = ["obofoundry", "semweb", "miriam", "default", "bioportal", "ols", "n2t"]
 priority = ["obofoundry", "semweb", "miriam", "default", "bioportal", "ols", "n2t"]
 
 
 def from_bioregistry_upper(**kwargs) -> Context:
+    """
+    As :ref:`from_bioregistry` with default uppercase normalization on
+
+    :param kwargs:
+    :return:
+    """
     return from_bioregistry(upper=True, **kwargs)
 
 
-def from_bioregistry(upper=False, canonical_idorg=True) -> Context:
+def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> Context:
     """
+    Creates a Context from the bioregistry
 
-    :param upper:
-    :param canonical_idorg:
+    :param upper: if True, normalize prefix to uppercase unless a preferred form is stated
+    :param canonical_idorg: use the original/canonical identifiers.org PURLs
+    :param filter_dubious: skip namespaces that do not match strict namespace regular expression
     :return:
     """
     from bioregistry import get_prefix_map
@@ -29,5 +37,8 @@ def from_bioregistry(upper=False, canonical_idorg=True) -> Context:
             v = re.sub(
                 r"^https://identifiers.org/(\S+):$", r"http://identifiers.org/\1/", v
             )
+        if filter_dubious and not NAMESPACE_RE.match(v):
+            logging.debug(f"Skipping dubious ns {k} => {v}")
+            continue
         ctxt.add_prefix(k, v, preferred=preferred)
     return ctxt

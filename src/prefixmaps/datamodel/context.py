@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Dict, List, Optional, Mapping
@@ -8,6 +9,9 @@ NAMESPACE = str
 PREFIX_EXPANSION_DICT = Mapping[PREFIX, NAMESPACE]
 INVERSE_PREFIX_EXPANSION_DICT = Mapping[NAMESPACE, PREFIX]
 
+
+PREFIX_RE = re.compile(r"^[\w\.]+$")
+NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 
 class StatusType(Enum):
     """
@@ -36,6 +40,14 @@ class PrefixExpansion:
         :return:
         """
         return self.status == StatusType.canonical
+
+    def validate(self) -> List[str]:
+        messages = []
+        if not PREFIX_RE.match(self.prefix):
+            messages.append(f"prefix {self.prefix} does not match {PREFIX_RE}")
+        if not NAMESPACE_RE.match(self.namespace):
+            messages.append(f"namespace {self.namespace} does not match {NAMESPACE_RE} (prefix: {self.prefix})")
+        return messages
 
 
 @dataclass
@@ -171,3 +183,14 @@ class Context:
         return {
             pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()
         }
+
+    def validate(self, canonical_only=True) -> List[str]:
+        messages = []
+        for pe in self.prefix_expansions:
+            if canonical_only and not pe.canonical():
+                continue
+            messages += pe.validate()
+        namespaces = self.namespaces(lower=True)
+        prefixes = self.namespaces(lower=True)
+        return messages
+

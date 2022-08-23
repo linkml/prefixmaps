@@ -24,5 +24,8 @@ def parse_go_xrefs(input: Union[str, TextIO]) -> Context:
     context = Context("go")
     for p in prefixes:
         if "rdf_uri_prefix" in p:
-            context.add_prefix(p["database"], p["rdf_uri_prefix"])
+            ns = p["rdf_uri_prefix"]
+            if not ns[-1] in ["/", "#", "_"]:
+                ns += "/"
+            context.add_prefix(p["database"], ns)
     return context

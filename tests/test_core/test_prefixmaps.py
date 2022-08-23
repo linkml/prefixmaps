@@ -114,6 +114,9 @@ class TextPrefixMaps(unittest.TestCase):
         for pfx, exp in EXPECTED_OBO + EXPECTED_SEMWEB + EXPECTED_OTHER:
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
+        issues = ctxt.validate()
+        for issue in issues:
+            print(issue)
 
     def test_dyn_merged(self):
         ctxt = self.dyn_merged_context
