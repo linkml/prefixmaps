@@ -42,7 +42,23 @@ converter = Converter.from_prefix_map(ctxt.as_dict())
 'http://identifiers.org/fb/FBgn123'
 ```
 
+### Refresh
+
+By default this will make use of metadata distributed alongside the package. This has certain advantages in terms
+of reproducibility, but it means if a new ontology or prefix is added to an upstream source you won't see this.
+
+To refresh and use the latest upstream:
+
+```python
+ctxt = load_context("obo", refresh=True)
+```
+
+### Order
+
+order is significant - sources listed first will take priority. The as_dict method ensures that the map is bijective
 
 ## Contexts
 
 See [contexts.curated.yaml](src/prefixmaps/data/contexts.curated.yaml)
+
+See the description fields

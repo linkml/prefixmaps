@@ -19,6 +19,9 @@
   description: prefix.cc registry
   format: context.jsonld
   location: http://prefix.cc/context.jsonld
+  comments:
+    - prefix.cc is quite a messy source, it has many outdated expansions for OBO ontologies, lots of strange duplicates etc
+    - we recommend this is not used in isolatiom but is instead combined, lower in the priority order
 
 - name: bioregistry
   description: bioregistry

@@ -18,17 +18,18 @@ def context_path(name: CONTEXT) -> Path:
     return data_path / f"{name}.csv"
 
 
-def load_multi_context(names: List[CONTEXT]) -> Context:
+def load_multi_context(names: List[CONTEXT], refresh=False) -> Context:
     """
     Merges multiple contexts
 
     :param names:
+    :param refresh: if True, fetch from upstream
     :return:
     """
     name = "+".join(names)
     ctxt = Context(name)
     for n in names:
-        ctxt.combine(load_context(n))
+        ctxt.combine(load_context(n, refresh=refresh))
     return ctxt
 
 
