@@ -1160,12 +1160,13 @@ docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "jaraco.tideli
 testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.3)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
 
 [extras]
+docs = []
 gilda = []
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "a719e24b193fbcd9637b19708e91be614e9eaadeb802a160514e8cfa721ef173"
+content-hash = "b0b72e29d730691fd31299613daa3d5a1cc98c57fa53189eca20325cbd01937a"
 
 [metadata.files]
 alabaster = [
