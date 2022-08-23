@@ -3,9 +3,9 @@ from pathlib import Path
 from typing import List, TextIO
 
 import yaml
+
 from prefixmaps.data import data_path
-from prefixmaps.datamodel.context import (CONTEXT, Context, PrefixExpansion,
-                                          StatusType)
+from prefixmaps.datamodel.context import CONTEXT, Context, PrefixExpansion, StatusType
 
 
 def context_path(name: CONTEXT) -> Path:
@@ -43,6 +43,7 @@ def load_context(name: CONTEXT, refresh=False) -> Context:
     """
     if refresh:
         from prefixmaps.ingest.etl_runner import load_context_from_source
+
         return load_context_from_source(name)
     else:
         with open(data_path / f"{name}.csv", encoding="utf-8") as file:

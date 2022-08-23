@@ -3,14 +3,15 @@ from typing import Union
 
 import click
 
-from prefixmaps.datamodel.context import Context, CONTEXT
-from prefixmaps.ingest.ingest_bioregistry import (from_bioregistry,
-                                                  from_bioregistry_upper)
+from prefixmaps.datamodel.context import CONTEXT, Context
+from prefixmaps.ingest.ingest_bioregistry import (
+    from_bioregistry,
+    from_bioregistry_upper,
+)
 from prefixmaps.ingest.ingest_go import parse_go_xrefs_from_remote
 from prefixmaps.ingest.ingest_jsonld import from_prefixcc
 from prefixmaps.ingest.ingest_linkml import from_semweb_curated
 from prefixmaps.ingest.ingest_shacl import from_obo
-from prefixmaps.io.parser import load_contexts_meta
 from prefixmaps.io.writer import context_to_file
 
 # TODO: replace this with introspection from metadata file
@@ -42,8 +43,9 @@ def load_context_from_source(context: CONTEXT) -> Context:
     else:
         raise ValueError(f"No such context: {context}")
 
+
 def run_etl(output_directory: Union[str, Path]):
-    #contexts = load_contexts_meta()
+    # contexts = load_contexts_meta()
     if not isinstance(output_directory, Path):
         output_directory = Path(output_directory)
     output_directory.mkdir(exist_ok=True, parents=True)

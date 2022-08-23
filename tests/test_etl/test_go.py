@@ -13,7 +13,8 @@ class TextETLForGO(unittest.TestCase):
             #    print(vars(pe))
             pm = ctxt.as_dict()
             self.assertEqual(
-                pm["WBPhenotype"], "http://purl.obolibrary.org/obo/WBPhenotype_"
+                pm["WBPhenotype"],
+                "http://purl.obolibrary.org/obo/WBPhenotype_",
             )
             outpath = OUTPUT_DIR / "foo.csv"
             OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -25,9 +26,7 @@ class TextETLForGO(unittest.TestCase):
         # for pe in ctxt.prefix_expansions:
         #    print(vars(pe))
         pm = ctxt.as_dict()
-        self.assertEqual(
-            pm["WBPhenotype"], "http://purl.obolibrary.org/obo/WBPhenotype_"
-        )
+        self.assertEqual(pm["WBPhenotype"], "http://purl.obolibrary.org/obo/WBPhenotype_")
         outpath = OUTPUT_DIR / "bar.csv"
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         with open(str(outpath), "w", encoding="UTF-8") as outfile:

@@ -5,7 +5,7 @@ import yaml
 
 from prefixmaps.datamodel.context import Context
 
-URL = "https://raw.githubusercontent.com/geneontology/go-site/master/metadata/db-xrefs.yaml"
+URL = "https://raw.githubusercontent.com/geneontology/go-site/master/metadata/db-xrefs.yaml"  # noqa: E501
 
 
 def parse_go_xrefs_from_remote() -> Context:

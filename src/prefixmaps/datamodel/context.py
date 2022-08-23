@@ -1,7 +1,7 @@
 import re
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Dict, List, Optional, Mapping
+from typing import List, Mapping, Optional
 
 CONTEXT = str
 PREFIX = str
@@ -13,10 +13,12 @@ INVERSE_PREFIX_EXPANSION_DICT = Mapping[NAMESPACE, PREFIX]
 PREFIX_RE = re.compile(r"^[\w\.]+$")
 NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 
+
 class StatusType(Enum):
     """
     Classification of prefix expansions
     """
+
     canonical = "canonical"
     prefix_alias = "prefix_alias"
     namespace_alias = "namespace_alias"
@@ -28,6 +30,7 @@ class PrefixExpansion:
     """
     An individual mapping between a prefix and a namespace
     """
+
     context: CONTEXT
     prefix: PREFIX
     namespace: NAMESPACE
@@ -46,7 +49,10 @@ class PrefixExpansion:
         if not PREFIX_RE.match(self.prefix):
             messages.append(f"prefix {self.prefix} does not match {PREFIX_RE}")
         if not NAMESPACE_RE.match(self.namespace):
-            messages.append(f"namespace {self.namespace} does not match {NAMESPACE_RE} (prefix: {self.prefix})")
+            messages.append(
+                f"namespace {self.namespace} does not match {NAMESPACE_RE}\
+                (prefix: {self.prefix})"
+            )
         return messages
 
 
@@ -91,7 +97,8 @@ class Context:
         The current context stays canonical. Additional prefixes
         added may be classified as aliases
 
-        If upper or lower is set for this context, the the prefix will be auto-case normalized,
+        If upper or lower is set for this context, the the
+        prefix will be auto-case normalized,
         UNLESS preferred=True
 
         :param prefix:
@@ -113,7 +120,7 @@ class Context:
         if prefix.lower() in prefixes:
             if namespace.lower() in namespaces:
                 return
-                #status = StatusType.multi_alias
+                # status = StatusType.multi_alias
             else:
                 status = StatusType.prefix_alias
         else:
@@ -121,7 +128,10 @@ class Context:
                 status = StatusType.namespace_alias
         self.prefix_expansions.append(
             PrefixExpansion(
-                context=self.name, prefix=prefix, namespace=namespace, status=status
+                context=self.name,
+                prefix=prefix,
+                namespace=namespace,
+                status=status,
             )
         )
 
@@ -170,9 +180,7 @@ class Context:
 
         :return:
         """
-        return {
-            pe.prefix: pe.namespace for pe in self.prefix_expansions if pe.canonical()
-        }
+        return {pe.prefix: pe.namespace for pe in self.prefix_expansions if pe.canonical()}
 
     def as_inverted_dict(self) -> INVERSE_PREFIX_EXPANSION_DICT:
         """
@@ -180,9 +188,7 @@ class Context:
 
         :return:
         """
-        return {
-            pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()
-        }
+        return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
 
     def validate(self, canonical_only=True) -> List[str]:
         messages = []
@@ -190,7 +196,6 @@ class Context:
             if canonical_only and not pe.canonical():
                 continue
             messages += pe.validate()
-        namespaces = self.namespaces(lower=True)
-        prefixes = self.namespaces(lower=True)
+        # namespaces = self.namespaces(lower=True)
+        # prefixes = self.namespaces(lower=True)
         return messages
-
