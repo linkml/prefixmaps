@@ -2,6 +2,7 @@ from csv import DictReader
 from pathlib import Path
 from typing import List, TextIO
 
+import yaml
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import (CONTEXT, Context, PrefixExpansion,
                                           StatusType)
@@ -62,3 +63,18 @@ def context_from_file(name: CONTEXT, file: TextIO) -> Context:
         pe = PrefixExpansion(**row)
         context.prefix_expansions.append(pe)
     return context
+
+
+def load_contexts_meta() -> List[Context]:
+    """
+    Returns metadata for all contexts
+
+    :param name:
+    :return:
+    """
+    objs = yaml.safe_load(open(data_path / "contexts.curated.yaml"))
+    ctxts = []
+    for obj in objs:
+        ctxt = Context(**obj)
+        ctxts.append(ctxt)
+    return ctxts

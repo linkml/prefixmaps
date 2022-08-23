@@ -28,3 +28,7 @@ from prefixmaps.io.parser import load_context, load_multi_contexts
 
 ctxt = load_multi_context("obo", "bioregistry.upper", , "prefixcc")
 ```
+
+## Contexts
+
+See [contexts.curated.yaml](src/prefixmaps/data/contexts.curated.yaml)

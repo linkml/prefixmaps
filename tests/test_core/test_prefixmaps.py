@@ -1,7 +1,7 @@
 import unittest
 
 from prefixmaps.datamodel.context import StatusType
-from prefixmaps.io.parser import context_from_file, load_context, load_multi_context
+from prefixmaps.io.parser import context_from_file, load_context, load_multi_context, load_contexts_meta
 from prefixmaps.io.writer import context_to_file
 from tests import OUTPUT_DIR
 
@@ -138,3 +138,7 @@ class TextPrefixMaps(unittest.TestCase):
         for pfx, exp in EXPECTED_OBO:
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
+
+    def test_meta(self):
+        ctxts = load_contexts_meta()
+        #print(ctxts)

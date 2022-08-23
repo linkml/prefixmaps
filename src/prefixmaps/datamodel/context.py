@@ -47,6 +47,10 @@ class Context:
     name: CONTEXT
     description: Optional[str] = None
     prefix_expansions: List[PrefixExpansion] = field(default_factory=lambda: [])
+    comments: List[str] = None
+    location: Optional[str] = None
+    format: Optional[str] = None
+    merged_from: Optional[List[str]] = None
     upper: bool = None
     lower: bool = None
 
