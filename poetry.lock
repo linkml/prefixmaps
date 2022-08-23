@@ -139,6 +139,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "coverage"
+version = "6.4.4"
+description = "Code coverage measurement for Python"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+toml = ["tomli"]
+
+[[package]]
 name = "curies"
 version = "0.2.0"
 description = "Idiomatic conversion between URIs and compact URIs (CURIEs)."
@@ -1154,7 +1165,7 @@ gilda = []
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "f9285e823c8ce1fc703f7baeebf5bc8ff0bb51ee878a266b54c39620cef624f6"
+content-hash = "a719e24b193fbcd9637b19708e91be614e9eaadeb802a160514e8cfa721ef173"
 
 [metadata.files]
 alabaster = [
@@ -1200,6 +1211,7 @@ colorama = [
     {file = "colorama-0.4.5-py2.py3-none-any.whl", hash = "sha256:854bf444933e37f5824ae7bfc1e98d5bce2ebe4160d46b5edf346a89358e99da"},
     {file = "colorama-0.4.5.tar.gz", hash = "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"},
 ]
+coverage = []
 curies = []
 decorator = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
