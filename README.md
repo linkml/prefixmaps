@@ -23,11 +23,25 @@ pip install prefixmaps
 
 ## Usage
 
-```python
-from prefixmaps.io.parser import load_context, load_multi_contexts
+to use in combination with [curies](https://github.com/cthoyt/curies) library:
 
-ctxt = load_multi_context("obo", "bioregistry.upper", , "prefixcc")
+```python
+from prefixmaps.io.parser import load_context, load_multi_context
+from curies import Converter
+
+ctxt = load_multi_context(["obo", "bioregistry.upper", "linked_data", "prefixcc"])
+converter = Converter.from_prefix_map(ctxt.as_dict())
+
+>>> converter.expand("CHEBI:1")
+'http://purl.obolibrary.org/obo/CHEBI_1'
+>>> converter.expand("GEO:1")
+'http://purl.obolibrary.org/obo/GEO_1'
+>>> converter.expand("owl:Class")
+'http://www.w3.org/2002/07/owl#Class'
+>>> converter.expand("FlyBase:FBgn123")
+'http://identifiers.org/fb/FBgn123'
 ```
+
 
 ## Contexts
 
