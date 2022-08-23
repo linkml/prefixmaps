@@ -83,14 +83,14 @@ jobs:
       #              run test suite   
       #----------------------------------------------
       - name: Run tests
-        run: poetry run pytest
+        run: poetry run python -m unittest discover
 
       #----------------------------------------------
       #              coverage report   
       #----------------------------------------------
       - name: Generate coverage results
         run: |
-          poetry run coverage run pytest
+          poetry run coverage run python -m unittest discover
           poetry run coverage xml
           poetry run coverage report -m
 
