@@ -1,5 +1,4 @@
 context,prefix,namespace,status
-
 bioportal,ABA-AMB,http://mouse.brain-map.org/atlas/index.html#,canonical
 bioportal,ABD,http://brd.bsvgateway.org/api/,canonical
 bioportal,ACESO,http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#,canonical
