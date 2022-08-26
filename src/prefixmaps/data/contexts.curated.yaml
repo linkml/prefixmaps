@@ -1,7 +1,7 @@
 - name: obo
   description: OBO prefix registry
   format: shacl.ttl
-  location: http://obofoundry.org/registry/obo_prefixes.ttl
+  location: http://purl.obolibrary.org/meta/obo_prefixes.ttl
 
 - name: linked_data
   description: Curated Linked Data Prefixes
