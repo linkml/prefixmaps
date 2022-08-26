@@ -18,3 +18,4 @@ linkml,vann,https://vocab.org/vann/,canonical
 linkml,qudt,http://qudt.org/schema/qudt/,canonical
 linkml,xsd,http://www.w3.org/2001/XMLSchema#,canonical
 linkml,shex,http://www.w3.org/ns/shex#,canonical
+linkml,biolink,https://w3id.org/biolink/vocab/,canonical

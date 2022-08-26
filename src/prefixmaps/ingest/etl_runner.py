@@ -23,7 +23,10 @@ CONTEXTS = {
     "bioregistry": from_bioregistry,
     "prefixcc": from_prefixcc,
 }
-COMBINED = {"merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"]}
+COMBINED = {
+    "merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
+    "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
+}
 
 
 def load_context_from_source(context: CONTEXT) -> Context:
