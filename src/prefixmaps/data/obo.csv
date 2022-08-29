@@ -1,14 +1,4 @@
 context,prefix,namespace,status
-obo,BFO,http://purl.obolibrary.org/obo/BFO_,canonical
-obo,CHEBI,http://purl.obolibrary.org/obo/CHEBI_,canonical
-obo,DOID,http://purl.obolibrary.org/obo/DOID_,canonical
-obo,GO,http://purl.obolibrary.org/obo/GO_,canonical
-obo,OBI,http://purl.obolibrary.org/obo/OBI_,canonical
-obo,PATO,http://purl.obolibrary.org/obo/PATO_,canonical
-obo,PO,http://purl.obolibrary.org/obo/PO_,canonical
-obo,PR,http://purl.obolibrary.org/obo/PR_,canonical
-obo,XAO,http://purl.obolibrary.org/obo/XAO_,canonical
-obo,ZFA,http://purl.obolibrary.org/obo/ZFA_,canonical
 obo,ADO,http://purl.obolibrary.org/obo/ADO_,canonical
 obo,AGRO,http://purl.obolibrary.org/obo/AGRO_,canonical
 obo,AISM,http://purl.obolibrary.org/obo/AISM_,canonical
@@ -17,11 +7,13 @@ obo,APO,http://purl.obolibrary.org/obo/APO_,canonical
 obo,APOLLO_SV,http://purl.obolibrary.org/obo/APOLLO_SV_,canonical
 obo,ARO,http://purl.obolibrary.org/obo/ARO_,canonical
 obo,BCO,http://purl.obolibrary.org/obo/BCO_,canonical
+obo,BFO,http://purl.obolibrary.org/obo/BFO_,canonical
 obo,BSPO,http://purl.obolibrary.org/obo/BSPO_,canonical
 obo,BTO,http://purl.obolibrary.org/obo/BTO_,canonical
 obo,CARO,http://purl.obolibrary.org/obo/CARO_,canonical
 obo,CDAO,http://purl.obolibrary.org/obo/CDAO_,canonical
 obo,CDNO,http://purl.obolibrary.org/obo/CDNO_,canonical
+obo,CHEBI,http://purl.obolibrary.org/obo/CHEBI_,canonical
 obo,CHEMINF,http://purl.obolibrary.org/obo/CHEMINF_,canonical
 obo,CHIRO,http://purl.obolibrary.org/obo/CHIRO_,canonical
 obo,CHMO,http://purl.obolibrary.org/obo/CHMO_,canonical
@@ -42,6 +34,7 @@ obo,DDANAT,http://purl.obolibrary.org/obo/DDANAT_,canonical
 obo,DDPHENO,http://purl.obolibrary.org/obo/DDPHENO_,canonical
 obo,DIDEO,http://purl.obolibrary.org/obo/DIDEO_,canonical
 obo,DISDRIV,http://purl.obolibrary.org/obo/DISDRIV_,canonical
+obo,DOID,http://purl.obolibrary.org/obo/DOID_,canonical
 obo,FBcv,http://purl.obolibrary.org/obo/FBcv_,canonical
 obo,DRON,http://purl.obolibrary.org/obo/DRON_,canonical
 obo,DUO,http://purl.obolibrary.org/obo/DUO_,canonical
@@ -69,6 +62,7 @@ obo,GENEPIO,http://purl.obolibrary.org/obo/GENEPIO_,canonical
 obo,GENO,http://purl.obolibrary.org/obo/GENO_,canonical
 obo,GEO,http://purl.obolibrary.org/obo/GEO_,canonical
 obo,GNO,http://purl.obolibrary.org/obo/GNO_,canonical
+obo,GO,http://purl.obolibrary.org/obo/GO_,canonical
 obo,HANCESTRO,http://purl.obolibrary.org/obo/HANCESTRO_,canonical
 obo,HAO,http://purl.obolibrary.org/obo/HAO_,canonical
 obo,HOM,http://purl.obolibrary.org/obo/HOM_,canonical
@@ -111,6 +105,7 @@ obo,OAE,http://purl.obolibrary.org/obo/OAE_,canonical
 obo,OARCS,http://purl.obolibrary.org/obo/OARCS_,canonical
 obo,OBA,http://purl.obolibrary.org/obo/OBA_,canonical
 obo,OBCS,http://purl.obolibrary.org/obo/OBCS_,canonical
+obo,OBI,http://purl.obolibrary.org/obo/OBI_,canonical
 obo,OBIB,http://purl.obolibrary.org/obo/OBIB_,canonical
 obo,OGG,http://purl.obolibrary.org/obo/OGG_,canonical
 obo,OGMS,http://purl.obolibrary.org/obo/OGMS_,canonical
@@ -132,6 +127,7 @@ obo,OPL,http://purl.obolibrary.org/obo/OPL_,canonical
 obo,OPMI,http://purl.obolibrary.org/obo/OPMI_,canonical
 obo,ORNASEQ,http://purl.obolibrary.org/obo/ORNASEQ_,canonical
 obo,OVAE,http://purl.obolibrary.org/obo/OVAE_,canonical
+obo,PATO,http://purl.obolibrary.org/obo/PATO_,canonical
 obo,PCL,http://purl.obolibrary.org/obo/PCL_,canonical
 obo,PCO,http://purl.obolibrary.org/obo/PCO_,canonical
 obo,PDRO,http://purl.obolibrary.org/obo/PDRO_,canonical
@@ -140,8 +136,10 @@ obo,PECO,http://purl.obolibrary.org/obo/PECO_,canonical
 obo,PHIPO,http://purl.obolibrary.org/obo/PHIPO_,canonical
 obo,PLANA,http://purl.obolibrary.org/obo/PLANA_,canonical
 obo,PLANP,http://purl.obolibrary.org/obo/PLANP_,canonical
+obo,PO,http://purl.obolibrary.org/obo/PO_,canonical
 obo,PORO,http://purl.obolibrary.org/obo/PORO_,canonical
 obo,PPO,http://purl.obolibrary.org/obo/PPO_,canonical
+obo,PR,http://purl.obolibrary.org/obo/PR_,canonical
 obo,PROCO,http://purl.obolibrary.org/obo/PROCO_,canonical
 obo,PSDO,http://purl.obolibrary.org/obo/PSDO_,canonical
 obo,PSO,http://purl.obolibrary.org/obo/PSO_,canonical
@@ -170,10 +168,12 @@ obo,VTO,http://purl.obolibrary.org/obo/VTO_,canonical
 obo,WBbt,http://purl.obolibrary.org/obo/WBbt_,canonical
 obo,WBls,http://purl.obolibrary.org/obo/WBls_,canonical
 obo,WBPhenotype,http://purl.obolibrary.org/obo/WBPhenotype_,canonical
+obo,XAO,http://purl.obolibrary.org/obo/XAO_,canonical
 obo,XCO,http://purl.obolibrary.org/obo/XCO_,canonical
 obo,XLMOD,http://purl.obolibrary.org/obo/XLMOD_,canonical
 obo,XPO,http://purl.obolibrary.org/obo/XPO_,canonical
 obo,ZECO,http://purl.obolibrary.org/obo/ZECO_,canonical
+obo,ZFA,http://purl.obolibrary.org/obo/ZFA_,canonical
 obo,ZFS,http://purl.obolibrary.org/obo/ZFS_,canonical
 obo,ZP,http://purl.obolibrary.org/obo/ZP_,canonical
 obo,GSSO,http://purl.obolibrary.org/obo/GSSO_,canonical

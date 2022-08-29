@@ -7,13 +7,15 @@ A semantic prefix map will map a a prefix (e.g. `skos`) to a namespace (e.g `htt
 This library is designed to satisfy the following requirements
 
 - coverage of prefixes from multiple different domains
-- multiple authorities
+- no single authoritative source of either prefixes or prefix-namespace mappings (clash-resilient)
 - preferred semantic namespace is prioritized over web URLs
-- authority preferred prefix is prioritized
-- lightweight
-- network-independence
-- versioned prefix maps
-- ability to retrieve latest from external authority on network
+- authority preferred prefix is prioritized where possible
+- each individual prefixmap is case-insenstive bijective
+- prefixmap composition and custom ordering of prefixmaps
+- lightweight / low footprint
+- fast (TODO)
+- network-independence / versioned prefix maps
+- optional ability to retrieve latest from external authority on network
 
 ## Installation
 
@@ -42,7 +44,79 @@ converter = Converter.from_prefix_map(ctxt.as_dict())
 'http://identifiers.org/fb/FBgn123'
 ```
 
-### Refresh
+### Alternate orderings / clash resilience
+
+- prefix.cc uses the prefix `geo` for geosparql `http://www.opengis.net/ont/geosparql#`
+- OBO uses prefix `GEO` for the geographic ontology `http://purl.obolibrary.org/obo/GEO_`
+- bioprefix uses the prefix `geo` for NCBI GEO, and "re-mints" a GEOGEO prefix for the OBO ontology
+
+If we prioritize prefix.cc the OBO prefix is ignored:
+
+```python
+>>> ctxt = load_multi_context(["prefixcc", "obo"])
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter.expand("GEO:1")
+>>> converter.expand("geo:1")
+'http://www.opengis.net/ont/geosparql#1'
+```
+
+Even though prefix expansion is case sensitive, we intentionally block conflicts that differ only in case.
+
+If we push bioregistry at the start of the list then GEOGEO can be used as the prefix for the OBO ontology
+
+```python
+>>> ctxt = load_multi_context(["bioregistry", "prefixcc", "obo"])
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter.expand("geo:1")
+'http://identifiers.org/geo/1'
+>>> converter.expand("GEO:1")
+>>> converter.expand("GEOGEO:1")
+'http://purl.obolibrary.org/obo/GEO_1'
+```
+
+Note that from the OBO perspective, GEOGEO is non-canonical
+
+We get similar results using the upper-normalized variant of bioregistry:
+
+```python
+>>> ctxt = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter.expand("GEO:1")
+'http://identifiers.org/geo/1'
+>>> converter.expand("geo:1")
+>>> converter.expand("GEOGEO:1")
+'http://purl.obolibrary.org/obo/GEO_1'
+```
+
+Users of OBO ontologies will want to place OBO at the start of the list:
+
+```python
+>>> ctxt = load_multi_context(["obo", "bioregistry.upper", "prefixcc"])
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter.expand("geo:1")
+>>> converter.expand("GEO:1")
+'http://purl.obolibrary.org/obo/GEO_1'
+>>> converter.expand("GEOGEO:1")
+```
+
+Note under this ordering there is no prefix for NCBI GEO. This is not
+a major limitation as there is no canonical semantic rendering of NCBI
+GEO. This could be added in future with a unique OBO prefix.
+
+You can use the ready-made "merged" prefix set, which prioritizes OBO:
+
+```python
+>>> ctxt = load_context("merged")
+>>> converter = Converter.from_prefix_map(ctxt.as_dict())
+>>> converter.expand("GEOGEO:1")
+>>> converter.expand("GEO:1")
+'http://purl.obolibrary.org/obo/GEO_1'
+>>> converter.expand("geo:1")
+```
+
+### Network independence and requesting latest versions
 
 By default this will make use of metadata distributed alongside the package. This has certain advantages in terms
 of reproducibility, but it means if a new ontology or prefix is added to an upstream source you won't see this.
@@ -53,12 +127,31 @@ To refresh and use the latest upstream:
 ctxt = load_context("obo", refresh=True)
 ```
 
-### Order
+This will perform a fetch from http://obofoundry.org/registry/obo_prefixes.ttl
 
-order is significant - sources listed first will take priority. The as_dict method ensures that the map is bijective
-
-## Contexts
+## Context Metadata
 
 See [contexts.curated.yaml](src/prefixmaps/data/contexts.curated.yaml)
 
 See the description fields
+
+## Code organization
+
+Data files containing pre-build prefix maps using sources like OBO and BioRegistry are distributed alongside the python
+
+Location:
+
+ * [src/prefixmaps/data](src/prefixmaps/data/)
+
+These can be regenerated using:
+
+```
+make etl
+```
+
+TODO: make a github action that auto-released new versions
+
+## Requesting new prefixes
+
+This repo is NOT a prefix registry. Its job is simply to aggregate
+different prefix maps. Request changes upstream.
