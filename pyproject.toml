@@ -18,6 +18,12 @@ coverage = "^6.4.4"
 
 [tool.poetry.extras]
 gilda = ["gilda"]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "sphinx-autodoc-typehints",
+    "sphinx-click",
+    ]
 
 [tool.black]
 line-length = 100
