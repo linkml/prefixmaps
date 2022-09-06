@@ -258,7 +258,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "importlib-metadata"
 version = "4.12.0"
 description = "Read metadata from Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -1149,7 +1149,7 @@ telegram = ["requests"]
 name = "typing-extensions"
 version = "4.3.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -1197,7 +1197,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 name = "zipp"
 version = "3.8.1"
 description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -1212,7 +1212,7 @@ gilda = []
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "a96b6cd5cbb2cb64e52d56d8f7d74167ee9365ecb508eaf4d80f94bbeff3985e"
+content-hash = "3c2af9ffba01eb2adaab6ec0f8432fe947908cbd597db593e6c53a825832dfa7"
 
 [metadata.files]
 alabaster = [
