@@ -1,5 +1,3 @@
-from importlib import metadata
-
 from .io.parser import load_context
 
 try:
