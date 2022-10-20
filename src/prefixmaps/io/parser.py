@@ -7,11 +7,11 @@ import yaml
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import CONTEXT, Context, PrefixExpansion, StatusType
 
-
 __all__ = [
     "load_multi_context",
     "load_context",
 ]
+
 
 def context_path(name: CONTEXT) -> Path:
     """
