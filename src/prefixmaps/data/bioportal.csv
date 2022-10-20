@@ -40,7 +40,7 @@ bioportal,BIBFRAME,http://id.loc.gov/ontologies/bibframe/,canonical
 bioportal,BIBLIOTEK-O,http://bibliotek-o.org/1.1/ontology/,canonical
 bioportal,BIBLIOTEK-O,http://bibliotek-o.org/ontology/,prefix_alias
 bioportal,BIM,http://cbakerlab.unbsj.ca/unbvps/BIM#,canonical
-bioportal,BIM,http://cbakerlab.unbsj.ca:8080/ontologies/BIM.owl#,canonical
+bioportal,BIM,http://cbakerlab.unbsj.ca:8080/ontologies/BIM.owl#,prefix_alias
 bioportal,BIM,http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#,prefix_alias
 bioportal,BIN,http://purl.bioontology.org/ontology/BIN/,canonical
 bioportal,BIRNLEX,http://bioontology.org/projects/ontologies/birnlex#,canonical
@@ -68,7 +68,7 @@ bioportal,CHD,http://homes.esat.kuleuven.be/~bioiuser/chdwiki/index.php/CHD:Case
 bioportal,CIDOC-CRM,http://www.cidoc-crm.org/cidoc-crm/,canonical
 bioportal,CMDO,http://purl.bioontology.org/ontology/CMDO/,canonical
 bioportal,CMR-QA,http://www.semanticweb.org/ukbiobank/ocmr_isg/CMR-QA#,canonical
-bioportal,CN,http://mmisw.org/ont/Technology/ComputerNetworks#,canonical
+bioportal,CN,http://mmisw.org/ont/Technology/ComputerNetworks#,prefix_alias
 bioportal,CN,http://mmisw.org/ont/Technology/ComputerNetworks/,canonical
 bioportal,CO-WHEAT,OBO:CO_321_,canonical
 bioportal,CODO,http://www.isibang.ac.in/ns/codo#,canonical
@@ -139,7 +139,7 @@ bioportal,FISHO,http://mybiodiversityontologies.um.edu.my/FO.owl#,prefix_alias
 bioportal,FLYGLYCODB,http://www.flyglycodb.org/ontologies/2015/,canonical
 bioportal,FMA,http://purl.org/obo/owlapi/fma#,prefix_alias
 bioportal,FMA,http://purl.org/sig/ont/fma/,canonical
-bioportal,FMA,http://sig.uw.edu/fma#,canonical
+bioportal,FMA,http://sig.uw.edu/fma#,prefix_alias
 bioportal,GALEN,http://www.co-ode.org/ontologies/galen#,canonical
 bioportal,GAMUTS,http://www.gamuts.net/entity#,canonical
 bioportal,GBOL,http://gbol.life/0.1/,canonical
@@ -235,7 +235,7 @@ bioportal,MESH,http://purl.bioontology.org/ontology/MESH/,canonical
 bioportal,MIM,http://purl.bioontology.org/ontology/MIM#,canonical
 bioportal,MIRO,OBO:miro#,prefix_alias
 bioportal,MIXS,https://w3id.org/mixs/terms/,canonical
-bioportal,MIXS,https://w3id.org/mixs/vocab/,canonical
+bioportal,MIXS,https://w3id.org/mixs/vocab/,prefix_alias
 bioportal,MOC,http://sweet.jpl.nasa.gov/2.3/matrOrganicCompound.owl#,canonical
 bioportal,MODSCI,https://w3id.org/skgo/modsci#,canonical
 bioportal,MONO,http://www.owl-ontologies.com/MO.owl#,canonical
@@ -291,7 +291,7 @@ bioportal,ONTOSIM,http://www.semanticweb.org/DIASUS/OntoSIM#,canonical
 bioportal,ONTOSINASC,http://www.semanticweb.org/DIASUS/OntoSINASC#,canonical
 bioportal,ONTOTOX,http://OntoTox.owl#,canonical
 bioportal,OOEVV,http://bmkeg.isi.edu/ooevv/,canonical
-bioportal,OPB,http://bhi.washington.edu/OPB##,canonical
+bioportal,OPB,http://bhi.washington.edu/OPB##,prefix_alias
 bioportal,OPB,http://bhi.washington.edu/OPB#OPB_,canonical
 bioportal,OPDE,http://www.mudhc.edu.et/template-vocabulary#,canonical
 bioportal,OPE,http://www.semanticweb.org/ontologies/2013/2/OPE.owl#,canonical
@@ -316,7 +316,7 @@ bioportal,PDRO,OBO:PDRO/PDRO.owl#,prefix_alias
 bioportal,PDUMDV,OBO:PdumDv_,canonical
 bioportal,PE,http://bmi.utah.edu/ontologies/peontology/,canonical
 bioportal,PE-O,http://www.pepathway.org/peo/1.1#,canonical
-bioportal,PE-O,http://www.pepathway.org/peo/1.2#,canonical
+bioportal,PE-O,http://www.pepathway.org/peo/1.2#,prefix_alias
 bioportal,PEDTERM,http://www.owl-ontologies.com/Ontology1358660052.owl#,canonical
 bioportal,PEO,http://knoesis.wright.edu/ParasiteExperiment.owl#,canonical
 bioportal,PESONT,http://www.semanticweb.org/patienceusip/ontologies/2021/7/untitled-ontology-23#,canonical
@@ -341,7 +341,7 @@ bioportal,PROPREO,http://lsdis.cs.uga.edu/projects/glycomics/propreo#,canonical
 bioportal,PROVO,http://www.w3.org/ns/prov-o#,canonical
 bioportal,PROVO,http://www.w3.org/ns/prov-o-20130312#,prefix_alias
 bioportal,PSO_2,http://ontorion.com/PSO#,canonical
-bioportal,QUDT,http://qudt.org/2.1/schema/,canonical
+bioportal,QUDT,http://qudt.org/2.1/schema/,prefix_alias
 bioportal,QUDT,http://qudt.org/schema/,canonical
 bioportal,RADLEX,http://radlex.org/RID/,canonical
 bioportal,RADLEX,http://www.radlex.org/RID/,prefix_alias
@@ -433,7 +433,7 @@ bioportal,WETAXTOPICS,http://purl.org/neat/,canonical
 bioportal,WIKIPATHWAYS,http://vocabularies.wikipathways.org/wp#,canonical
 bioportal,WIKIPATHWAYS,http://vocabularies.wikipathways.org/wpTypes#,prefix_alias
 bioportal,WSIO,OBO:WSIO_,canonical
-bioportal,WSIO,OBO:http://wsio.org#,canonical
+bioportal,WSIO,OBO:http://wsio.org#,prefix_alias
 bioportal,XEO,OBO:XEO_,canonical
 bioportal,XLMOD,OBO:XLMOD_,canonical
 bioportal,XPO,OBO:XPO_,canonical
