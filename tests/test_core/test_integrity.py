@@ -14,8 +14,12 @@ class TestIntegrity(unittest.TestCase):
 
     def setUp(self) -> None:
         """Set up the test case with all contexts."""
+        # it's likely there will be some issues with dat
+        # integrity caused by merge, so best to skip these
+        # on the first attempt at doing data integrity tests
+        skip = {"merged", "merged.oak"}
         self.contexts: Mapping[str, Context] = {
-            key: load_context(key) for key, path in context_paths.items()
+            key: load_context(key) for key, path in context_paths.items() if key not in skip
         }
 
     def test_unique_canonical_prefix(self):
