@@ -9,7 +9,4 @@ __all__ = [
 data_path = Path(__file__).parent
 
 #: A mapping from contexts to their paths
-context_paths: Mapping[str, Path] = {
-    path.stem: path
-    for path in data_path.glob("*.csv")
-}
+context_paths: Mapping[str, Path] = {path.stem: path for path in data_path.glob("*.csv")}
