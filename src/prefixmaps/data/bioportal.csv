@@ -1,10 +1,8 @@
 context,prefix,namespace,status
-bioportal,ABA-AMB,http://mouse.brain-map.org/atlas/index.html#,canonical
 bioportal,ABD,http://brd.bsvgateway.org/api/,canonical
 bioportal,ACESO,http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#,canonical
 bioportal,ACGT-MO,http://www.ifomis.org/acgt/1.0#,canonical
 bioportal,AD-DROP,http://www.semanticweb.org/AD-DROP#,canonical
-bioportal,ADA-AMB,http://mouse.brain-map.org/atlas/index.html#,canonical
 bioportal,ADAR,http://purl.org/autism-ontology/1.0/autism-core.owl#,canonical
 bioportal,ADAR,http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#,prefix_alias
 bioportal,ADAR,http://purl.org/autism-ontology/1.0/Interests_and_behaviors_phenotype#,prefix_alias
@@ -127,7 +125,6 @@ bioportal,EPISEM,http://www.semanticweb.org/danielhier/ontologies/2019/3/,canoni
 bioportal,EPO,http://www.semanticweb.org/ontologies/epo.owl#,canonical
 bioportal,EPSO,http://www.case.edu/EpilepsyOntology.owl#,canonical
 bioportal,ESSO,http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#,canonical
-bioportal,ETANC,https://github.com/VODANA/Controlled-vocabulary/ethanc/,canonical
 bioportal,ETHANC,https://github.com/VODANA/Controlled-vocabulary/ethanc/,canonical
 bioportal,EXACT,http://www.owl-ontologies.com/Ontology1184060740.owl#,canonical
 bioportal,EXTRACT,http://purl.org/extract/,canonical
@@ -196,7 +193,7 @@ bioportal,INFRARISK,https://www.infrarisk-fp7.eu/vocabs/#,canonical
 bioportal,INSECTH,http://neuromorpho.org/ontologies/insectH.owl#,canonical
 bioportal,INSNAME,https://www.vodan-totafrica.info/vocs/institutions/,canonical
 bioportal,INTO,http://www.semanticweb.org/Terrorism#,canonical
-bioportal,INVERSEROLES,http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#,canonical
+bioportal,INVERSEROLES,http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#,prefix_alias
 bioportal,IRD,http://www.semanticweb.org/msh/ontologies/2019/9/untitled-ontology-3#,canonical
 bioportal,IRDG,http://www.semanticweb.org/IRDGuyamazon#,canonical
 bioportal,ISO-15926-2_2003,http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#,canonical
@@ -373,7 +370,6 @@ bioportal,SDO,http://mimi.case.edu/ontologies/2009/1/SDO.owl#,canonical
 bioportal,SEDI,http://semantic-dicom.org/dcm#,canonical
 bioportal,SENSO,http://purl.dataone.org/odo/SENSO_,canonical
 bioportal,SEQ,http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#,canonical
-bioportal,SHR,http://www.shojaee.com/shr/shr.owl#,canonical
 bioportal,SHR,http://www.shojaee.com/shr/shr.owl#,canonical
 bioportal,SITBAC,http://www.semanticweb.org/ontologies/2008/1/Ontology1204037102846.owl#,canonical
 bioportal,SK,http://www.semanticweb.org/sandeepak/digitalforensic#,canonical
