@@ -3,6 +3,12 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Mapping, Optional
 
+__all__ = [
+    "StatusType",
+    "PrefixExpansion",
+    "Context",
+]
+
 CONTEXT = str
 PREFIX = str
 NAMESPACE = str
