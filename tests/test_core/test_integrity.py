@@ -1,7 +1,7 @@
 """This module contains tests for data integrity."""
 
 import unittest
-from collections import Counter
+from collections import Counter, defaultdict
 from typing import Mapping
 
 from prefixmaps import load_context
@@ -40,14 +40,13 @@ class TestIntegrity(unittest.TestCase):
         """Test that no contexts have duplicate canonical namespaces."""
         for key, context in self.contexts.items():
             with self.subTest(key=key):
-                counter = Counter(
-                    expansion.namespace
-                    for expansion in context.prefix_expansions
-                    if expansion.canonical()
-                )
-                duplicates = {prefix for prefix, count in counter.items() if count > 1}
+                dd = defaultdict(list)
+                for expansion in context.prefix_expansions:
+                    if expansion.canonical():
+                        dd[expansion.namespace].append(expansion)
+                duplicates = {namespace: expansions for namespace, expansions in dd.items() if len(expansions) > 1}
                 self.assertEqual(
-                    set(),
+                    {},
                     duplicates,
                     msg=f"[{key} multiple canonical records with the same namespace",
                 )
