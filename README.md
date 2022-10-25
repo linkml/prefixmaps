@@ -47,8 +47,8 @@ converter = Converter.from_prefix_map(ctxt.as_dict())
 ### Alternate orderings / clash resilience
 
 - prefix.cc uses the prefix `geo` for geosparql `http://www.opengis.net/ont/geosparql#`
-- OBO uses prefix `GEO` for the geographic ontology `http://purl.obolibrary.org/obo/GEO_`
-- bioprefix uses the prefix `geo` for NCBI GEO, and "re-mints" a GEOGEO prefix for the OBO ontology
+- OBO uses prefix [`GEO`](https://obofoundry.org/ontology/geo) for the Geographical Entity Ontology  `http://purl.obolibrary.org/obo/GEO_`
+- the Bioregistry uses the prefix [`geo`](https://bioregistry.io/registry/geo) for NCBI GEO, and "re-mints" a [`geogeo`](https://bioregistry.io/registry/geogeo) prefix for the OBO ontology
 
 If we prioritize prefix.cc the OBO prefix is ignored:
 
@@ -137,7 +137,7 @@ See the description fields
 
 ## Code organization
 
-Data files containing pre-build prefix maps using sources like OBO and BioRegistry are distributed alongside the python
+Data files containing pre-build prefix maps using sources like OBO and Bioregistry are distributed alongside the python
 
 Location:
 
