@@ -1,9 +1,20 @@
 [tool.poetry]
 name = "prefixmaps"
 version = "0.1.1"
-description = ""
+description = "A python library for retrieving semantic prefix maps"
 readme = "README.md"
 authors = ["cmungall <cjm@berkeleybop.org>"]
+keywords = ["semantic web", "bioinformatics"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[tool.poetry.urls]
+repository = "https://github.com/linkml/prefixmaps"
+homepage = "https://github.com/linkml/prefixmaps"
+"Bug Tracker" = "https://github.com/linkml/prefixmaps/issues"
+
 
 [tool.poetry.dependencies]
 python = "^3.7.6"
