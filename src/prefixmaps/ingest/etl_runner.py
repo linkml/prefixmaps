@@ -1,8 +1,9 @@
 from pathlib import Path
-from typing import Union
+from typing import Callable, Dict, Mapping, Union
 
 import click
 
+from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import CONTEXT, Context
 from prefixmaps.ingest.ingest_bioregistry import (
     from_bioregistry,
@@ -15,7 +16,7 @@ from prefixmaps.ingest.ingest_shacl import from_obo
 from prefixmaps.io.writer import context_to_file
 
 # TODO: replace this with introspection from metadata file
-CONTEXTS = {
+CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "obo": from_obo,
     "go": parse_go_xrefs_from_remote,
     "linked_data": from_semweb_curated,
@@ -47,30 +48,35 @@ def load_context_from_source(context: CONTEXT) -> Context:
         raise ValueError(f"No such context: {context}")
 
 
-def run_etl(output_directory: Union[str, Path]):
+def run_etl(output_directory: Union[str, Path]) -> None:
     # contexts = load_contexts_meta()
-    if not isinstance(output_directory, Path):
-        output_directory = Path(output_directory)
+    output_directory = Path(output_directory).resolve()
     output_directory.mkdir(exist_ok=True, parents=True)
-    cmap = {}
-    for k, f in CONTEXTS.items():
-        ctxt = f()
-        cmap[k] = ctxt
-    for k, vs in COMBINED.items():
-        ctxt = Context(k)
-        cmap[k] = ctxt
-        for v in vs:
-            ctxt.combine(cmap[v])
-    for k, ctxt in cmap.items():
-        with open(str(output_directory / f"{k}.csv"), "w", encoding="UTF-8") as file:
-            context_to_file(ctxt, file)
+
+    # Load all individual contexts
+    contexts: Dict[str, Context] = {
+        name: context_getter() for name, context_getter in CONTEXTS.items()
+    }
+
+    # Create merged contexts
+    for merged_name, names in COMBINED.items():
+        context = Context(name=merged_name)
+        contexts[merged_name] = context
+        for name in names:
+            context.combine(contexts[name])
+
+    # Write all contexts
+    for name, context in contexts.items():
+        with output_directory.joinpath(f"{name}.csv").open("w", encoding="UTF-8") as file:
+            context_to_file(context, file)
 
 
 @click.command
 @click.option(
     "-d",
     "--output-directory",
-    required=True,
+    default=data_path,
+    type=Path,
     help="Path to directory where CSVs are stored",
 )
 def cli(output_directory):
