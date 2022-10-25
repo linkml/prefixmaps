@@ -55,8 +55,7 @@ def run_etl(output_directory: Union[str, Path]) -> None:
 
     # Load all individual contexts
     contexts: Dict[str, Context] = {
-        name: context_getter()
-        for name, context_getter in CONTEXTS.items()
+        name: context_getter() for name, context_getter in CONTEXTS.items()
     }
 
     # Create merged contexts
