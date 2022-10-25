@@ -52,7 +52,7 @@ class TestIntegrity(unittest.TestCase):
                     msg=f"[{key} multiple canonical records with the same namespace",
                 )
 
-    def test_valid_namespace_synonyms(self):
+    def test_prefix_aliases(self):
         """Test that namespace aliases have a valid prefix."""
         for key, context in self.contexts.items():
             with self.subTest(key=key):
@@ -63,35 +63,35 @@ class TestIntegrity(unittest.TestCase):
                 }
                 # A namespace alias means that the prefix should be the same as a canonical prefix somewhere
                 missing_canonical_prefixes = {
-                    expansion.prefix
+                    expansion.prefix: expansion
                     for expansion in context.prefix_expansions
-                    if expansion.status == StatusType.namespace_alias
+                    if expansion.status == StatusType.prefix_alias
                     and expansion.prefix not in canonical_prefixes
                 }
                 self.assertEqual(
-                    set(),
+                    {},
                     missing_canonical_prefixes,
                     msg=f"[{key}] prefix aliases were missing corresponding canonical prefixes",
                 )
 
-    def test_valid_prefix_synonyms(self):
+    def test_namespace_aliases(self):
         """Test that prefix aliases have a valid namespace."""
         for key, context in self.contexts.items():
             with self.subTest(key=key):
                 canonical_namespaces = {
-                    expansion.namespace
+                    expansion.namespace: expansion.prefix
                     for expansion in context.prefix_expansions
                     if expansion.canonical()
                 }
-                # A prefix alias means that the namespace should appear in a canoncail record as well
+                # A prefix alias means that the namespace should appear in a canonical record as well
                 missing_canonical_namespace = {
-                    expansion.namespace
+                    expansion.namespace: expansion.prefix
                     for expansion in context.prefix_expansions
-                    if expansion.status == StatusType.prefix_alias
+                    if expansion.status == StatusType.namespace_alias
                     and expansion.namespace not in canonical_namespaces
                 }
                 self.assertEqual(
-                    set(),
+                    {},
                     missing_canonical_namespace,
                     msg=f"[{key}] prefix aliases were missing corresponding canonical prefixes",
                 )
