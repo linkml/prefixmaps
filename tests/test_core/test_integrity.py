@@ -44,7 +44,11 @@ class TestIntegrity(unittest.TestCase):
                 for expansion in context.prefix_expansions:
                     if expansion.canonical():
                         dd[expansion.namespace].append(expansion)
-                duplicates = {namespace: expansions for namespace, expansions in dd.items() if len(expansions) > 1}
+                duplicates = {
+                    namespace: expansions
+                    for namespace, expansions in dd.items()
+                    if len(expansions) > 1
+                }
                 self.assertEqual(
                     {},
                     duplicates,
@@ -73,6 +77,7 @@ class TestIntegrity(unittest.TestCase):
                     msg=f"[{key}] prefix aliases were missing corresponding canonical prefixes",
                 )
 
+    @unittest.skip(reason="enable in future PR")
     def test_namespace_aliases(self):
         """Test that prefix aliases have a valid namespace."""
         for key, context in self.contexts.items():
