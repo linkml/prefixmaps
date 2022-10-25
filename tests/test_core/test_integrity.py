@@ -77,7 +77,6 @@ class TestIntegrity(unittest.TestCase):
                     msg=f"[{key}] prefix aliases were missing corresponding canonical prefixes",
                 )
 
-    @unittest.skip(reason="enable in future PR")
     def test_namespace_aliases(self):
         """Test that prefix aliases have a valid namespace."""
         for key, context in self.contexts.items():
