@@ -26,6 +26,7 @@ jobs:
 
     - name: Build documentation.
       run: |
+        pip install sphinx-rtd-theme
         mkdir gh-pages
         touch gh-pages/.nojekyll
         cd docs/
