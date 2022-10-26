@@ -58,8 +58,8 @@ context = load_multi_context(["prefixcc", "obo"])
 extended_prefix_map = context.as_extended_prefix_map()
 converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
->> > converter.expand("GEO:1")
->> > converter.expand("geo:1")
+>>> converter.expand("GEO:1")
+>>> converter.expand("geo:1")
 'http://www.opengis.net/ont/geosparql#1'
 ```
 
@@ -72,10 +72,10 @@ context = load_multi_context(["bioregistry", "prefixcc", "obo"])
 extended_prefix_map = context.as_extended_prefix_map()
 converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
->> > converter.expand("geo:1")
+>>> converter.expand("geo:1")
 'http://identifiers.org/geo/1'
->> > converter.expand("GEO:1")
->> > converter.expand("GEOGEO:1")
+>>> converter.expand("GEO:1")
+>>> converter.expand("GEOGEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
 ```
 
@@ -88,10 +88,10 @@ context = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
 extended_prefix_map = context.as_extended_prefix_map()
 converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
->> > converter.expand("GEO:1")
+>>> converter.expand("GEO:1")
 'http://identifiers.org/geo/1'
->> > converter.expand("geo:1")
->> > converter.expand("GEOGEO:1")
+>>> converter.expand("geo:1")
+>>> converter.expand("GEOGEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
 ```
 
@@ -102,10 +102,10 @@ context = load_multi_context(["obo", "bioregistry.upper", "prefixcc"])
 extended_prefix_map = context.as_extended_prefix_map()
 converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
->> > converter.expand("geo:1")
->> > converter.expand("GEO:1")
+>>> converter.expand("geo:1")
+>>> converter.expand("GEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
->> > converter.expand("GEOGEO:1")
+>>> converter.expand("GEOGEO:1")
 ```
 
 Note under this ordering there is no prefix for NCBI GEO. This is not
@@ -119,10 +119,10 @@ context = load_context("merged")
 extended_prefix_map = context.as_extended_prefix_map()
 converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
->> > converter.expand("GEOGEO:1")
->> > converter.expand("GEO:1")
+>>> converter.expand("GEOGEO:1")
+>>> converter.expand("GEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
->> > converter.expand("geo:1")
+>>> converter.expand("geo:1")
 ```
 
 ### Network independence and requesting latest versions
