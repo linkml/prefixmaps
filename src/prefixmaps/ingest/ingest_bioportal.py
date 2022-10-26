@@ -38,13 +38,8 @@ def from_bioportal(obj: Dict[str, Any], name: str = None) -> Context:
                     statustype = StatusType.canonical
                 else:
                     statustype = StatusType.prefix_alias
-                ctxt.add_prefix(prefix=prefix,
-                                namespace=item,
-                                status=statustype,
-                                preferred=True)
+                ctxt.add_prefix(prefix=prefix, namespace=item, status=statustype, preferred=True)
                 i = i + 1
         else:
-            ctxt.add_prefix(prefix=prefix,
-                            namespace=uri_prefix,
-                            preferred=True)
+            ctxt.add_prefix(prefix=prefix, namespace=uri_prefix, preferred=True)
     return ctxt
