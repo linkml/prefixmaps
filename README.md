@@ -4,8 +4,10 @@ A python library for retrieving semantic prefix maps
 
 A semantic prefix map will map a a prefix (e.g. `skos`) to a namespace (e.g `http://www.w3.org/2004/02/skos/core#`)
 
-This library is designed to satisfy the following requirements
+This repository and the corresponding library is designed to satisfy the following requirements:
 
+- generation of prefix maps in headers of RDF documents
+- use in tools that expand CURIEs and short-form identifiers to URIs that can be used as subjects of RDF triples
 - coverage of prefixes from multiple different domains
 - no single authoritative source of either prefixes or prefix-namespace mappings (clash-resilient)
 - preferred semantic namespace is prioritized over web URLs
@@ -16,6 +18,11 @@ This library is designed to satisfy the following requirements
 - fast (TODO)
 - network-independence / versioned prefix maps
 - optional ability to retrieve latest from external authority on network
+
+What this is NOT intended for:
+
+- a general source of metadata about either prefixes or namespaces
+- a mechansim for resolving identifiers to web URLs for humans to find information
 
 ## Installation
 
@@ -135,7 +142,7 @@ See [contexts.curated.yaml](src/prefixmaps/data/contexts.curated.yaml)
 
 See the description fields
 
-## Code organization
+## Repository organization
 
 Data files containing pre-build prefix maps using sources like OBO and Bioregistry are distributed alongside the python
 
@@ -143,13 +150,28 @@ Location:
 
  * [src/prefixmaps/data](src/prefixmaps/data/)
 
-These can be regenerated using:
+### CSV field descriptions
+
+1. context: a unique handle for this context. This MUST be the same as the basename of the file
+2. prefix: corresponds to http://www.w3.org/ns/shacl#prefix
+3. namespace: corresponds to http://www.w3.org/ns/shacl#namespace
+4. canonical: true if this satisfies bijectivity
+
+These CSVs can be regenerated using:
 
 ```
 make etl
 ```
 
 TODO: make a github action that auto-released new versions
+
+Note that PRs should *not* be made against the individual CSV files. These are generated from upstream sources.
+
+We temporarily house a small number of curated prefixmaps such as [linked_data.yaml](https://github.com/linkml/prefixmaps/blob/main/src/prefixmaps/data/linked_data.curated.yaml), with the CSV generated from the YAML.
+
+Our goal is to ultimately cede these to upstream sources.
+
+
 
 ## Requesting new prefixes
 
