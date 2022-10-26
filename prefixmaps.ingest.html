@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>prefixmaps.ingest package &mdash; prefixmaps 0.1.4 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="prefixmaps.io package" href="prefixmaps.io.html" />
+    <link rel="prev" title="prefixmaps.datamodel package" href="prefixmaps.datamodel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> prefixmaps
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introuction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="prefixmaps.html">prefixmaps package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="prefixmaps.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.data.html">prefixmaps.data package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html">prefixmaps.datamodel package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">prefixmaps.ingest package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.io.html">prefixmaps.io package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.html#module-prefixmaps">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">prefixmaps</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">Modules</a> &raquo;</li>
+          <li><a href="prefixmaps.html">prefixmaps package</a> &raquo;</li>
+      <li>prefixmaps.ingest package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/prefixmaps.ingest.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prefixmaps-ingest-package">
+<h1>prefixmaps.ingest package<a class="headerlink" href="#prefixmaps-ingest-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-prefixmaps.ingest.etl_runner">
+<span id="prefixmaps-ingest-etl-runner-module"></span><h2>prefixmaps.ingest.etl_runner module<a class="headerlink" href="#module-prefixmaps.ingest.etl_runner" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.etl_runner.load_context_from_source">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.etl_runner.</span></span><span class="sig-name descname"><span class="pre">load_context_from_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.etl_runner.load_context_from_source" title="Permalink to this definition"></a></dt>
+<dd><p>Loads a context from upstream source</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>context</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.etl_runner.run_etl">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.etl_runner.</span></span><span class="sig-name descname"><span class="pre">run_etl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_directory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.etl_runner.run_etl" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest.ingest">
+<span id="prefixmaps-ingest-ingest-module"></span><h2>prefixmaps.ingest.ingest module<a class="headerlink" href="#module-prefixmaps.ingest.ingest" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest.xxxsave_context">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest.</span></span><span class="sig-name descname"><span class="pre">xxxsave_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest.xxxsave_context" title="Permalink to this definition"></a></dt>
+<dd><p>Saves a Context object in the standard place</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>context</strong> (<a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest.ingest_bioregistry">
+<span id="prefixmaps-ingest-ingest-bioregistry-module"></span><h2>prefixmaps.ingest.ingest_bioregistry module<a class="headerlink" href="#module-prefixmaps.ingest.ingest_bioregistry" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_bioregistry.from_bioregistry">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_bioregistry.</span></span><span class="sig-name descname"><span class="pre">from_bioregistry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">upper</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canonical_idorg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_dubious</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_bioregistry.from_bioregistry" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a Context from the bioregistry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>upper</strong> – if True, normalize prefix to uppercase
+unless a preferred form is stated</p></li>
+<li><p><strong>canonical_idorg</strong> – use the original/canonical identifiers.org PURLs</p></li>
+<li><p><strong>filter_dubious</strong> – skip namespaces that do not match
+strict namespace regular expression</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_bioregistry.from_bioregistry_upper">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_bioregistry.</span></span><span class="sig-name descname"><span class="pre">from_bioregistry_upper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_bioregistry.from_bioregistry_upper" title="Permalink to this definition"></a></dt>
+<dd><p>As <span class="xref std std-ref">from_bioregistry</span> with default uppercase normalization on</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>kwargs</strong> – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest.ingest_go">
+<span id="prefixmaps-ingest-ingest-go-module"></span><h2>prefixmaps.ingest.ingest_go module<a class="headerlink" href="#module-prefixmaps.ingest.ingest_go" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_go.parse_go_xrefs">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_go.</span></span><span class="sig-name descname"><span class="pre">parse_go_xrefs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_go.parse_go_xrefs" title="Permalink to this definition"></a></dt>
+<dd><p>Parse GO db-xrefs.yaml file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_go.parse_go_xrefs_from_remote">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_go.</span></span><span class="sig-name descname"><span class="pre">parse_go_xrefs_from_remote</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_go.parse_go_xrefs_from_remote" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest.ingest_jsonld">
+<span id="prefixmaps-ingest-ingest-jsonld-module"></span><h2>prefixmaps.ingest.ingest_jsonld module<a class="headerlink" href="#module-prefixmaps.ingest.ingest_jsonld" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.from_jsonld_context">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_jsonld_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jsonld_context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_jsonld_context" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.from_jsonld_context_file">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_jsonld_context_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.from_jsonld_context_url">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_jsonld_context_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_url" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.from_prefixcc">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_prefixcc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_prefixcc" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest.ingest_linkml">
+<span id="prefixmaps-ingest-ingest-linkml-module"></span><h2>prefixmaps.ingest.ingest_linkml module<a class="headerlink" href="#module-prefixmaps.ingest.ingest_linkml" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_linkml">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_linkml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_linkml" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_linkml_file">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_linkml_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_linkml_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_linkml_url">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_linkml_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_linkml_url" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_semweb_curated">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_semweb_curated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_semweb_curated" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest.ingest_shacl">
+<span id="prefixmaps-ingest-ingest-shacl-module"></span><h2>prefixmaps.ingest.ingest_shacl module<a class="headerlink" href="#module-prefixmaps.ingest.ingest_shacl" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_shacl.from_obo">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_obo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_obo" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a context from official OBO SHACL namespace PURL</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_shacl.from_shacl_file">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_shacl_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_shacl_file" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a context from a local turtle using SHACL vocabulary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TextIO</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – </p></li>
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>format</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_shacl.from_shacl_graph">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_shacl_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_shacl_graph" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a context from a graph using SHACL vocabulary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Graph</span></code>) – </p></li>
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_shacl.from_shacl_url">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_shacl_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_shacl_url" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a context from a remote URL with turtle using SHACL vocabulary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-prefixmaps.ingest">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-prefixmaps.ingest" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="prefixmaps.datamodel.html" class="btn btn-neutral float-left" title="prefixmaps.datamodel package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="prefixmaps.io.html" class="btn btn-neutral float-right" title="prefixmaps.io package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Chris Mungall.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

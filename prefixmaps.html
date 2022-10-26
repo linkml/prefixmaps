@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>prefixmaps package &mdash; prefixmaps 0.1.4 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="prefixmaps.data package" href="prefixmaps.data.html" />
+    <link rel="prev" title="Modules" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> prefixmaps
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introuction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">prefixmaps package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.data.html">prefixmaps.data package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html">prefixmaps.datamodel package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.ingest.html">prefixmaps.ingest package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.io.html">prefixmaps.io package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-prefixmaps">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prefixmaps.Context"><code class="docutils literal notranslate"><span class="pre">Context</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#prefixmaps.PrefixExpansion"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#prefixmaps.StatusType"><code class="docutils literal notranslate"><span class="pre">StatusType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#prefixmaps.load_context"><code class="docutils literal notranslate"><span class="pre">load_context()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#prefixmaps.load_multi_context"><code class="docutils literal notranslate"><span class="pre">load_multi_context()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">prefixmaps</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">Modules</a> &raquo;</li>
+      <li>prefixmaps package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/prefixmaps.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prefixmaps-package">
+<h1>prefixmaps package<a class="headerlink" href="#prefixmaps-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="prefixmaps.data.html">prefixmaps.data package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.data.html#module-prefixmaps.data">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.data.html#prefixmaps.data.context_paths"><code class="docutils literal notranslate"><span class="pre">context_paths</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prefixmaps.datamodel.html">prefixmaps.datamodel package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.datamodel.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.datamodel.html#module-prefixmaps.datamodel.context">prefixmaps.datamodel.context module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context"><code class="docutils literal notranslate"><span class="pre">Context</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.add_prefix"><code class="docutils literal notranslate"><span class="pre">Context.add_prefix()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.as_dict"><code class="docutils literal notranslate"><span class="pre">Context.as_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.as_inverted_dict"><code class="docutils literal notranslate"><span class="pre">Context.as_inverted_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.combine"><code class="docutils literal notranslate"><span class="pre">Context.combine()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.comments"><code class="docutils literal notranslate"><span class="pre">Context.comments</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.description"><code class="docutils literal notranslate"><span class="pre">Context.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.filter"><code class="docutils literal notranslate"><span class="pre">Context.filter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.format"><code class="docutils literal notranslate"><span class="pre">Context.format</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.location"><code class="docutils literal notranslate"><span class="pre">Context.location</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.lower"><code class="docutils literal notranslate"><span class="pre">Context.lower</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.merged_from"><code class="docutils literal notranslate"><span class="pre">Context.merged_from</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.name"><code class="docutils literal notranslate"><span class="pre">Context.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.namespaces"><code class="docutils literal notranslate"><span class="pre">Context.namespaces()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.prefix_expansions"><code class="docutils literal notranslate"><span class="pre">Context.prefix_expansions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.prefixes"><code class="docutils literal notranslate"><span class="pre">Context.prefixes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.upper"><code class="docutils literal notranslate"><span class="pre">Context.upper</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context.validate"><code class="docutils literal notranslate"><span class="pre">Context.validate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.canonical"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.canonical()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.context"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.context</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.namespace"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.namespace</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.prefix"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.prefix</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.status"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.status</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.validate"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.validate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType"><code class="docutils literal notranslate"><span class="pre">StatusType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType.canonical"><code class="docutils literal notranslate"><span class="pre">StatusType.canonical</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType.multi_alias"><code class="docutils literal notranslate"><span class="pre">StatusType.multi_alias</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType.namespace_alias"><code class="docutils literal notranslate"><span class="pre">StatusType.namespace_alias</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType.prefix_alias"><code class="docutils literal notranslate"><span class="pre">StatusType.prefix_alias</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.datamodel.html#module-prefixmaps.datamodel">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prefixmaps.ingest.html">prefixmaps.ingest package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.etl_runner">prefixmaps.ingest.etl_runner module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.etl_runner.load_context_from_source"><code class="docutils literal notranslate"><span class="pre">load_context_from_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.etl_runner.run_etl"><code class="docutils literal notranslate"><span class="pre">run_etl()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest">prefixmaps.ingest.ingest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest.xxxsave_context"><code class="docutils literal notranslate"><span class="pre">xxxsave_context()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest_bioregistry">prefixmaps.ingest.ingest_bioregistry module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_bioregistry.from_bioregistry"><code class="docutils literal notranslate"><span class="pre">from_bioregistry()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_bioregistry.from_bioregistry_upper"><code class="docutils literal notranslate"><span class="pre">from_bioregistry_upper()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest_go">prefixmaps.ingest.ingest_go module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_go.parse_go_xrefs"><code class="docutils literal notranslate"><span class="pre">parse_go_xrefs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_go.parse_go_xrefs_from_remote"><code class="docutils literal notranslate"><span class="pre">parse_go_xrefs_from_remote()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest_jsonld">prefixmaps.ingest.ingest_jsonld module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_jsonld_context"><code class="docutils literal notranslate"><span class="pre">from_jsonld_context()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_file"><code class="docutils literal notranslate"><span class="pre">from_jsonld_context_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_url"><code class="docutils literal notranslate"><span class="pre">from_jsonld_context_url()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_prefixcc"><code class="docutils literal notranslate"><span class="pre">from_prefixcc()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest_linkml">prefixmaps.ingest.ingest_linkml module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_linkml.from_linkml"><code class="docutils literal notranslate"><span class="pre">from_linkml()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_linkml.from_linkml_file"><code class="docutils literal notranslate"><span class="pre">from_linkml_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_linkml.from_linkml_url"><code class="docutils literal notranslate"><span class="pre">from_linkml_url()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_linkml.from_semweb_curated"><code class="docutils literal notranslate"><span class="pre">from_semweb_curated()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest_shacl">prefixmaps.ingest.ingest_shacl module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_shacl.from_obo"><code class="docutils literal notranslate"><span class="pre">from_obo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_shacl.from_shacl_file"><code class="docutils literal notranslate"><span class="pre">from_shacl_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_shacl.from_shacl_graph"><code class="docutils literal notranslate"><span class="pre">from_shacl_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_shacl.from_shacl_url"><code class="docutils literal notranslate"><span class="pre">from_shacl_url()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prefixmaps.io.html">prefixmaps.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.io.html#module-prefixmaps.io.parser">prefixmaps.io.parser module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.io.html#prefixmaps.io.parser.load_context"><code class="docutils literal notranslate"><span class="pre">load_context()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.io.html#prefixmaps.io.parser.load_multi_context"><code class="docutils literal notranslate"><span class="pre">load_multi_context()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.io.html#module-prefixmaps.io.writer">prefixmaps.io.writer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.io.html#prefixmaps.io.writer.context_to_file"><code class="docutils literal notranslate"><span class="pre">context_to_file()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prefixmaps.io.html#module-prefixmaps.io">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-prefixmaps">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-prefixmaps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="prefixmaps.Context">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">Context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_expansions=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comments=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merged_from=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A context is a localized collection of prefix expansions</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.add_prefix">
+<span class="sig-name descname"><span class="pre">add_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StatusType.canonical</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preferred</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.add_prefix" title="Permalink to this definition"></a></dt>
+<dd><p>Adds a prefix expansion to this context</p>
+<p>The current context stays canonical. Additional prefixes
+added may be classified as aliases</p>
+<p>If upper or lower is set for this context, the the
+prefix will be auto-case normalized,
+UNLESS preferred=True</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prefix</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>namespace</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>status</strong> (<a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType" title="prefixmaps.datamodel.context.StatusType"><code class="xref py py-class docutils literal notranslate"><span class="pre">StatusType</span></code></a>) – </p></li>
+<li><p><strong>preferred</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.as_dict">
+<span class="sig-name descname"><span class="pre">as_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.as_dict" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a mapping between canonical prefixes and expansions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.as_inverted_dict">
+<span class="sig-name descname"><span class="pre">as_inverted_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.as_inverted_dict" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a mapping between canonical expansions and prefixes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.combine">
+<span class="sig-name descname"><span class="pre">combine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.combine" title="Permalink to this definition"></a></dt>
+<dd><p>Merge a context into this one</p>
+<p>The current context stays primary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>context</strong> (<a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.comments">
+<span class="sig-name descname"><span class="pre">comments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.comments" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.description" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.filter">
+<span class="sig-name descname"><span class="pre">filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.filter" title="Permalink to this definition"></a></dt>
+<dd><p>Returns namespaces matching query</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prefix</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – </p></li>
+<li><p><strong>namespace</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.format">
+<span class="sig-name descname"><span class="pre">format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.format" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.location">
+<span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.location" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.lower">
+<span class="sig-name descname"><span class="pre">lower</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.lower" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.merged_from">
+<span class="sig-name descname"><span class="pre">merged_from</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.merged_from" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#prefixmaps.Context.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.namespaces">
+<span class="sig-name descname"><span class="pre">namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.namespaces" title="Permalink to this definition"></a></dt>
+<dd><p>All unique namespaces in all prefix expansions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.prefix_expansions">
+<span class="sig-name descname"><span class="pre">prefix_expansions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion" title="prefixmaps.datamodel.context.PrefixExpansion"><span class="pre">PrefixExpansion</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#prefixmaps.Context.prefix_expansions" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.prefixes">
+<span class="sig-name descname"><span class="pre">prefixes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.prefixes" title="Permalink to this definition"></a></dt>
+<dd><p>All unique prefixes in all prefix expansions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.Context.upper">
+<span class="sig-name descname"><span class="pre">upper</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.Context.upper" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.Context.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canonical_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.validate" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">PrefixExpansion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.PrefixExpansion" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An individual mapping between a prefix and a namespace</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.canonical">
+<span class="sig-name descname"><span class="pre">canonical</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.PrefixExpansion.canonical" title="Permalink to this definition"></a></dt>
+<dd><p>True if this is the canonical expansions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.context">
+<span class="sig-name descname"><span class="pre">context</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#prefixmaps.PrefixExpansion.context" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.namespace">
+<span class="sig-name descname"><span class="pre">namespace</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#prefixmaps.PrefixExpansion.namespace" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.prefix">
+<span class="sig-name descname"><span class="pre">prefix</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#prefixmaps.PrefixExpansion.prefix" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType" title="prefixmaps.datamodel.context.StatusType"><span class="pre">StatusType</span></a></em><a class="headerlink" href="#prefixmaps.PrefixExpansion.status" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.PrefixExpansion.validate" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="prefixmaps.StatusType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">StatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.StatusType" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Classification of prefix expansions</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.StatusType.canonical">
+<span class="sig-name descname"><span class="pre">canonical</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'canonical'</span></em><a class="headerlink" href="#prefixmaps.StatusType.canonical" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.StatusType.multi_alias">
+<span class="sig-name descname"><span class="pre">multi_alias</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'multi_alias'</span></em><a class="headerlink" href="#prefixmaps.StatusType.multi_alias" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.StatusType.namespace_alias">
+<span class="sig-name descname"><span class="pre">namespace_alias</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'namespace_alias'</span></em><a class="headerlink" href="#prefixmaps.StatusType.namespace_alias" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.StatusType.prefix_alias">
+<span class="sig-name descname"><span class="pre">prefix_alias</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'prefix_alias'</span></em><a class="headerlink" href="#prefixmaps.StatusType.prefix_alias" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.load_context">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">load_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.load_context" title="Permalink to this definition"></a></dt>
+<dd><p>Loads a context by name from standard location</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>refresh</strong> – if True, fetch from upstream</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.load_multi_context">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">load_multi_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.load_multi_context" title="Permalink to this definition"></a></dt>
+<dd><p>Merges multiple contexts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>names</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – </p></li>
+<li><p><strong>refresh</strong> – if True, fetch from upstream</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="prefixmaps.data.html" class="btn btn-neutral float-right" title="prefixmaps.data package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Chris Mungall.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
