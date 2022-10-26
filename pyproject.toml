@@ -39,6 +39,7 @@ docs = [
     "sphinx-autodoc-typehints",
     "sphinx-click",
     ]
+gilda = ["gilda"]
 
 [tool.black]
 line-length = 100
