@@ -1394,11 +1394,12 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "flake8 
 
 [extras]
 docs = ["Sphinx", "sphinx-rtd-theme", "sphinx-autodoc-typehints", "sphinx-click"]
+gilda = []
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "77a6c28881e3bb786f3041c121c6639e8cd74dfe47458b06267460543ec99bcf"
+content-hash = "d44cfebad1460c6f53f7c345bd6faa0f0ff0e7d50b630875cc469397cf66944d"
 
 [metadata.files]
 alabaster = []
