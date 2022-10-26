@@ -15,6 +15,7 @@ EXPECTED_NONCANONICAL = [
     "http://meta.schema.org/",
 ]
 
+
 class TextETLForBioportal(unittest.TestCase):
     def test_bioportal(self):
         with open(str(INPUT_DIR / "bioportal.yaml")) as file:
