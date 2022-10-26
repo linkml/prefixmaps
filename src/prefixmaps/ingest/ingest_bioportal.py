@@ -1,7 +1,7 @@
 """Simple ETL from bioportal to prefixmaps."""
 from typing import Any, Dict, TextIO, Union
 
-from prefixmaps.datamodel.context import Context
+from prefixmaps.datamodel.context import Context, StatusType
 
 
 def from_bioportal_file(file: Union[TextIO, str], name: str = None) -> Context:
@@ -31,5 +31,13 @@ def from_bioportal(obj: Dict[str, Any], name: str = None) -> Context:
         name = obj["name"]
     ctxt = Context(name)
     for prefix, uri_prefix in obj["prefixes"].items():
-        ctxt.add_prefix(prefix, uri_prefix)
+        if isinstance(uri_prefix, list):
+            ctxt.add_prefix(prefix=prefix,
+                            namespace=uri_prefix,
+                            status=StatusType.prefix_alias,
+                            preferred=True)
+        else:
+            ctxt.add_prefix(prefix=prefix,
+                            namespace=uri_prefix,
+                            preferred=True)
     return ctxt
