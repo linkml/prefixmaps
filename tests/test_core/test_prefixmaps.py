@@ -46,6 +46,7 @@ EXPECTED_OTHER = [
 
 class TextPrefixMaps(unittest.TestCase):
     """Tests the core canonical PrefixExpansions logic of prefixmaps"""
+
     def setUp(self) -> None:
         self.obo_context = load_context("obo")
         self.prefixcc_context = load_context("prefixcc")
