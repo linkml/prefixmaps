@@ -14,7 +14,7 @@ class TestIntegrity(unittest.TestCase):
 
     def setUp(self) -> None:
         """Set up the test case with all contexts."""
-        # it's likely there will be some issues with dat
+        # it's likely there will be some issues with data
         # integrity caused by merge, so best to skip these
         # on the first attempt at doing data integrity tests
         skip = {"merged", "merged.oak"}

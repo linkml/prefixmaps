@@ -1,3 +1,4 @@
+"""Generic JSON-LD ingests."""
 import json
 from typing import Any, Dict, List, Optional, TextIO, Union
 
@@ -26,6 +27,14 @@ PREFIXCC_EXCLUDE = [
 
 
 def from_jsonld_context_url(url: str, name: str, excludes: Optional[List[str]] = None) -> Context:
+    """
+    Ingests from a remote JSON-LD context.
+
+    :param url:
+    :param name:
+    :param excludes:
+    :return:
+    """
     response = requests.get(url=url)
     if name is None:
         name = url
@@ -35,6 +44,14 @@ def from_jsonld_context_url(url: str, name: str, excludes: Optional[List[str]] =
 def from_jsonld_context_file(
     file: Union[TextIO, str], name: str, excludes: Optional[List[str]] = None
 ) -> Context:
+    """
+    Ingests from a local JSON-LD context.
+
+    :param file:
+    :param name:
+    :param excludes:
+    :return:
+    """
     if isinstance(file, str):
         if name is None:
             name = file
@@ -49,6 +66,18 @@ def from_jsonld_context(
     name: str,
     excludes: Optional[List[str]] = None,
 ) -> Context:
+    """
+    Ingests from a JSON-LD context stored as a dictionary.
+
+    .. note::
+
+        Does not support JSON-LD 1.1 contexts.
+
+    :param jsonld_context:
+    :param name:
+    :param excludes:
+    :return:
+    """
     if name is None:
         raise ValueError("Must pass name")
     ctxt = Context(name)
@@ -66,4 +95,19 @@ def from_jsonld_context(
 
 
 def from_prefixcc() -> Context:
+    """
+    Ingests from prefix.cc.
+
+    Note that prefix.cc is an extremely messy source, but it can be useful
+    for semweb namespaces.
+
+    In order to prioritize "better" prefixes we have an exclusion list, that attempts to
+    exclude the most egregious entries, and prioritize more official sources. However,
+    there are still no guarantees as to quality.
+
+    Longer term we should focus on the curated linked_data.yaml file, and
+    moving this to bioregistry.
+
+    :return:
+    """
     return from_jsonld_context_url("http://prefix.cc/context.jsonld", "prefixcc", PREFIXCC_EXCLUDE)

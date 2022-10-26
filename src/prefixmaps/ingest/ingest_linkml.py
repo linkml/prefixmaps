@@ -33,4 +33,10 @@ def from_linkml(obj: Dict[str, Any], name: str = None) -> Context:
 
 
 def from_semweb_curated() -> Context:
+    """
+    Ingests the curated SemWeb context.
+
+    In future this may migrate upstream.
+    :return:
+    """
     return from_linkml_file(str(data_path / "linked_data.curated.yaml"))
