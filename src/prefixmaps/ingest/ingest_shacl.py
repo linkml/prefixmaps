@@ -1,3 +1,4 @@
+"""Ingests from triples using the SHACL PrefixDeclarations data model."""
 from typing import Any, TextIO, Union
 
 import rdflib
@@ -63,7 +64,7 @@ def from_shacl_graph(g: Graph, name: str) -> Context:
 
 def from_obo() -> Context:
     """
-    Creates a context from official OBO SHACL namespace PURL
+    Creates a context from official OBO SHACL namespace PURL.
 
     :return:
     """
