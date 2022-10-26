@@ -2,7 +2,9 @@ import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import List, Mapping, Optional, TypedDict
+from typing import List, Mapping, Optional
+
+from typing_extensions import TypedDict
 
 __all__ = [
     "StatusType",
