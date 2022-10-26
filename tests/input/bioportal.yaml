@@ -1,0 +1,43 @@
+name: bioportal
+prefixes:
+  OA: http://www.w3.org/ns/oa#
+  OBOE: http://ecoinformatics.org/oboe/oboe.1.2/
+  OBOREL: 
+    - http://www.obofoundry.org/ro/ro.owl#
+    - OBO:OBO_REL#_
+  OBS: http://www.semanticweb.org/bito2/ontologies/2021/3/untitled-ontology-11#
+  OCIMIDO: https://github.com/sap218/ocimido/blob/master/ontology/ocimido.owl#
+  OCRE: http://purl.org/net/OCRe/
+  OGR: http://www.owl-ontologies.com/GeographicalRegion.owl#
+  OGROUP: http://protozoadb.biowebdb.org/22/ogroup#
+  OM: http://www.ontology-of-units-of-measure.org/resource/
+  OMIM:
+    - http://purl.bioontology.org/ontology/OMIM/
+    - http://identifiers.org/omim/
+  PROVO: 
+    - http://www.w3.org/ns/prov-o#
+    - http://www.w3.org/ns/prov-o-20130312#
+  RCTONT: http://www.owl-ontologies.com/RCTOntology.owl#
+  RCTV2: http://purl.bioontology.org/ontology/RCTV2/
+  RDA-CONTENT: http://rdaregistry.info/termList/RDAContentType#
+  REPO: http://purl.bioontology.org/ontology/REPO.owl#
+  RH-MESH: http://phenomebrowser.net/ontologies/mesh/mesh.owl#
+  RO: http://www.radiomics.org/RO/
+  ROLEO: OBO:RoleO_
+  ROO: http://www.cancerdata.org/roo/
+  RPO: http://www.semanticweb.org/ontologies/2012/5/Ontology1338526551855.owl#
+  RSA: http://rdf.biosemantics.org/ontologies/rsa#
+  RVO: http://w3id.org/rv-ontology#
+  SAO: http://ccdb.ucsd.edu/SAO/1.2#
+  SBO: 
+    - http://purl.bioontology.org/ontology/SBO/SBO_
+    - http://biomodels.net/SBO/SBO_
+  SBOL: OBO:SBOL_
+  SCHEMA: 
+    - http://schema.org/
+    - http://meta.schema.org/
+    - http://www.w3.org/wiki/WebSchemas/
+    - https://www.w3.org/wiki/WebSchemas/
+  SCIO: http://psink.de/scio/
+  SD3: http://www.wiser.pitt.edu/ontologies/SimulationScenarioDeviations.owl#
+  SDO: http://mimi.case.edu/ontologies/2009/1/SDO.owl#
