@@ -49,7 +49,7 @@ class PrefixExpansion:
     """
     An individual mapping between a prefix and a namespace.
 
-    A PrefixExpansion corresponds to a SHACL PrefixDeclaration (http://www.w3.org/ns/shacl#PrefixDeclaration)
+    A PrefixExpansion corresponds to a SHACL PrefixDeclaration (https://www.w3.org/TR/shacl/#dfn-prefix-declarations)
     """
 
     context: CONTEXT
