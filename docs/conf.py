@@ -14,7 +14,7 @@ from prefixmaps import __version__
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "prefixmaps"
-copyright = 'f"{date.today().year}", Chris Mungall'
+copyright = f"{date.today().year}, Chris Mungall"
 author = "Chris Mungall"
 release = __version__
 
