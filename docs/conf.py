@@ -27,7 +27,7 @@ autosummary_generate = True
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.githubpages",
-    "sphinx-rtd-theme",
+    "sphinx_rtd_theme",
     "sphinx_click",
     "sphinx_autodoc_typehints",
 ]
