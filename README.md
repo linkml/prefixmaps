@@ -28,11 +28,12 @@ pip install prefixmaps
 to use in combination with [curies](https://github.com/cthoyt/curies) library:
 
 ```python
-from prefixmaps.io.parser import load_context, load_multi_context
+from prefixmaps.io.parser import load_multi_context
 from curies import Converter
 
-ctxt = load_multi_context(["obo", "bioregistry.upper", "linked_data", "prefixcc"])
-converter = Converter.from_prefix_map(ctxt.as_dict())
+context = load_multi_context(["obo", "bioregistry.upper", "linked_data", "prefixcc"])
+extended_prefix_map = context.as_extended_prefix_map()
+converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
 >>> converter.expand("CHEBI:1")
 'http://purl.obolibrary.org/obo/CHEBI_1'
@@ -53,10 +54,12 @@ converter = Converter.from_prefix_map(ctxt.as_dict())
 If we prioritize prefix.cc the OBO prefix is ignored:
 
 ```python
->>> ctxt = load_multi_context(["prefixcc", "obo"])
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter.expand("GEO:1")
->>> converter.expand("geo:1")
+context = load_multi_context(["prefixcc", "obo"])
+extended_prefix_map = context.as_extended_prefix_map()
+converter = Converter.from_extended_prefix_map(extended_prefix_map)
+
+>> > converter.expand("GEO:1")
+>> > converter.expand("geo:1")
 'http://www.opengis.net/ont/geosparql#1'
 ```
 
@@ -65,12 +68,14 @@ Even though prefix expansion is case sensitive, we intentionally block conflicts
 If we push bioregistry at the start of the list then GEOGEO can be used as the prefix for the OBO ontology
 
 ```python
->>> ctxt = load_multi_context(["bioregistry", "prefixcc", "obo"])
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter.expand("geo:1")
+context = load_multi_context(["bioregistry", "prefixcc", "obo"])
+extended_prefix_map = context.as_extended_prefix_map()
+converter = Converter.from_extended_prefix_map(extended_prefix_map)
+
+>> > converter.expand("geo:1")
 'http://identifiers.org/geo/1'
->>> converter.expand("GEO:1")
->>> converter.expand("GEOGEO:1")
+>> > converter.expand("GEO:1")
+>> > converter.expand("GEOGEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
 ```
 
@@ -79,26 +84,28 @@ Note that from the OBO perspective, GEOGEO is non-canonical
 We get similar results using the upper-normalized variant of bioregistry:
 
 ```python
->>> ctxt = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter.expand("GEO:1")
+context = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
+extended_prefix_map = context.as_extended_prefix_map()
+converter = Converter.from_extended_prefix_map(extended_prefix_map)
+
+>> > converter.expand("GEO:1")
 'http://identifiers.org/geo/1'
->>> converter.expand("geo:1")
->>> converter.expand("GEOGEO:1")
+>> > converter.expand("geo:1")
+>> > converter.expand("GEOGEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
 ```
 
 Users of OBO ontologies will want to place OBO at the start of the list:
 
 ```python
->>> ctxt = load_multi_context(["obo", "bioregistry.upper", "prefixcc"])
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter.expand("geo:1")
->>> converter.expand("GEO:1")
+context = load_multi_context(["obo", "bioregistry.upper", "prefixcc"])
+extended_prefix_map = context.as_extended_prefix_map()
+converter = Converter.from_extended_prefix_map(extended_prefix_map)
+
+>> > converter.expand("geo:1")
+>> > converter.expand("GEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
->>> converter.expand("GEOGEO:1")
+>> > converter.expand("GEOGEO:1")
 ```
 
 Note under this ordering there is no prefix for NCBI GEO. This is not
@@ -108,12 +115,14 @@ GEO. This could be added in future with a unique OBO prefix.
 You can use the ready-made "merged" prefix set, which prioritizes OBO:
 
 ```python
->>> ctxt = load_context("merged")
->>> converter = Converter.from_prefix_map(ctxt.as_dict())
->>> converter.expand("GEOGEO:1")
->>> converter.expand("GEO:1")
+context = load_context("merged")
+extended_prefix_map = context.as_extended_prefix_map()
+converter = Converter.from_extended_prefix_map(extended_prefix_map)
+
+>> > converter.expand("GEOGEO:1")
+>> > converter.expand("GEO:1")
 'http://purl.obolibrary.org/obo/GEO_1'
->>> converter.expand("geo:1")
+>> > converter.expand("geo:1")
 ```
 
 ### Network independence and requesting latest versions

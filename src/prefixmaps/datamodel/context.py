@@ -1,7 +1,8 @@
 import re
+from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import List, Mapping, Optional
+from typing import List, Mapping, Optional, TypedDict
 
 __all__ = [
     "StatusType",
@@ -29,6 +30,15 @@ class StatusType(Enum):
     prefix_alias = "prefix_alias"
     namespace_alias = "namespace_alias"
     multi_alias = "multi_alias"
+
+
+class Record(TypedDict):
+    """A record that is compatible with :mod:`curies`."""
+
+    prefix: str
+    uri_prefix: str
+    prefix_synonyms: List[str]
+    uri_prefix_synonyms: List[str]
 
 
 @dataclass
@@ -195,6 +205,34 @@ class Context:
         :return:
         """
         return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
+
+    def as_extended_prefix_map(self) -> List[Record]:
+        """Return records appropriate for generating a :class:`curies.Converter`."""
+        prefix_map, reverse_prefix_map = {}, {}
+        for expansion in self.prefix_expansions:
+            if expansion.canonical():
+                reverse_prefix_map[expansion.namespace] = expansion.prefix
+                prefix_map[expansion.prefix] = expansion.namespace
+
+        uri_prefix_synonyms = defaultdict(set)
+        for expansion in self.prefix_expansions:
+            if expansion.status == StatusType.prefix_alias:
+                uri_prefix_synonyms[expansion.prefix].add(expansion.namespace)
+
+        prefix_synonyms = defaultdict(set)
+        for expansion in self.prefix_expansions:
+            if expansion.status == StatusType.namespace_alias:
+                prefix_synonyms[reverse_prefix_map[expansion.namespace]].add(expansion.prefix)
+
+        return [
+            Record(
+                prefix=prefix,
+                prefix_synonyms=sorted(prefix_synonyms[prefix]),
+                uri_prefix=uri_prefix,
+                uri_prefix_synonyms=sorted(uri_prefix_synonyms[prefix]),
+            )
+            for prefix, uri_prefix in sorted(prefix_map.items())
+        ]
 
     def validate(self, canonical_only=True) -> List[str]:
         messages = []
