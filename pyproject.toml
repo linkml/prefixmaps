@@ -20,7 +20,11 @@ homepage = "https://github.com/linkml/prefixmaps"
 python = "^3.7.6"
 pyyaml = ">=5.3.1"
 importlib-metadata = "^4.12.0"
-typing-extensions = "^4.4.0"
+sphinx-rtd-theme = {version = "^1.0.0", extras = ["docs"]}
+Sphinx = {version = "^5.3.0", extras = ["docs"]}
+sphinx-autodoc-typehints = {version = "^1.19.4", extras = ["docs"]}
+sphinx-click = {version = "^4.3.0", extras = ["docs"]}
+myst-parser = {version = "^0.18.1", extras = ["docs"]}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -30,13 +34,14 @@ curies = "^0.3.0"
 coverage = "^6.4.4"
 
 [tool.poetry.extras]
-gilda = ["gilda"]
 docs = [
     "sphinx",
     "sphinx-rtd-theme",
     "sphinx-autodoc-typehints",
     "sphinx-click",
+    "myst-parser"
     ]
+gilda = ["gilda"]
 
 [tool.black]
 line-length = 100

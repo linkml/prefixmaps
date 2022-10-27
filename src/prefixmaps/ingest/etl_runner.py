@@ -1,3 +1,4 @@
+"""ETL logic for retrieving and normalizing upstream contexts."""
 from pathlib import Path
 from typing import Callable, Dict, Mapping, Union
 
@@ -24,17 +25,25 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "bioregistry": from_bioregistry,
     "prefixcc": from_prefixcc,
 }
+"""Maps the name of a context to the python function that can generate it"""
+
 COMBINED = {
     "merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
     "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
 }
+"""Contexts that remix other contexts. Order is significant, with the first listed having highest precedence."""
 
 
 def load_context_from_source(context: CONTEXT) -> Context:
     """
-    Loads a context from upstream source
+    Loads a context from upstream source.
 
-    :param context:
+    The context name should be a handle for either:
+
+    - An atomic context (e.g. obo, linked_data)
+    - A conbined context (which remixes existing contexts)
+
+    :param context: unique handle of the context
     :return:
     """
     if context in CONTEXTS:
@@ -49,6 +58,15 @@ def load_context_from_source(context: CONTEXT) -> Context:
 
 
 def run_etl(output_directory: Union[str, Path]) -> None:
+    """
+    Runs the complete ETL pipeline.
+
+    All contexts are refreshed from upstream sources, and written to the output directory,
+    as CSV.
+
+    :param output_directory:
+    :return:
+    """
     # contexts = load_contexts_meta()
     output_directory = Path(output_directory).resolve()
     output_directory.mkdir(exist_ok=True, parents=True)

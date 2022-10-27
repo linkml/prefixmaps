@@ -1,3 +1,5 @@
+"""Classes for managing individual Contexts."""
+
 import re
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -25,13 +27,24 @@ NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 
 class StatusType(Enum):
     """
-    Classification of prefix expansions
+    Classification of prefix expansions.
+
+    Note that only canonical mappings are exposed to the users of the library. However,
+    it can be useful for prefixmap ETL pipelines to include non-canonical mappings for
+    purposes of debugging.
     """
 
     canonical = "canonical"
+    """The canonical prefix expansion for a prefix. The set of all canonical mappings must be bijective."""
+
     prefix_alias = "prefix_alias"
+    """The prefix is an alias for an existing canonical prefix."""
+
     namespace_alias = "namespace_alias"
+    """The prefix is an alias for an existing canonical namespace."""
+
     multi_alias = "multi_alias"
+    """Both the prefix and the namespace are aliases for existing canonical namespaces."""
 
 
 class Record(TypedDict):
@@ -46,23 +59,53 @@ class Record(TypedDict):
 @dataclass
 class PrefixExpansion:
     """
-    An individual mapping between a prefix and a namespace
+    An individual mapping between a prefix and a namespace.
+
+    A PrefixExpansion corresponds to a SHACL PrefixDeclaration (https://www.w3.org/TR/shacl/#dfn-prefix-declarations)
     """
 
     context: CONTEXT
+    """Each PrefixExpansion is grouped into a context."""
+
     prefix: PREFIX
+    """Corresponds to http://www.w3.org/ns/shacl#prefix"""
+
     namespace: NAMESPACE
+    """Corresponds to http://www.w3.org/ns/shacl#namespace"""
+
     status: StatusType
+    """Indicates whether the expansion is canonical, a prefix alias, a namespace alias, or both."""
 
     def canonical(self) -> bool:
         """
-        True if this is the canonical expansions
+        True if this is the canonical mapping in both directions.
 
-        :return:
+        Note that canonicality is always relative to a context:
+
+        - ("GEO", "http://purl.obolibrary.org/obo/geo/") is canonical in the OBO Foundry context
+
+        :return: True if the status is canonical
         """
         return self.status == StatusType.canonical
 
     def validate(self) -> List[str]:
+        """
+        Validate the prefix expansion.
+
+        - Ensures that prefixes conform to W3C CURIE syntax
+        - Ensures that namespaces conform to a restricted subset of W3C URI syntax
+
+        Note that we use a highly restricted syntax in order to filter out pseudo-semantic
+        URIs. These include URLs for websites intended for humans that have http parameters
+        with `?`s, `=`s, etc.
+
+        These URLs are almost NEVER intended to be used as semantic URIs, i.e as subjects of
+        RDF triples. It is almost always bad practice to use them as such.
+
+        In future, if we discover exceptions to this rule, we will add them here.
+
+        :return: list of validation errors
+        """
         messages = []
         if not PREFIX_RE.match(self.prefix):
             messages.append(f"prefix {self.prefix} does not match {PREFIX_RE}")
@@ -77,13 +120,27 @@ class PrefixExpansion:
 @dataclass
 class Context:
     """
-    A context is a localized collection of prefix expansions
+    A context is a localized collection of prefix expansions.
+
+    A context should be internally consistent:
+
+    - the set of canonical PrefixExpansions should be bijective
+
+    However, there is no guarantee that a context is consistent with other contexts.
     """
 
     name: CONTEXT
+    """A unique stable handle for the context."""
+
     description: Optional[str] = None
+    """A human readable concise description of the context."""
+
     prefix_expansions: List[PrefixExpansion] = field(default_factory=lambda: [])
+    """All prefix expansions within that context. Corresponds to http://www.w3.org/ns/shacl#prefixes"""
+
     comments: List[str] = None
+    """Optional comments on the context."""
+
     location: Optional[str] = None
     format: Optional[str] = None
     merged_from: Optional[List[str]] = None
@@ -92,9 +149,10 @@ class Context:
 
     def combine(self, context: "Context"):
         """
-        Merge a context into this one
+        Merge a context into this one.
 
-        The current context stays primary
+        If there are conflicts, the current context takes precedence,
+        and the merged expansions are marked as non-canonical
 
         :param context:
         :return:
@@ -110,18 +168,18 @@ class Context:
         preferred: bool = False,
     ):
         """
-        Adds a prefix expansion to this context
+        Adds a prefix expansion to this context.
 
         The current context stays canonical. Additional prefixes
-        added may be classified as aliases
+        added may be classified as non-canonical.
 
-        If upper or lower is set for this context, the the
+        If upper or lower is set for this context, the
         prefix will be auto-case normalized,
         UNLESS preferred=True
 
-        :param prefix:
-        :param namespace:
-        :param status:
+        :param prefix: prefix to be added
+        :param namespace: namespace to be added
+        :param status: the status of the prefix being added
         :param preferred:
         :return:
         """
@@ -155,7 +213,7 @@ class Context:
 
     def filter(self, prefix: PREFIX = None, namespace: NAMESPACE = None):
         """
-        Returns namespaces matching query
+        Returns namespaces matching query.
 
         :param prefix:
         :param namespace:
@@ -172,8 +230,9 @@ class Context:
 
     def prefixes(self, lower=False) -> List[str]:
         """
-        All unique prefixes in all prefix expansions
+        All unique prefixes in all prefix expansions.
 
+        :param lower: if True, the prefix is normalized to lowercase.
         :return:
         """
         if lower:
@@ -185,6 +244,7 @@ class Context:
         """
         All unique namespaces in all prefix expansions
 
+        :param lower: if True, the namespace is normalized to lowercase.
         :return:
         """
         if lower:
@@ -194,17 +254,20 @@ class Context:
 
     def as_dict(self) -> PREFIX_EXPANSION_DICT:
         """
-        Returns a mapping between canonical prefixes and expansions
+        Returns a mapping between canonical prefixes and expansions.
 
-        :return:
+        This only includes canonical expansions. The results can be safely used
+        in the header of RDF syntax documents.
+
+        :return: Mappings between prefixes and namespaces
         """
         return {pe.prefix: pe.namespace for pe in self.prefix_expansions if pe.canonical()}
 
     def as_inverted_dict(self) -> INVERSE_PREFIX_EXPANSION_DICT:
         """
-        Returns a mapping between canonical expansions and prefixes
+        Returns a mapping between canonical expansions and prefixes.
 
-        :return:
+        :return: Mapping between namespaces and prefixes
         """
         return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
 
@@ -237,6 +300,12 @@ class Context:
         ]
 
     def validate(self, canonical_only=True) -> List[str]:
+        """
+        Validates each prefix expansion in the context.
+
+        :param canonical_only:
+        :return:
+        """
         messages = []
         for pe in self.prefix_expansions:
             if canonical_only and not pe.canonical():
