@@ -64,7 +64,7 @@ lxml = ["lxml"]
 
 [[package]]
 name = "bioregistry"
-version = "0.5.141"
+version = "0.5.142"
 description = "Integrated registry of biological databases and nomenclatures"
 category = "dev"
 optional = false
@@ -160,7 +160,7 @@ toml = ["tomli"]
 
 [[package]]
 name = "curies"
-version = "0.3.0"
+version = "0.4.0"
 description = "Idiomatic conversion between URIs and compact URIs (CURIEs)."
 category = "dev"
 optional = false
@@ -174,6 +174,7 @@ requests = "*"
 tests = ["coverage", "pytest"]
 pandas = ["pandas"]
 docs = ["sphinx-automodapi", "sphinx-autodoc-typehints", "sphinx-rtd-theme", "sphinx"]
+bioregistry = ["bioregistry (>=0.5.136)"]
 
 [[package]]
 name = "decorator"
@@ -1399,7 +1400,7 @@ gilda = []
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "521850283dfe27a0e420f2c52fbdb0cd8d30f0e1576dd56be6be80b78cf12f16"
+content-hash = "05f3359c39ff325cdeae69bc30fa36e20d859bc4b90bfc1f83347ce875e994a7"
 
 [metadata.files]
 alabaster = [
@@ -1425,8 +1426,8 @@ beautifulsoup4 = [
     {file = "beautifulsoup4-4.11.1.tar.gz", hash = "sha256:ad9aa55b65ef2808eb405f46cf74df7fcb7044d5cbc26487f96eb2ef2e436693"},
 ]
 bioregistry = [
-    {file = "bioregistry-0.5.141-py3-none-any.whl", hash = "sha256:c9d737fee285f5a3aa72b46ccb574bc0caa4ef7f9a407244620bacbd51e5e632"},
-    {file = "bioregistry-0.5.141.tar.gz", hash = "sha256:2b4d259f842e3f5cd811041ede9bd5e4f0b46f9064def85613790974016b8278"},
+    {file = "bioregistry-0.5.142-py3-none-any.whl", hash = "sha256:5e975f323b24dd23b733f36cd77f348d0084340194f5c0a50235e891052fda7f"},
+    {file = "bioregistry-0.5.142.tar.gz", hash = "sha256:989bfc3a9ffcaa7536718633a166f33f6563a00eb5b4cbac4055252de0f5c363"},
 ]
 certifi = [
     {file = "certifi-2022.9.24-py3-none-any.whl", hash = "sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382"},
@@ -1504,8 +1505,8 @@ coverage = [
     {file = "coverage-6.5.0.tar.gz", hash = "sha256:f642e90754ee3e06b0e7e51bce3379590e76b7f76b708e1a71ff043f87025c84"},
 ]
 curies = [
-    {file = "curies-0.3.0-py3-none-any.whl", hash = "sha256:0ac091b6a87103c6ebc11aee66a5cab48d3d4d8df5c894f222584932036daa18"},
-    {file = "curies-0.3.0.tar.gz", hash = "sha256:e2efff21fed623b55d1cfd9cf18d42e133c6ca0a6ddc42e7c023ca85d62ffdb5"},
+    {file = "curies-0.4.0-py3-none-any.whl", hash = "sha256:e3042027344ab70b7b90307aa9160351645152c34d1ada4b0fbd121dd537bd87"},
+    {file = "curies-0.4.0.tar.gz", hash = "sha256:fc235a75ff53b9f4478bb0fc1df8e2facf1c17d913895876815b14eba7f25b41"},
 ]
 decorator = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
