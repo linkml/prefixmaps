@@ -35,14 +35,12 @@ def from_bioportal(obj: Dict[str, Any], name: str = None) -> Context:
     ctxt = Context(name)
     for prefix, uri_prefix in obj["prefixes"].items():
         if isinstance(uri_prefix, list):
-            i = 0
             for i, item in enumerate(uri_prefix):
                 if i == 0:
                     statustype = StatusType.canonical
                 else:
                     statustype = StatusType.prefix_alias
                 ctxt.add_prefix(prefix=prefix, namespace=item, status=statustype, preferred=True)
-                i = i + 1
         else:
             ctxt.add_prefix(prefix=prefix, namespace=uri_prefix, preferred=True)
     return ctxt
