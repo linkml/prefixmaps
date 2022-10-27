@@ -33,7 +33,7 @@ def from_bioportal(obj: Dict[str, Any], name: str = None) -> Context:
     for prefix, uri_prefix in obj["prefixes"].items():
         if isinstance(uri_prefix, list):
             i = 0
-            for item in uri_prefix:
+            for i, item in enumerate(uri_prefix):
                 if i == 0:
                     statustype = StatusType.canonical
                 else:
