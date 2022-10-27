@@ -25,6 +25,7 @@ Sphinx = {version = "^5.3.0", extras = ["docs"]}
 sphinx-autodoc-typehints = {version = "^1.19.4", extras = ["docs"]}
 sphinx-click = {version = "^4.3.0", extras = ["docs"]}
 myst-parser = {version = "^0.18.1", extras = ["docs"]}
+typing-extensions = "^4.4.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
