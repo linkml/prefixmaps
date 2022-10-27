@@ -4,6 +4,7 @@ prefixes:
   ACESO: http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#
   ACGT-MO: http://www.ifomis.org/acgt/1.0#
   AD-DROP: http://www.semanticweb.org/AD-DROP#
+  ADALAB-META: http://rdf.adalab-project.org/ontology/adalab-meta/
   ADAR:
     - http://purl.org/autism-ontology/1.0/autism-core.owl#
     - http://purl.org/autism-ontology/1.0/CA_ADOS1-2001.owl#
@@ -73,7 +74,9 @@ prefixes:
   CDPEO: http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#
   CEDARVS: http://www.semanticweb.org/jgraybeal/ontologies/2015/7/cedarvaluesets#
   CHD: http://homes.esat.kuleuven.be/~bioiuser/chdwiki/index.php/CHD:CaseReport?id=
+  CHEMINF: http://semanticscience.org/resource/CHEMINF_
   CIDOC-CRM: http://www.cidoc-crm.org/cidoc-crm/
+  CKDO: http://clininf.eu/ckdo#
   CMDO: http://purl.bioontology.org/ontology/CMDO/
   CMR-QA: http://www.semanticweb.org/ukbiobank/ocmr_isg/CMR-QA#
   CN: 
@@ -89,6 +92,7 @@ prefixes:
   COID: https://github.com/sap218/coid/blob/master/coid.owl#
   COKPME: http://www.iiitdwd.ac.in/ACB/COKPME#
   COMODI: http://purl.uni-rostock.de/comodi/comodi#
+  COSTART: http://purl.bioontology.org/ontology/CST/
   CPRO: http://purl.org/cpr/
   CRISP: http://purl.bioontology.org/ontology/CSP/
   CRYOEM: http://scipion.i2pc.es/ontology/CRYOEM_
@@ -111,15 +115,18 @@ prefixes:
   DOID: http://purl.org/obo/owl/DOID#
   DOREMUS-KEYS: http://data.doremus.org/vocabulary/key/
   DRANPTO: http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/
+  DREAMDNPTO: http://www.semanticweb.org/zhenyuzhang/ontologies/2021/DREAMDNPTO#
   DRPSNPTO: http://www.semanticweb.org/zhenyuzhang/ontologies/2020/DRPSNPTO/
   DSEO: http://bigdatau.org/dseo#
   DTO: http://www.drugtargetontology.org/dto/DTO_
   EBP: http://www.semanticweb.org/tswheeler/ontologies/2016/3/EmpowerBP#
   ECAO: OBO:ECAO_
+  ECP: http://iris.med.duth.gr/research/ecp/ontology/eCP.owl#
   ECG: http://www.cvrgrid.org/files/ECGOntologyv1.owl#ECG_
   ECSO: http://purl.dataone.org/odo/ECSO_
   EDAM: http://edamontology.org/
   EFO: http://www.ebi.ac.uk/efo/EFO_
+  ELECTRICA: http://purl.org/ELECTRICA/
   ELIG: http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#
   ELTER_CL: http://vocabs.lter-europe.net/eLTER_CL/
   EMO: http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/
@@ -132,7 +139,7 @@ prefixes:
   EPILONT: http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#
   EPIO: https://bio.scai.fraunhofer.de/ontology/epilepsy#
   EPIP: https://pat.nichd.nih.gov/patepigeneticprocess/
-  EPISEM: http://www.semanticweb.org/danielhier/ontologies/2019/3/
+  EPISEM: http://www.semanticweb.org/danielhier/ontologies/2019/3/untitled-ontology-57/
   EPO: http://www.semanticweb.org/ontologies/epo.owl#
   EPSO: http://www.case.edu/EpilepsyOntology.owl#
   ESSO: http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#
@@ -145,6 +152,7 @@ prefixes:
   FG: https://w3id.org/fair-genomes/ontology/
   FHHO: http://www.owl-ontologies.com/Ontology1172270693.owl#
   FIRE: http://cerrado.linkeddata.es/ecology/fire#
+  FISH-AST: http://purl.org/heritagedata/schemes/560/concepts/
   FISHO:
     - http://bioportal.bioontology.org/ontologies/FISHO#
     - http://mybiodiversityontologies.um.edu.my/FO.owl#
@@ -156,25 +164,31 @@ prefixes:
   GALEN: http://www.co-ode.org/ontologies/galen#
   GAMUTS: http://www.gamuts.net/entity#
   GBOL: http://gbol.life/0.1/
+  GCO: http://rdf.biosemantics.org/ontologies/genomecomponents#
   GECKO: OBO:GECKO_
   GENE-CDS: http://www.genomic-cds.org/ont/genomic-cds.owl#
   GEOSPARQL: http://www.opengis.net/ont/geosparql#
-  GEOSPECIES: http://rdf.geospecies.org/ont/geospecies.owl#
+  GEOSPECIES:
+    - http://rdf.geospecies.org/ont/geospecies#
+    - http://rdf.geospecies.org/ont/geospecies.owl#
   GFFO: https://raw.githubusercontent.com/mpievolbio-scicomp/GenomeFeatureFormatOntology/main/gffo#
   GFO: 
     - http://www.onto-med.de/ontologies/gfo.owl#
     - http://www.onto-med.de/ontologies/gfo-basic.owl#
+  GFO-BIO: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#
   GFVO: https://www.codamono.com/biointerchange/gfvo#
   GLYCO: http://glycomics.ccrc.uga.edu/ontologies/GlycO#
   GLYCOCOO: http://purl.jp/bio/12/glyco/
-  GML: 
+  GML:
     - http://www.opengis.net/ont/gml#
     - http://loki.cae.drexel.edu/~wbs/ontology/2004/09/ogc-gml#
+  GMO: http://purl.jp/bio/10/gmo/GMO_
   GNO: OBO:GNO_
   GO: http://purl.org/obo/owl/GO#GO_
   GRO: http://www.bootstrep.eu/ontology/GRO#
   GSSO: OBO:GSSO_
   GVO: http://genome-variation.org/resource/gvo#
+  HASCO: http://hadatac.org/ont/hasco/
   HCDR: http://www.semanticweb.org/m14067/ontologies/2020/0/untitled-ontology-5#
   HCPCS: http://purl.bioontology.org/ontology/HCPCS/
   HEIO: http://whistl.uwaterloo.ca/heio.owl#
@@ -182,6 +196,7 @@ prefixes:
   HGNC: 
     - http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_
     - OBO:HGNC_
+  HIVO0004: http://bioportal/bioontology.org/ontologies/HIVO0004#
   HL7: http://purl.bioontology.org/ontology/HL7/
   HLA: http://purl.org/stemnet/HLA#
   HMIS033B: http://vocab.vodana.org/hmis033b/
@@ -190,8 +205,12 @@ prefixes:
   HSO: https://w3id.org/hso#
   HUPSON: http://scai.fraunhofer.de/HuPSON#
   I2SV: https://i2insights.org/index/integration-and-implementation-sciences-vocabulary#
+  I-ADOPT: https://w3id.org/iadopt/ont/
   IAML-MOP: http://data.doremus.org/vocabulary/iaml/mop/
-  ICD10: http://purl.bioontology.org/ontology/ICD10/
+  IBO: http://www.semanticweb.org/eamdouni/ontologies/2015/5/IBO#
+  ICD10: 
+    - http://purl.bioontology.org/ontology/ICD10/
+    - https://cdn.rawgit.com/laiasubirats/rarediseasesontology/master/ICD10_1.0.owl#
   ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
   ICD10PCS: http://purl.bioontology.org/ontology/ICD10PCS/
   ICD11-BODYSYSTEM: http://who.int/bodysystem.owl#
@@ -203,9 +222,12 @@ prefixes:
   ICNP: http://www.icn.ch/icnp#
   ICPC2P: http://purl.bioontology.org/ontology/ICPC2P/
   ICPS: http://www.ICPS/ontologies/
-  IDEM: http://purl.org/idem//
+  ID-AMR: http://purl.org/zonmw/id-amr/
+  IDEM: http://purl.org/idem/
   IDG_GL: http://druggablegenome.net/
+  IDODEN: http://purl.bioontology.org/ontology/IDODEN_
   IMGT-ONTOLOGY: http://www.imgt.org/download/IMGT-ONTOLOGY/IMGT-ONTOLOGY-v1-0-3.owl#
+  INBIO: http://www.semanticweb.org/rs/ontologies/INBIO#
   INBIODIV: http://www.semanticweb.org/mca/ontologies/2018/8/untitled-ontology-47#
   INCENTIVE: http://purl.org/incentive/
   INCENTIVE-VARS: http://purl.org/incentive/variables/
@@ -229,7 +251,9 @@ prefixes:
   IntAct: http://identifiers.org/intact/
   JERM: http://jermontology.org/ontology/JERMOntology#
   KISAO: http://www.biomodels.net/kisao/KISAO#KISAO_
-  KORO: http://www.knowledgegrid.org/koro/1.0.0/koro.owl#
+  KORO: 
+    - http://www.knowledgegrid.org/koro#
+    - http://www.knowledgegrid.org/koro/1.0.0/koro.owl#
   LAND-SURFACE: http://anzsoil.org/def/au/asls/land-surface/
   LANDFORM: http://anzsoil.org/def/au/asls/landform/
   LDA: http://www.semanticweb.org/ontologies/2008/10/languageacquisition_autism.owl#
@@ -443,6 +467,7 @@ prefixes:
   SSO: 
     - http://surveillance.mcgill.ca/sso/syndromes.owl#
     - http://www.medicine.mcgill.ca/epidemiology/buckeridge/syndromes.owl#
+  STMSO: https://bioportal.bioontology.org/ontologies/STMSO#
   STY: http://purl.bioontology.org/ontology/STY/
   SURGICAL: http://www.cablesat.com.au/research/
   SWEET: http://sweetontology.net/
@@ -477,6 +502,7 @@ prefixes:
   TRON: OBO:TrOn_
   TXPO: OBO:TXPO_
   TYPON: http://purl.phyloviz.net/ontology/typon#
+  UMMS: https://w3id.org/umms/ekg/onto01/
   UNITSONT: http://mimi.case.edu/ontologies/2009/1/UnitsOntology#
   UPA: OBO:UPa_
   VANDF: http://purl.bioontology.org/ontology/VANDF/
