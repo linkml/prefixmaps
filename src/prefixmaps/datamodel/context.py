@@ -47,7 +47,7 @@ class StatusType(Enum):
     """Both the prefix and the namespace are aliases for existing canonical namespaces."""
 
 
-class Record(TypedDict):
+class RecordDict(TypedDict):
     """A record that is compatible with :mod:`curies`."""
 
     prefix: str
@@ -271,7 +271,7 @@ class Context:
         """
         return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
 
-    def as_extended_prefix_map(self) -> List[Record]:
+    def as_extended_prefix_map(self) -> List[RecordDict]:
         """Return records appropriate for generating a :class:`curies.Converter`."""
         prefix_map, reverse_prefix_map = {}, {}
         for expansion in self.prefix_expansions:
@@ -290,7 +290,7 @@ class Context:
                 prefix_synonyms[reverse_prefix_map[expansion.namespace]].add(expansion.prefix)
 
         return [
-            Record(
+            RecordDict(
                 prefix=prefix,
                 prefix_synonyms=sorted(prefix_synonyms[prefix]),
                 uri_prefix=uri_prefix,
