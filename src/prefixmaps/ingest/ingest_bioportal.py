@@ -1,10 +1,13 @@
 """Simple ETL from bioportal to prefixmaps."""
 from typing import Any, Dict, TextIO, Union
 
+from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import Context, StatusType
 
 
-def from_bioportal_file(file: Union[TextIO, str], name: str = None) -> Context:
+def from_bioportal_file(
+    file: Union[TextIO, str] = str(data_path / "bioportal.curated.yaml"), name: str = None
+) -> Context:
     """
     Parse curated Bioportal prefixes.
 
