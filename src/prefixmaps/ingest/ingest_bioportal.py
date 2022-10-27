@@ -6,9 +6,8 @@ from prefixmaps.datamodel.context import Context, StatusType
 
 CURATED_PATH = str(data_path / "bioportal.curated.yaml")
 
-def from_bioportal_file(
-    file: Union[TextIO, str] = CURATED_PATH, name: str = None
-) -> Context:
+
+def from_bioportal_file(file: Union[TextIO, str] = CURATED_PATH, name: str = None) -> Context:
     """
     Parse curated Bioportal prefixes.
 
