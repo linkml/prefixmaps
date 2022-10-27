@@ -4,9 +4,10 @@ from typing import Any, Dict, TextIO, Union
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import Context, StatusType
 
+CURATED_PATH = str(data_path / "bioportal.curated.yaml")
 
 def from_bioportal_file(
-    file: Union[TextIO, str] = str(data_path / "bioportal.curated.yaml"), name: str = None
+    file: Union[TextIO, str] = CURATED_PATH, name: str = None
 ) -> Context:
     """
     Parse curated Bioportal prefixes.
