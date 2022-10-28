@@ -272,7 +272,24 @@ class Context:
         return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
 
     def as_extended_prefix_map(self) -> List[RecordDict]:
-        """Return records appropriate for generating a :class:`curies.Converter`."""
+        """Return an extended prfix, appropriate for generating a :class:`curies.Converter`.
+
+        An extended prefix map is a collection of dictionaries, each of which has the following
+        fields:
+
+        - ``prefix`` - the canonical prefix
+        - ``uri_prefix`` - the canonical URI prefix (i.e. namespace)
+        - ``prefix_synonyms`` - optional extra prefixes such as capitialization variants. No prefix
+          synonyms are allowed to be duplicate across any canonical prefixes or synonyms in other
+          records in the extended prefix
+        - ``uri_prefix_synonyms`` - optional extra URI prefixes such as variants of Identifiers.org
+          URLs, PURLs, etc. No URI prefix synyonms are allowed to be duplicates of either canonical
+          or other URI prefix synonyms.
+
+        Extended prefix maps have the benefit over regular prefix maps in that they keep extra
+        information. An extended prefix map can be readily collapsed into a normal prefix map
+        by getting the ``prefix`` and ``uri_prefix`` fields.
+        """
         prefix_map, reverse_prefix_map = {}, {}
         for expansion in self.prefix_expansions:
             if expansion.canonical():
