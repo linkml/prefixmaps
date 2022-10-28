@@ -2,7 +2,6 @@
   description: OBO prefix registry
   format: shacl.ttl
   location: http://purl.obolibrary.org/meta/obo_prefixes.ttl
-  semantic: true
 
 - name: linked_data
   description: Curated Linked Data Prefixes
@@ -10,13 +9,11 @@
     - note that only a small subset are curated, to serve as tie-breakers for prefixes.cc
   format: linkml.yaml
   location: linked_data.curated.yaml
-  semantic: true
 
 - name: go
   description: GO Semantic Prefixes
   format: go-dbxrefs.yaml
   location: https://raw.githubusercontent.com/geneontology/go-site/master/metadata/db-xrefs.yaml
-  semantic: true
 
 - name: prefixcc
   description: prefix.cc registry
@@ -25,7 +22,6 @@
   comments:
     - prefix.cc is quite a messy source, it has many outdated expansions for OBO ontologies, lots of strange duplicates etc
     - we recommend this is not used in isolation but is instead combined, lower in the priority order
-  semantic: true
 
 - name: bioportal
   description: bioportal
@@ -34,12 +30,10 @@
     - canonical, prefix_alias, and namespace_alias entries are present
   format: linkml.yaml
   location: bioportal.curated.yaml
-  semantic: true
 
 - name: bioregistry
   description: bioregistry
   format: bioregistry_api
-  semantic: false
 
 - name: bioregistry.upper
   description: bioregistry normalized to upper-case for MIRIAM entries
@@ -48,7 +42,6 @@
   comments:
     - The correct form for most databases such as MGI, ZFIN, GO, CGD, COG, EC, ENSEMBL, etc is upper-case
     - the need for this will disappear if we can curated a preferred form in bioregistry
-  semantic: false
 
 - name: merged
   description: merged entries
