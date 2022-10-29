@@ -157,11 +157,23 @@ Location:
 3. namespace: corresponds to http://www.w3.org/ns/shacl#namespace
 4. canonical: true if this satisfies bijectivity
 
-These CSVs can be regenerated using:
 
-```
-make etl
-```
+### Refreshing the Data
+
+The data can be refreshed in several ways:
+
+1. Locally, you can use `tox` with:
+
+   ```shell
+   pip install tox tox-poetry
+   tox -e refresh
+   ```
+2. Manually running and automatically committing via [this GitHub Actions workflow](https://github.com/linkml/prefixmaps/blob/main/.github/workflows/refresh.yaml).
+3. Running makefile (warning, this requires some pre-configuration
+    
+    ```shell
+    make etl
+    ```
 
 TODO: make a github action that auto-released new versions
 
