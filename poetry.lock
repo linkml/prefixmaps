@@ -64,7 +64,7 @@ lxml = ["lxml"]
 
 [[package]]
 name = "bioregistry"
-version = "0.5.141"
+version = "0.5.143"
 description = "Integrated registry of biological databases and nomenclatures"
 category = "dev"
 optional = false
@@ -366,14 +366,11 @@ pyyaml = "*"
 
 [[package]]
 name = "jsonasobj"
-version = "2.0.1"
+version = "1.3.1"
 description = "JSON as python objects"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-hbreader = "*"
+python-versions = "*"
 
 [[package]]
 name = "jsonasobj2"
@@ -961,7 +958,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
-name = "ruamel.yaml"
+name = "ruamel-yaml"
 version = "0.17.21"
 description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
 category = "dev"
@@ -976,7 +973,7 @@ docs = ["ryd"]
 jinja2 = ["ruamel.yaml.jinja2 (>=0.2)"]
 
 [[package]]
-name = "ruamel.yaml.clib"
+name = "ruamel-yaml-clib"
 version = "0.2.7"
 description = "C version of reader, parser and emitter for ruamel.yaml derived from libyaml"
 category = "dev"
@@ -1408,12 +1405,13 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 
 [extras]
 docs = ["Sphinx", "sphinx-rtd-theme", "sphinx-autodoc-typehints", "sphinx-click", "myst-parser"]
-refresh = []
+gilda = []
+refresh = ["click"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "cc47bfd8dac79592507f0f4f6b55673f128abc838bba4a9363fea54ab34dbe4b"
+content-hash = "79067a8808fa3c5e4af48d6679981ea41d5e87e8bed796b88efb7cf057084a40"
 
 [metadata.files]
 alabaster = [
@@ -1439,8 +1437,8 @@ beautifulsoup4 = [
     {file = "beautifulsoup4-4.11.1.tar.gz", hash = "sha256:ad9aa55b65ef2808eb405f46cf74df7fcb7044d5cbc26487f96eb2ef2e436693"},
 ]
 bioregistry = [
-    {file = "bioregistry-0.5.141-py3-none-any.whl", hash = "sha256:c9d737fee285f5a3aa72b46ccb574bc0caa4ef7f9a407244620bacbd51e5e632"},
-    {file = "bioregistry-0.5.141.tar.gz", hash = "sha256:2b4d259f842e3f5cd811041ede9bd5e4f0b46f9064def85613790974016b8278"},
+    {file = "bioregistry-0.5.143-py3-none-any.whl", hash = "sha256:70e0221fae09bf3aa47799a8bfb592d42d95d6a2df4924ce10dfe40cc294150e"},
+    {file = "bioregistry-0.5.143.tar.gz", hash = "sha256:15e2beb3a7d53fa81abbf0339762fcec59f7ba5a1ac219f2c247e04c3eaa8007"},
 ]
 certifi = [
     {file = "certifi-2022.9.24-py3-none-any.whl", hash = "sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382"},
@@ -1654,8 +1652,8 @@ json-flattener = [
     {file = "json_flattener-0.1.9.tar.gz", hash = "sha256:84cf8523045ffb124301a602602201665fcb003a171ece87e6f46ed02f7f0c15"},
 ]
 jsonasobj = [
-    {file = "jsonasobj-2.0.1-py3-none-any.whl", hash = "sha256:221af946bbe4171505e81ea1f0c31d652e69c68e02fff742e37543abe08ff7d9"},
-    {file = "jsonasobj-2.0.1.tar.gz", hash = "sha256:e87c47ec5ec3db65a212e15236fdefc38dd01bdcf563b0d53021095066cd5963"},
+    {file = "jsonasobj-1.3.1-py3-none-any.whl", hash = "sha256:b9e329dc1ceaae7cf5d5b214684a0b100e0dad0be6d5bbabac281ec35ddeca65"},
+    {file = "jsonasobj-1.3.1.tar.gz", hash = "sha256:d52e0544a54a08f6ea3f77fa3387271e3648655e0eace2f21e825c26370e44a2"},
 ]
 jsonasobj2 = [
     {file = "jsonasobj2-1.0.4-py3-none-any.whl", hash = "sha256:12e86f86324d54fcf60632db94ea74488d5314e3da554c994fe1e2c6f29acb79"},
@@ -1981,11 +1979,11 @@ requests = [
     {file = "requests-2.28.1-py3-none-any.whl", hash = "sha256:8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"},
     {file = "requests-2.28.1.tar.gz", hash = "sha256:7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983"},
 ]
-"ruamel.yaml" = [
+ruamel-yaml = [
     {file = "ruamel.yaml-0.17.21-py3-none-any.whl", hash = "sha256:742b35d3d665023981bd6d16b3d24248ce5df75fdb4e2924e93a05c1f8b61ca7"},
     {file = "ruamel.yaml-0.17.21.tar.gz", hash = "sha256:8b7ce697a2f212752a35c1ac414471dc16c424c9573be4926b56ff3f5d23b7af"},
 ]
-"ruamel.yaml.clib" = [
+ruamel-yaml-clib = [
     {file = "ruamel.yaml.clib-0.2.7-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d5859983f26d8cd7bb5c287ef452e8aacc86501487634573d260968f753e1d71"},
     {file = "ruamel.yaml.clib-0.2.7-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:debc87a9516b237d0466a711b18b6ebeb17ba9f391eb7f91c649c5c4ec5006c7"},
     {file = "ruamel.yaml.clib-0.2.7-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:df5828871e6648db72d1c19b4bd24819b80a755c4541d3409f0f7acd0f335c80"},
