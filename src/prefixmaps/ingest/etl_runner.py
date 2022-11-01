@@ -6,6 +6,7 @@ import click
 
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import CONTEXT, Context
+from prefixmaps.ingest.ingest_bioportal import from_bioportal_file
 from prefixmaps.ingest.ingest_bioregistry import (
     from_bioregistry,
     from_bioregistry_upper,
@@ -21,6 +22,7 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "obo": from_obo,
     "go": parse_go_xrefs_from_remote,
     "linked_data": from_semweb_curated,
+    "bioportal": from_bioportal_file,
     "bioregistry.upper": from_bioregistry_upper,
     "bioregistry": from_bioregistry,
     "prefixcc": from_prefixcc,
