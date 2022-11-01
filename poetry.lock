@@ -1496,11 +1496,12 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [extras]
 docs = ["Sphinx", "sphinx-rtd-theme", "sphinx-autodoc-typehints", "sphinx-click", "myst-parser"]
 gilda = []
+refresh = ["click"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "936eedb395f3529a7e47e6b307212e6dca579e92d49483bc1efd3b3998019e43"
+content-hash = "79067a8808fa3c5e4af48d6679981ea41d5e87e8bed796b88efb7cf057084a40"
 
 [metadata.files]
 alabaster = [
