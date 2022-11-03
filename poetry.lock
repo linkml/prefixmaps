@@ -180,7 +180,7 @@ toml = ["tomli"]
 
 [[package]]
 name = "curies"
-version = "0.3.0"
+version = "0.4.0"
 description = "Idiomatic conversion between URIs and compact URIs (CURIEs)."
 category = "main"
 optional = false
@@ -191,6 +191,7 @@ pytrie = "*"
 requests = "*"
 
 [package.extras]
+bioregistry = ["bioregistry (>=0.5.136)"]
 docs = ["sphinx", "sphinx-autodoc-typehints", "sphinx-automodapi", "sphinx-rtd-theme"]
 pandas = ["pandas"]
 tests = ["coverage", "pytest"]
@@ -1500,7 +1501,7 @@ refresh = ["requests", "bioregistry", "rdflib"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "0025321c980b80b5e7f8f8c943aec3f17b29fcadaddc880a7b7ef7f8cc2e06fb"
+content-hash = "f42d25eafabcf1904f14484f724608b237682fe3b345c2f30413556ab0b74a46"
 
 [metadata.files]
 alabaster = [
@@ -1613,8 +1614,8 @@ coverage = [
     {file = "coverage-6.5.0.tar.gz", hash = "sha256:f642e90754ee3e06b0e7e51bce3379590e76b7f76b708e1a71ff043f87025c84"},
 ]
 curies = [
-    {file = "curies-0.3.0-py3-none-any.whl", hash = "sha256:0ac091b6a87103c6ebc11aee66a5cab48d3d4d8df5c894f222584932036daa18"},
-    {file = "curies-0.3.0.tar.gz", hash = "sha256:e2efff21fed623b55d1cfd9cf18d42e133c6ca0a6ddc42e7c023ca85d62ffdb5"},
+    {file = "curies-0.4.0-py3-none-any.whl", hash = "sha256:e3042027344ab70b7b90307aa9160351645152c34d1ada4b0fbd121dd537bd87"},
+    {file = "curies-0.4.0.tar.gz", hash = "sha256:fc235a75ff53b9f4478bb0fc1df8e2facf1c17d913895876815b14eba7f25b41"},
 ]
 decorator = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
