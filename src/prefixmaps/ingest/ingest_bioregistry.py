@@ -73,4 +73,5 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
             continue
         preferred = record.prefix == bioregistry.get_preferred_prefix(record.prefix)
         context.add_prefix(record.prefix, record.uri_prefix, preferred=preferred)
+        # TODO add synonyms, do in later PR since it will increase diff and complexity of review
     return context
