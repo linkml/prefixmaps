@@ -143,6 +143,32 @@ in the header of RDF syntax documents.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.as_extended_prefix_map">
+<span class="sig-name descname"><span class="pre">as_extended_prefix_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.as_extended_prefix_map" title="Permalink to this definition"></a></dt>
+<dd><p>Return an extended prfix, appropriate for generating a <code class="xref py py-class docutils literal notranslate"><span class="pre">curies.Converter</span></code>.</p>
+<p>An extended prefix map is a collection of dictionaries, each of which has the following
+fields:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">prefix</span></code> - the canonical prefix</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uri_prefix</span></code> - the canonical URI prefix (i.e. namespace)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">prefix_synonyms</span></code> - optional extra prefixes such as capitialization variants. No prefix
+synonyms are allowed to be duplicate across any canonical prefixes or synonyms in other
+records in the extended prefix</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uri_prefix_synonyms</span></code> - optional extra URI prefixes such as variants of Identifiers.org
+URLs, PURLs, etc. No URI prefix synyonms are allowed to be duplicates of either canonical
+or other URI prefix synonyms.</p></li>
+</ul>
+<p>Extended prefix maps have the benefit over regular prefix maps in that they keep extra
+information. An extended prefix map can be readily collapsed into a normal prefix map
+by getting the <code class="docutils literal notranslate"><span class="pre">prefix</span></code> and <code class="docutils literal notranslate"><span class="pre">uri_prefix</span></code> fields.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">RecordDict</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.as_inverted_dict">
 <span class="sig-name descname"><span class="pre">as_inverted_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.as_inverted_dict" title="Permalink to this definition"></a></dt>
 <dd><p>Returns a mapping between canonical expansions and prefixes.</p>
