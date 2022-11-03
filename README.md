@@ -1,8 +1,8 @@
 # prefixmaps
 
-A python library for retrieving semantic prefix maps
+A Python library for retrieving semantic prefix maps.
 
-A semantic prefix map will map a a prefix (e.g. `skos`) to a namespace (e.g `http://www.w3.org/2004/02/skos/core#`)
+A semantic prefix map will map a a prefix (e.g. `skos`) to a namespace (e.g `http://www.w3.org/2004/02/skos/core#`).
 
 This repository and the corresponding library is designed to satisfy the following requirements:
 
@@ -32,7 +32,7 @@ pip install prefixmaps
 
 ## Usage
 
-to use in combination with [curies](https://github.com/cthoyt/curies) library:
+To use in combination with [curies](https://github.com/cthoyt/curies) library:
 
 ```python
 from prefixmaps.io.parser import load_multi_context
@@ -72,7 +72,7 @@ converter = Converter.from_extended_prefix_map(extended_prefix_map)
 
 Even though prefix expansion is case sensitive, we intentionally block conflicts that differ only in case.
 
-If we push bioregistry at the start of the list then GEOGEO can be used as the prefix for the OBO ontology
+If we push `bioregistry` at the start of the list then GEOGEO can be used as the prefix for the OBO ontology:
 
 ```python
 context = load_multi_context(["bioregistry", "prefixcc", "obo"])
@@ -86,9 +86,9 @@ converter = Converter.from_extended_prefix_map(extended_prefix_map)
 'http://purl.obolibrary.org/obo/GEO_1'
 ```
 
-Note that from the OBO perspective, GEOGEO is non-canonical
+Note that from the OBO perspective, GEOGEO is non-canonical.
 
-We get similar results using the upper-normalized variant of bioregistry:
+We get similar results using the upper-normalized variant of `bioregistry`:
 
 ```python
 context = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
@@ -184,7 +184,7 @@ The data can be refreshed in several ways:
     make etl
     ```
 
-TODO: make a github action that auto-released new versions
+TODO: make a github action that auto-releases new versions
 
 Note that PRs should *not* be made against the individual CSV files. These are generated from upstream sources.
 
