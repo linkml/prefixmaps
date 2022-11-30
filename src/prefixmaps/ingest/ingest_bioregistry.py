@@ -1,7 +1,6 @@
 """ETL from bioregistry to prefixmaps."""
 
 import logging
-import re
 
 import bioregistry
 from tqdm import tqdm
@@ -47,8 +46,6 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
                     strict namespace regular expression
     :return:
     """
-    import bioregistry
-
     context = Context("bioregistry", upper=upper)
     prefix_priority = [
         #  "obofoundry.preferred",
