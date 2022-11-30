@@ -1501,7 +1501,7 @@ refresh = ["requests", "bioregistry", "rdflib"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "58890475bd159172c91ca31940f35dc229233d370b2f1761f0071a5720abaa17"
+content-hash = "74bf394147bd38415cd9915f3c14c5d0c910b5aab013b7567a6738153f5678ef"
 
 [metadata.files]
 alabaster = [
