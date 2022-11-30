@@ -3,9 +3,9 @@
 import logging
 import re
 
+import bioregistry
 from tqdm import tqdm
 
-import bioregistry
 from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 
 
@@ -66,7 +66,9 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
     ]
     # We always set use_preferred=True, which ensures that OBO prefixes
     # are either capitalized (e.g. GO) or use the preferred form (e.g. FBbt)
-    records = bioregistry.get_extended_prefix_map(uri_prefix_priority=priority, prefix_priority=prefix_priority)
+    records = bioregistry.get_extended_prefix_map(
+        uri_prefix_priority=priority, prefix_priority=prefix_priority
+    )
     for record in tqdm(records):
         if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):
             logging.debug(f"Skipping dubious ns {record.prefix} => {record.uri_prefix}")
