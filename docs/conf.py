@@ -65,3 +65,11 @@ html_static_path = ['_static']
 #
 if os.path.exists("logo.png"):
     html_logo = "logo.png"
+
+
+intersphinx_mapping = {
+    "https://docs.python.org/3/": None,
+    "bioregistry": ("https://bioregistry.readthedocs.io/en/stable/", None),
+    "curies": ("https://curies.readthedocs.io/en/stable/", None),
+    "rdflib": ("https://rdflib.readthedocs.io/en/stable/", None),
+}

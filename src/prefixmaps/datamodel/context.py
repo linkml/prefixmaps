@@ -1,9 +1,12 @@
 """Classes for managing individual Contexts."""
 
 import re
+from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Mapping, Optional
+
+from typing_extensions import TypedDict
 
 __all__ = [
     "StatusType",
@@ -42,6 +45,15 @@ class StatusType(Enum):
 
     multi_alias = "multi_alias"
     """Both the prefix and the namespace are aliases for existing canonical namespaces."""
+
+
+class RecordDict(TypedDict):
+    """A record that is compatible with :mod:`curies`."""
+
+    prefix: str
+    uri_prefix: str
+    prefix_synonyms: List[str]
+    uri_prefix_synonyms: List[str]
 
 
 @dataclass
@@ -258,6 +270,51 @@ class Context:
         :return: Mapping between namespaces and prefixes
         """
         return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
+
+    def as_extended_prefix_map(self) -> List[RecordDict]:
+        """Return an extended prfix, appropriate for generating a :class:`curies.Converter`.
+
+        An extended prefix map is a collection of dictionaries, each of which has the following
+        fields:
+
+        - ``prefix`` - the canonical prefix
+        - ``uri_prefix`` - the canonical URI prefix (i.e. namespace)
+        - ``prefix_synonyms`` - optional extra prefixes such as capitialization variants. No prefix
+          synonyms are allowed to be duplicate across any canonical prefixes or synonyms in other
+          records in the extended prefix
+        - ``uri_prefix_synonyms`` - optional extra URI prefixes such as variants of Identifiers.org
+          URLs, PURLs, etc. No URI prefix synyonms are allowed to be duplicates of either canonical
+          or other URI prefix synonyms.
+
+        Extended prefix maps have the benefit over regular prefix maps in that they keep extra
+        information. An extended prefix map can be readily collapsed into a normal prefix map
+        by getting the ``prefix`` and ``uri_prefix`` fields.
+        """
+        prefix_map, reverse_prefix_map = {}, {}
+        for expansion in self.prefix_expansions:
+            if expansion.canonical():
+                reverse_prefix_map[expansion.namespace] = expansion.prefix
+                prefix_map[expansion.prefix] = expansion.namespace
+
+        uri_prefix_synonyms = defaultdict(set)
+        for expansion in self.prefix_expansions:
+            if expansion.status == StatusType.prefix_alias:
+                uri_prefix_synonyms[expansion.prefix].add(expansion.namespace)
+
+        prefix_synonyms = defaultdict(set)
+        for expansion in self.prefix_expansions:
+            if expansion.status == StatusType.namespace_alias:
+                prefix_synonyms[reverse_prefix_map[expansion.namespace]].add(expansion.prefix)
+
+        return [
+            RecordDict(
+                prefix=prefix,
+                prefix_synonyms=sorted(prefix_synonyms[prefix]),
+                uri_prefix=uri_prefix,
+                uri_prefix_synonyms=sorted(uri_prefix_synonyms[prefix]),
+            )
+            for prefix, uri_prefix in sorted(prefix_map.items())
+        ]
 
     def validate(self, canonical_only=True) -> List[str]:
         """
