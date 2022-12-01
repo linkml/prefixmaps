@@ -54,7 +54,7 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
                     strict namespace regular expression
     :return:
     """
-    from bioregistry import get_prefix_map
+    from bioregistry import get_prefix_map, get_resource
 
     ctxt = Context("bioregistry", upper=upper)
     # We always set use_preferred=True, which ensures that OBO prefixes
@@ -64,6 +64,8 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
     pm_miriam = get_prefix_map(priority=["miriam"])
     for prefix, uri_prefix in prefix_map.items():
         preferred = prefix not in pm_non_preferred or prefix not in pm_miriam
+        if get_resource(prefix).deprecated:
+            continue
         if canonical_idorg:
             uri_prefix = re.sub(
                 r"^https://identifiers.org/(\S+):$",
@@ -73,5 +75,6 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         if filter_dubious and not NAMESPACE_RE.match(uri_prefix):
             logging.debug(f"Skipping dubious ns {prefix} => {uri_prefix}")
             continue
+
         ctxt.add_prefix(prefix, uri_prefix, preferred=preferred)
     return ctxt
