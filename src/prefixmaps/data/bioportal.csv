@@ -27,6 +27,7 @@ bioportal,AMINO-ACID,http://www.co-ode.org/ontologies/amino-acid/2006/05/18/amin
 bioportal,AO,http://childhealthservicemodels.eu/asthma#,canonical
 bioportal,APAOCUEMPLOY,http://www.semanticweb.org/ontologies/2015/0/ocupationalemploymentcluster.owl#,canonical
 bioportal,APATREATMENT,http://www.semanticweb.org/ontologies/2015/0/treatmentcluster.owl#,canonical
+bioportal,araport,OBO:Araport_,canonical
 bioportal,ARCRC,http://purl.dataone.org/odo/ARCRC_,canonical
 bioportal,ASDPTO,http://cbmi.med.harvard.edu/asdphenotype#,canonical
 bioportal,ASPECT,http://purl.org/aspect/,canonical
@@ -66,6 +67,7 @@ bioportal,CASE-BASE-ONTO,http://www.semanticweb.org/hsh/ontologies/2019/7/CBRDys
 bioportal,CCTOO,OBO:CCTO_,canonical
 bioportal,CDPEO,http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#,canonical
 bioportal,CEDARVS,http://www.semanticweb.org/jgraybeal/ontologies/2015/7/cedarvaluesets#,canonical
+bioportal,cgnc,OBO:CGNC_,canonical
 bioportal,CHD,http://homes.esat.kuleuven.be/~bioiuser/chdwiki/index.php/CHD:CaseReport?id=,canonical
 bioportal,CHEMINF,http://semanticscience.org/resource/CHEMINF_,canonical
 bioportal,CIDOC-CRM,http://www.cidoc-crm.org/cidoc-crm/,canonical
@@ -112,8 +114,8 @@ bioportal,DSEO,http://bigdatau.org/dseo#,canonical
 bioportal,DTO,http://www.drugtargetontology.org/dto/DTO_,canonical
 bioportal,EBP,http://www.semanticweb.org/tswheeler/ontologies/2016/3/EmpowerBP#,canonical
 bioportal,ECAO,OBO:ECAO_,canonical
-bioportal,ECP,http://iris.med.duth.gr/research/ecp/ontology/eCP.owl#,canonical
 bioportal,ECG,http://www.cvrgrid.org/files/ECGOntologyv1.owl#ECG_,canonical
+bioportal,ECP,http://iris.med.duth.gr/research/ecp/ontology/eCP.owl#,canonical
 bioportal,ECSO,http://purl.dataone.org/odo/ECSO_,canonical
 bioportal,EDAM,http://edamontology.org/,canonical
 bioportal,EFO,http://www.ebi.ac.uk/efo/EFO_,canonical
@@ -121,6 +123,7 @@ bioportal,ELECTRICA,http://purl.org/ELECTRICA/,canonical
 bioportal,ELIG,http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#,canonical
 bioportal,ELTER_CL,http://vocabs.lter-europe.net/eLTER_CL/,canonical
 bioportal,EMO,http://www.semanticweb.org/ontologies/2011/1/14/EMO.owl/,canonical
+bioportal,ensembl.bacteria,OBO:EnsemblBacteria#_,canonical
 bioportal,ENVS_VARIABLES,http://purl.org/m4m-dk-2/variables/,canonical
 bioportal,ENVTHES,http://vocabs.lter-europe.net/EnvThes/,canonical
 bioportal,EO,http://www.semanticweb.org/ethnicityOntology#,canonical
@@ -189,8 +192,8 @@ bioportal,HNS,http://www.humannervousystem.org/KAnOE/2014/dave86#,canonical
 bioportal,HRDO,http://www.limics.org/hrdo/HRDO.owl#,canonical
 bioportal,HSO,https://w3id.org/hso#,canonical
 bioportal,HUPSON,http://scai.fraunhofer.de/HuPSON#,canonical
-bioportal,I2SV,https://i2insights.org/index/integration-and-implementation-sciences-vocabulary#,canonical
 bioportal,I-ADOPT,https://w3id.org/iadopt/ont/,canonical
+bioportal,I2SV,https://i2insights.org/index/integration-and-implementation-sciences-vocabulary#,canonical
 bioportal,IAML-MOP,http://data.doremus.org/vocabulary/iaml/mop/,canonical
 bioportal,IBO,http://www.semanticweb.org/eamdouni/ontologies/2015/5/IBO#,canonical
 bioportal,ICD10,http://purl.bioontology.org/ontology/ICD10/,canonical
@@ -217,6 +220,7 @@ bioportal,INCENTIVE-VARS,http://purl.org/incentive/variables/,canonical
 bioportal,INFRARISK,https://www.infrarisk-fp7.eu/vocabs/#,canonical
 bioportal,INSECTH,http://neuromorpho.org/ontologies/insectH.owl#,canonical
 bioportal,INSNAME,https://www.vodan-totafrica.info/vocs/institutions/,canonical
+bioportal,IntAct,http://identifiers.org/intact/,canonical
 bioportal,INTO,http://www.semanticweb.org/Terrorism#,canonical
 bioportal,INVERSEROLES,http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#,canonical
 bioportal,IRD,http://www.semanticweb.org/msh/ontologies/2019/9/untitled-ontology-3#,canonical
@@ -230,7 +234,6 @@ bioportal,ISO19115ID,http://def.isotc211.org/iso19115/2003/,canonical
 bioportal,ISO19115PR,http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#,canonical
 bioportal,ISO19115PR,http://www.geosciml.org/vocabularies/iso-19115-codes.owl#,prefix_alias
 bioportal,ISSVA,http://purl.bioontology.org/ontology/ISSVA/,canonical
-bioportal,IntAct,http://identifiers.org/intact/,canonical
 bioportal,JERM,http://jermontology.org/ontology/JERMOntology#,canonical
 bioportal,KISAO,http://www.biomodels.net/kisao/KISAO#KISAO_,canonical
 bioportal,KORO,http://www.knowledgegrid.org/koro#,canonical
@@ -488,6 +491,3 @@ bioportal,XREF-FUNDER-REF,http://data.crossref.org/fundingdata/vocabulary/Label-
 bioportal,ZONMW-ADMIN-MD,http://www.fair-data-collective.com/zonmw/projectadmin/,canonical
 bioportal,ZONMW-CONTENT,http://purl.org/zonmw/covid19/,canonical
 bioportal,ZONMW-GENERIC,http://purl.org/zonmw/generic/,canonical
-bioportal,araport,OBO:Araport_,canonical
-bioportal,cgnc,OBO:CGNC_,canonical
-bioportal,ensembl.bacteria,OBO:EnsemblBacteria#_,canonical

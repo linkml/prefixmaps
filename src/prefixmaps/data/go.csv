@@ -36,8 +36,8 @@ go,MGI,https://identifiers.org/MGI/,canonical
 go,NCBIGene,https://identifiers.org/ncbigene/,canonical
 go,PANTHER,https://identifiers.org/panther.family/,canonical
 go,PATO,http://purl.obolibrary.org/obo/PATO_,canonical
-go,PO,http://purl.obolibrary.org/obo/PO_,canonical
 go,PlasmoDB,https://identifiers.org/plasmodb/,canonical
+go,PO,http://purl.obolibrary.org/obo/PO_,canonical
 go,PomBase,https://identifiers.org/pombase/,canonical
 go,PR,http://purl.obolibrary.org/obo/PR_,canonical
 go,Reactome,https://identifiers.org/reactome/,canonical
