@@ -9,6 +9,7 @@ from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 # Problematic records, look into later
 SKIP = {"gro"}
 
+
 def from_bioregistry_upper(**kwargs) -> Context:
     """
     As :ref:`from_bioregistry`, with default uppercase normalization on
