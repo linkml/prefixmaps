@@ -1188,7 +1188,7 @@ merged.oak,fno,https://w3id.org/function/ontology#,canonical
 merged.oak,fnom,https://w3id.org/function/vocabulary/mapping#,canonical
 merged.oak,fntbox,http://www.ontologydesignpatterns.org/ont/framenet/tbox/,canonical
 merged.oak,fo,http://www.w3.org/1999/XSL/Format#,canonical
-merged.oak,FOAF,http://xmlns.com/foaf/0.1/,canonical
+merged.oak,foaf,http://xmlns.com/foaf/0.1/,canonical
 merged.oak,foaffff,http://gogl.com/,canonical
 merged.oak,foam,https://www.koerperfettwaage-test.de/,canonical
 merged.oak,FOBI,http://purl.obolibrary.org/obo/FOBI_,canonical
