@@ -20,3 +20,4 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   shex: http://www.w3.org/ns/shex#
   biolink: https://w3id.org/biolink/vocab/
+  foaf: http://xmlns.com/foaf/0.1/

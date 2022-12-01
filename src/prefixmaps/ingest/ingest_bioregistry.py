@@ -1,19 +1,13 @@
 """ETL from bioregistry to prefixmaps."""
+
 import logging
-import re
+
+from tqdm import tqdm
 
 from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 
-priority = [
-    "obofoundry",
-    "semweb",
-    "miriam",
-    "default",
-    "bioportal",
-    "ols",
-    "n2t",
-]
-"""Priority order for bioregistry."""
+# Problematic records, look into later
+SKIP = {"gro"}
 
 
 def from_bioregistry_upper(**kwargs) -> Context:
@@ -54,27 +48,33 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
                     strict namespace regular expression
     :return:
     """
-    from bioregistry import get_prefix_map, get_resource
+    import bioregistry
 
-    ctxt = Context("bioregistry", upper=upper)
-    # We always set use_preferred=True, which ensures that OBO prefixes
-    # are either capitalized (e.g. GO) or use the preferred form (e.g. FBbt)
-    prefix_map = get_prefix_map(priority=priority, use_preferred=True)
-    pm_non_preferred = get_prefix_map(priority=priority, use_preferred=False)
-    pm_miriam = get_prefix_map(priority=["miriam"])
-    for prefix, uri_prefix in prefix_map.items():
-        preferred = prefix not in pm_non_preferred or prefix not in pm_miriam
-        if get_resource(prefix).deprecated:
+    context = Context("bioregistry", upper=upper)
+    prefix_priority = [
+        #  "obofoundry.preferred",
+        "preferred",
+        # "obofoundry",
+        "default",
+    ]
+    priority = [
+        "obofoundry",
+        "miriam.legacy" if canonical_idorg else "miriam",
+        "default",
+        "bioportal",
+        "ols",
+        "n2t",
+    ]
+    records = bioregistry.get_extended_prefix_map(
+        uri_prefix_priority=priority, prefix_priority=prefix_priority
+    )
+    for record in tqdm(records):
+        if record.prefix in SKIP:
             continue
-        if canonical_idorg:
-            uri_prefix = re.sub(
-                r"^https://identifiers.org/(\S+):$",
-                r"http://identifiers.org/\1/",
-                uri_prefix,
-            )
-        if filter_dubious and not NAMESPACE_RE.match(uri_prefix):
-            logging.debug(f"Skipping dubious ns {prefix} => {uri_prefix}")
+        if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):
+            logging.debug(f"Skipping dubious ns {record.prefix} => {record.uri_prefix}")
             continue
-
-        ctxt.add_prefix(prefix, uri_prefix, preferred=preferred)
-    return ctxt
+        preferred = record.prefix == bioregistry.get_preferred_prefix(record.prefix)
+        context.add_prefix(record.prefix, record.uri_prefix, preferred=preferred)
+        # TODO add synonyms, do in later PR since it will increase diff and complexity of review
+    return context
