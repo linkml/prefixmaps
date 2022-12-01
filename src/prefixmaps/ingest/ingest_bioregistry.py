@@ -2,7 +2,6 @@
 
 import logging
 
-import bioregistry
 from tqdm import tqdm
 
 from prefixmaps.datamodel.context import NAMESPACE_RE, Context
@@ -46,6 +45,8 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
                     strict namespace regular expression
     :return:
     """
+    import bioregistry
+
     context = Context("bioregistry", upper=upper)
     prefix_priority = [
         #  "obofoundry.preferred",
@@ -65,6 +66,8 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         uri_prefix_priority=priority, prefix_priority=prefix_priority
     )
     for record in tqdm(records):
+        if bioregistry.is_deprecated(record.prefix):
+            continue
         if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):
             logging.debug(f"Skipping dubious ns {record.prefix} => {record.uri_prefix}")
             continue
