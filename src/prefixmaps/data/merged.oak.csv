@@ -641,7 +641,8 @@ merged.oak,csdbp,http://cs.dbpedia.org/,canonical
 merged.oak,cska,http://pfclitex.com/,canonical
 merged.oak,csm,http://purl.org/csm/1.0#,canonical
 merged.oak,cso,http://cso.kmi.open.ac.uk/schema/cso/,canonical
-merged.oak,csp,http://vocab.deri.ie/csp#,canonical
+merged.oak,CSP,http://purl.bioontology.org/ontology/CSP/,canonical
+merged.oak,csp,http://vocab.deri.ie/csp#,prefix_alias
 merged.oak,csv,http://vocab.sindice.net/csv/,canonical
 merged.oak,csvw,http://www.w3.org/ns/csvw#,canonical
 merged.oak,ct,http://data.linkedct.org/resource/linkedct/,canonical
@@ -705,6 +706,7 @@ merged.oak,DATANATOR.METABOLITE,http://identifiers.org/datanator.metabolite/,can
 merged.oak,DATANATOR.REACTION,http://identifiers.org/datanator.reaction/,canonical
 merged.oak,date,http://contextus.net/ontology/ontomedia/misc/date#,canonical
 merged.oak,datex,http://vocab.datex.org/terms#,canonical
+merged.oak,DATF,http://identifiers.org/datf/,canonical
 merged.oak,dave,http://theme-e.adaptcentre.ie/dave#,canonical
 merged.oak,dawgt,http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#,canonical
 merged.oak,days,http://ontologi.es/days#,canonical
@@ -832,6 +834,7 @@ merged.oak,dis,http://stanbol.apache.org/ontology/disambiguation/disambiguation#
 merged.oak,disco,http://rdf-vocabulary.ddialliance.org/discovery#,canonical
 merged.oak,DISDRIV,http://purl.obolibrary.org/obo/DISDRIV_,canonical
 merged.oak,disease,http://www.agfa.com/w3c/2009/humanDisorder#,canonical
+merged.oak,DISEASECLASS,https://biopragmatics.github.io/providers/diseaseclass/,canonical
 merged.oak,diseasome,http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/,canonical
 merged.oak,diso,https://purls.helmholtz-metadaten.de/diso#,canonical
 merged.oak,DISPROT,http://identifiers.org/disprot/,canonical
@@ -1247,6 +1250,7 @@ merged.oak,GA4GHDOS,http://identifiers.org/ga4ghdos/,canonical
 merged.oak,gadm,http://gadm.geovocab.org/ontology#,canonical
 merged.oak,gaf,http://groundedannotationframework.org/,canonical
 merged.oak,galaksiya,http://ontoloji.galaksiya.com/vocab/,canonical
+merged.oak,GALEN,http://www.co-ode.org/ontologies/galen#,canonical
 merged.oak,game,http://data.totl.net/game/,canonical
 merged.oak,gas,http://www.bigdata.com/rdf/gas#,canonical
 merged.oak,gastro,http://www.ebsemantics.net/gastro#,canonical
@@ -1694,7 +1698,8 @@ merged.oak,kbv,https://id.kb.se/vocab/,canonical
 merged.oak,kdo,http://kdo.render-project.eu/kdo#,canonical
 merged.oak,kdsf,https://kerndatensatz-forschung.de/version1/technisches_datenmodell/owl/kdsf.owl#,canonical
 merged.oak,kees,http://linkeddata.center/kees/v1#,canonical
-merged.oak,kegg,http://bio2rdf.org/ns/kegg#,canonical
+merged.oak,KEGG,http://identifiers.org/kegg/,canonical
+merged.oak,kegg,http://bio2rdf.org/ns/kegg#,prefix_alias
 merged.oak,KEGG_ENZYME,http://identifiers.org/kegg.enzyme/,canonical
 merged.oak,KEGG_PATHWAY,http://identifiers.org/kegg.pathway/,canonical
 merged.oak,keys,http://purl.org/NET/c4dm/keys.owl#,canonical
@@ -1933,6 +1938,7 @@ merged.oak,mb,http://dbtune.org/musicbrainz/resource/instrument/,canonical
 merged.oak,MBA,https://biopragmatics.github.io/providers/mba/,canonical
 merged.oak,mbgd,http://mbgd.genome.ad.jp/owl/mbgd.owl#,canonical
 merged.oak,mbkeys,https://pastebin.com/ThBfphb8#,canonical
+merged.oak,MCC,http://www.semanticweb.org/pallabi.d/ontologies/2014/2/untitled-ontology-11#,canonical
 merged.oak,mccv,http://purl.jp/bio/10/mccv#,canonical
 merged.oak,MCO,http://purl.obolibrary.org/obo/MCO_,canonical
 merged.oak,md,http://www.w3.org/ns/md#,canonical
@@ -2013,6 +2019,8 @@ merged.oak,MIR,http://identifiers.org/MIR/,canonical
 merged.oak,MIRBASE,http://identifiers.org/mirbase/,canonical
 merged.oak,MIRBASE.MATURE,http://identifiers.org/mirbase.mature/,canonical
 merged.oak,MIRIAM,http://identifiers.org/identifiers.namespace/,canonical
+merged.oak,MIRIAM.COLLECTION,http://identifiers.org/miriam.collection/,canonical
+merged.oak,MIRIAM.RESOURCE,http://identifiers.org/miriam.resource/,canonical
 merged.oak,MIRNAO,http://purl.obolibrary.org/obo/MIRNAO_,canonical
 merged.oak,MIRNEST,http://identifiers.org/mirnest/,canonical
 merged.oak,MIRO,http://purl.obolibrary.org/obo/MIRO_,canonical
@@ -2529,6 +2537,7 @@ merged.oak,PAO,http://purl.obolibrary.org/obo/PAO_,canonical
 merged.oak,parl,https://id.parliament.uk/schema/,canonical
 merged.oak,part,http://purl.org/vocab/participation/schema#,canonical
 merged.oak,particip,http://purl.org/vocab/participation/schema#,namespace_alias
+merged.oak,PASS2,http://identifiers.org/pass2/,canonical
 merged.oak,passim,http://data.lirmm.fr/ontologies/passim#,canonical
 merged.oak,pat,http://purl.org/hpi/patchr#,canonical
 merged.oak,PATHBANK,https://pathbank.org/view/,canonical
@@ -2562,10 +2571,12 @@ merged.oak,PDRO,http://purl.obolibrary.org/obo/PDRO_,canonical
 merged.oak,PdumDv,http://purl.obolibrary.org/obo/PdumDv_,canonical
 merged.oak,PECO,http://purl.obolibrary.org/obo/PECO_,canonical
 merged.oak,PED,http://identifiers.org/ped/,canonical
+merged.oak,PEFF,https://biopragmatics.github.io/providers/peff/,canonical
 merged.oak,penis,http://penis.to/#,canonical
 merged.oak,penn,http://purl.org/olia/penn.owl#,canonical
 merged.oak,PENNSIEVE,http://identifiers.org/ps/,canonical
 merged.oak,pep,https://w3id.org/pep/,canonical
+merged.oak,PEPBANK,http://pepbank.mgh.harvard.edu/interactions/details/,canonical
 merged.oak,PEPTIDEATLAS,http://identifiers.org/peptideatlas/,canonical
 merged.oak,PEPTIDEATLAS.DATASET,http://identifiers.org/peptideatlas.dataset/,canonical
 merged.oak,PEROXIBASE,http://identifiers.org/peroxibase/,canonical
@@ -2749,6 +2760,7 @@ merged.oak,ps,https://w3id.org/payswarm#,canonical
 merged.oak,PSDO,http://purl.obolibrary.org/obo/PSDO_,canonical
 merged.oak,PSEUDOMONAS,http://identifiers.org/pseudomonas/,canonical
 merged.oak,psh,http://psh.techlib.cz/skos/,canonical
+merged.oak,PSIPAR,http://identifiers.org/psipar/,canonical
 merged.oak,PSO,http://purl.obolibrary.org/obo/PSO_,canonical
 merged.oak,pso,http://purl.org/spar/pso/,prefix_alias
 merged.oak,psv,http://www.wikidata.org/prop/statement/value/,canonical
@@ -3027,6 +3039,7 @@ merged.oak,rofsfrda,http://rdaregistry.info/termList/rofsfrda/,canonical
 merged.oak,rofsm,http://rdaregistry.info/termList/rofsm/,canonical
 merged.oak,roh,http://w3id.org/roh#,canonical
 merged.oak,role,https://w3id.org/role/,canonical
+merged.oak,RoleO,http://purl.obolibrary.org/obo/RoleO_,canonical
 merged.oak,room,http://vocab.deri.ie/rooms#,canonical
 merged.oak,rooms,http://vocab.deri.ie/rooms#,namespace_alias
 merged.oak,ROR,http://identifiers.org/ror/,canonical
@@ -3644,7 +3657,8 @@ merged.oak,TGD,https://identifiers.org/tgd/,canonical
 merged.oak,TGD,http://identifiers.org/tgd/,prefix_alias
 merged.oak,tgm,http://id.loc.gov/vocabulary/graphicMaterials/,canonical
 merged.oak,TGMA,http://purl.obolibrary.org/obo/TGMA_,canonical
-merged.oak,tgn,http://vocab.getty.edu/tgn/,canonical
+merged.oak,TGN,http://vocab.getty.edu/page/tgn/,canonical
+merged.oak,tgn,http://vocab.getty.edu/tgn/,prefix_alias
 merged.oak,theatre,http://purl.org/theatre#,canonical
 merged.oak,theme,http://voc.odw.tw/theme/,canonical
 merged.oak,THERMOFISHER,https://www.thermofisher.com/antibody/product/,canonical
@@ -3973,6 +3987,7 @@ merged.oak,won,https://w3id.org/won/core#,canonical
 merged.oak,wordmap,http://purl.org/net/ns/wordmap#,canonical
 merged.oak,wordnet,http://wordnet-rdf.princeton.edu/ontology#,canonical
 merged.oak,WORFDB,http://identifiers.org/worfdb/,canonical
+merged.oak,WORLD2DPAGE,https://world-2dpage.expasy.org/repository/,canonical
 merged.oak,worldbank,http://worldbank.270a.info/dataset/,canonical
 merged.oak,WormBase,http://identifiers.org/wb/,canonical
 merged.oak,WORMPEP,http://identifiers.org/wormpep/,canonical
@@ -4011,10 +4026,12 @@ merged.oak,xhtmlvocab,http://www.w3.org/1999/xhtml/vocab/,canonical
 merged.oak,xhv,http://www.w3.org/1999/xhtml/vocab#,canonical
 merged.oak,XIMBIO,https://ximbio.com/reagent/,canonical
 merged.oak,xkos,http://rdf-vocabulary.ddialliance.org/xkos#,canonical
-merged.oak,xl,http://langegger.at/xlwrap/vocab#,canonical
+merged.oak,XL,http://purl.obolibrary.org/obo/XL_,canonical
+merged.oak,xl,http://langegger.at/xlwrap/vocab#,prefix_alias
 merged.oak,xlime,http://xlime-project.org/vocab/,canonical
 merged.oak,xlink,https://es.scribd.com/doc/79794476/05-Ejercicios-Resueltos-Caja-Negra-y-Recapitulacion/,canonical
 merged.oak,XLMOD,http://purl.obolibrary.org/obo/XLMOD_,canonical
+merged.oak,XMETDB,http://www.xmetdb.org/xmetdb/protocol/,canonical
 merged.oak,XML,http://www.w3.org/XML/1998/namespace#,canonical
 merged.oak,xml,http://www.w3.org/XML/1998/namespace/,prefix_alias
 merged.oak,xmlns,http://xmlns.com/foaf/0.1/,namespace_alias

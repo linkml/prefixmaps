@@ -6,6 +6,8 @@ from tqdm import tqdm
 
 from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 
+# Problematic records, look into later
+SKIP = {"gro"}
 
 def from_bioregistry_upper(**kwargs) -> Context:
     """
@@ -66,7 +68,7 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         uri_prefix_priority=priority, prefix_priority=prefix_priority
     )
     for record in tqdm(records):
-        if bioregistry.is_deprecated(record.prefix):
+        if record.prefix in SKIP:
             continue
         if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):
             logging.debug(f"Skipping dubious ns {record.prefix} => {record.uri_prefix}")
