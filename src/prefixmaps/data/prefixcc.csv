@@ -275,6 +275,7 @@ prefixcc,cdt,https://w3id.org/cdt/,canonical
 prefixcc,cdtype,http://purl.org/cld/cdtype/,canonical
 prefixcc,centrifuge,http://purl.org/twc/vocab/centrifuge#,canonical
 prefixcc,ceo,https://linkeddata.cultureelerfgoed.nl/def/ceo#,canonical
+prefixcc,ceox,https://linkeddata.cultureelerfgoed.nl/def/ceox#,canonical
 prefixcc,cerealstoo,http://rdf.ag/o/cerealstoo#,canonical
 prefixcc,cerif,http://spi-fm.uca.es/neologism/cerif#,canonical
 prefixcc,cert,http://www.w3.org/ns/auth/cert#,canonical
@@ -781,6 +782,7 @@ prefixcc,fernanda,http://fernanda.nl/,canonical
 prefixcc,fhir,http://hl7.org/fhir/,canonical
 prefixcc,fibo,https://spec.edmcouncil.org/fibo/ontology/master/latest/,canonical
 prefixcc,figigii,http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/,canonical
+prefixcc,film,http://semantics.id/ns/example/film/,canonical
 prefixcc,fincaselaw,http://purl.org/finlex/schema/oikeus/,canonical
 prefixcc,fingal,http://vocab.deri.ie/fingal#,canonical
 prefixcc,finlaw,http://purl.org/finlex/schema/laki/,canonical
@@ -834,7 +836,7 @@ prefixcc,frsad,http://iflastandards.info/ns/fr/frsad/,canonical
 prefixcc,fso,https://w3id.org/fso#,canonical
 prefixcc,fssp,http://linkeddata.fssprus.ru/resource/,canonical
 prefixcc,ftcontent,http://www.ft.com/ontology/content/,canonical
-prefixcc,fun,http://w3id.org/sparql-generate/fn/,canonical
+prefixcc,fun,http://w3id.org/sparql-generate/fn/,namespace_alias
 prefixcc,func,http://www.w3.org/2007/rif-builtin-function#,canonical
 prefixcc,fuseki,http://jena.apache.org/fuseki#,canonical
 prefixcc,fx,http://sparql.xyz/facade-x/ns/,canonical
@@ -915,6 +917,7 @@ prefixcc,gnm,http://www.geonames.org/ontology/mappings/,canonical
 prefixcc,gns,http://sws.geonames.org/,namespace_alias
 prefixcc,gnvc,http://purl.org/gc/,canonical
 prefixcc,goaf,http://goaf.fr/goaf#,canonical
+prefixcc,goavoc,http://bio2rdf.org/goa_vocabulary:,canonical
 prefixcc,gob,http://purl.org/ontology/last-fm/,namespace_alias
 prefixcc,gobierno,http://www.gobierno.es/gobierno/,canonical
 prefixcc,godaddy,https://sso.godaddy.com/,canonical
@@ -1001,6 +1004,7 @@ prefixcc,huto,http://ns.inria.fr/huto/,canonical
 prefixcc,hva,http://www.ebusiness-unibw.org/ontologies/hva/ontology#,canonical
 prefixcc,hxl,http://hxl.humanitarianresponse.info/ns/#,canonical
 prefixcc,hydra,http://www.w3.org/ns/hydra/core#,canonical
+prefixcc,hyr,https://w3id.org/simulation/data/,canonical
 prefixcc,i18n,https://www.w3.org/ns/i18n#,canonical
 prefixcc,iab,https://www.iab.com/guidelines/taxonomy/,canonical
 prefixcc,iaco,https://iaco.me/,namespace_alias
@@ -1156,6 +1160,7 @@ prefixcc,lbdserver,https://w3id.org/lbdserver#,canonical
 prefixcc,lblodlg,http://data.lblod.info/vocabularies/leidinggevenden/,canonical
 prefixcc,lc,http://semweb.mmlab.be/ns/linkedconnections#,canonical
 prefixcc,lcdr,http://ns.lucid-project.org/revision/,canonical
+prefixcc,lcnaf,http://id.loc.gov/authorities/names/,canonical
 prefixcc,lcsh,http://id.loc.gov/authorities/subjects/,canonical
 prefixcc,lctr,http://data.linkedct.org/vocab/resource/,canonical
 prefixcc,lcy,http://purl.org/vocab/lifecycle/schema#,namespace_alias
@@ -1176,7 +1181,7 @@ prefixcc,lds,https://solid.ti.rw.fau.de/public/ns/linked-data-structures#,canoni
 prefixcc,ldt,https://www.w3.org/ns/ldt#,canonical
 prefixcc,ldvm,http://linked.opendata.cz/ontology/ldvm/,canonical
 prefixcc,leak,http://data.ontotext.com/resource/leak/,canonical
-prefixcc,leaks,https://onlyfans.com/chelxie/,canonical
+prefixcc,leaks,https://cuzin.com/,canonical
 prefixcc,led,http://led.kmi.open.ac.uk/term/,canonical
 prefixcc,legal,http://www.w3.org/ns/legal#,canonical
 prefixcc,lemon,http://lemon-model.net/lemon#,canonical
@@ -1858,6 +1863,7 @@ prefixcc,psys,http://proton.semanticweb.org/protonsys#,canonical
 prefixcc,pto,http://www.productontology.org/id/,canonical
 prefixcc,ptop,http://www.ontotext.com/proton/protontop#,canonical
 prefixcc,ptr,http://www.w3.org/2009/pointers#,canonical
+prefixcc,pubchem,https://pubchem.ncbi.nlm.nih.gov/,canonical
 prefixcc,pubmed,http://bio2rdf.org/pubmed_vocabulary:,canonical
 prefixcc,puc,http://purl.org/NET/puc#,canonical
 prefixcc,puelia,http://kwijibo.talis.com/vocabs/puelia#,canonical
@@ -2202,7 +2208,7 @@ prefixcc,sfd,http://semantic-forms.cc:9112/ldp/,canonical
 prefixcc,sfl,http://data.finlex.fi/schema/sfl/,canonical
 prefixcc,sfn,http://semweb.datasciencelab.be/ns/sfn#,canonical
 prefixcc,sg,http://name.scigraph.com/ontologies/core/,canonical
-prefixcc,sgfn,http://w3id.org/sparql-generate/fn/,namespace_alias
+prefixcc,sgfn,http://w3id.org/sparql-generate/fn/,canonical
 prefixcc,sgg,http://www.springernature.com/scigraph/graphs/,canonical
 prefixcc,sgiter,http://w3id.org/sparql-generate/iter/,canonical
 prefixcc,sgv,http://www.w3.org/TR/SVG/,canonical
@@ -2490,7 +2496,7 @@ prefixcc,spatial,http://geovocab.org/spatial#,canonical
 prefixcc,spc,http://purl.org/ontomedia/core/space#,canonical
 prefixcc,spcm,http://spi-fm.uca.es/spdef/models/deployment/spcm/1.0#,canonical
 prefixcc,spdx,http://spdx.org/rdf/terms#,canonical
-prefixcc,spec,https://www.w3.org/ns/spec#,canonical
+prefixcc,spec,http://www.w3.org/ns/spec#,canonical
 prefixcc,spfood,http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#,canonical
 prefixcc,spif,http://spinrdf.org/spif#,canonical
 prefixcc,spin,http://spinrdf.org/spin#,canonical
@@ -2719,9 +2725,11 @@ prefixcc,vehman,http://deductions.github.io/vehicule-management.owl.ttl#,namespa
 prefixcc,veo,http://linkeddata.finki.ukim.mk/lod/ontology/veo#,canonical
 prefixcc,ver,https://w3id.org/version/ontology#,canonical
 prefixcc,verb,https://w3id.org/verb/,canonical
+prefixcc,version,https://version.link/,namespace_alias
 prefixcc,vext,http://ldf.fi/void-ext#,canonical
 prefixcc,vf,https://w3id.org/valueflows#,canonical
 prefixcc,vgo,http://purl.org/net/VideoGameOntology#,canonical
+prefixcc,vhbieo,https://w3id.org/vhbieo#,canonical
 prefixcc,viaf,http://viaf.org/viaf/,canonical
 prefixcc,video,http://purl.org/ontology/video#,canonical
 prefixcc,videogame,http://purl.org/net/vgo#,canonical

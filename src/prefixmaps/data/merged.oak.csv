@@ -427,6 +427,7 @@ merged.oak,CELLREPO,http://identifiers.org/cellrepo/,canonical
 merged.oak,cemo,http://purl.obolibrary.org/obo/cemo.owl#,canonical
 merged.oak,centrifuge,http://purl.org/twc/vocab/centrifuge#,canonical
 merged.oak,ceo,https://linkeddata.cultureelerfgoed.nl/def/ceo#,canonical
+merged.oak,ceox,https://linkeddata.cultureelerfgoed.nl/def/ceox#,canonical
 merged.oak,CEPH,http://purl.obolibrary.org/obo/CEPH_,canonical
 merged.oak,cerealstoo,http://rdf.ag/o/cerealstoo#,canonical
 merged.oak,cerif,http://spi-fm.uca.es/neologism/cerif#,canonical
@@ -1196,6 +1197,7 @@ merged.oak,fhir.implementation,https://hl7.org/fhir/us/,canonical
 merged.oak,fibo,https://spec.edmcouncil.org/fibo/ontology/master/latest/,canonical
 merged.oak,FIDEO,http://purl.obolibrary.org/obo/FIDEO_,canonical
 merged.oak,figigii,http://www.omg.org/spec/FIGI/GlobalInstrumentIdentifiers/,canonical
+merged.oak,film,http://semantics.id/ns/example/film/,canonical
 merged.oak,fincaselaw,http://purl.org/finlex/schema/oikeus/,canonical
 merged.oak,fingal,http://vocab.deri.ie/fingal#,canonical
 merged.oak,finlaw,http://purl.org/finlex/schema/laki/,canonical
@@ -1265,7 +1267,7 @@ merged.oak,FSNP,http://identifiers.org/fsnp/,canonical
 merged.oak,fso,https://w3id.org/fso#,canonical
 merged.oak,fssp,http://linkeddata.fssprus.ru/resource/,canonical
 merged.oak,ftcontent,http://www.ft.com/ontology/content/,canonical
-merged.oak,fun,http://w3id.org/sparql-generate/fn/,canonical
+merged.oak,fun,http://w3id.org/sparql-generate/fn/,namespace_alias
 merged.oak,func,http://www.w3.org/2007/rif-builtin-function#,canonical
 merged.oak,FUNCBASE.FLY,http://identifiers.org/funcbase.fly/,canonical
 merged.oak,FUNCBASE.HUMAN,http://identifiers.org/funcbase.human/,canonical
@@ -1404,6 +1406,7 @@ merged.oak,GO.REF,http://identifiers.org/GO_REF/,canonical
 merged.oak,go.resource,https://bioregistry.io/metaregistry/go/,canonical
 merged.oak,GOA,http://identifiers.org/goa/,canonical
 merged.oak,goaf,http://goaf.fr/goaf#,canonical
+merged.oak,goavoc,http://bio2rdf.org/goa_vocabulary:,canonical
 merged.oak,gob,http://purl.org/ontology/last-fm/,namespace_alias
 merged.oak,gobierno,http://www.gobierno.es/gobierno/,canonical
 merged.oak,GOCHE,https://biopragmatics.github.io/providers/goche/,canonical
@@ -1560,6 +1563,7 @@ merged.oak,huto,http://ns.inria.fr/huto/,canonical
 merged.oak,hva,http://www.ebusiness-unibw.org/ontologies/hva/ontology#,canonical
 merged.oak,hxl,http://hxl.humanitarianresponse.info/ns/#,canonical
 merged.oak,hydra,http://www.w3.org/ns/hydra/core#,canonical
+merged.oak,hyr,https://w3id.org/simulation/data/,canonical
 merged.oak,i18n,https://www.w3.org/ns/i18n#,canonical
 merged.oak,iab,https://www.iab.com/guidelines/taxonomy/,canonical
 merged.oak,iaco,https://iaco.me/,namespace_alias
@@ -1794,6 +1798,7 @@ merged.oak,lblodlg,http://data.lblod.info/vocabularies/leidinggevenden/,canonica
 merged.oak,lbo,http://purl.obolibrary.org/obo/LBO_,canonical
 merged.oak,lc,http://semweb.mmlab.be/ns/linkedconnections#,canonical
 merged.oak,lcdr,http://ns.lucid-project.org/revision/,canonical
+merged.oak,lcnaf,http://id.loc.gov/authorities/names/,canonical
 merged.oak,lcsh,http://id.loc.gov/authorities/subjects/,canonical
 merged.oak,lctr,http://data.linkedct.org/vocab/resource/,canonical
 merged.oak,lcy,http://purl.org/vocab/lifecycle/schema#,namespace_alias
@@ -1814,7 +1819,7 @@ merged.oak,lds,https://solid.ti.rw.fau.de/public/ns/linked-data-structures#,cano
 merged.oak,ldt,https://www.w3.org/ns/ldt#,canonical
 merged.oak,ldvm,http://linked.opendata.cz/ontology/ldvm/,canonical
 merged.oak,leak,http://data.ontotext.com/resource/leak/,canonical
-merged.oak,leaks,https://onlyfans.com/chelxie/,canonical
+merged.oak,leaks,https://cuzin.com/,canonical
 merged.oak,led,http://led.kmi.open.ac.uk/term/,canonical
 merged.oak,legal,http://www.w3.org/ns/legal#,canonical
 merged.oak,LEI,http://identifiers.org/lei/,canonical
@@ -2850,6 +2855,7 @@ merged.oak,psys,http://proton.semanticweb.org/protonsys#,canonical
 merged.oak,pto,http://www.productontology.org/id/,canonical
 merged.oak,ptop,http://www.ontotext.com/proton/protontop#,canonical
 merged.oak,ptr,http://www.w3.org/2009/pointers#,canonical
+merged.oak,pubchem,https://pubchem.ncbi.nlm.nih.gov/,canonical
 merged.oak,PUBCHEM.BIOASSAY,http://identifiers.org/pubchem.bioassay/,canonical
 merged.oak,pubchem.cell,https://pubchem.ncbi.nlm.nih.gov/cell/,canonical
 merged.oak,PUBCHEM.COMPOUND,http://identifiers.org/pubchem.compound/,canonical
@@ -3279,7 +3285,7 @@ merged.oak,sg,http://name.scigraph.com/ontologies/core/,canonical
 merged.oak,SGD,https://identifiers.org/sgd/,canonical
 merged.oak,SGD,http://identifiers.org/sgd/,prefix_alias
 merged.oak,SGD.PATHWAYS,http://identifiers.org/sgd.pathways/,canonical
-merged.oak,sgfn,http://w3id.org/sparql-generate/fn/,namespace_alias
+merged.oak,sgfn,http://w3id.org/sparql-generate/fn/,canonical
 merged.oak,sgg,http://www.springernature.com/scigraph/graphs/,canonical
 merged.oak,sgiter,http://w3id.org/sparql-generate/iter/,canonical
 merged.oak,SGN,https://identifiers.org/sgn/,canonical
@@ -3591,7 +3597,7 @@ merged.oak,spcm,http://spi-fm.uca.es/spdef/models/deployment/spcm/1.0#,canonical
 merged.oak,SPD,http://purl.obolibrary.org/obo/SPD_,canonical
 merged.oak,SPDX,http://identifiers.org/spdx/,canonical
 merged.oak,spdx,http://spdx.org/rdf/terms#,prefix_alias
-merged.oak,spec,https://www.w3.org/ns/spec#,canonical
+merged.oak,spec,http://www.w3.org/ns/spec#,canonical
 merged.oak,spfood,http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#,canonical
 merged.oak,sphn,https://biomedit.ch/rdf/sphn-ontology/sphn#,canonical
 merged.oak,spif,http://spinrdf.org/spif#,canonical
@@ -3925,6 +3931,7 @@ merged.oak,vehman,http://deductions.github.io/vehicule-management.owl.ttl#,names
 merged.oak,veo,http://linkeddata.finki.ukim.mk/lod/ontology/veo#,canonical
 merged.oak,ver,https://w3id.org/version/ontology#,canonical
 merged.oak,verb,https://w3id.org/verb/,canonical
+merged.oak,version,https://version.link/,namespace_alias
 merged.oak,vext,http://ldf.fi/void-ext#,canonical
 merged.oak,vf,https://w3id.org/valueflows#,canonical
 merged.oak,VFB,http://identifiers.org/vfb/,canonical
@@ -3932,6 +3939,7 @@ merged.oak,VFDB.GENE,http://identifiers.org/vfdb.gene/,canonical
 merged.oak,VFDB.GENUS,http://identifiers.org/vfdb.genus/,canonical
 merged.oak,VGNC,http://identifiers.org/vgnc/,canonical
 merged.oak,vgo,http://purl.org/net/VideoGameOntology#,canonical
+merged.oak,vhbieo,https://w3id.org/vhbieo#,canonical
 merged.oak,VHOG,http://purl.obolibrary.org/obo/VHOG_,canonical
 merged.oak,VIAF,http://identifiers.org/viaf/,canonical
 merged.oak,viaf,http://viaf.org/viaf/,prefix_alias
