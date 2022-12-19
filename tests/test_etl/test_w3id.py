@@ -2,7 +2,6 @@ import unittest
 
 from prefixmaps.ingest.ingest_w3id import from_w3id
 
-
 # use test cases that are likely to be stable
 EXPECTED = [
     ("kgcl", "https://w3id.org/kgcl/"),
@@ -22,4 +21,3 @@ class TestW3id(unittest.TestCase):
         for pfx, ns in EXPECTED:
             self.assertEqual(pm[pfx], ns)
             self.assertEqual(pmi[ns], pfx)
-

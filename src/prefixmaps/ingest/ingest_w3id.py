@@ -4,6 +4,7 @@ from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 
 API_LIST_CALL = "https://api.github.com/repos/perma-id/w3id.org/git/trees/master"
 
+
 def from_w3id() -> Context:
     """
     Creates a Context from the https://github.com/perma-id/w3id.org/.
@@ -11,6 +12,7 @@ def from_w3id() -> Context:
     :return:
     """
     import requests
+
     r = requests.get(API_LIST_CALL)
     results = r.json()
     if r.status_code != 200:
