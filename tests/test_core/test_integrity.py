@@ -14,9 +14,8 @@ class TestIntegrity(unittest.TestCase):
 
     def setUp(self) -> None:
         """Set up the test case with all contexts."""
-        # it's likely there will be some issues with data
-        # integrity caused by merge, so best to skip these
-        # on the first attempt at doing data integrity tests
+        # We don't expect some merged contexts to pass all tests, see:
+        # See: https://github.com/linkml/prefixmaps/issues/26
         skip = {"merged", "merged.oak"}
         self.contexts: Mapping[str, Context] = {
             key: load_context(key) for key, path in context_paths.items() if key not in skip
