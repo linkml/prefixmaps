@@ -1,6 +1,6 @@
 """ETL from w3id to prefixmaps."""
 
-from prefixmaps.datamodel.context import NAMESPACE_RE, Context
+from prefixmaps.datamodel.context import Context
 
 API_LIST_CALL = "https://api.github.com/repos/perma-id/w3id.org/git/trees/master"
 
