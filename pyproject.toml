@@ -30,6 +30,7 @@ typing-extensions = "^4.4.0"
 requests = {version = "^2.28.1", extras = ["refresh"]}
 bioregistry = {version = "^0.6.0", extras = ["refresh"]}
 rdflib = {version = "^6.2.0", extras = ["refresh"]}
+curies = "^0.4.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

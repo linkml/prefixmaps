@@ -2532,4 +2532,4 @@ refresh = ["bioregistry", "rdflib", "requests"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7.6"
-content-hash = "89d896ddb2ac7a41ccd12c6f412446a3fef4f2110a18ea9b262ef341a9594e34"
+content-hash = "91592dbfa29fdf0c81cf77b29479f7f2d8713e08bbe68a3e0d978d4e34805096"
