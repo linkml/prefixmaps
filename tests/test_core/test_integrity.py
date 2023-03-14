@@ -58,7 +58,6 @@ class TestIntegrity(unittest.TestCase):
     def test_prefix_aliases(self):
         """Test that namespace aliases have a valid prefix."""
         for key, context in self.contexts.items():
-
             with self.subTest(key=key):
                 canonical_prefixes = {
                     expansion.prefix
