@@ -15,6 +15,7 @@ from prefixmaps.ingest.ingest_go import parse_go_xrefs_from_remote
 from prefixmaps.ingest.ingest_jsonld import from_prefixcc
 from prefixmaps.ingest.ingest_linkml import from_semweb_curated
 from prefixmaps.ingest.ingest_shacl import from_obo
+from prefixmaps.ingest.ingest_w3id import from_w3id
 from prefixmaps.io.writer import context_to_file
 
 # TODO: replace this with introspection from metadata file
@@ -26,6 +27,7 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "bioregistry.upper": from_bioregistry_upper,
     "bioregistry": from_bioregistry,
     "prefixcc": from_prefixcc,
+    "w3id": from_w3id,
 }
 """Maps the name of a context to the python function that can generate it"""
 
