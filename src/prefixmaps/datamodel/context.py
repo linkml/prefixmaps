@@ -7,7 +7,6 @@ from enum import Enum
 from typing import List, Mapping, Optional
 
 import curies
-from typing_extensions import TypedDict
 
 __all__ = [
     "StatusType",
