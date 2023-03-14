@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Mapping, Optional
 
+import curies
 from typing_extensions import TypedDict
 
 __all__ = [
@@ -45,15 +46,6 @@ class StatusType(Enum):
 
     multi_alias = "multi_alias"
     """Both the prefix and the namespace are aliases for existing canonical namespaces."""
-
-
-class RecordDict(TypedDict):
-    """A record that is compatible with :mod:`curies`."""
-
-    prefix: str
-    uri_prefix: str
-    prefix_synonyms: List[str]
-    uri_prefix_synonyms: List[str]
 
 
 @dataclass
@@ -271,8 +263,8 @@ class Context:
         """
         return {pe.namespace: pe.prefix for pe in self.prefix_expansions if pe.canonical()}
 
-    def as_extended_prefix_map(self) -> List[RecordDict]:
-        """Return an extended prfix, appropriate for generating a :class:`curies.Converter`.
+    def as_extended_prefix_map(self) -> List[curies.Record]:
+        """Return an extended prefix, appropriate for generating a :class:`curies.Converter`.
 
         An extended prefix map is a collection of dictionaries, each of which has the following
         fields:
@@ -307,7 +299,7 @@ class Context:
                 prefix_synonyms[reverse_prefix_map[expansion.namespace]].add(expansion.prefix)
 
         return [
-            RecordDict(
+            curies.Record(
                 prefix=prefix,
                 prefix_synonyms=sorted(prefix_synonyms[prefix]),
                 uri_prefix=uri_prefix,
@@ -315,6 +307,11 @@ class Context:
             )
             for prefix, uri_prefix in sorted(prefix_map.items())
         ]
+
+    def as_converter(self) -> curies.Converter:
+        """Get a converter from this prefix map."""
+        extended_prefix_map = self.as_extended_prefix_map()
+        return curies.Converter.from_extended_prefix_map(extended_prefix_map)
 
     def validate(self, canonical_only=True) -> List[str]:
         """
