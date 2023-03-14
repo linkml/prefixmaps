@@ -22,6 +22,7 @@ class TestCuries(unittest.TestCase):
         self.assertIn(uri_prefix_2, context_namespaces)
 
         converter = context.as_converter()
+        self.assertIsInstance(converter, Converter)
 
         # prefix map checks
         self.assertIn(prefix, converter.prefix_map)
