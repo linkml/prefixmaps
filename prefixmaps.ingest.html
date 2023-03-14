@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>prefixmaps.ingest package &mdash; prefixmaps 0.1.4 documentation</title>
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> prefixmaps
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            prefixmaps
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -71,7 +75,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="modules.html">Modules</a></li>
           <li class="breadcrumb-item"><a href="prefixmaps.html">prefixmaps package</a></li>
       <li class="breadcrumb-item active">prefixmaps.ingest package</li>
@@ -114,13 +118,13 @@
 <li><p>A conbined context (which remixes existing contexts)</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>context</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – unique handle of the context</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -133,13 +137,13 @@
 <p>All contexts are refreshed from upstream sources, and written to the output directory,
 as CSV.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>output_directory</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code>]) – </p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -170,7 +174,7 @@ adopted this practice to provide semantic URIs non-born-semantic databases.
 In order to support this use case, we have an option to preserve these
 original namespaces. This can be disabled with <code class="docutils literal notranslate"><span class="pre">canonical_idorg=False</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>upper</strong> – if True, normalize prefix to uppercase
 unless a preferred form is stated</p></li>
@@ -179,10 +183,10 @@ unless a preferred form is stated</p></li>
 strict namespace regular expression</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -193,22 +197,16 @@ strict namespace regular expression</p></li>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_bioregistry.</span></span><span class="sig-name descname"><span class="pre">from_bioregistry_upper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_bioregistry.from_bioregistry_upper" title="Permalink to this definition"></a></dt>
 <dd><p>As <span class="xref std std-ref">from_bioregistry</span>, with default uppercase normalization on</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>kwargs</strong> – pass-through to <span class="xref std std-ref">from_bioregistry</span></p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_bioregistry.priority">
-<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_bioregistry.</span></span><span class="sig-name descname"><span class="pre">priority</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['obofoundry',</span> <span class="pre">'semweb',</span> <span class="pre">'miriam',</span> <span class="pre">'default',</span> <span class="pre">'bioportal',</span> <span class="pre">'ols',</span> <span class="pre">'n2t']</span></em><a class="headerlink" href="#prefixmaps.ingest.ingest_bioregistry.priority" title="Permalink to this definition"></a></dt>
-<dd><p>Priority order for bioregistry.</p>
 </dd></dl>
 
 </section>
@@ -223,13 +221,13 @@ strict namespace regular expression</p></li>
 “embedded JSON-LD context” which are those marked rdf_uri_prefix,
 which indicates the <em>semantic</em> expansions used in the triplestore.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>file</strong> – </p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -239,7 +237,7 @@ which indicates the <em>semantic</em> expansions used in the triplestore.</p>
 <dt class="sig sig-object py" id="prefixmaps.ingest.ingest_go.parse_go_xrefs_from_remote">
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_go.</span></span><span class="sig-name descname"><span class="pre">parse_go_xrefs_from_remote</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_go.parse_go_xrefs_from_remote" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
 </dl>
@@ -258,17 +256,17 @@ which indicates the <em>semantic</em> expansions used in the triplestore.</p>
 <p>Does not support JSON-LD 1.1 contexts.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>jsonld_context</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]) – </p></li>
 <li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 <li><p><strong>excludes</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -279,17 +277,17 @@ which indicates the <em>semantic</em> expansions used in the triplestore.</p>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_jsonld_context_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_file" title="Permalink to this definition"></a></dt>
 <dd><p>Ingests from a local JSON-LD context.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>file</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TextIO</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – </p></li>
 <li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 <li><p><strong>excludes</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -300,17 +298,17 @@ which indicates the <em>semantic</em> expansions used in the triplestore.</p>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_jsonld_context_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_url" title="Permalink to this definition"></a></dt>
 <dd><p>Ingests from a remote JSON-LD context.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>url</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 <li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 <li><p><strong>excludes</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -328,10 +326,10 @@ there are still no guarantees as to quality.</p>
 <p>Longer term we should focus on the curated linked_data.yaml file, and
 moving this to bioregistry.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
 </dd>
 </dl>
@@ -344,7 +342,7 @@ moving this to bioregistry.</p>
 <dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_linkml">
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_linkml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_linkml" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
 </dl>
@@ -354,7 +352,7 @@ moving this to bioregistry.</p>
 <dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_linkml_file">
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_linkml_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_linkml_file" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
 </dl>
@@ -364,7 +362,7 @@ moving this to bioregistry.</p>
 <dt class="sig sig-object py" id="prefixmaps.ingest.ingest_linkml.from_linkml_url">
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_linkml.</span></span><span class="sig-name descname"><span class="pre">from_linkml_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_linkml.from_linkml_url" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
 </dl>
@@ -388,10 +386,10 @@ moving this to bioregistry.</p>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_obo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_obo" title="Permalink to this definition"></a></dt>
 <dd><p>Creates a context from official OBO SHACL namespace PURL.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
 </dd>
 </dl>
@@ -402,17 +400,17 @@ moving this to bioregistry.</p>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_shacl_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_shacl_file" title="Permalink to this definition"></a></dt>
 <dd><p>Creates a context from a local turtle using SHACL vocabulary</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>file</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TextIO</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – </p></li>
 <li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 <li><p><strong>format</strong> – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -423,16 +421,16 @@ moving this to bioregistry.</p>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_shacl_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_shacl_graph" title="Permalink to this definition"></a></dt>
 <dd><p>Creates a context from a graph using SHACL vocabulary</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>g</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Graph</span></code>) – </p></li>
 <li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
@@ -443,16 +441,16 @@ moving this to bioregistry.</p>
 <span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_shacl.</span></span><span class="sig-name descname"><span class="pre">from_shacl_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_shacl.from_shacl_url" title="Permalink to this definition"></a></dt>
 <dd><p>Creates a context from a remote URL with turtle using SHACL vocabulary</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>url</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 <li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
 </dl>
