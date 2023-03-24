@@ -8,6 +8,11 @@ keywords = ["semantic web", "bioinformatics"]
 classifiers = [
     "Development Status :: 1 - Planning",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.7",
 ]
 
 [tool.poetry.urls]
