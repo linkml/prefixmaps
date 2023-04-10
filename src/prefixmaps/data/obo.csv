@@ -143,6 +143,7 @@ obo,NBO,http://purl.obolibrary.org/obo/NBO_,canonical
 obo,NCBITaxon,http://purl.obolibrary.org/obo/NCBITaxon_,canonical
 obo,NCIT,http://purl.obolibrary.org/obo/NCIT_,canonical
 obo,NCRO,http://purl.obolibrary.org/obo/NCRO_,canonical
+obo,NGBO,http://purl.obolibrary.org/obo/NGBO_,canonical
 obo,NIF_CELL,http://purl.obolibrary.org/obo/NIF_CELL_,canonical
 obo,NIF_DYSFUNCTION,http://purl.obolibrary.org/obo/NIF_DYSFUNCTION_,canonical
 obo,NIF_GROSSANATOMY,http://purl.obolibrary.org/obo/NIF_GROSSANATOMY_,canonical
