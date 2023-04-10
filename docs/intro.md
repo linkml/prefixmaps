@@ -10,7 +10,7 @@ This library is designed to satisfy the following requirements
 - no single authoritative source of either prefixes or prefix-namespace mappings (clash-resilient)
 - preferred semantic namespace is prioritized over web URLs
 - authority preferred prefix is prioritized where possible
-- each individual prefixmap is case-insenstive bijective
+- each individual prefixmap is case-insensitive bijective
 - prefixmap composition and custom ordering of prefixmaps
 - lightweight / low footprint
 - fast (TODO)
