@@ -18,6 +18,7 @@ merged.oak,accom,http://purl.org/acco/ns#,namespace_alias
 merged.oak,ACEVIEW.WORM,http://identifiers.org/aceview.worm/,canonical
 merged.oak,acl,http://www.w3.org/ns/auth/acl#,canonical
 merged.oak,acm,http://www.rkbexplorer.com/ontologies/acm#,canonical
+merged.oak,acp,http://www.w3.org/ns/solid/acp#,canonical
 merged.oak,acrt,http://privatealpha.com/ontology/certification/1#,canonical
 merged.oak,act,http://www.w3.org/2007/rif-builtin-action#,canonical
 merged.oak,activity,https://www.w3.org/TR/activitystreams-vocabulary/,canonical
@@ -112,10 +113,12 @@ merged.oak,APHIDBASE.TRANSCRIPT,http://identifiers.org/aphidbase.transcript/,can
 merged.oak,api,http://purl.org/linked-data/api/vocab#,canonical
 merged.oak,apivc,http://purl.org/linked-data/api/vocab#,namespace_alias
 merged.oak,APO,http://purl.obolibrary.org/obo/APO_,canonical
+merged.oak,apods,http://activitypods.org/ns/core#,canonical
 merged.oak,APOLLO_SV,http://purl.obolibrary.org/obo/APOLLO_SV_,canonical
 merged.oak,app,http://jmvanel.free.fr/ontology/software_applications.n3#,canonical
 merged.oak,aprov,http://purl.org/a-proc#,canonical
 merged.oak,ARACHNOSERVER,http://identifiers.org/arachnoserver/,canonical
+merged.oak,ARAPORT,http://identifiers.org/tair.name/,canonical
 merged.oak,arch,http://purl.org/archival/vocab/arch#,canonical
 merged.oak,archdesc,http://archdesc.info/archEvent#,canonical
 merged.oak,archivo,https://archivo.dbpedia.org/onto#,canonical
@@ -153,6 +156,7 @@ merged.oak,ass,http://uptheasset.org/ontology#,canonical
 merged.oak,assoc,https://w3id.org/associations/vocab#,canonical
 merged.oak,ATC,http://identifiers.org/atc/,canonical
 merged.oak,ATCC,http://identifiers.org/atcc/,canonical
+merged.oak,atcc,https://www.atcc.org/products/,prefix_alias
 merged.oak,ATCVET,http://identifiers.org/atcvet/,canonical
 merged.oak,atd,https://data.nasa.gov/ontologies/atmonto/data#,canonical
 merged.oak,ATFDB.FAMILY,http://identifiers.org/atfdb.family/,canonical
@@ -264,6 +268,7 @@ merged.oak,biocore,http://bio2rdf.org/core#,canonical
 merged.oak,biocrm,http://ldf.fi/schema/bioc/,canonical
 merged.oak,BIOCYC,http://identifiers.org/biocyc/,canonical
 merged.oak,bioentity,http://bioentity.io/vocab/,canonical
+merged.oak,BIOFACTOID,https://biofactoid.org/document/,canonical
 merged.oak,BIOGRID,http://identifiers.org/biogrid/,canonical
 merged.oak,biogrid,http://thebiogrid.org/,prefix_alias
 merged.oak,BIOGRID.INTERACTION,https://thebiogrid.org/interaction/,canonical
@@ -285,6 +290,7 @@ merged.oak,BIOREGISTRY.REGISTRY,https://bioregistry.io/metaregistry/,canonical
 merged.oak,BIOREGISTRY.SCHEMA,https://bioregistry.io/schema/#,canonical
 merged.oak,BIORXIV,https://www.biorxiv.org/content/10.1101/,canonical
 merged.oak,BIOSAMPLE,http://identifiers.org/biosample/,canonical
+merged.oak,BIOSCHEMAS,https://bioschemas.org/profiles/,canonical
 merged.oak,BIOSIMULATIONS,http://identifiers.org/biosimulations/,canonical
 merged.oak,BIOSIMULATORS,http://identifiers.org/biosimulators/,canonical
 merged.oak,bioskos,http://eulersharp.sourceforge.net/2003/03swap/bioSKOSSchemes#,canonical
@@ -329,7 +335,6 @@ merged.oak,bp3,http://www.biopax.org/release/biopax-level3.owl#,namespace_alias
 merged.oak,bperson,http://data.vlaanderen.be/ns/persoon#,canonical
 merged.oak,bpo,https://w3id.org/bpo#,canonical
 merged.oak,br,http://vocab.deri.ie/br#,canonical
-merged.oak,BRENDA,http://identifiers.org/brenda/,canonical
 merged.oak,brick,https://brickschema.org/schema/Brick#,canonical
 merged.oak,bridge,http://purl.org/vocommons/bridge#,canonical
 merged.oak,brk,http://brk.basisregistraties.overheid.nl/def/brk#,canonical
@@ -340,6 +345,7 @@ merged.oak,BS,https://biopragmatics.github.io/providers/bs/,canonical
 merged.oak,bs,https://w3id.org/def/basicsemantics-owl#,prefix_alias
 merged.oak,bsb,http://opacplus.bsb-muenchen.de/title/,canonical
 merged.oak,bsbm,http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/,canonical
+merged.oak,bsdd,http://bsdd.buildingsmart.org/def#,canonical
 merged.oak,bsh,https://brickschema.org/schema/1.1.0/BrickShape#,canonical
 merged.oak,BSPO,http://purl.obolibrary.org/obo/BSPO_,canonical
 merged.oak,bsym,http://bsym.bloomberg.com/sym/,canonical
@@ -357,7 +363,7 @@ merged.oak,ca,http://complyadvantage.com/,canonical
 merged.oak,cal,http://www.w3.org/2002/12/cal/ical#,namespace_alias
 merged.oak,call,http://webofcode.org/wfn/call:,canonical
 merged.oak,calli,http://callimachusproject.org/rdf/2009/framework#,canonical
-merged.oak,CALOHA,https://biopragmatics.github.io/providers/caloha/,canonical
+merged.oak,CALOHA,https://www.nextprot.org/term/,canonical
 merged.oak,camelot,http://vocab.ox.ac.uk/camelot#,canonical
 merged.oak,CAMEO,http://identifiers.org/cameo/,canonical
 merged.oak,campsite,http://www.openlinksw.com/campsites/schema#,canonical
@@ -478,6 +484,7 @@ merged.oak,cl,http://advene.org/ns/cinelab/,prefix_alias
 merged.oak,CLAO,http://purl.obolibrary.org/obo/CLAO_,canonical
 merged.oak,clapit,http://dati.gov.it/onto/clapit/,canonical
 merged.oak,CLASSYFIRE,http://identifiers.org/classyfire/,canonical
+merged.oak,CLB,http://identifiers.org/clb/,canonical
 merged.oak,cld,http://purl.org/cld/terms/,canonical
 merged.oak,climb,http://climb.dataincubator.org/vocabs/climb/,canonical
 merged.oak,clineva,http://www.agfa.com/w3c/2009/clinicalEvaluation#,canonical
@@ -539,6 +546,7 @@ merged.oak,CO_370,https://cropontology.org/rdf/CO_370:,canonical
 merged.oak,COB,http://purl.obolibrary.org/obo/COB_,canonical
 merged.oak,COCONUT,https://coconut.naturalproducts.net/compound/coconut_id/,canonical
 merged.oak,cocoon,https://w3id.org/cocoon/v1.0#,canonical
+merged.oak,coda,http://art.uniroma2.it/coda/contracts/,canonical
 merged.oak,code,http://telegraphis.net/ontology/measurement/code#,canonical
 merged.oak,coeus,http://bioinformatics.ua.pt/coeus/,canonical
 merged.oak,COG,https://www.ncbi.nlm.nih.gov/research/cog/cog/,canonical
@@ -547,11 +555,11 @@ merged.oak,COG.CATEGORY,https://www.ncbi.nlm.nih.gov/research/cog/cogcategory/,c
 merged.oak,COG.PATHWAY,https://www.ncbi.nlm.nih.gov/research/cog/pathway/,canonical
 merged.oak,cogs,http://vocab.deri.ie/cogs#,canonical
 merged.oak,coin,http://purl.org/court/def/2009/coin#,canonical
+merged.oak,COL,http://identifiers.org/col/,canonical
 merged.oak,COLAO,http://purl.obolibrary.org/obo/COLAO_,canonical
 merged.oak,cold,http://purl.org/configurationontology#,canonical
 merged.oak,coll,http://purl.org/co/,canonical
 merged.oak,com,http://purl.org/commerce#,canonical
-merged.oak,COMBINE.SPECIFICATIONS,http://identifiers.org/combine.specifications/,canonical
 merged.oak,comm,http://vocab.resc.info/communication#,canonical
 merged.oak,commerce,http://search.yahoo.com/searchmonkey/commerce/,canonical
 merged.oak,common,http://www.w3.org/2007/uwa/context/common.owl#,canonical
@@ -626,6 +634,7 @@ merged.oak,crmdig,http://www.ics.forth.gr/isl/CRMdig/,canonical
 merged.oak,crmeh,http://purl.org/crmeh#,canonical
 merged.oak,crminf,http://www.cidoc-crm.org/cidoc-crm/CRMinf/,canonical
 merged.oak,crml,http://semweb.mmlab.be/ns/rml/condition#,canonical
+merged.oak,crmsci,http://cidoc-crm.org/crmsci/,canonical
 merged.oak,CRO,http://purl.obolibrary.org/obo/CRO_,canonical
 merged.oak,cro,http://rhizomik.net/ontologies/copyrightonto.owl#,prefix_alias
 merged.oak,CROP2ML,http://identifiers.org/crop2ml/,canonical
@@ -659,6 +668,7 @@ merged.oak,ctxdesc,http://www.demcare.eu/ontologies/contextdescriptor.owl#,canon
 merged.oak,cube,https://cube.link/,canonical
 merged.oak,cubeont,http://ontology.cube.global/,canonical
 merged.oak,cue,http://www.clarin.eu/cmdi/cues/display/1.0#,canonical
+merged.oak,cur,http://qudt.org/2.1/vocab/currency/,canonical
 merged.oak,curr,https://w3id.org/cc#,canonical
 merged.oak,custom,http://www.openrdf.org/config/sail/custom#,canonical
 merged.oak,customer,http://www.valuelabs.com/,canonical
@@ -698,6 +708,7 @@ merged.oak,dash,http://datashapes.org/dash#,canonical
 merged.oak,DASHR,http://identifiers.org/dashr/,canonical
 merged.oak,data,http://data.odw.tw/,canonical
 merged.oak,DataCite,http://purl.org/spar/datacite/,canonical
+merged.oak,DATACOMMONS,https://datacommons.org/browser/,canonical
 merged.oak,datacron,http://www.datacron-project.eu/datAcron#,canonical
 merged.oak,datafaqs,http://purl.org/twc/vocab/datafaqs#,canonical
 merged.oak,datagc,https://data.grottocenter.org/ldp/,canonical
@@ -758,6 +769,7 @@ merged.oak,dcap,http://purl.org/ws-mmi-dc/terms/,canonical
 merged.oak,DCAT,http://www.w3.org/ns/dcat#,canonical
 merged.oak,dcatapit,http://dati.gov.it/onto/dcatapit#,canonical
 merged.oak,dcatnl,http://standaarden.overheid.nl/dcatnl/terms/,canonical
+merged.oak,dcatno,https://data.norge.no/vocabulary/dcatno#,canonical
 merged.oak,dcb,http://dbpedia.org/resource/Category:,namespace_alias
 merged.oak,dce,http://purl.org/dc/elements/1.1/,namespace_alias
 merged.oak,dcite,http://purl.org/spar/datacite/,namespace_alias
@@ -906,7 +918,7 @@ merged.oak,DRUGBANK.SALT,https://go.drugbank.com/salts/,canonical
 merged.oak,DRUGBANKV4.TARGET,http://identifiers.org/drugbankv4.target/,canonical
 merged.oak,DRUGCENTRAL,http://identifiers.org/drugcentral/,canonical
 merged.oak,ds,http://purl.org/ctic/dcat#,canonical
-merged.oak,dsd,http://dqm.faw.jku.at/ontologies/dsd#,canonical
+merged.oak,dsd,https://w3id.org/dsd#,canonical
 merged.oak,dsfv,http://sws.ifi.uio.no/vocab/dsf/henriwi/dsf#,canonical
 merged.oak,dsi,https://data.dsi.omgeving.vlaanderen.be/ns/dsi#,canonical
 merged.oak,DSMZ,https://www.dsmz.de/collection/catalogue/details/culture/,canonical
@@ -951,6 +963,7 @@ merged.oak,eccf,http://data.europa.eu/54i/,canonical
 merged.oak,ECCODE,http://identifiers.org/ec-code/,canonical
 merged.oak,eccpubsub,https://vocab.eccenca.com/pubsub/,canonical
 merged.oak,eccrev,https://vocab.eccenca.com/revision/,canonical
+merged.oak,ecfo,https://w3id.org/ecfo#,canonical
 merged.oak,ecgl,http://schema.geolink.org/,namespace_alias
 merged.oak,ecglview,http://schema.geolink.org/view/,canonical
 merged.oak,ECHOBASE,http://identifiers.org/echobase/,canonical
@@ -1009,13 +1022,15 @@ merged.oak,elod,http://linkedeconomy.org/ontology#,canonical
 merged.oak,elog,http://eulersharp.sourceforge.net/2003/03swap/log-rules#,namespace_alias
 merged.oak,EMAP,http://purl.obolibrary.org/obo/EMAP_,canonical
 merged.oak,EMAPA,http://purl.obolibrary.org/obo/EMAPA_,canonical
+merged.oak,EMAPS,https://www.informatics.jax.org/vocab/gxd/anatomy/EMAPS:,canonical
 merged.oak,EMDB,http://identifiers.org/emdb/,canonical
 merged.oak,emergel,http://purl.org/emergel/core#,canonical
 merged.oak,emergelm,http://purl.org/emergel/modules#,canonical
+merged.oak,EMMO.CIF,http://emmo.info/emmo/cif-core#,canonical
 merged.oak,emoca,http://ns.inria.fr/emoca#,namespace_alias
 merged.oak,emotion,http://ns.inria.fr/emoca#,canonical
 merged.oak,emp,http://purl.org/ctic/empleo/oferta#,canonical
-merged.oak,EMPIAR,https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/,canonical
+merged.oak,EMPIAR,http://identifiers.org/empiar/,canonical
 merged.oak,employee,http://www.employee.com/data#,canonical
 merged.oak,emtr,http://purl.org/NET/ssnext/electricmeters#,canonical
 merged.oak,ENA.EMBL,http://identifiers.org/ena.embl/,canonical
@@ -1121,7 +1136,7 @@ merged.oak,ExO,http://purl.obolibrary.org/obo/ExO_,canonical
 merged.oak,exo,https://w3id.org/example#,prefix_alias
 merged.oak,experts,http://emmo.info/emmo/application/maeo/experts#,canonical
 merged.oak,express,https://w3id.org/express#,canonical
-merged.oak,ext,http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#,canonical
+merged.oak,ext,http://mu.semte.ch/vocabularies/ext/,canonical
 merged.oak,extech,https://w3id.org/executionTechnique/ontology/,canonical
 merged.oak,exterms,http://www.example.org/terms/,canonical
 merged.oak,eye,http://jena.hpl.hp.com/Eyeball#,canonical
@@ -1134,6 +1149,8 @@ merged.oak,fabio,http://purl.org/spar/fabio/,prefix_alias
 merged.oak,FACEBASE,http://identifiers.org/facebase/,canonical
 merged.oak,factbook,http://wifo5-04.informatik.uni-mannheim.de/factbook/ns#,canonical
 merged.oak,FAIRSHARING,http://identifiers.org/fairsharing/,canonical
+merged.oak,FAIRSHARING.ORGANIZATION,https://fairsharing.org/organisations/,canonical
+merged.oak,FAIRSHARING.USER,https://fairsharing.org/users/,canonical
 merged.oak,FALDO,http://biohackathon.org/resource/faldo#,canonical
 merged.oak,fam,http://vocab.fusepool.info/fam#,canonical
 merged.oak,FAO,http://purl.obolibrary.org/obo/FAO_,canonical
@@ -1155,6 +1172,7 @@ merged.oak,fcs,http://clarin.eu/fcs/resource#,canonical
 merged.oak,fct,http://openlinksw.com/services/facets/1.0/,canonical
 merged.oak,fd,http://foodable.co/ns/,canonical
 merged.oak,fdbp,http://fr.dbpedia.org/property/,namespace_alias
+merged.oak,fdp,https://w3id.org/fdp/fdp-o#,canonical
 merged.oak,fe,http://www.ontologydesignpatterns.org/ont/framenet/abox/fe/,canonical
 merged.oak,fea,http://vocab.data.gov/def/fea#,canonical
 merged.oak,fec,http://www.rdfabout.com/rdf/schema/usfec/,canonical
@@ -1237,7 +1255,7 @@ merged.oak,FSNP,http://identifiers.org/fsnp/,canonical
 merged.oak,fso,https://w3id.org/fso#,canonical
 merged.oak,fssp,http://linkeddata.fssprus.ru/resource/,canonical
 merged.oak,ftcontent,http://www.ft.com/ontology/content/,canonical
-merged.oak,fun,http://w3id.org/sparql-generate/fn/,namespace_alias
+merged.oak,fun,http://w3id.org/sparql-generate/fn/,canonical
 merged.oak,func,http://www.w3.org/2007/rif-builtin-function#,canonical
 merged.oak,FUNCBASE.FLY,http://identifiers.org/funcbase.fly/,canonical
 merged.oak,FUNCBASE.HUMAN,http://identifiers.org/funcbase.human/,canonical
@@ -1251,6 +1269,7 @@ merged.oak,FYPO,http://purl.obolibrary.org/obo/FYPO_,canonical
 merged.oak,GA4GHDOS,http://identifiers.org/ga4ghdos/,canonical
 merged.oak,gadm,http://gadm.geovocab.org/ontology#,canonical
 merged.oak,gaf,http://groundedannotationframework.org/,canonical
+merged.oak,GAINESVILLE.CORE,http://purl.org/gc/,canonical
 merged.oak,galaksiya,http://ontoloji.galaksiya.com/vocab/,canonical
 merged.oak,GALEN,http://www.co-ode.org/ontologies/galen#,canonical
 merged.oak,game,http://data.totl.net/game/,canonical
@@ -1363,10 +1382,12 @@ merged.oak,gnd,http://d-nb.info/gnd/,canonical
 merged.oak,gndo,http://d-nb.info/standards/elementset/gnd#,canonical
 merged.oak,gnm,http://www.geonames.org/ontology/mappings/,canonical
 merged.oak,GNO,http://purl.obolibrary.org/obo/GNO_,canonical
+merged.oak,GNOMAD,https://gnomad.broadinstitute.org/variant/,canonical
 merged.oak,GNPIS,http://identifiers.org/gnpis/,canonical
 merged.oak,gns,http://sws.geonames.org/,namespace_alias
-merged.oak,gnvc,http://purl.org/gc/,canonical
+merged.oak,gnvc,http://purl.org/gc/,namespace_alias
 merged.oak,GO,http://purl.obolibrary.org/obo/GO_,canonical
+merged.oak,GO.GPI,http://geneontology.org/docs/gene-product-information-gpi-format/#,canonical
 merged.oak,GO.MODEL,http://noctua.geneontology.org/editor/graph/gomodel:,canonical
 merged.oak,GO.REF,http://identifiers.org/GO_REF/,canonical
 merged.oak,GO.RESOURCE,https://bioregistry.io/metaregistry/go/,canonical
@@ -1481,11 +1502,16 @@ merged.oak,HINV.PROTEIN,http://identifiers.org/hinv.protein/,canonical
 merged.oak,HINV.TRANSCRIPT,http://identifiers.org/hinv.transcript/,canonical
 merged.oak,hlisting,http://sindice.com/hlisting/0.1/,canonical
 merged.oak,hlygt,http://www.holygoat.co.uk/owl/redwood/0.1/tags/,namespace_alias
+merged.oak,hmas,https://purl.org/hmas/,canonical
 merged.oak,HMDB,http://identifiers.org/hmdb/,canonical
+merged.oak,HMS.LINCS.ANTIBODY,https://lincs.hms.harvard.edu/db/antibodies/,canonical
+merged.oak,HMS.LINCS.CELL,https://lincs.hms.harvard.edu/db/cells/,canonical
 merged.oak,HMS.LINCS.COMPOUND,https://lincs.hms.harvard.edu/db/sm/,canonical
+merged.oak,HMS.LINCS.DATASET,https://lincs.hms.harvard.edu/db/datasets/,canonical
 merged.oak,hni,https://collectiedata.hetnieuweinstituut.nl/,canonical
 merged.oak,HOG,https://biopragmatics.github.io/providers/hog/,canonical
 merged.oak,HOGENOM,http://identifiers.org/hogenom/,canonical
+merged.oak,HOIP,http://purl.bioontology.org/ontology/HOIP/HOIP_,canonical
 merged.oak,hola,https://moodle.insa-lyon.fr/course/view.php?id=,canonical
 merged.oak,holding,http://purl.org/ontology/holding#,canonical
 merged.oak,HOM,http://purl.obolibrary.org/obo/HOM_,canonical
@@ -1619,11 +1645,13 @@ merged.oak,InterPro,https://registry.identifiers.org/registry/interpro/,canonica
 merged.oak,interval,http://reference.data.gov.uk/def/intervals/,canonical
 merged.oak,intervals,http://reference.data.gov.uk/def/intervals/,namespace_alias
 merged.oak,io,https://iaco.me/,canonical
+merged.oak,IOBC,http://purl.jp/bio/4/id/,canonical
 merged.oak,iol,http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#,canonical
 merged.oak,iospress,http://ld.iospress.nl/rdf/ontology/,canonical
 merged.oak,iot,http://iotschema.org/,canonical
 merged.oak,iotlite,http://purl.oclc.org/NET/UNIS/fiware/iot-lite#,canonical
 merged.oak,ioto,http://www.irit.fr/recherches/MELODI/ontologies/IoT-O#,canonical
+merged.oak,iottta,https://w3id.org/iot-tta#,canonical
 merged.oak,ipad,http://www.padinthecity.com/,canonical
 merged.oak,ipo,http://purl.org/ipo/core#,canonical
 merged.oak,IPR,http://purl.obolibrary.org/obo/IPR_,canonical
@@ -1647,6 +1675,7 @@ merged.oak,isi,http://purl.org/ontology/is/inst/,canonical
 merged.oak,isidore,http://www.rechercheisidore.fr/class/,canonical
 merged.oak,ISNI,http://identifiers.org/isni/,canonical
 merged.oak,iso,http://purl.org/iso25964/skos-thes#,namespace_alias
+merged.oak,ISO15926,http://standards.iso.org/iso/15926/part14/,canonical
 merged.oak,iso37120,http://ontology.eil.utoronto.ca/ISO37120.owl#,canonical
 merged.oak,isoadr,http://reference.data.gov.au/def/ont/iso19160-1-address#,canonical
 merged.oak,isocat,http://www.isocat.org/datcat/,canonical
@@ -1716,6 +1745,7 @@ merged.oak,kml,http://www.opengis.net/kml/2.2#,canonical
 merged.oak,KNAPSACK,http://identifiers.org/knapsack/,canonical
 merged.oak,knows,http://semantic.komc/usu/2020/knows#,canonical
 merged.oak,koko,https://seznam.cz/,canonical
+merged.oak,kokot,http://strbaste.com/,canonical
 merged.oak,koly,http://www.ensias.ma/,canonical
 merged.oak,kontakt,http://richard.cyganiak.de/,canonical
 merged.oak,kpd,http://purl.org/kpd/,canonical
@@ -1737,7 +1767,7 @@ merged.oak,languages,http://eulersharp.sourceforge.net/2003/03swap/languages#,ca
 merged.oak,laposte,http://data.lirmm.fr/ontologies/laposte#,canonical
 merged.oak,lark1,http://users.utcluj.ro/~raluca/ontology/Ontology1279614123500.owl#,canonical
 merged.oak,lastfm,http://purl.org/ontology/last-fm/,namespace_alias
-merged.oak,latitude,https://www.w3.org/2006/vcard/ns#latitude#,canonical
+merged.oak,latitude,https://www.w3.org/2006/vcard/ns#,canonical
 merged.oak,lawd,http://lawd.info/ontology/,canonical
 merged.oak,lbds,https://w3id.org/lbdserver#,namespace_alias
 merged.oak,lbdserver,https://w3id.org/lbdserver#,canonical
@@ -1766,7 +1796,7 @@ merged.oak,lds,https://solid.ti.rw.fau.de/public/ns/linked-data-structures#,cano
 merged.oak,ldt,https://www.w3.org/ns/ldt#,canonical
 merged.oak,ldvm,http://linked.opendata.cz/ontology/ldvm/,canonical
 merged.oak,leak,http://data.ontotext.com/resource/leak/,canonical
-merged.oak,leaks,https://cuzin.com/,canonical
+merged.oak,leaks,https://onlyfans.com/chelxie/,canonical
 merged.oak,led,http://led.kmi.open.ac.uk/term/,canonical
 merged.oak,legal,http://www.w3.org/ns/legal#,canonical
 merged.oak,LEI,http://identifiers.org/lei/,canonical
@@ -1970,9 +2000,10 @@ merged.oak,merge,http://jazz.net/ns/lqe/merge/,canonical
 merged.oak,MEROPS.ENTRY,http://identifiers.org/merops.inhibitor/,canonical
 merged.oak,MEROPS.FAMILY,http://identifiers.org/merops.family/,canonical
 merged.oak,MESH,http://identifiers.org/mesh/,canonical
-merged.oak,mesh,http://purl.bioontology.org/ontology/MESH/,prefix_alias
+merged.oak,mesh,http://id.nlm.nih.gov/mesh/,prefix_alias
+merged.oak,MESH.VOCAB,http://id.nlm.nih.gov/mesh/vocab#,canonical
 merged.oak,mesh2021,http://id.nlm.nih.gov/mesh/2021/,canonical
-merged.oak,meshv,http://id.nlm.nih.gov/mesh/vocab#,canonical
+merged.oak,meshv,http://id.nlm.nih.gov/mesh/vocab#,namespace_alias
 merged.oak,meta,https://krr.triply.cc/krr/sameas-meta/def/,canonical
 merged.oak,METABOLIGHTS,http://identifiers.org/metabolights/,canonical
 merged.oak,MetaCyc,https://identifiers.org/metacyc.reaction/,canonical
@@ -2032,6 +2063,7 @@ merged.oak,MIRO,http://purl.obolibrary.org/obo/MIRO_,canonical
 merged.oak,MIRTARBASE,http://identifiers.org/mirtarbase/,canonical
 merged.oak,misp,http://purl.org/cyber/misp#,canonical
 merged.oak,mit,http://purl.org/ontology/mo/mit#,canonical
+merged.oak,MIXS,https://w3id.org/mixs/,canonical
 merged.oak,MLC,http://identifiers.org/mlc/,canonical
 merged.oak,mls,http://www.w3.org/ns/mls#,canonical
 merged.oak,mltd,https://mltd.pikopikopla.net/mltd-schema#,canonical
@@ -2147,6 +2179,7 @@ merged.oak,nbo,http://data.bioontology.org/ontologies/NBO/,prefix_alias
 merged.oak,NBRC,http://identifiers.org/nbrc/,canonical
 merged.oak,ncal,http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#,canonical
 merged.oak,NCATS.DRUG,https://drugs.ncats.io/drug/,canonical
+merged.oak,ncbi,https://www.ncbi.nlm.nih.gov/,canonical
 merged.oak,NCBI.ASSEMBLY,http://identifiers.org/assembly/,canonical
 merged.oak,NCBI.GENOME,https://www.ncbi.nlm.nih.gov/genome/,canonical
 merged.oak,NCBI.RESOURCE,https://bioregistry.io/metaregistry/ncbi/,canonical
@@ -2186,6 +2219,7 @@ merged.oak,nexif,http://www.semanticdesktop.org/ontologies/2007/05/10/nexif#,can
 merged.oak,NEXTDB,http://identifiers.org/nextdb/,canonical
 merged.oak,NEXTPROT,http://identifiers.org/nextprot/,canonical
 merged.oak,nfo,http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#,canonical
+merged.oak,NGBO,http://purl.obolibrary.org/obo/NGBO_,canonical
 merged.oak,ngeo,http://geovocab.org/geometry#,canonical
 merged.oak,ngeoi,http://vocab.lenka.no/geo-deling#,canonical
 merged.oak,NGL,http://identifiers.org/ngl/,canonical
@@ -2255,10 +2289,12 @@ merged.oak,nsl,http://purl.org/ontology/storyline/,canonical
 merged.oak,nsogi,http://prefix.cc/nsogi:,canonical
 merged.oak,nt,http://ns.inria.fr/nicetag/2010/09/09/voc#,canonical
 merged.oak,ntag,http://ns.inria.fr/nicetag/2010/09/09/voc#,namespace_alias
-merged.oak,NUCLEARBD,http://identifiers.org/nuclearbd/,canonical
+merged.oak,ntp,https://schema.finto.fi/ntp#,canonical
+merged.oak,NUCLEARDB,http://identifiers.org/nuclearbd/,canonical
 merged.oak,number,http://km.aifb.kit.edu/projects/numbers/number#,namespace_alias
 merged.oak,numbers,http://km.aifb.kit.edu/projects/numbers/,canonical
 merged.oak,nuts,http://dd.eionet.europa.eu/vocabulary/common/nuts/,canonical
+merged.oak,nutscode,http://data.europa.eu/nuts/code/,canonical
 merged.oak,nxp,http://purl.org/nxp/schema/v1/,canonical
 merged.oak,nxs,http://www.neclimateus.org/,canonical
 merged.oak,nyt,http://data.nytimes.com/,canonical
@@ -2275,6 +2311,7 @@ merged.oak,oat,http://openlinksw.com/schemas/oat/,canonical
 merged.oak,oauth,http://demiblog.org/vocab/oauth#,canonical
 merged.oak,oax,http://www.w3.org/ns/openannotation/extensions/,canonical
 merged.oak,OBA,http://purl.obolibrary.org/obo/OBA_,canonical
+merged.oak,OBAN,http://purl.org/oban/,canonical
 merged.oak,OBCS,http://purl.obolibrary.org/obo/OBCS_,canonical
 merged.oak,obeu,http://data.openbudgets.eu/ontology/,canonical
 merged.oak,OBI,http://purl.obolibrary.org/obo/OBI_,canonical
@@ -2326,6 +2363,7 @@ merged.oak,ofrd,http://purl.org/opdm/refrigerator#,canonical
 merged.oak,og,http://opengraphprotocol.org/schema/,canonical
 merged.oak,ogbd,http://www.ogbd.fr/2012/ontologie#,canonical
 merged.oak,ogc,http://www.opengis.net/def/,canonical
+merged.oak,ogcf,http://www.opengis.net/def/function/geosparql/,namespace_alias
 merged.oak,ogdl4m,https://github.com/martynui/OGDL4M/,canonical
 merged.oak,OGG,http://purl.obolibrary.org/obo/OGG_,canonical
 merged.oak,ogham,http://lod.ogham.link/data/,canonical
@@ -2367,6 +2405,7 @@ merged.oak,omc,http://purl.org/ontomedia/ext/common/bestiary#,canonical
 merged.oak,omdoc,http://omdoc.org/ontology/,canonical
 merged.oak,ome,http://purl.org/ontomedia/core/expression#,canonical
 merged.oak,omg,https://w3id.org/omg#,canonical
+merged.oak,OMIA,http://identifiers.org/omia/,canonical
 merged.oak,OMIABIS,http://purl.obolibrary.org/obo/OMIABIS_,canonical
 merged.oak,OMIM,http://identifiers.org/mim/,canonical
 merged.oak,omim,http://purl.bioontology.org/ontology/OMIM/,prefix_alias
@@ -2403,6 +2442,7 @@ merged.oak,ontoneo,http://purl.obolibrary.org/obo/ontoneo/,prefix_alias
 merged.oak,ontop,https://w3id.org/ontop/,canonical
 merged.oak,ontopic,http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#,canonical
 merged.oak,ontosec,http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#,canonical
+merged.oak,ontouml,https://w3id.org/ontouml#,canonical
 merged.oak,onyx,http://www.gsi.dit.upm.es/ontologies/onyx/ns#,canonical
 merged.oak,oo,http://purl.org/openorg/,canonical
 merged.oak,oop,http://w3id.org/oop#,canonical
@@ -2423,6 +2463,7 @@ merged.oak,OPL,http://purl.obolibrary.org/obo/OPL_,canonical
 merged.oak,opl,http://openlinksw.com/schema/attribution#,prefix_alias
 merged.oak,oplacl,http://www.openlinksw.com/ontology/acl#,canonical
 merged.oak,oplangel,http://www.openlinksw.com/schemas/angel#,canonical
+merged.oak,oplben,http://www.openlinksw.com/ontology/benefits#,namespace_alias
 merged.oak,oplbenefit,http://www.openlinksw.com/ontology/benefits#,canonical
 merged.oak,oplcb,http://www.openlinksw.com/schemas/crunchbase#,canonical
 merged.oak,oplcert,http://www.openlinksw.com/schemas/cert#,canonical
@@ -2519,17 +2560,19 @@ merged.oak,owl2xml,http://www.w3.org/2006/12/owl2-xml#,canonical
 merged.oak,owlim,http://www.ontotext.com/trree/owlim#,canonical
 merged.oak,owls,http://www.daml.org/services/owl-s/1.2/Service.owl#,canonical
 merged.oak,owlse,http://www.daml.org/services/owl-s/1.2/generic/Expression.owl#,canonical
+merged.oak,OWLSTAR,http://w3id.org/owlstar/,canonical
 merged.oak,owltime,http://www.w3.org/TR/owl-time#,canonical
 merged.oak,owms,http://standaarden.overheid.nl/owms/terms/,canonical
 merged.oak,owsom,https://onlinesocialmeasures.wordpress.com/,canonical
 merged.oak,ox,http://vocab.ox.ac.uk/projectfunding#,canonical
 merged.oak,oxi,http://omerxi.com/ontologies/core.owl.ttl#,canonical
 merged.oak,p20,http://zbw.eu/beta/p20/vocab/,canonical
+merged.oak,p2po,https://purl.org/p2p-o#,canonical
 merged.oak,p3p,http://www.w3.org/2002/01/p3prdfv1#,canonical
 merged.oak,paam,https://lod.mediathek-tanz-theater.de/schema/paam/,canonical
 merged.oak,paf,https://paf.link/,canonical
 merged.oak,paia,http://purl.org/ontology/paia#,canonical
-merged.oak,pair,http://virtual-assembly.org/pair/PAIR_LOD_V3.owl/,canonical
+merged.oak,pair,http://virtual-assembly.org/ontologies/pair#,canonical
 merged.oak,PALEODB,http://identifiers.org/paleodb/,canonical
 merged.oak,pam,http://prismstandard.org/namespaces/pam/2.0/,canonical
 merged.oak,pand,http://bag.basisregistraties.overheid.nl/bag/id/pand/,canonical
@@ -2575,6 +2618,7 @@ merged.oak,pdo,http://ontologies.smile.deri.ie/pdo#,canonical
 merged.oak,PDRO,http://purl.obolibrary.org/obo/PDRO_,canonical
 merged.oak,PdumDv,http://purl.obolibrary.org/obo/PdumDv_,canonical
 merged.oak,PECO,http://purl.obolibrary.org/obo/PECO_,canonical
+merged.oak,peco,https://w3id.org/peco#,prefix_alias
 merged.oak,PED,http://identifiers.org/ped/,canonical
 merged.oak,PEFF,https://biopragmatics.github.io/providers/peff/,canonical
 merged.oak,penis,http://penis.to/#,canonical
@@ -2764,7 +2808,7 @@ merged.oak,prvtypes,http://purl.org/net/provenance/types#,canonical
 merged.oak,ps,https://w3id.org/payswarm#,canonical
 merged.oak,PSDO,http://purl.obolibrary.org/obo/PSDO_,canonical
 merged.oak,PSEUDOMONAS,http://identifiers.org/pseudomonas/,canonical
-merged.oak,psh,http://psh.techlib.cz/skos/,canonical
+merged.oak,psh,http://ns.inria.fr/probabilistic-shacl/,canonical
 merged.oak,PSIPAR,http://identifiers.org/psipar/,canonical
 merged.oak,PSO,http://purl.obolibrary.org/obo/PSO_,canonical
 merged.oak,pso,http://purl.org/spar/pso/,prefix_alias
@@ -2780,6 +2824,7 @@ merged.oak,PUBCHEM.CELL,https://pubchem.ncbi.nlm.nih.gov/cell/,canonical
 merged.oak,PUBCHEM.COMPOUND,http://identifiers.org/pubchem.compound/,canonical
 merged.oak,PUBCHEM.ELEMENT,https://pubchem.ncbi.nlm.nih.gov/element/,canonical
 merged.oak,PUBCHEM.SUBSTANCE,http://identifiers.org/pubchem.substance/,canonical
+merged.oak,PUBLONS.PUBLICATION,https://publons.com/publon/,canonical
 merged.oak,PUBLONS.RESEARCHER,https://publons.com/researcher/,canonical
 merged.oak,PUBMED,http://identifiers.org/pubmed/,canonical
 merged.oak,pubmed,http://bio2rdf.org/pubmed_vocabulary:,prefix_alias
@@ -3019,7 +3064,7 @@ merged.oak,RNAO,http://purl.obolibrary.org/obo/RNAO_,canonical
 merged.oak,rnce,https://data.cultureelerfgoed.nl/id/rnce#,canonical
 merged.oak,rnews,http://iptc.org/std/rNews/2011-10-07#,canonical
 merged.oak,RO,http://purl.obolibrary.org/obo/RO_,canonical
-merged.oak,ro,http://purl.org/obo/owl/ro#,prefix_alias
+merged.oak,ro,http://purl.org/wf4ever/ro#,prefix_alias
 merged.oak,roadmap,http://mappings.roadmap.org/,canonical
 merged.oak,roar,https://w3id.org/roar#,canonical
 merged.oak,robotarm,https://solid.ti.rw.fau.de/public/ns/robotArm#,canonical
@@ -3127,6 +3172,7 @@ merged.oak,schoi,https://w3id.org/scholarlydata/ontology/indicators-ontology.owl
 merged.oak,SCHOLIA.RESOURCE,https://bioregistry.io/metaregistry/scholia/,canonical
 merged.oak,scholl,http://menemeneml.com/school#,canonical
 merged.oak,sci,http://data.scientology.org/ns/,canonical
+merged.oak,SCIFLECTION,http://identifiers.org/sciflection/,canonical
 merged.oak,scip,http://lod.taxonconcept.org/ontology/sci_people.owl#,canonical
 merged.oak,sciprov,http://sweetontology.net/reprSciProvenance/,canonical
 merged.oak,scms,http://ns.aksw.org/scms/annotations/,canonical
@@ -3177,6 +3223,7 @@ merged.oak,SEED.COMPOUND,http://identifiers.org/seed.compound/,canonical
 merged.oak,SEED.REACTION,http://identifiers.org/seed.reaction/,canonical
 merged.oak,seeds,http://deductions.github.io/seeds.owl.ttl#,canonical
 merged.oak,sem,http://semanticweb.cs.vu.nl/2009/11/sem/,canonical
+merged.oak,SEMAPV,https://w3id.org/semapv/vocab/,canonical
 merged.oak,semio,http://www.lingvoj.org/semio#,canonical
 merged.oak,semiot,http://w3id.org/semiot/ontologies/semiot#,canonical
 merged.oak,semsur,http://purl.org/SemSur/,canonical
@@ -3201,14 +3248,14 @@ merged.oak,sg,http://name.scigraph.com/ontologies/core/,canonical
 merged.oak,SGD,https://identifiers.org/sgd/,canonical
 merged.oak,SGD,http://identifiers.org/sgd/,prefix_alias
 merged.oak,SGD.PATHWAYS,http://identifiers.org/sgd.pathways/,canonical
-merged.oak,sgfn,http://w3id.org/sparql-generate/fn/,canonical
+merged.oak,sgfn,http://w3id.org/sparql-generate/fn/,namespace_alias
 merged.oak,sgg,http://www.springernature.com/scigraph/graphs/,canonical
 merged.oak,sgiter,http://w3id.org/sparql-generate/iter/,canonical
 merged.oak,SGN,https://identifiers.org/sgn/,canonical
 merged.oak,SGN,http://identifiers.org/sgn/,prefix_alias
 merged.oak,sgv,http://www.w3.org/TR/SVG/,canonical
 merged.oak,sh,http://www.w3.org/ns/shacl#,canonical
-merged.oak,SHACL,http://www.w3.org/ns/shacl#,namespace_alias
+merged.oak,shacl,http://www.w3.org/ns/shacl#,namespace_alias
 merged.oak,SHARKIPEDIA.SPECIES,https://www.sharkipedia.org/species/,canonical
 merged.oak,SHARKIPEDIA.TRAIT,https://www.sharkipedia.org/traits/,canonical
 merged.oak,SHARKIPEDIA.TREND,https://www.sharkipedia.org/trends/,canonical
@@ -3505,6 +3552,7 @@ merged.oak,spacerel,http://data.ordnancesurvey.co.uk/ontology/spatialrelations/,
 merged.oak,span,http://www.ifomis.org/bfo/1.1/span#,canonical
 merged.oak,sparql,http://www.w3.org/ns/sparql#,canonical
 merged.oak,spatial,http://geovocab.org/spatial#,canonical
+merged.oak,spatialf,http://jena.apache.org/function/spatial#,canonical
 merged.oak,spc,http://purl.org/ontomedia/core/space#,canonical
 merged.oak,spcm,http://spi-fm.uca.es/spdef/models/deployment/spcm/1.0#,canonical
 merged.oak,SPD,http://purl.obolibrary.org/obo/SPD_,canonical
@@ -3517,7 +3565,7 @@ merged.oak,spif,http://spinrdf.org/spif#,canonical
 merged.oak,spin,http://spinrdf.org/spin#,canonical
 merged.oak,spl,http://spinrdf.org/spl#,canonical
 merged.oak,SPLASH,http://identifiers.org/splash/,canonical
-merged.oak,sport,http://www.bbc.co.uk/ontologies/sport/,canonical
+merged.oak,sport,http://purl.org/ontology/sport/,canonical
 merged.oak,SPP,http://identifiers.org/spp/,canonical
 merged.oak,spt,http://spitfire-project.eu/ontology/ns/,canonical
 merged.oak,spv,http://completeness.inf.unibz.it/sp-vocab#,canonical
@@ -3540,6 +3588,7 @@ merged.oak,ssno,http://www.w3.org/ns/ssn/,namespace_alias
 merged.oak,ssnx,http://purl.oclc.org/NET/ssnx/ssn#,canonical
 merged.oak,sso,http://nlp2rdf.lod2.eu/schema/sso/,canonical
 merged.oak,ssso,http://purl.org/ontology/ssso#,canonical
+merged.oak,SSSOM,https://w3id.org/sssom/,canonical
 merged.oak,st,http://ns.inria.fr/sparql-template/,canonical
 merged.oak,stac,http://securitytoolbox.appspot.com/stac#,canonical
 merged.oak,stanford,http://purl.org/olia/stanford.owl#,canonical
@@ -3565,12 +3614,14 @@ merged.oak,stream,http://dbpedia.org/ontology/Stream/,canonical
 merged.oak,string,http://www.w3.org/2000/10/swap/string#,canonical
 merged.oak,studiop,http://purl.org/resource/pilatesstudio/,canonical
 merged.oak,stx,http://purl.org/cyber/stix#,canonical
-merged.oak,STY,http://purl.bioontology.org/ontology/STY/,canonical
+merged.oak,STY,https://uts.nlm.nih.gov/uts/umls/semantic-network/,canonical
+merged.oak,sty,http://purl.bioontology.org/ontology/STY/,prefix_alias
 merged.oak,SUBTILIST,http://identifiers.org/subtilist/,canonical
 merged.oak,SUBTIWIKI,http://identifiers.org/subtiwiki/,canonical
 merged.oak,SUGARBIND,http://identifiers.org/sugarbind/,canonical
 merged.oak,summa,http://purl.org/voc/summa/,canonical
 merged.oak,SUPFAM,http://identifiers.org/supfam/,canonical
+merged.oak,sure,http://ns.inria.fr/sure#,canonical
 merged.oak,sv,http://schemas.talis.com/2005/service/schema#,canonical
 merged.oak,svcs,http://rdfs.org/sioc/services#,namespace_alias
 merged.oak,sw,http://linkedwidgets.org/statisticalwidget/ontology/,canonical
@@ -3669,6 +3720,7 @@ merged.oak,theatre,http://purl.org/theatre#,canonical
 merged.oak,theme,http://voc.odw.tw/theme/,canonical
 merged.oak,THERMOFISHER,https://www.thermofisher.com/antibody/product/,canonical
 merged.oak,thors,http://resource.geosciml.org/ontology/timescale/thors#,canonical
+merged.oak,threat,https://cve.mitre.org/,canonical
 merged.oak,thub,http://vocabularis.crai.ub.edu/thub/,canonical
 merged.oak,ti,http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#,canonical
 merged.oak,TIGRFAM,http://identifiers.org/tigrfam/,canonical
@@ -3719,6 +3771,7 @@ merged.oak,tsioc,http://rdfs.org/sioc/types#,namespace_alias
 merged.oak,tsn,http://purl.org/net/tsn#,canonical
 merged.oak,tsnchange,http://purl.org/net/tsnchange#,canonical
 merged.oak,tso,https://w3id.org/tso#,canonical
+merged.oak,tsso,https://scch.org/technical_standards#,canonical
 merged.oak,TTD.DRUG,http://identifiers.org/ttd.drug/,canonical
 merged.oak,TTD.TARGET,http://identifiers.org/ttd.target/,canonical
 merged.oak,ttl,http://www.w3.org/2008/turtle#,canonical
@@ -3949,7 +4002,7 @@ merged.oak,webbox,http://webbox.ecs.soton.ac.uk/ns#,canonical
 merged.oak,WEBELEMENTS,https://www.webelements.com/,canonical
 merged.oak,webservice,http://www.openlinksw.com/ontology/webservices#,canonical
 merged.oak,webtlab,http://webtlab.it.uc3m.es/,canonical
-merged.oak,weki,https://en.wikipedia.org/wiki/,canonical
+merged.oak,weki,https://en.wikipedia.org/wiki/,namespace_alias
 merged.oak,wf,http://www.w3.org/2005/01/wf/flow#,canonical
 merged.oak,wf4ever,http://purl.org/wf4ever/wf4ever#,canonical
 merged.oak,wfdesc,http://purl.org/wf4ever/wfdesc#,canonical
@@ -3972,7 +4025,7 @@ merged.oak,WIKIDATA.PROPERTY,https://www.wikidata.org/wiki/Property:,canonical
 merged.oak,wikim,http://spi-fm.uca.es/spdef/models/genericTools/wikim/1.0#,canonical
 merged.oak,wikimedia,http://upload.wikimedia.org/wikipedia/commons/f/f6/,canonical
 merged.oak,WIKIPATHWAYS,http://identifiers.org/wikipathways/,canonical
-merged.oak,wikipedia,http://wikipedia.no/rdf/,canonical
+merged.oak,wikipedia,https://en.wikipedia.org/wiki/,canonical
 merged.oak,WIKIPEDIA.EN,http://identifiers.org/wikipedia.en/,canonical
 merged.oak,wikterms,http://wiktionary.dbpedia.org/terms/,canonical
 merged.oak,wild,http://purl.org/wild/vocab#,canonical
@@ -3996,6 +4049,7 @@ merged.oak,wordmap,http://purl.org/net/ns/wordmap#,canonical
 merged.oak,wordnet,http://wordnet-rdf.princeton.edu/ontology#,canonical
 merged.oak,WORFDB,http://identifiers.org/worfdb/,canonical
 merged.oak,WORLD2DPAGE,https://world-2dpage.expasy.org/repository/,canonical
+merged.oak,WORLDAVATAR.KIN,http://www.theworldavatar.com/ontology/ontokin/OntoKin.owl#,canonical
 merged.oak,worldbank,http://worldbank.270a.info/dataset/,canonical
 merged.oak,WormBase,http://identifiers.org/wb/,canonical
 merged.oak,WORMPEP,http://identifiers.org/wormpep/,canonical

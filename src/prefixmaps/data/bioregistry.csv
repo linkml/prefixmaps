@@ -34,6 +34,7 @@ bioregistry,aphidbase.transcript,http://identifiers.org/aphidbase.transcript/,ca
 bioregistry,APO,http://purl.obolibrary.org/obo/APO_,canonical
 bioregistry,APOLLO_SV,http://purl.obolibrary.org/obo/APOLLO_SV_,canonical
 bioregistry,arachnoserver,http://identifiers.org/arachnoserver/,canonical
+bioregistry,araport,http://identifiers.org/tair.name/,canonical
 bioregistry,ardb,http://identifiers.org/ardb/,canonical
 bioregistry,ark,http://identifiers.org/ARK/,canonical
 bioregistry,ARO,http://purl.obolibrary.org/obo/ARO_,canonical
@@ -83,6 +84,7 @@ bioregistry,bindingdb,http://identifiers.org/bindingdb/,canonical
 bioregistry,biocarta.pathway,http://identifiers.org/biocarta.pathway/,canonical
 bioregistry,biocatalogue.service,http://identifiers.org/biocatalogue.service/,canonical
 bioregistry,biocyc,http://identifiers.org/biocyc/,canonical
+bioregistry,biofactoid,https://biofactoid.org/document/,canonical
 bioregistry,biogrid,http://identifiers.org/biogrid/,canonical
 bioregistry,biogrid.interaction,https://thebiogrid.org/interaction/,canonical
 bioregistry,biolink,http://identifiers.org/biolink/,canonical
@@ -99,6 +101,7 @@ bioregistry,bioregistry.registry,https://bioregistry.io/metaregistry/,canonical
 bioregistry,bioregistry.schema,https://bioregistry.io/schema/#,canonical
 bioregistry,biorxiv,https://www.biorxiv.org/content/10.1101/,canonical
 bioregistry,biosample,http://identifiers.org/biosample/,canonical
+bioregistry,bioschemas,https://bioschemas.org/profiles/,canonical
 bioregistry,biosimulations,http://identifiers.org/biosimulations/,canonical
 bioregistry,biosimulators,http://identifiers.org/biosimulators/,canonical
 bioregistry,biostudies,http://identifiers.org/biostudies/,canonical
@@ -113,7 +116,6 @@ bioregistry,bitterdb.rec,http://identifiers.org/bitterdb.rec/,canonical
 bioregistry,bko,http://www.sbgnbricks.org/BKO/full/entry/all/BKO:,canonical
 bioregistry,bold.taxonomy,http://identifiers.org/bold.taxonomy/,canonical
 bioregistry,BOOTSTREP,http://purl.obolibrary.org/obo/BOOTSTREP_,canonical
-bioregistry,brenda,http://identifiers.org/brenda/,canonical
 bioregistry,broad,http://identifiers.org/broad/,canonical
 bioregistry,bs,https://biopragmatics.github.io/providers/bs/,canonical
 bioregistry,BSPO,http://purl.obolibrary.org/obo/BSPO_,canonical
@@ -121,7 +123,7 @@ bioregistry,BTO,http://purl.obolibrary.org/obo/BTO_,canonical
 bioregistry,bugbase.expt,http://identifiers.org/bugbase.expt/,canonical
 bioregistry,bugbase.protocol,http://identifiers.org/bugbase.protocol/,canonical
 bioregistry,C4O,http://purl.org/spar/c4o/,canonical
-bioregistry,caloha,https://biopragmatics.github.io/providers/caloha/,canonical
+bioregistry,caloha,https://www.nextprot.org/term/,canonical
 bioregistry,cameo,http://identifiers.org/cameo/,canonical
 bioregistry,caps,http://identifiers.org/caps/,canonical
 bioregistry,CARO,http://purl.obolibrary.org/obo/CARO_,canonical
@@ -171,6 +173,7 @@ bioregistry,civic.vid,http://identifiers.org/civic.vid/,canonical
 bioregistry,CL,http://purl.obolibrary.org/obo/CL_,canonical
 bioregistry,CLAO,http://purl.obolibrary.org/obo/CLAO_,canonical
 bioregistry,classyfire,http://identifiers.org/classyfire/,canonical
+bioregistry,clb,http://identifiers.org/clb/,canonical
 bioregistry,clinicaltrials,http://identifiers.org/clinicaltrials/,canonical
 bioregistry,clinvar,http://identifiers.org/clinvar/,canonical
 bioregistry,clinvar.record,http://identifiers.org/clinvar.record/,canonical
@@ -221,8 +224,8 @@ bioregistry,coconut,https://coconut.naturalproducts.net/compound/coconut_id/,can
 bioregistry,cog,https://www.ncbi.nlm.nih.gov/research/cog/cog/,canonical
 bioregistry,cog.category,https://www.ncbi.nlm.nih.gov/research/cog/cogcategory/,canonical
 bioregistry,cog.pathway,https://www.ncbi.nlm.nih.gov/research/cog/pathway/,canonical
+bioregistry,col,http://identifiers.org/col/,canonical
 bioregistry,COLAO,http://purl.obolibrary.org/obo/COLAO_,canonical
-bioregistry,combine.specifications,http://identifiers.org/combine.specifications/,canonical
 bioregistry,commoncoreontology,http://www.ontologyrepository.com/CommonCoreOntologies/,canonical
 bioregistry,complexportal,http://identifiers.org/complexportal/,canonical
 bioregistry,comptox,http://identifiers.org/comptox/,canonical
@@ -255,6 +258,7 @@ bioregistry,dandi,http://identifiers.org/dandi/,canonical
 bioregistry,darc,http://identifiers.org/darc/,canonical
 bioregistry,dashr,http://identifiers.org/dashr/,canonical
 bioregistry,DataCite,http://purl.org/spar/datacite/,canonical
+bioregistry,datacommons,https://datacommons.org/browser/,canonical
 bioregistry,datanator.gene,http://identifiers.org/datanator.gene/,canonical
 bioregistry,datanator.metabolite,http://identifiers.org/datanator.metabolite/,canonical
 bioregistry,datanator.reaction,http://identifiers.org/datanator.reaction/,canonical
@@ -355,8 +359,10 @@ bioregistry,EHDAA,http://purl.obolibrary.org/obo/EHDAA_,canonical
 bioregistry,EHDAA2,http://purl.obolibrary.org/obo/EHDAA2_,canonical
 bioregistry,EMAP,http://purl.obolibrary.org/obo/EMAP_,canonical
 bioregistry,EMAPA,http://purl.obolibrary.org/obo/EMAPA_,canonical
+bioregistry,EMAPS,https://www.informatics.jax.org/vocab/gxd/anatomy/EMAPS:,canonical
 bioregistry,emdb,http://identifiers.org/emdb/,canonical
-bioregistry,empiar,https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/,canonical
+bioregistry,emmo.cif,http://emmo.info/emmo/cif-core#,canonical
+bioregistry,empiar,http://identifiers.org/empiar/,canonical
 bioregistry,ena.embl,http://identifiers.org/ena.embl/,canonical
 bioregistry,encode,http://identifiers.org/encode/,canonical
 bioregistry,enm,http://purl.enanomapper.org/onto/ENM_,canonical
@@ -389,6 +395,8 @@ bioregistry,ExO,http://purl.obolibrary.org/obo/ExO_,canonical
 bioregistry,fabio,https://sparontologies.github.io/fabio/current/fabio.html#,canonical
 bioregistry,facebase,http://identifiers.org/facebase/,canonical
 bioregistry,fairsharing,http://identifiers.org/fairsharing/,canonical
+bioregistry,fairsharing.organization,https://fairsharing.org/organisations/,canonical
+bioregistry,fairsharing.user,https://fairsharing.org/users/,canonical
 bioregistry,faldo,http://biohackathon.org/resource/faldo#,canonical
 bioregistry,FAO,http://purl.obolibrary.org/obo/FAO_,canonical
 bioregistry,FBbi,http://purl.obolibrary.org/obo/FBbi_,canonical
@@ -425,6 +433,7 @@ bioregistry,funderregistry,http://identifiers.org/funderregistry/,canonical
 bioregistry,fungidb,http://identifiers.org/fungidb/,canonical
 bioregistry,FYPO,http://purl.obolibrary.org/obo/FYPO_,canonical
 bioregistry,ga4ghdos,http://identifiers.org/ga4ghdos/,canonical
+bioregistry,gainesville.core,http://purl.org/gc/,canonical
 bioregistry,galen,http://www.co-ode.org/ontologies/galen#,canonical
 bioregistry,gateway,http://identifiers.org/gateway/,canonical
 bioregistry,GAZ,http://purl.obolibrary.org/obo/GAZ_,canonical
@@ -465,8 +474,10 @@ bioregistry,gmd.gcms,http://identifiers.org/gmd.gcms/,canonical
 bioregistry,gmd.profile,http://identifiers.org/gmd.profile/,canonical
 bioregistry,gmd.ref,http://identifiers.org/gmd.ref/,canonical
 bioregistry,GNO,http://purl.obolibrary.org/obo/GNO_,canonical
+bioregistry,gnomad,https://gnomad.broadinstitute.org/variant/,canonical
 bioregistry,gnpis,http://identifiers.org/gnpis/,canonical
 bioregistry,GO,http://purl.obolibrary.org/obo/GO_,canonical
+bioregistry,go.gpi,http://geneontology.org/docs/gene-product-information-gpi-format/#,canonical
 bioregistry,go.model,http://noctua.geneontology.org/editor/graph/gomodel:,canonical
 bioregistry,go.ref,http://identifiers.org/GO_REF/,canonical
 bioregistry,go.resource,https://bioregistry.io/metaregistry/go/,canonical
@@ -513,9 +524,13 @@ bioregistry,hinv.locus,http://identifiers.org/hinv.locus/,canonical
 bioregistry,hinv.protein,http://identifiers.org/hinv.protein/,canonical
 bioregistry,hinv.transcript,http://identifiers.org/hinv.transcript/,canonical
 bioregistry,hmdb,http://identifiers.org/hmdb/,canonical
+bioregistry,hms.lincs.antibody,https://lincs.hms.harvard.edu/db/antibodies/,canonical
+bioregistry,hms.lincs.cell,https://lincs.hms.harvard.edu/db/cells/,canonical
 bioregistry,hms.lincs.compound,https://lincs.hms.harvard.edu/db/sm/,canonical
+bioregistry,hms.lincs.dataset,https://lincs.hms.harvard.edu/db/datasets/,canonical
 bioregistry,hog,https://biopragmatics.github.io/providers/hog/,canonical
 bioregistry,hogenom,http://identifiers.org/hogenom/,canonical
+bioregistry,hoip,http://purl.bioontology.org/ontology/HOIP/HOIP_,canonical
 bioregistry,HOM,http://purl.obolibrary.org/obo/HOM_,canonical
 bioregistry,homd.seq,http://identifiers.org/homd.seq/,canonical
 bioregistry,homd.taxon,http://identifiers.org/homd.taxon/,canonical
@@ -574,11 +589,13 @@ bioregistry,intact,http://identifiers.org/intact/,canonical
 bioregistry,intact.molecule,http://identifiers.org/intact.molecule/,canonical
 bioregistry,interlex,http://identifiers.org/ilx/,canonical
 bioregistry,interpro,http://purl.obolibrary.org/obo/IPR_,canonical
+bioregistry,iobc,http://purl.jp/bio/4/id/,canonical
 bioregistry,ird.segment,http://identifiers.org/ird.segment/,canonical
 bioregistry,irefweb,http://identifiers.org/irefweb/,canonical
 bioregistry,isbn,http://identifiers.org/isbn/,canonical
 bioregistry,isfinder,http://identifiers.org/isfinder/,canonical
 bioregistry,isni,http://identifiers.org/isni/,canonical
+bioregistry,iso15926,http://standards.iso.org/iso/15926/part14/,canonical
 bioregistry,issn,http://identifiers.org/issn/,canonical
 bioregistry,ito,http://identifiers.org/ito/,canonical
 bioregistry,iuphar.family,http://identifiers.org/iuphar.family/,canonical
@@ -635,6 +652,7 @@ bioregistry,medgen,http://identifiers.org/medgen/,canonical
 bioregistry,merops.entry,http://identifiers.org/merops.inhibitor/,canonical
 bioregistry,merops.family,http://identifiers.org/merops.family/,canonical
 bioregistry,mesh,http://identifiers.org/mesh/,canonical
+bioregistry,mesh.vocab,http://id.nlm.nih.gov/mesh/vocab#,canonical
 bioregistry,metabolights,http://identifiers.org/metabolights/,canonical
 bioregistry,metacyc.compound,http://identifiers.org/metacyc.compound/,canonical
 bioregistry,metacyc.reaction,http://identifiers.org/metacyc.reaction/,canonical
@@ -675,6 +693,7 @@ bioregistry,MIRNAO,http://purl.obolibrary.org/obo/MIRNAO_,canonical
 bioregistry,mirnest,http://identifiers.org/mirnest/,canonical
 bioregistry,MIRO,http://purl.obolibrary.org/obo/MIRO_,canonical
 bioregistry,mirtarbase,http://identifiers.org/mirtarbase/,canonical
+bioregistry,mixs,https://w3id.org/mixs/,canonical
 bioregistry,mlc,http://identifiers.org/mlc/,canonical
 bioregistry,mmdb,http://identifiers.org/mmdb/,canonical
 bioregistry,MMO,http://purl.obolibrary.org/obo/MMO_,canonical
@@ -772,11 +791,12 @@ bioregistry,noncodev4.gene,http://identifiers.org/noncodev4.gene/,canonical
 bioregistry,noncodev4.rna,http://identifiers.org/noncodev4.rna/,canonical
 bioregistry,norine,http://identifiers.org/norine/,canonical
 bioregistry,novus,https://www.novusbio.com/products/,canonical
-bioregistry,nuclearbd,http://identifiers.org/nuclearbd/,canonical
+bioregistry,nucleardb,http://identifiers.org/nuclearbd/,canonical
 bioregistry,oa,http://www.w3.org/ns/oa#,canonical
 bioregistry,OAE,http://purl.obolibrary.org/obo/OAE_,canonical
 bioregistry,OARCS,http://purl.obolibrary.org/obo/OARCS_,canonical
 bioregistry,OBA,http://purl.obolibrary.org/obo/OBA_,canonical
+bioregistry,oban,http://purl.org/oban/,canonical
 bioregistry,OBCS,http://purl.obolibrary.org/obo/OBCS_,canonical
 bioregistry,OBI,http://purl.obolibrary.org/obo/OBI_,canonical
 bioregistry,OBIB,http://purl.obolibrary.org/obo/OBIB_,canonical
@@ -801,6 +821,7 @@ bioregistry,om,http://www.ontology-of-units-of-measure.org/resource/om-2/,canoni
 bioregistry,oma.grp,http://identifiers.org/oma.grp/,canonical
 bioregistry,oma.hog,http://identifiers.org/OMA.HOG/,canonical
 bioregistry,oma.protein,http://identifiers.org/oma.protein/,canonical
+bioregistry,omia,http://identifiers.org/omia/,canonical
 bioregistry,OMIABIS,http://purl.obolibrary.org/obo/OMIABIS_,canonical
 bioregistry,omim,http://identifiers.org/mim/,canonical
 bioregistry,OMIT,http://purl.obolibrary.org/obo/OMIT_,canonical
@@ -836,6 +857,7 @@ bioregistry,oslc,http://open-services.net/ns/core#,canonical
 bioregistry,otl,http://identifiers.org/otl/,canonical
 bioregistry,OVAE,http://purl.obolibrary.org/obo/OVAE_,canonical
 bioregistry,owl,http://www.w3.org/2002/07/owl#,canonical
+bioregistry,owlstar,http://w3id.org/owlstar/,canonical
 bioregistry,paleodb,http://identifiers.org/paleodb/,canonical
 bioregistry,panther.family,http://identifiers.org/panther.family/,canonical
 bioregistry,panther.node,http://identifiers.org/panther.node/,canonical
@@ -931,6 +953,7 @@ bioregistry,pubchem.cell,https://pubchem.ncbi.nlm.nih.gov/cell/,canonical
 bioregistry,pubchem.compound,http://identifiers.org/pubchem.compound/,canonical
 bioregistry,pubchem.element,https://pubchem.ncbi.nlm.nih.gov/element/,canonical
 bioregistry,pubchem.substance,http://identifiers.org/pubchem.substance/,canonical
+bioregistry,publons.publication,https://publons.com/publon/,canonical
 bioregistry,publons.researcher,https://publons.com/researcher/,canonical
 bioregistry,pubmed,http://identifiers.org/pubmed/,canonical
 bioregistry,PuRO,http://purl.org/spar/pro/,canonical
@@ -992,6 +1015,7 @@ bioregistry,SCDO,http://purl.obolibrary.org/obo/SCDO_,canonical
 bioregistry,schem,https://biopragmatics.github.io/providers/schem/,canonical
 bioregistry,schema,https://schema.org/,canonical
 bioregistry,scholia.resource,https://bioregistry.io/metaregistry/scholia/,canonical
+bioregistry,sciflection,http://identifiers.org/sciflection/,canonical
 bioregistry,scomp,https://biopragmatics.github.io/providers/scomp/,canonical
 bioregistry,scop,http://identifiers.org/scop/,canonical
 bioregistry,SCoRO,http://purl.org/spar/scoro/,canonical
@@ -1005,13 +1029,14 @@ bioregistry,sedml.language,http://identifiers.org/sedml.language/,canonical
 bioregistry,seed,http://identifiers.org/seed/,canonical
 bioregistry,seed.compound,http://identifiers.org/seed.compound/,canonical
 bioregistry,seed.reaction,http://identifiers.org/seed.reaction/,canonical
+bioregistry,semapv,https://w3id.org/semapv/vocab/,canonical
 bioregistry,SEP,http://purl.obolibrary.org/obo/SEP_,canonical
 bioregistry,SEPIO,http://purl.obolibrary.org/obo/SEPIO_,canonical
 bioregistry,sfam,https://biopragmatics.github.io/providers/sfam/,canonical
 bioregistry,sgd,http://identifiers.org/sgd/,canonical
 bioregistry,sgd.pathways,http://identifiers.org/sgd.pathways/,canonical
 bioregistry,sgn,http://identifiers.org/sgn/,canonical
-bioregistry,shacl,http://www.w3.org/ns/shacl#,canonical
+bioregistry,sh,http://www.w3.org/ns/shacl#,canonical
 bioregistry,sharkipedia.species,https://www.sharkipedia.org/species/,canonical
 bioregistry,sharkipedia.trait,https://www.sharkipedia.org/traits/,canonical
 bioregistry,sharkipedia.trend,https://www.sharkipedia.org/trends/,canonical
@@ -1041,11 +1066,12 @@ bioregistry,spp,http://identifiers.org/spp/,canonical
 bioregistry,srao,http://www.fairsharing.org/ontology/subject/SRAO_,canonical
 bioregistry,ssbd.dataset,https://ssbd.riken.jp/database/dataset/,canonical
 bioregistry,ssbd.project,https://ssbd.riken.jp/database/project/,canonical
+bioregistry,sssom,https://w3id.org/sssom/,canonical
 bioregistry,stap,http://identifiers.org/stap/,canonical
 bioregistry,STATO,http://purl.obolibrary.org/obo/STATO_,canonical
 bioregistry,stitch,http://identifiers.org/stitch/,canonical
 bioregistry,storedb,http://identifiers.org/STOREDB/,canonical
-bioregistry,sty,http://purl.bioontology.org/ontology/STY/,canonical
+bioregistry,sty,https://uts.nlm.nih.gov/uts/umls/semantic-network/,canonical
 bioregistry,subtilist,http://identifiers.org/subtilist/,canonical
 bioregistry,subtiwiki,http://identifiers.org/subtiwiki/,canonical
 bioregistry,sugarbind,http://identifiers.org/sugarbind/,canonical
@@ -1058,6 +1084,7 @@ bioregistry,SWO,http://purl.obolibrary.org/obo/SWO_,canonical
 bioregistry,swrl,http://www.w3.org/2003/11/swrl#,canonical
 bioregistry,SYMP,http://purl.obolibrary.org/obo/SYMP_,canonical
 bioregistry,t3db,http://identifiers.org/t3db/,canonical
+bioregistry,T4FS,http://purl.obolibrary.org/obo/T4FS_,canonical
 bioregistry,TADS,http://purl.obolibrary.org/obo/TADS_,canonical
 bioregistry,TAHE,http://purl.obolibrary.org/obo/TAHE_,canonical
 bioregistry,TAHH,http://purl.obolibrary.org/obo/TAHH_,canonical
@@ -1163,6 +1190,7 @@ bioregistry,wikipathways,http://identifiers.org/wikipathways/,canonical
 bioregistry,wikipedia.en,http://identifiers.org/wikipedia.en/,canonical
 bioregistry,worfdb,http://identifiers.org/worfdb/,canonical
 bioregistry,world2dpage,https://world-2dpage.expasy.org/repository/,canonical
+bioregistry,worldavatar.kin,http://www.theworldavatar.com/ontology/ontokin/OntoKin.owl#,canonical
 bioregistry,WormBase,http://identifiers.org/wb/,canonical
 bioregistry,wormpep,http://identifiers.org/wormpep/,canonical
 bioregistry,worms,http://identifiers.org/worms/,canonical
