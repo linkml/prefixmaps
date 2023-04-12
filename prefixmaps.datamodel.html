@@ -131,6 +131,17 @@ UNLESS preferred=True</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.as_converter">
+<span class="sig-name descname"><span class="pre">as_converter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.as_converter" title="Permalink to this definition"></a></dt>
+<dd><p>Get a converter from this prefix map.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Converter</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.as_dict">
 <span class="sig-name descname"><span class="pre">as_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.as_dict" title="Permalink to this definition"></a></dt>
 <dd><p>Returns a mapping between canonical prefixes and expansions.</p>
@@ -149,10 +160,10 @@ in the header of RDF syntax documents.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.as_extended_prefix_map">
 <span class="sig-name descname"><span class="pre">as_extended_prefix_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.as_extended_prefix_map" title="Permalink to this definition"></a></dt>
-<dd><p>Return an extended prfix, appropriate for generating a <code class="xref py py-class docutils literal notranslate"><span class="pre">curies.Converter</span></code>.</p>
+<dd><p>Return an extended prefix, appropriate for generating a <code class="xref py py-class docutils literal notranslate"><span class="pre">curies.Converter</span></code>.</p>
 <p>An extended prefix map is a collection of dictionaries, each of which has the following
 fields:
-:rtype: <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">RecordDict</span></code>]</p>
+:rtype: <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Record</span></code>]</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">prefix</span></code> - the canonical prefix</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">uri_prefix</span></code> - the canonical URI prefix (i.e. namespace)</p></li>
