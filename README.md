@@ -12,8 +12,8 @@ This repository and the corresponding library is designed to satisfy the followi
 - no single authoritative source of either prefixes or prefix-namespace mappings (clash-resilient)
 - preferred semantic namespace is prioritized over web URLs
 - authority preferred prefix is prioritized where possible
-- each individual prefixmap is case-insenstive bijective
-- prefixmap composition and custom ordering of prefixmaps
+- each individual prefix map is case-insensitive bijective
+- prefix map composition and custom ordering of prefixmaps
 - lightweight / low footprint
 - fast (TODO)
 - network-independence / versioned prefix maps
@@ -22,11 +22,11 @@ This repository and the corresponding library is designed to satisfy the followi
 What this is NOT intended for:
 
 - a general source of metadata about either prefixes or namespaces
-- a mechansim for resolving identifiers to web URLs for humans to find information
+- a mechanism for resolving identifiers to web URLs for humans to find information
 
 ## Installation
 
-```
+```shell
 pip install prefixmaps
 ```
 
@@ -39,8 +39,7 @@ from prefixmaps.io.parser import load_multi_context
 from curies import Converter
 
 context = load_multi_context(["obo", "bioregistry.upper", "linked_data", "prefixcc"])
-extended_prefix_map = context.as_extended_prefix_map()
-converter = Converter.from_extended_prefix_map(extended_prefix_map)
+converter: Converter = context.as_converter()
 
 >>> converter.expand("CHEBI:1")
 'http://purl.obolibrary.org/obo/CHEBI_1'
@@ -62,8 +61,7 @@ If we prioritize prefix.cc the OBO prefix is ignored:
 
 ```python
 context = load_multi_context(["prefixcc", "obo"])
-extended_prefix_map = context.as_extended_prefix_map()
-converter = Converter.from_extended_prefix_map(extended_prefix_map)
+converter: Converter = context.as_converter()
 
 >>> converter.expand("GEO:1")
 >>> converter.expand("geo:1")
@@ -76,8 +74,7 @@ If we push `bioregistry` at the start of the list then GEOGEO can be used as the
 
 ```python
 context = load_multi_context(["bioregistry", "prefixcc", "obo"])
-extended_prefix_map = context.as_extended_prefix_map()
-converter = Converter.from_extended_prefix_map(extended_prefix_map)
+converter: Converter = context.as_converter()
 
 >>> converter.expand("geo:1")
 'http://identifiers.org/geo/1'
@@ -92,8 +89,7 @@ We get similar results using the upper-normalized variant of `bioregistry`:
 
 ```python
 context = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
-extended_prefix_map = context.as_extended_prefix_map()
-converter = Converter.from_extended_prefix_map(extended_prefix_map)
+converter: Converter = context.as_converter()
 
 >>> converter.expand("GEO:1")
 'http://identifiers.org/geo/1'
@@ -106,8 +102,7 @@ Users of OBO ontologies will want to place OBO at the start of the list:
 
 ```python
 context = load_multi_context(["obo", "bioregistry.upper", "prefixcc"])
-extended_prefix_map = context.as_extended_prefix_map()
-converter = Converter.from_extended_prefix_map(extended_prefix_map)
+converter: Converter = context.as_converter()
 
 >>> converter.expand("geo:1")
 >>> converter.expand("GEO:1")
@@ -123,8 +118,7 @@ You can use the ready-made "merged" prefix set, which prioritizes OBO:
 
 ```python
 context = load_context("merged")
-extended_prefix_map = context.as_extended_prefix_map()
-converter = Converter.from_extended_prefix_map(extended_prefix_map)
+converter: Converter = context.as_converter()
 
 >>> converter.expand("GEOGEO:1")
 >>> converter.expand("GEO:1")
