@@ -11,7 +11,7 @@ prefixes:
   schema: http://schema.org/
   bibo: http://purl.org/ontology/bibo/
   swrl: http://www.w3.org/2003/11/swrl#
-  sh: https://w3id.org/shacl/
+  sh: http://www.w3.org/ns/shacl#
   owl: http://www.w3.org/2002/07/owl#
   qb: http://purl.org/linked-data/cube#
   prov: http://www.w3.org/ns/prov#
@@ -20,3 +20,4 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
   shex: http://www.w3.org/ns/shex#
   biolink: https://w3id.org/biolink/vocab/
+  foaf: http://xmlns.com/foaf/0.1/

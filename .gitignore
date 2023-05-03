@@ -18,3 +18,4 @@ notebooks/api-key.txt
 .venv
 .tox/
 .coverage
+.DS_Store

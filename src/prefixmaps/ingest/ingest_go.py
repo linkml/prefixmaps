@@ -1,3 +1,4 @@
+"""Ingests the GO prefix registry."""
 from typing import TextIO, Union
 
 import requests
@@ -15,7 +16,11 @@ def parse_go_xrefs_from_remote() -> Context:
 
 def parse_go_xrefs(input: Union[str, TextIO]) -> Context:
     """
-    Parse GO db-xrefs.yaml file
+    Parse GO db-xrefs.yaml file.
+
+    Note that most entries in the file are ignored. We only extract the
+    "embedded JSON-LD context" which are those marked rdf_uri_prefix,
+    which indicates the *semantic* expansions used in the triplestore.
 
     :param file:
     :return:
