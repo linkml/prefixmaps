@@ -297,7 +297,7 @@ test = ["coverage", "mock (>=4)", "pytest (>=7)", "pytest-cov", "pytest-mock (>=
 name = "greenlet"
 version = "2.0.1"
 description = "Lightweight in-process concurrent programming"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
 
@@ -1535,7 +1535,7 @@ refresh = ["requests", "bioregistry", "rdflib"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.6"
-content-hash = "0bf86a733f4ed7a6dc0ed56c3f9678857b38378c00c49113706acc2846a2ae66"
+content-hash = "f0210acc4a1e1afc422b00bd3241ea792a8e459d81772360df44dbf4c2bb6d34"
 
 [metadata.files]
 alabaster = [
