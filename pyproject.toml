@@ -5,6 +5,7 @@ description = "A python library for retrieving semantic prefix maps"
 readme = "README.md"
 authors = ["cmungall <cjm@berkeleybop.org>"]
 keywords = ["semantic web", "bioinformatics"]
+license = "Apache-2.0"
 classifiers = [
     "Development Status :: 1 - Planning",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
