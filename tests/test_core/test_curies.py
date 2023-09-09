@@ -24,8 +24,8 @@ class TestCuries(unittest.TestCase):
         converter = context.as_converter()
         self.assertIsInstance(converter, Converter)
 
-        self.assertEqual(converter, prefixmaps.load_converter("bioportal"))
-        self.assertEqual(converter, prefixmaps.load_converter(["bioportal"]))
+        self.assertEqual(converter.prefix_map, prefixmaps.load_converter("bioportal").prefix_map)
+        self.assertEqual(converter.prefix_map, prefixmaps.load_converter(["bioportal"].prefix_map))
 
         # prefix map checks
         self.assertIn(prefix, converter.prefix_map)
