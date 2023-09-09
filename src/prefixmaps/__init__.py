@@ -1,5 +1,5 @@
 from .datamodel.context import Context, PrefixExpansion, StatusType
-from .io.parser import load_context, load_multi_context, load_converter
+from .io.parser import load_context, load_converter, load_multi_context
 
 try:
     from importlib.metadata import version
