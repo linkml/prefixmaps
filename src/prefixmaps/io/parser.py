@@ -1,8 +1,9 @@
 from csv import DictReader
 from pathlib import Path
-from typing import List, TextIO
+from typing import List, TextIO, Union
 
 import yaml
+from curies import Converter
 
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import CONTEXT, Context, PrefixExpansion, StatusType
@@ -10,6 +11,7 @@ from prefixmaps.datamodel.context import CONTEXT, Context, PrefixExpansion, Stat
 __all__ = [
     "load_multi_context",
     "load_context",
+    "load_converter",
 ]
 
 
@@ -21,6 +23,13 @@ def context_path(name: CONTEXT) -> Path:
     :return:
     """
     return data_path / f"{name}.csv"
+
+
+def load_converter(names: Union[CONTEXT, List[CONTEXT]], refresh: bool = False) -> Converter:
+    """Get a converter."""
+    if isinstance(names, str):
+        return load_context(names, refresh=refresh).as_converter()
+    return load_multi_context(names, refresh=refresh).as_converter()
 
 
 def load_multi_context(names: List[CONTEXT], refresh=False) -> Context:
