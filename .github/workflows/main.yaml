@@ -81,12 +81,6 @@ jobs:
         run: poetry install --no-interaction --extras refresh
 
       #----------------------------------------------
-      #              run test suite   
-      #----------------------------------------------
-      - name: Run tests
-        run: poetry run pytest
-
-      #----------------------------------------------
       #              coverage report   
       #----------------------------------------------
       - name: Generate coverage results
