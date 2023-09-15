@@ -35,11 +35,10 @@ pip install prefixmaps
 To use in combination with [curies](https://github.com/cthoyt/curies) library:
 
 ```python
-from prefixmaps.io.parser import load_multi_context
+from prefixmaps import load_converter
 from curies import Converter
 
-context = load_multi_context(["obo", "bioregistry.upper", "linked_data", "prefixcc"])
-converter: Converter = context.as_converter()
+converter: Converter = load_converter(["obo", "bioregistry.upper", "linked_data", "prefixcc"])
 
 >>> converter.expand("CHEBI:1")
 'http://purl.obolibrary.org/obo/CHEBI_1'
@@ -60,21 +59,19 @@ converter: Converter = context.as_converter()
 If we prioritize prefix.cc the OBO prefix is ignored:
 
 ```python
-context = load_multi_context(["prefixcc", "obo"])
-converter: Converter = context.as_converter()
+converter = load_converter(["prefixcc", "obo"])
 
 >>> converter.expand("GEO:1")
 >>> converter.expand("geo:1")
 'http://www.opengis.net/ont/geosparql#1'
 ```
 
-Even though prefix expansion is case sensitive, we intentionally block conflicts that differ only in case.
+Even though prefix expansion is case-sensitive, we intentionally block conflicts that differ only in case.
 
 If we push `bioregistry` at the start of the list then GEOGEO can be used as the prefix for the OBO ontology:
 
 ```python
-context = load_multi_context(["bioregistry", "prefixcc", "obo"])
-converter: Converter = context.as_converter()
+converter = load_converter(["bioregistry", "prefixcc", "obo"])
 
 >>> converter.expand("geo:1")
 'http://identifiers.org/geo/1'
@@ -88,8 +85,7 @@ Note that from the OBO perspective, GEOGEO is non-canonical.
 We get similar results using the upper-normalized variant of `bioregistry`:
 
 ```python
-context = load_multi_context(["bioregistry.upper", "prefixcc", "obo"])
-converter: Converter = context.as_converter()
+converter = load_converter(["bioregistry.upper", "prefixcc", "obo"])
 
 >>> converter.expand("GEO:1")
 'http://identifiers.org/geo/1'
@@ -101,8 +97,7 @@ converter: Converter = context.as_converter()
 Users of OBO ontologies will want to place OBO at the start of the list:
 
 ```python
-context = load_multi_context(["obo", "bioregistry.upper", "prefixcc"])
-converter: Converter = context.as_converter()
+converter = load_converter(["obo", "bioregistry.upper", "prefixcc"])
 
 >>> converter.expand("geo:1")
 >>> converter.expand("GEO:1")
@@ -117,8 +112,7 @@ GEO. This could be added in future with a unique OBO prefix.
 You can use the ready-made "merged" prefix set, which prioritizes OBO:
 
 ```python
-context = load_context("merged")
-converter: Converter = context.as_converter()
+converter = load_converter("merged")
 
 >>> converter.expand("GEOGEO:1")
 >>> converter.expand("GEO:1")
@@ -128,13 +122,13 @@ converter: Converter = context.as_converter()
 
 ### Network independence and requesting latest versions
 
-By default this will make use of metadata distributed alongside the package. This has certain advantages in terms
+By default, this will make use of metadata distributed alongside the package. This has certain advantages in terms
 of reproducibility, but it means if a new ontology or prefix is added to an upstream source you won't see this.
 
 To refresh and use the latest upstream:
 
 ```python
-ctxt = load_context("obo", refresh=True)
+converter = load_converter("obo", refresh=True)
 ```
 
 This will perform a fetch from http://obofoundry.org/registry/obo_prefixes.ttl
