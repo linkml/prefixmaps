@@ -118,6 +118,7 @@ obo,MAO,http://purl.obolibrary.org/obo/MAO_,canonical
 obo,MAT,http://purl.obolibrary.org/obo/MAT_,canonical
 obo,MAXO,http://purl.obolibrary.org/obo/MAXO_,canonical
 obo,MCO,http://purl.obolibrary.org/obo/MCO_,canonical
+obo,MCRO,http://purl.obolibrary.org/obo/MCRO_,canonical
 obo,MF,http://purl.obolibrary.org/obo/MF_,canonical
 obo,MFMO,http://purl.obolibrary.org/obo/MFMO_,canonical
 obo,MFO,http://purl.obolibrary.org/obo/MFO_,canonical
