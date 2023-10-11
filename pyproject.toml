@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "prefixmaps"
-version = "1.6.0"
+version = "0.1.6"
 description = "A python library for retrieving semantic prefix maps"
 readme = "README.md"
 authors = ["cmungall <cjm@berkeleybop.org>"]
