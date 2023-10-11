@@ -1,11 +1,11 @@
 """Classes for managing individual Contexts."""
 
 import re
+import warnings
 from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Mapping, Optional
-import warnings
 
 import curies
 
@@ -295,10 +295,18 @@ class Context:
 
         prefix_synonyms = defaultdict(set)
         for expansion in self.prefix_expansions:
-            if expansion.status == StatusType.namespace_alias and expansion.namespace in reverse_prefix_map:
+            if (
+                expansion.status == StatusType.namespace_alias
+                and expansion.namespace in reverse_prefix_map
+            ):
                 prefix_synonyms[reverse_prefix_map[expansion.namespace]].add(expansion.prefix)
-            elif expansion.status == StatusType.namespace_alias and expansion.namespace not in reverse_prefix_map:
-                warnings.warn(f"Namespace {expansion.namespace} has no canonical prefix")
+            elif (
+                expansion.status == StatusType.namespace_alias
+                and expansion.namespace not in reverse_prefix_map
+            ):
+                warnings.warn(
+                    f"Namespace {expansion.namespace} has no canonical prefix", stacklevel=2
+                )
 
         return [
             curies.Record(
