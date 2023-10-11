@@ -297,7 +297,7 @@ class Context:
             if expansion.status == StatusType.namespace_alias and expansion.namespace in reverse_prefix_map:
                 prefix_synonyms[reverse_prefix_map[expansion.namespace]].add(expansion.prefix)
             elif expansion.status == StatusType.namespace_alias and expansion.namespace not in reverse_prefix_map:
-                raise Warning(f"Namespace {expansion.namespace} has no canonical prefix")
+                warnings.warn(f"Namespace {expansion.namespace} has no canonical prefix")
 
         return [
             curies.Record(
