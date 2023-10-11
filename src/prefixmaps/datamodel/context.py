@@ -5,6 +5,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Mapping, Optional
+import warnings
 
 import curies
 
