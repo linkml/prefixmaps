@@ -1,7 +1,7 @@
 """Classes for managing individual Contexts."""
 
-import re
 import logging
+import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum

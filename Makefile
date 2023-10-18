@@ -10,6 +10,7 @@ etl:
 
 lint-fix:
 	$(RUN) tox -e lint-fix
+	$(RUN) tox -e flake8
 
 
 format: lint-fix
