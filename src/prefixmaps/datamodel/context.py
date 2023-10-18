@@ -28,6 +28,7 @@ NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+
 class StatusType(Enum):
     """
     Classification of prefix expansions.
@@ -307,10 +308,12 @@ class Context:
                 and expansion.namespace not in reverse_prefix_map
             ):
                 # this is too noisy, we need a logger here instead
-                #warnings.warn(
+                # warnings.warn(
                 #    f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace"
-                #)
-                logger.info(f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace")
+                # )
+                logger.info(
+                    f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace"
+                )
 
         return [
             curies.Record(

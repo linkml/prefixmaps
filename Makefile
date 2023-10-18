@@ -8,3 +8,8 @@ test:
 etl:
 	$(RUN) slurp-prefixmaps -d $(DATA)
 
+lint-fix:
+	$(RUN) tox -e lint-fix
+
+
+format: lint-fix
