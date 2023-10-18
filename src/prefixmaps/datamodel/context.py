@@ -1,7 +1,7 @@
 """Classes for managing individual Contexts."""
 
 import re
-import warnings
+import logging
 from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
@@ -25,6 +25,8 @@ INVERSE_PREFIX_EXPANSION_DICT = Mapping[NAMESPACE, PREFIX]
 PREFIX_RE = re.compile(r"^[\w\.]+$")
 NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 class StatusType(Enum):
     """
@@ -304,9 +306,11 @@ class Context:
                 expansion.status == StatusType.namespace_alias
                 and expansion.namespace not in reverse_prefix_map
             ):
-                warnings.warn(
-                    f"Namespace {expansion.namespace} has no canonical prefix", stacklevel=2
-                )
+                # this is too noisy, we need a logger here instead
+                #warnings.warn(
+                #    f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace"
+                #)
+                logger.info(f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace")
 
         return [
             curies.Record(
