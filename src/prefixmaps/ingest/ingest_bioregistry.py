@@ -4,7 +4,7 @@ import logging
 
 from tqdm import tqdm
 
-from prefixmaps.datamodel.context import NAMESPACE_RE, Context
+from prefixmaps.datamodel.context import NAMESPACE_RE, Context, StatusType
 
 # Problematic records, look into later
 SKIP = {"gro"}
@@ -76,5 +76,9 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
             continue
         preferred = record.prefix == bioregistry.get_preferred_prefix(record.prefix)
         context.add_prefix(record.prefix, record.uri_prefix, preferred=preferred)
-        # TODO add synonyms, do in later PR since it will increase diff and complexity of review
+        for s in record.prefix_synonyms:
+            context.add_prefix(s, record.uri_prefix, status = StatusType.prefix_alias, preferred=preferred)
+        # TODO future, add URI prefix synonyms
+        # for s in record.uri_prefix_synonyms:
+        #     context.add_prefix(record.prefix, s, status=StatusType.namespace_alias, preferred=preferred)
     return context
