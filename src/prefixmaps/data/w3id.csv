@@ -292,6 +292,7 @@ w3id,drone,https://w3id.org/drone/,canonical
 w3id,dsa,https://w3id.org/dsa/,canonical
 w3id,dsd,https://w3id.org/dsd/,canonical
 w3id,dso,https://w3id.org/dso/,canonical
+w3id,dspace,https://w3id.org/dspace/,canonical
 w3id,dstv,https://w3id.org/dstv/,canonical
 w3id,dsv-ontology,https://w3id.org/dsv-ontology/,canonical
 w3id,dts,https://w3id.org/dts/,canonical
@@ -351,6 +352,7 @@ w3id,euro-nmd-kpis,https://w3id.org/euro-nmd-kpis/,canonical
 w3id,EUTaxO,https://w3id.org/EUTaxO/,canonical
 w3id,evdoxus,https://w3id.org/evdoxus/,canonical
 w3id,EVENTSKG-Dataset,https://w3id.org/EVENTSKG-Dataset/,canonical
+w3id,everycred,https://w3id.org/everycred/,canonical
 w3id,EVI,https://w3id.org/EVI/,canonical
 w3id,EXACT,https://w3id.org/EXACT/,canonical
 w3id,examode,https://w3id.org/examode/,canonical
@@ -402,6 +404,7 @@ w3id,fog,https://w3id.org/fog/,canonical
 w3id,food,https://w3id.org/food/,canonical
 w3id,foodallergen,https://w3id.org/foodallergen/,canonical
 w3id,foodie,https://w3id.org/foodie/,canonical
+w3id,foodpairing_inspire_kg,https://w3id.org/foodpairing_inspire_kg/,canonical
 w3id,foops,https://w3id.org/foops/,canonical
 w3id,forecasting4eepsa,https://w3id.org/forecasting4eepsa/,canonical
 w3id,fox,https://w3id.org/fox/,canonical
@@ -619,6 +622,7 @@ w3id,media,https://w3id.org/media/,canonical
 w3id,mediatype,https://w3id.org/mediatype/,canonical
 w3id,medred,https://w3id.org/medred/,canonical
 w3id,medtag,https://w3id.org/medtag/,canonical
+w3id,meta,https://w3id.org/meta/,canonical
 w3id,meta-share,https://w3id.org/meta-share/,canonical
 w3id,metadocencia,https://w3id.org/metadocencia/,canonical
 w3id,metamodeling,https://w3id.org/metamodeling/,canonical
@@ -700,7 +704,6 @@ w3id,oac,https://w3id.org/oac/,canonical
 w3id,oak,https://w3id.org/oak/,canonical
 w3id,obda,https://w3id.org/obda/,canonical
 w3id,obelisk,https://w3id.org/obelisk/,canonical
-w3id,obio,https://w3id.org/obio/,canonical
 w3id,obo,https://w3id.org/obo/,canonical
 w3id,obpa,https://w3id.org/obpa/,canonical
 w3id,obpd,https://w3id.org/obpd/,canonical
@@ -716,6 +719,7 @@ w3id,oebDatasets,https://w3id.org/oebDatasets/,canonical
 w3id,oerbase,https://w3id.org/oerbase/,canonical
 w3id,ofo,https://w3id.org/ofo/,canonical
 w3id,oho,https://w3id.org/oho/,canonical
+w3id,okg,https://w3id.org/okg/,canonical
 w3id,okn,https://w3id.org/okn/,canonical
 w3id,olu,https://w3id.org/olu/,canonical
 w3id,omg,https://w3id.org/omg/,canonical

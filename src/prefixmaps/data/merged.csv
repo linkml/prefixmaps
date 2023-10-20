@@ -1514,7 +1514,7 @@ merged,ggbn,http://data.ggbn.org/schemas/ggbn/terms/,canonical
 merged,ghga,http://w3id.org/ghga/,canonical
 merged,GHR,https://medlineplus.gov/genetics/condition/,canonical
 merged,GIARDIADB,http://identifiers.org/giardiadb/,canonical
-merged,gist,https://ontologies.semanticarts.com/o/gistCore#,canonical
+merged,gist,http://ontologies.semanticarts.com/gist/,canonical
 merged,GITHUB,http://identifiers.org/github/,canonical
 merged,GITHUB.ISSUE,https://bioregistry.io/resolve/github/issue/,canonical
 merged,GITHUB.PULL,https://bioregistry.io/resolve/github/pull/,canonical
