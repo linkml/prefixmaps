@@ -4,7 +4,7 @@ import logging
 
 from tqdm import tqdm
 
-from prefixmaps.datamodel.context import NAMESPACE_RE, Context, StatusType
+from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 
 # Problematic records, look into later
 SKIP = {"gro"}
