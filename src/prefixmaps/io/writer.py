@@ -15,17 +15,25 @@ def _key(pe: PrefixExpansion):
     return pe.prefix.casefold(), STATUS_TYPE_ORDER[pe.status]
 
 
-def context_to_file(context: Context, file: TextIO) -> None:
+def context_to_file(context: Context, file: TextIO, *, include_source: bool = False) -> None:
     """
     Writes a context to a file
 
     :param context:
     :param file:
+    :param include_source: If true, include a "source" column. This is useful for
+        writing merged contexts since it says the highest priority simple context
+        from which the row corresponding to a :class:`PrefixExpansion` came.
     :return:
     """
-    writer = DictWriter(file, fieldnames=["context", "prefix", "namespace", "status"])
+    field_names = ["context", "prefix", "namespace", "status"]
+    if include_source:
+        field_names.append("source")
+    writer = DictWriter(file, fieldnames=field_names)
     writer.writeheader()
     for pe in sorted(context.prefix_expansions, key=_key):
         row = vars(pe)
         row["status"] = pe.status.value
+        if not include_source:
+            row.pop("source", None)
         writer.writerow(row)

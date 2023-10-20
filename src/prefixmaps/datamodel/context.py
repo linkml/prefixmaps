@@ -71,6 +71,9 @@ class PrefixExpansion:
     status: StatusType
     """Indicates whether the expansion is canonical, a prefix alias, a namespace alias, or both."""
 
+    source: Optional[str] = None
+    """Indicates the source of the prefix expansion."""
+
     def canonical(self) -> bool:
         """
         True if this is the canonical mapping in both directions.
@@ -153,7 +156,7 @@ class Context:
         :return:
         """
         for pe in context.prefix_expansions:
-            self.add_prefix(pe.prefix, pe.namespace, pe.status)
+            self.add_prefix(pe.prefix, pe.namespace, pe.status, source=context.name)
 
     def add_prefix(
         self,
@@ -161,6 +164,7 @@ class Context:
         namespace: NAMESPACE,
         status: StatusType = StatusType.canonical,
         preferred: bool = False,
+        source: Optional[str] = None,
     ):
         """
         Adds a prefix expansion to this context.
@@ -203,6 +207,7 @@ class Context:
                 prefix=prefix,
                 namespace=namespace,
                 status=status,
+                source=source,
             )
         )
 

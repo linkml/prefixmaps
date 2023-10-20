@@ -90,7 +90,7 @@ def run_etl(output_directory: Union[str, Path]) -> None:
     # Write all contexts
     for name, context in contexts.items():
         with output_directory.joinpath(f"{name}.csv").open("w", encoding="UTF-8") as file:
-            context_to_file(context, file)
+            context_to_file(context, file, include_source=context.name in COMBINED)
 
 
 @click.command
