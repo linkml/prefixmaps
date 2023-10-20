@@ -180,6 +180,9 @@ class Context:
         :param namespace: namespace to be added
         :param status: the status of the prefix being added
         :param preferred:
+        :param source: An optional annotation to be used when merging contexts together.
+            The source will keep track of the original context that a given prefix
+            expansion came from. This is used in :meth:`Context.combine`.
         :return:
         """
         # TODO: check status
