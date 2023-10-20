@@ -711,6 +711,7 @@ prefixcc,environ,http://eulersharp.sourceforge.net/2003/03swap/environment#,cano
 prefixcc,eol,http://purl.org/biodiversity/eol/,canonical
 prefixcc,ep,http://eprints.org/ontology/,namespace_alias
 prefixcc,epcis,https://ns.gs1.org/epcis/,canonical
+prefixcc,epo,http://data.europa.eu/a4g/ontology#,canonical
 prefixcc,eppl,https://w3id.org/ep-plan#,canonical
 prefixcc,epplan,https://w3id.org/ep-plan#,namespace_alias
 prefixcc,eppo,https://gd.eppo.int/taxon/,canonical
@@ -929,7 +930,7 @@ prefixcc,gfo,http://www.onto-med.de/ontologies/gfo.owl#,canonical
 prefixcc,gg,http://www.gemeentegeschiedenis.nl/gg-schema#,canonical
 prefixcc,ggbn,http://data.ggbn.org/schemas/ggbn/terms/,canonical
 prefixcc,ghga,http://w3id.org/ghga/,canonical
-prefixcc,gist,http://ontologies.semanticarts.com/gist#,canonical
+prefixcc,gist,http://ontologies.semanticarts.com/gist/,canonical
 prefixcc,giving,http://ontologi.es/giving#,canonical
 prefixcc,gl,http://schema.geolink.org/,canonical
 prefixcc,gldp,http://www.w3.org/ns/people#,canonical
@@ -1209,7 +1210,7 @@ prefixcc,lda,http://purl.org/linked-data/api/vocab#,namespace_alias
 prefixcc,ldap,http://purl.org/net/ldap/,canonical
 prefixcc,ldc,https://tac.nist.gov/tracks/SM-KBP/2018/ontologies/SeedlingOntology#,canonical
 prefixcc,lden,http://www.linklion.org/lden/,canonical
-prefixcc,ldes,http://w3id.org/ldes#,canonical
+prefixcc,ldes,https://w3id.org/ldes#,canonical
 prefixcc,ldl,https://w3id.org/ldpdl/ns#,canonical
 prefixcc,ldn,https://www.w3.org/TR/ldn/#,canonical
 prefixcc,ldp,http://www.w3.org/ns/ldp#,canonical

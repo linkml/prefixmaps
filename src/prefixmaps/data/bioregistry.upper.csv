@@ -1283,6 +1283,7 @@ bioregistry,VMHGENE,http://identifiers.org/vmhgene/,canonical
 bioregistry,VMHMETABOLITE,http://identifiers.org/vmhmetabolite/,canonical
 bioregistry,VMHREACTION,http://identifiers.org/vmhreaction/,canonical
 bioregistry,VO,http://purl.obolibrary.org/obo/VO_,canonical
+bioregistry,VOC4CAT,https://w3id.org/nfdi4cat/voc4cat_,canonical
 bioregistry,VOID,http://rdfs.org/ns/void#,canonical
 bioregistry,VSAO,http://purl.obolibrary.org/obo/VSAO_,canonical
 bioregistry,VSMO,http://purl.obolibrary.org/obo/VSMO_,canonical
