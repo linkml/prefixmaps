@@ -4,7 +4,6 @@ This serves as "checksums" on the underlying ingested data.
 import unittest
 
 import prefixmaps
-
 from prefixmaps.datamodel.context import StatusType
 from prefixmaps.io.parser import context_from_file, load_context, load_multi_context
 from prefixmaps.io.writer import context_to_file
