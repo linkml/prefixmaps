@@ -4528,9 +4528,7 @@ merged,wbc,http://worldbank.270a.info/classification/,canonical
 merged,WBls,http://purl.obolibrary.org/obo/WBls_,canonical
 merged,wbp,http://worldbank.270a.info/property/,canonical
 merged,WBPhenotype,http://purl.obolibrary.org/obo/WBPhenotype_,canonical
-merged,wd,http://www.wikidata.org/entity/,prefix_alias
-merged,WD,http://identifiers.org/wikidata/,namespace_alias
-merged,WD_ENTITY,http://identifiers.org/wikidata/,namespace_alias
+merged,wd,http://www.wikidata.org/entity/,canonical
 merged,wde,http://www.wikidata.org/entity/,namespace_alias
 merged,wdno,http://www.wikidata.org/prop/novalue/,canonical
 merged,wdr,http://www.w3.org/2007/05/powder#,namespace_alias

@@ -1696,8 +1696,6 @@ bioregistry,WB_REF,http://identifiers.org/wb/,namespace_alias
 bioregistry,WBbt,http://purl.obolibrary.org/obo/WBbt_,canonical
 bioregistry,WBls,http://purl.obolibrary.org/obo/WBls_,canonical
 bioregistry,WBPhenotype,http://purl.obolibrary.org/obo/WBPhenotype_,canonical
-bioregistry,wd,http://identifiers.org/wikidata/,namespace_alias
-bioregistry,WD_Entity,http://identifiers.org/wikidata/,namespace_alias
 bioregistry,webelements,https://www.webelements.com/,canonical
 bioregistry,wgs84,http://www.w3.org/2003/01/geo/wgs84_pos#,canonical
 bioregistry,wikidata,http://identifiers.org/wikidata/,canonical
