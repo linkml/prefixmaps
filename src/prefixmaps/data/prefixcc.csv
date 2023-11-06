@@ -196,6 +196,7 @@ prefixcc,biol,http://purl.org/NET/biol/ns#,canonical
 prefixcc,biolink,https://w3id.org/biolink/vocab/,namespace_alias
 prefixcc,biopax,http://www.biopax.org/release/biopax-level3.owl#,canonical
 prefixcc,biordf,http://purl.org/net/biordfmicroarray/ns#,canonical
+prefixcc,bioschemas,https://bioschemas.org/,canonical
 prefixcc,bioskos,http://eulersharp.sourceforge.net/2003/03swap/bioSKOSSchemes#,canonical
 prefixcc,biotop,http://purl.org/biotop/biotop.owl#,canonical
 prefixcc,biro,http://purl.org/spar/biro/,canonical
@@ -287,6 +288,7 @@ prefixcc,cdtype,http://purl.org/cld/cdtype/,canonical
 prefixcc,centrifuge,http://purl.org/twc/vocab/centrifuge#,canonical
 prefixcc,ceo,https://linkeddata.cultureelerfgoed.nl/def/ceo#,canonical
 prefixcc,ceox,https://linkeddata.cultureelerfgoed.nl/def/ceox#,canonical
+prefixcc,cercabib,https://cercabib.ub.edu/,canonical
 prefixcc,cerealstoo,http://rdf.ag/o/cerealstoo#,canonical
 prefixcc,cerif,http://spi-fm.uca.es/neologism/cerif#,canonical
 prefixcc,cert,http://www.w3.org/ns/auth/cert#,canonical
@@ -773,6 +775,7 @@ prefixcc,evset,http://dsnotify.org/vocab/eventset/0.1/,canonical
 prefixcc,ewg,http://ethoinformatics.org/,canonical
 prefixcc,ex,http://example.org/,canonical
 prefixcc,example,http://www.example.org/rdf#,canonical
+prefixcc,exekg,https://raw.githubusercontent.com/nsai-uio/ExeKGOntology/main/ds_exeKGOntology.ttl#,canonical
 prefixcc,exif,http://www.w3.org/2003/12/exif/ns#,canonical
 prefixcc,exo,https://w3id.org/example#,canonical
 prefixcc,experts,http://emmo.info/emmo/application/maeo/experts#,canonical
@@ -1407,6 +1410,7 @@ prefixcc,mi,http://www.marineinfo.org/ns/ontology#,canonical
 prefixcc,mibc,http://marineinfo.org/ns/library/bibcodes#,canonical
 prefixcc,mibt,https://marineinfo.org/ns/library/bibtypes#,canonical
 prefixcc,mico,http://www.mico-project.eu/ns/platform/1.0/schema#,canonical
+prefixcc,mifesto,https://w3id.org/mifesto#,canonical
 prefixcc,mil,http://rdf.muninn-project.org/ontologies/military#,canonical
 prefixcc,mime,https://www.iana.org/assignments/media-types/,canonical
 prefixcc,mindat,https://www.mindat.org/,canonical
@@ -1489,8 +1493,8 @@ prefixcc,ncal,http://www.semanticdesktop.org/ontologies/2007/04/02/ncal#,canonic
 prefixcc,ncbi,https://www.ncbi.nlm.nih.gov/,canonical
 prefixcc,ncbigene,http://identifiers.org/ncbigene/,canonical
 prefixcc,ncbitaxon,http://purl.org/obo/owl/NCBITaxon#,canonical
-prefixcc,ncicp,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,namespace_alias
-prefixcc,ncit,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,canonical
+prefixcc,ncicp,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,canonical
+prefixcc,ncit,https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=,canonical
 prefixcc,nco,http://www.semanticdesktop.org/ontologies/2007/03/22/nco#,canonical
 prefixcc,ndl,http://schemas.ogf.org/nml/2013/05/base#,canonical
 prefixcc,ndnp,http://chroniclingamerica.loc.gov/terms#,canonical
@@ -1779,6 +1783,7 @@ prefixcc,pattern,http://www.essepuntato.it/2008/12/pattern#,canonical
 prefixcc,pav,http://purl.org/pav/,canonical
 prefixcc,pay,http://reference.data.gov.uk/def/payment#,namespace_alias
 prefixcc,payment,http://reference.data.gov.uk/def/payment#,canonical
+prefixcc,pbac,https://w3id.org/pbac#,canonical
 prefixcc,pbo,http://purl.org/ontology/pbo/core#,canonical
 prefixcc,pbody,http://reference.data.gov.uk/def/public-body/,canonical
 prefixcc,pc,http://purl.org/procurement/public-contracts#,canonical
@@ -1955,6 +1960,7 @@ prefixcc,qud,http://qudt.org/1.1/schema/qudt#,canonical
 prefixcc,qudt,http://qudt.org/schema/qudt/,canonical
 prefixcc,quest,https://rb.gy/ntg7l/,canonical
 prefixcc,quid,https://w3id.org/quid/,canonical
+prefixcc,quit,http://quit.aksw.org/vocab/,canonical
 prefixcc,quran,http://khalidaloufi.sa/quran#,canonical
 prefixcc,quty,http://www.telegraphis.net/ontology/measurement/quantity#,canonical
 prefixcc,qvoc,http://mlode.nlp2rdf.org/quranvocab#,canonical
@@ -2259,6 +2265,7 @@ prefixcc,security,http://securitytoolbox.appspot.com/securityMain#,canonical
 prefixcc,sede,http://eventography.org/sede/0.1/,canonical
 prefixcc,seeds,http://deductions.github.io/seeds.owl.ttl#,canonical
 prefixcc,sem,http://semanticweb.cs.vu.nl/2009/11/sem/,canonical
+prefixcc,semapv,https://w3id.org/semapv/vocab/,canonical
 prefixcc,semio,http://www.lingvoj.org/semio#,canonical
 prefixcc,semiot,http://w3id.org/semiot/ontologies/semiot#,canonical
 prefixcc,semsur,http://purl.org/SemSur/,canonical
@@ -2601,6 +2608,7 @@ prefixcc,states,http://www.w3.org/2005/07/aaa#,canonical
 prefixcc,static,http://vocab-ld.org/vocab/static-ld#,canonical
 prefixcc,stats,http://purl.org/rdfstats/stats#,canonical
 prefixcc,status,http://www.w3.org/2003/06/sw-vocab-status/ns#,namespace_alias
+prefixcc,stax,https://w3id.org/stax/ontology#,canonical
 prefixcc,steel,http://ontorule-project.eu/resources/steel-30#,canonical
 prefixcc,stencila,http://schema.stenci.la/,canonical
 prefixcc,step,http://purl.org/net/step#,canonical
@@ -2937,6 +2945,7 @@ prefixcc,wotc,http://purl.org/wot-catalogue#,canonical
 prefixcc,wotsec,https://www.w3.org/2019/wot/security#,canonical
 prefixcc,wp,http://vocabularies.wikipathways.org/wp#,canonical
 prefixcc,wro,http://purl.org/net/wf4ever/ro#,canonical
+prefixcc,wrroc,https://w3id.org/ro/terms/workflow-run#,canonical
 prefixcc,ws,http://www.w3.org/ns/pim/space#,namespace_alias
 prefixcc,wsc,http://www.openk.org/wscaim.owl#,canonical
 prefixcc,wscaim,http://www.openk.org/wscaim.owl#,namespace_alias

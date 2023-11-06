@@ -68,10 +68,10 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         "ols",
         "n2t",
     ]
-    records = bioregistry.get_extended_prefix_map(
+    converter = bioregistry.get_converter(
         uri_prefix_priority=priority, prefix_priority=prefix_priority
     )
-    for record in tqdm(records):
+    for record in tqdm(converter.records):
         if record.prefix in SKIP:
             continue
         if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):

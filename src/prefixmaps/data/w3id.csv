@@ -139,6 +139,7 @@ w3id,cerrotti,https://w3id.org/cerrotti/,canonical
 w3id,certainty_nanopubs,https://w3id.org/certainty_nanopubs/,canonical
 w3id,cevo,https://w3id.org/cevo/,canonical
 w3id,chainpoint,https://w3id.org/chainpoint/,canonical
+w3id,chalkgrp,https://w3id.org/chalkgrp/,canonical
 w3id,character-computing,https://w3id.org/character-computing/,canonical
 w3id,charity-organization,https://w3id.org/charity-organization/,canonical
 w3id,charta77,https://w3id.org/charta77/,canonical
@@ -161,6 +162,7 @@ w3id,cld,https://w3id.org/cld/,canonical
 w3id,clinga,https://w3id.org/clinga/,canonical
 w3id,clipc,https://w3id.org/clipc/,canonical
 w3id,clodg,https://w3id.org/clodg/,canonical
+w3id,CMECS,https://w3id.org/CMECS/,canonical
 w3id,cmip6dr,https://w3id.org/cmip6dr/,canonical
 w3id,cntf,https://w3id.org/cntf/,canonical
 w3id,cocoon,https://w3id.org/cocoon/,canonical
@@ -312,6 +314,7 @@ w3id,ecodigit,https://w3id.org/ecodigit/,canonical
 w3id,ecsel-dr,https://w3id.org/ecsel-dr/,canonical
 w3id,ecsel-dr-prc-PMV,https://w3id.org/ecsel-dr-prc-PMV/,canonical
 w3id,ecsel-dr-sn-SSP,https://w3id.org/ecsel-dr-sn-SSP/,canonical
+w3id,EDH_Ctagged,https://w3id.org/EDH_Ctagged/,canonical
 w3id,edu-sharing,https://w3id.org/edu-sharing/,canonical
 w3id,education,https://w3id.org/education/,canonical
 w3id,edukg,https://w3id.org/edukg/,canonical
@@ -631,6 +634,7 @@ w3id,mgkb,https://w3id.org/mgkb/,canonical
 w3id,mica,https://w3id.org/mica/,canonical
 w3id,midas-catalog,https://w3id.org/midas-catalog/,canonical
 w3id,midas-metadata,https://w3id.org/midas-metadata/,canonical
+w3id,mifesto,https://w3id.org/mifesto/,canonical
 w3id,minerva,https://w3id.org/minerva/,canonical
 w3id,mint,https://w3id.org/mint/,canonical
 w3id,minte,https://w3id.org/minte/,canonical
@@ -787,10 +791,12 @@ w3id,paradise,https://w3id.org/paradise/,canonical
 w3id,patent_ontologies,https://w3id.org/patent_ontologies/,canonical
 w3id,payments,https://w3id.org/payments/,canonical
 w3id,payswarm,https://w3id.org/payswarm/,canonical
+w3id,pbac,https://w3id.org/pbac/,canonical
 w3id,pbs,https://w3id.org/pbs/,canonical
 w3id,pc,https://w3id.org/pc/,canonical
 w3id,peco,https://w3id.org/peco/,canonical
 w3id,pedigree,https://w3id.org/pedigree/,canonical
+w3id,peh,https://w3id.org/peh/,canonical
 w3id,people,https://w3id.org/people/,canonical
 w3id,pep,https://w3id.org/pep/,canonical
 w3id,per,https://w3id.org/per/,canonical
@@ -834,6 +840,7 @@ w3id,qb4solap,https://w3id.org/qb4solap/,canonical
 w3id,quality,https://w3id.org/quality/,canonical
 w3id,qudt,https://w3id.org/qudt/,canonical
 w3id,quid,https://w3id.org/quid/,canonical
+w3id,r74n,https://w3id.org/r74n/,canonical
 w3id,rai,https://w3id.org/rai/,canonical
 w3id,rail,https://w3id.org/rail/,canonical
 w3id,rains,https://w3id.org/rains/,canonical
@@ -929,6 +936,7 @@ w3id,seneca,https://w3id.org/seneca/,canonical
 w3id,sense,https://w3id.org/sense/,canonical
 w3id,sentitrack,https://w3id.org/sentitrack/,canonical
 w3id,seo,https://w3id.org/seo/,canonical
+w3id,seovoc,https://w3id.org/seovoc/,canonical
 w3id,sepses,https://w3id.org/sepses/,canonical
 w3id,serdif,https://w3id.org/serdif/,canonical
 w3id,sfs-ontology,https://w3id.org/sfs-ontology/,canonical
@@ -975,6 +983,7 @@ w3id,SpOTy,https://w3id.org/SpOTy/,canonical
 w3id,sqo,https://w3id.org/sqo/,canonical
 w3id,squap,https://w3id.org/squap/,canonical
 w3id,squirrel,https://w3id.org/squirrel/,canonical
+w3id,sri,https://w3id.org/sri/,canonical
 w3id,sri-lanka,https://w3id.org/sri-lanka/,canonical
 w3id,srmo,https://w3id.org/srmo/,canonical
 w3id,srr,https://w3id.org/srr/,canonical
@@ -984,6 +993,7 @@ w3id,sssom,https://w3id.org/sssom/,canonical
 w3id,stahl,https://w3id.org/stahl/,canonical
 w3id,stargate-h2020,https://w3id.org/stargate-h2020/,canonical
 w3id,stav,https://w3id.org/stav/,canonical
+w3id,stax,https://w3id.org/stax/,canonical
 w3id,steel,https://w3id.org/steel/,canonical
 w3id,stirdata,https://w3id.org/stirdata/,canonical
 w3id,stlab,https://w3id.org/stlab/,canonical
@@ -1033,6 +1043,7 @@ w3id,tso,https://w3id.org/tso/,canonical
 w3id,tsso,https://w3id.org/tsso/,canonical
 w3id,ttla,https://w3id.org/ttla/,canonical
 w3id,TTRpg,https://w3id.org/TTRpg/,canonical
+w3id,tvstationjp,https://w3id.org/tvstationjp/,canonical
 w3id,twins,https://w3id.org/twins/,canonical
 w3id,uco,https://w3id.org/uco/,canonical
 w3id,ufo,https://w3id.org/ufo/,canonical
