@@ -9,6 +9,9 @@ from prefixmaps.datamodel.context import NAMESPACE_RE, Context
 # Problematic records, look into later
 SKIP = {"gro"}
 
+#: Problematic synonym records cause the issue in https://github.com/linkml/prefixmaps/issues/50
+PROBLEMATIC_CURIE_PREFIX_SYNONYMS_RECORDS = {"wikidata"}
+
 
 def from_bioregistry_upper(**kwargs) -> Context:
     """
@@ -76,5 +79,10 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
             continue
         preferred = record.prefix == bioregistry.get_preferred_prefix(record.prefix)
         context.add_prefix(record.prefix, record.uri_prefix, preferred=preferred)
-        # TODO add synonyms, do in later PR since it will increase diff and complexity of review
+        if record.prefix not in PROBLEMATIC_CURIE_PREFIX_SYNONYMS_RECORDS:
+            for s in record.prefix_synonyms:
+                context.add_prefix(s, record.uri_prefix, preferred=preferred)
+        # TODO future, add URI prefix synonyms
+        # for s in record.uri_prefix_synonyms:
+        #     context.add_prefix(record.prefix, s, status=StatusType.namespace_alias, preferred=preferred)
     return context
