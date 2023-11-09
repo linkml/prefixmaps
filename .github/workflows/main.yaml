@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [ "3.11", "3.8" ]
+        python-version: [ "3.12", "3.11", "3.8" ]
 
     steps:
 
