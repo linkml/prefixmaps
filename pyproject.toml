@@ -36,9 +36,6 @@ bioregistry = {version = "^0.10.0", extras = ["refresh"]}
 rdflib = {version = "^6.2.0", extras = ["refresh"]}
 curies = ">=0.5.3"
 tox = "^4.11.3"
-# this forces tox to use pydantic ^1 instead of installing pydantic 2 as part of its "refresh" environment.
-# bioregistry is still at pydantic 1.0, so this is necessary to avoid refresh failure.
-pydantic = "^1.8.2"
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.2"
