@@ -149,13 +149,16 @@
 <span id="prefixmaps-io-writer-module"></span><h2>prefixmaps.io.writer module<a class="headerlink" href="#module-prefixmaps.io.writer" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="prefixmaps.io.writer.context_to_file">
-<span class="sig-prename descclassname"><span class="pre">prefixmaps.io.writer.</span></span><span class="sig-name descname"><span class="pre">context_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.io.writer.context_to_file" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.io.writer.</span></span><span class="sig-name descname"><span class="pre">context_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_expansion_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.io.writer.context_to_file" title="Link to this definition"></a></dt>
 <dd><p>Writes a context to a file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>context</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></span>) – </p></li>
 <li><p><strong>file</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextIO</span></code></span>) – </p></li>
+<li><p><strong>include_expansion_source</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – If true, include a “source” column. This is useful for
+writing merged contexts since it says the highest priority simple context
+from which the row corresponding to a <code class="xref py py-class docutils literal notranslate"><span class="pre">PrefixExpansion</span></code> came.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>

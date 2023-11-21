@@ -135,6 +135,7 @@
 <li class="toctree-l3"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.canonical"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.canonical()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.context"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.context</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.expansion_source"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.expansion_source</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.namespace"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.namespace</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.prefix"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.prefix</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.PrefixExpansion.status"><code class="docutils literal notranslate"><span class="pre">PrefixExpansion.status</span></code></a></li>
@@ -230,7 +231,7 @@
 <p>However, there is no guarantee that a context is consistent with other contexts.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.Context.add_prefix">
-<span class="sig-name descname"><span class="pre">add_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StatusType.canonical</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preferred</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.add_prefix" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StatusType.canonical</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preferred</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expansion_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.Context.add_prefix" title="Link to this definition"></a></dt>
 <dd><p>Adds a prefix expansion to this context.</p>
 <p>The current context stays canonical. Additional prefixes
 added may be classified as non-canonical.</p>
@@ -244,6 +245,9 @@ UNLESS preferred=True</p>
 <li><p><strong>namespace</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – namespace to be added</p></li>
 <li><p><strong>status</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.StatusType" title="prefixmaps.datamodel.context.StatusType"><code class="xref py py-class docutils literal notranslate"><span class="pre">StatusType</span></code></a></span>) – the status of the prefix being added</p></li>
 <li><p><strong>preferred</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – </p></li>
+<li><p><strong>expansion_source</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – An optional annotation to be used when merging contexts together.
+The source will keep track of the original context that a given prefix
+expansion came from. This is used in <a class="reference internal" href="#prefixmaps.Context.combine" title="prefixmaps.Context.combine"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Context.combine()</span></code></a>.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -452,7 +456,7 @@ and the merged expansions are marked as non-canonical</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="prefixmaps.PrefixExpansion">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">PrefixExpansion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.PrefixExpansion" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">PrefixExpansion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expansion_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.PrefixExpansion" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>An individual mapping between a prefix and a namespace.</p>
 <p>A PrefixExpansion corresponds to a SHACL PrefixDeclaration (<a class="reference external" href="https://www.w3.org/TR/shacl/#dfn-prefix-declarations">https://www.w3.org/TR/shacl/#dfn-prefix-declarations</a>)</p>
@@ -478,6 +482,12 @@ and the merged expansions are marked as non-canonical</p>
 <dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.context">
 <span class="sig-name descname"><span class="pre">context</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#prefixmaps.PrefixExpansion.context" title="Link to this definition"></a></dt>
 <dd><p>Each PrefixExpansion is grouped into a context.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="prefixmaps.PrefixExpansion.expansion_source">
+<span class="sig-name descname"><span class="pre">expansion_source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#prefixmaps.PrefixExpansion.expansion_source" title="Link to this definition"></a></dt>
+<dd><p>Indicates the source of the prefix expansion.</p>
 </dd></dl>
 
 <dl class="py attribute">
