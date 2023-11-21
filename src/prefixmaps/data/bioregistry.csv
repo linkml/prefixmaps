@@ -776,6 +776,7 @@ bioregistry,INO,http://purl.obolibrary.org/obo/INO_,canonical
 bioregistry,insdc,http://identifiers.org/insdc/,canonical
 bioregistry,insdc.cds,http://identifiers.org/ncbiprotein/,namespace_alias
 bioregistry,insdc.gca,http://identifiers.org/assembly/,namespace_alias
+bioregistry,insdc.gcf,http://identifiers.org/assembly/,namespace_alias
 bioregistry,insdc.run,https://www.ebi.ac.uk/ena/browser/view/,canonical
 bioregistry,insdc.sra,http://identifiers.org/insdc.sra/,canonical
 bioregistry,intact,http://identifiers.org/intact/,canonical
@@ -1034,6 +1035,7 @@ bioregistry,NCBI_gi,https://www.ncbi.nlm.nih.gov/nucleotide/,namespace_alias
 bioregistry,NCBI_taxid,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias
 bioregistry,NCBI_Taxon_ID,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias
 bioregistry,ncbibook,https://www.ncbi.nlm.nih.gov/books/,canonical
+bioregistry,ncbidrs,http://identifiers.org/ncbidrs/,canonical
 bioregistry,NCBIGene,http://identifiers.org/ncbigene/,canonical
 bioregistry,ncbigi,https://www.ncbi.nlm.nih.gov/nucleotide/,namespace_alias
 bioregistry,NCBIProtein,http://identifiers.org/ncbiprotein/,canonical
