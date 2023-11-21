@@ -4,19 +4,18 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; prefixmaps 0.1.6 documentation</title>
+  <title>Introduction &mdash; prefixmaps 0.1.8 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=22607128"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -85,7 +84,7 @@
            <div itemprop="articleBody">
              
   <section id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
 <p>A python library for retrieving semantic prefix maps</p>
 <p>A semantic prefix map will map a a prefix (e.g. <code class="docutils literal notranslate"><span class="pre">skos</span></code>) to a namespace (e.g <code class="docutils literal notranslate"><span class="pre">http://www.w3.org/2004/02/skos/core#</span></code>)</p>
 <p>This library is designed to satisfy the following requirements</p>
@@ -102,13 +101,13 @@
 <li><p>optional ability to retrieve latest from external authority on network</p></li>
 </ul>
 <section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">prefixmaps</span>
 </pre></div>
 </div>
 </section>
 <section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
 <p>to use in combination with <a class="reference external" href="https://github.com/cthoyt/curies">curies</a> library:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">prefixmaps.io.parser</span> <span class="kn">import</span> <span class="n">load_multi_context</span>
 <span class="kn">from</span> <span class="nn">curies</span> <span class="kn">import</span> <span class="n">Converter</span>
@@ -128,7 +127,7 @@
 </pre></div>
 </div>
 <section id="alternate-orderings-clash-resilience">
-<h3>Alternate orderings / clash resilience<a class="headerlink" href="#alternate-orderings-clash-resilience" title="Permalink to this heading"></a></h3>
+<h3>Alternate orderings / clash resilience<a class="headerlink" href="#alternate-orderings-clash-resilience" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>prefix.cc uses the prefix <code class="docutils literal notranslate"><span class="pre">geo</span></code> for geosparql <code class="docutils literal notranslate"><span class="pre">http://www.opengis.net/ont/geosparql#</span></code></p></li>
 <li><p>OBO uses prefix <code class="docutils literal notranslate"><span class="pre">GEO</span></code> for the <a class="reference external" href="https://obofoundry.org/ontology/geo">Geographical Entity Ontology</a>, expanding to <code class="docutils literal notranslate"><span class="pre">http://purl.obolibrary.org/obo/GEO_</span></code></p></li>
@@ -194,7 +193,7 @@ GEO. This could be added in future with a unique OBO prefix.</p>
 </div>
 </section>
 <section id="network-independence-and-requesting-latest-versions">
-<h3>Network independence and requesting latest versions<a class="headerlink" href="#network-independence-and-requesting-latest-versions" title="Permalink to this heading"></a></h3>
+<h3>Network independence and requesting latest versions<a class="headerlink" href="#network-independence-and-requesting-latest-versions" title="Link to this heading"></a></h3>
 <p>By default this will make use of metadata distributed alongside the package. This has certain advantages in terms
 of reproducibility, but it means if a new ontology or prefix is added to an upstream source you won’t see this.</p>
 <p>To refresh and use the latest upstream:</p>
@@ -205,16 +204,16 @@ of reproducibility, but it means if a new ontology or prefix is added to an upst
 </section>
 </section>
 <section id="context-metadata">
-<h2>Context Metadata<a class="headerlink" href="#context-metadata" title="Permalink to this heading"></a></h2>
-<p>See <span class="xref myst">contexts.curated.yaml</span></p>
+<h2>Context Metadata<a class="headerlink" href="#context-metadata" title="Link to this heading"></a></h2>
+<p>See <a class="reference internal" href="#src/prefixmaps/data/contexts.curated.yaml"><span class="xref myst">contexts.curated.yaml</span></a></p>
 <p>See the description fields</p>
 </section>
 <section id="code-organization">
-<h2>Code organization<a class="headerlink" href="#code-organization" title="Permalink to this heading"></a></h2>
+<h2>Code organization<a class="headerlink" href="#code-organization" title="Link to this heading"></a></h2>
 <p>Data files containing pre-build prefix maps using sources like OBO and Bioregistry are distributed alongside the python</p>
 <p>Location:</p>
 <ul class="simple">
-<li><p><span class="xref myst">src/prefixmaps/data</span></p></li>
+<li><p><a class="reference internal" href="#src/prefixmaps/data/"><span class="xref myst">src/prefixmaps/data</span></a></p></li>
 </ul>
 <p>These can be regenerated using:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">etl</span>
@@ -223,7 +222,7 @@ of reproducibility, but it means if a new ontology or prefix is added to an upst
 <p>TODO: make a github action that auto-released new versions</p>
 </section>
 <section id="requesting-new-prefixes">
-<h2>Requesting new prefixes<a class="headerlink" href="#requesting-new-prefixes" title="Permalink to this heading"></a></h2>
+<h2>Requesting new prefixes<a class="headerlink" href="#requesting-new-prefixes" title="Link to this heading"></a></h2>
 <p>This repo is NOT a prefix registry. Its job is simply to aggregate
 different prefix maps. Request changes upstream.</p>
 </section>
