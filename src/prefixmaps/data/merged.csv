@@ -1,4 +1,4 @@
-context,prefix,namespace,status,source
+context,prefix,namespace,status,expansion_source
 merged,3DMET,http://identifiers.org/3dmet/,canonical,bioregistry
 merged,4DN,http://identifiers.org/4dn/,namespace_alias,bioregistry
 merged,4DN.BIOSOURCE,http://identifiers.org/4dn/,canonical,bioregistry

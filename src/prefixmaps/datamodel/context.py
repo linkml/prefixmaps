@@ -71,7 +71,7 @@ class PrefixExpansion:
     status: StatusType
     """Indicates whether the expansion is canonical, a prefix alias, a namespace alias, or both."""
 
-    source: Optional[str] = None
+    expansion_source: Optional[str] = None
     """Indicates the source of the prefix expansion."""
 
     def canonical(self) -> bool:
@@ -156,7 +156,7 @@ class Context:
         :return:
         """
         for pe in context.prefix_expansions:
-            self.add_prefix(pe.prefix, pe.namespace, pe.status, source=context.name)
+            self.add_prefix(pe.prefix, pe.namespace, pe.status, expansion_source=context.name)
 
     def add_prefix(
         self,
@@ -164,7 +164,7 @@ class Context:
         namespace: NAMESPACE,
         status: StatusType = StatusType.canonical,
         preferred: bool = False,
-        source: Optional[str] = None,
+        expansion_source: Optional[str] = None,
     ):
         """
         Adds a prefix expansion to this context.
@@ -180,7 +180,7 @@ class Context:
         :param namespace: namespace to be added
         :param status: the status of the prefix being added
         :param preferred:
-        :param source: An optional annotation to be used when merging contexts together.
+        :param expansion_source: An optional annotation to be used when merging contexts together.
             The source will keep track of the original context that a given prefix
             expansion came from. This is used in :meth:`Context.combine`.
         :return:
@@ -210,7 +210,7 @@ class Context:
                 prefix=prefix,
                 namespace=namespace,
                 status=status,
-                source=source,
+                expansion_source=expansion_source,
             )
         )
 
