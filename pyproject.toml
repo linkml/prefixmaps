@@ -9,6 +9,7 @@ license = "Apache-2.0"
 classifiers = [
     "Development Status :: 1 - Planning",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.9",
@@ -36,9 +37,6 @@ bioregistry = {version = "^0.10.0", extras = ["refresh"]}
 rdflib = {version = "^6.2.0", extras = ["refresh"]}
 curies = ">=0.5.3"
 tox = "^4.11.3"
-# this forces tox to use pydantic ^1 instead of installing pydantic 2 as part of its "refresh" environment.
-# bioregistry is still at pydantic 1.0, so this is necessary to avoid refresh failure.
-pydantic = "^1.8.2"
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.2"
