@@ -9,6 +9,7 @@ license = "Apache-2.0"
 classifiers = [
     "Development Status :: 1 - Planning",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.9",
@@ -37,6 +38,7 @@ rdflib = {version = "^6.2.0", extras = ["refresh"]}
 curies = ">=0.5.3"
 tox = "^4.11.3"
 pydantic = "^2.5"
+
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.2"
