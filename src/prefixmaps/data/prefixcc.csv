@@ -290,6 +290,7 @@ prefixcc,ceo,https://linkeddata.cultureelerfgoed.nl/def/ceo#,canonical
 prefixcc,ceox,https://linkeddata.cultureelerfgoed.nl/def/ceox#,canonical
 prefixcc,cercabib,https://cercabib.ub.edu/,canonical
 prefixcc,cerealstoo,http://rdf.ag/o/cerealstoo#,canonical
+prefixcc,cergy,https://dbpedia.org/page/Cergy/,canonical
 prefixcc,cerif,http://spi-fm.uca.es/neologism/cerif#,canonical
 prefixcc,cert,http://www.w3.org/ns/auth/cert#,canonical
 prefixcc,ceterms,http://purl.org/ctdl/terms/,canonical
@@ -823,7 +824,7 @@ prefixcc,fire,http://tldp.org/HOWTO/XML-RPC-HOWTO/xmlrpc-howto-java.html#,canoni
 prefixcc,fisa,https://ifitkau.github.io/fisa/,canonical
 prefixcc,fise,http://fise.iks-project.eu/ontology/,canonical
 prefixcc,fl,http://eulersharp.sourceforge.net/2003/03swap/fl-rules#,canonical
-prefixcc,flow,http://www.w3.org/2005/01/wf/flow#,namespace_alias
+prefixcc,flow,http://www.w3.org/2005/01/wf/flow#,canonical
 prefixcc,fls,http://lukasblaho.sk/football_league_schema#,canonical
 prefixcc,fluidops,http://www.fluidops.com/,canonical
 prefixcc,fma,http://sig.uw.edu/fma#,canonical
@@ -983,6 +984,7 @@ prefixcc,gsp,http://www.opengis.net/ont/geosparql#,namespace_alias
 prefixcc,gt,https://vocab.eccenca.com/geniustex/,canonical
 prefixcc,gtfs,http://vocab.gtfs.org/terms#,canonical
 prefixcc,gts,http://resource.geosciml.org/ontology/timescale/gts#,canonical
+prefixcc,guez,http://guez.fr/,canonical
 prefixcc,gufo,http://purl.org/nemo/gufo#,canonical
 prefixcc,guo,http://purl.org/hpi/guo#,canonical
 prefixcc,gv,http://rdf.data-vocabulary.org/#,namespace_alias
@@ -1225,7 +1227,7 @@ prefixcc,lds,https://solid.ti.rw.fau.de/public/ns/linked-data-structures#,canoni
 prefixcc,ldt,https://www.w3.org/ns/ldt#,canonical
 prefixcc,ldvm,http://linked.opendata.cz/ontology/ldvm/,canonical
 prefixcc,leak,http://data.ontotext.com/resource/leak/,canonical
-prefixcc,leaks,https://cuzin.com/,canonical
+prefixcc,leaks,https://onlyfans.com/chelxie/,canonical
 prefixcc,led,http://led.kmi.open.ac.uk/term/,canonical
 prefixcc,legal,http://www.w3.org/ns/legal#,canonical
 prefixcc,lemon,http://lemon-model.net/lemon#,canonical
@@ -1415,6 +1417,7 @@ prefixcc,mil,http://rdf.muninn-project.org/ontologies/military#,canonical
 prefixcc,mime,https://www.iana.org/assignments/media-types/,canonical
 prefixcc,mindat,https://www.mindat.org/,canonical
 prefixcc,minim,http://purl.org/minim/minim#,canonical
+prefixcc,mir,http://marineinfo.org/ns/person/roles#,canonical
 prefixcc,misp,http://purl.org/cyber/misp#,canonical
 prefixcc,mit,http://purl.org/ontology/mo/mit#,canonical
 prefixcc,mls,http://www.w3.org/ns/mls#,canonical
@@ -2609,7 +2612,7 @@ prefixcc,static,http://vocab-ld.org/vocab/static-ld#,canonical
 prefixcc,stats,http://purl.org/rdfstats/stats#,canonical
 prefixcc,status,http://www.w3.org/2003/06/sw-vocab-status/ns#,namespace_alias
 prefixcc,stax,https://w3id.org/stax/ontology#,canonical
-prefixcc,steel,http://ontorule-project.eu/resources/steel-30#,canonical
+prefixcc,steel,https://w3id.org/steel/ProcessOntology/,canonical
 prefixcc,stencila,http://schema.stenci.la/,canonical
 prefixcc,step,http://purl.org/net/step#,canonical
 prefixcc,stirdata,https://w3id.org/stirdata/vocabulary/,canonical
@@ -2764,6 +2767,7 @@ prefixcc,ufo,http://ufo.com/#,canonical
 prefixcc,ui,http://www.w3.org/ns/ui#,canonical
 prefixcc,uimo,http://vocab.sti2.at/uimo/,canonical
 prefixcc,uio,https://www.mitre.org/mparmelee/ontologies/2023/6/UserIntentOntology/,canonical
+prefixcc,uiot,http://www.w3id.org/urban-iot/core#,canonical
 prefixcc,uis,http://uis.270a.info/dataset/,canonical
 prefixcc,ul,http://underlay.mit.edu/ns/,canonical
 prefixcc,ulan,http://vocab.getty.edu/ulan/,canonical
@@ -2898,7 +2902,7 @@ prefixcc,webbox,http://webbox.ecs.soton.ac.uk/ns#,canonical
 prefixcc,webservice,http://www.openlinksw.com/ontology/webservices#,canonical
 prefixcc,webtlab,http://webtlab.it.uc3m.es/,canonical
 prefixcc,weki,https://en.wikipedia.org/wiki/,namespace_alias
-prefixcc,wf,http://www.w3.org/2005/01/wf/flow#,canonical
+prefixcc,wf,http://www.w3.org/2005/01/wf/flow#,namespace_alias
 prefixcc,wf4ever,http://purl.org/wf4ever/wf4ever#,canonical
 prefixcc,wfdesc,http://purl.org/wf4ever/wfdesc#,canonical
 prefixcc,wfm,http://purl.org/net/wf-motifs#,canonical
