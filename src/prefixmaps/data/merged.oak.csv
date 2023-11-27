@@ -5487,7 +5487,7 @@ merged.oak,GIARDIADB,https://giardiadb.org/giardiadb/showRecord.do?name=GeneReco
 merged.oak,GIARDIADB,https://identifiers.org/giardiadb/,prefix_alias,bioregistry
 merged.oak,GIARDIADB,https://identifiers.org/giardiadb:,prefix_alias,bioregistry
 merged.oak,GIARDIADB,https://n2t.net/giardiadb:,prefix_alias,bioregistry
-merged.oak,gist,http://ontologies.semanticarts.com/gist/,canonical,prefixcc
+merged.oak,gist,https://ontologies.semanticarts.com/o/gistCore#,canonical,prefixcc
 merged.oak,GITHUB,http://identifiers.org/github/,canonical,bioregistry
 merged.oak,GITHUB,http://bioregistry.io/github:,prefix_alias,bioregistry
 merged.oak,GITHUB,http://github.com/,prefix_alias,bioregistry
@@ -6881,6 +6881,7 @@ merged.oak,IEDB,https://identifiers.org/iedb/,prefix_alias,bioregistry
 merged.oak,IEDB,https://identifiers.org/iedb:,prefix_alias,bioregistry
 merged.oak,IEDB,https://www.iedb.org/epId/,prefix_alias,bioregistry
 merged.oak,IEDB,https://www.iedb.org/reference/,prefix_alias,bioregistry
+merged.oak,ies,http://ies.data.gov.uk/ontology/ies4#,namespace_alias,prefixcc
 merged.oak,ies4,http://ies.data.gov.uk/ontology/ies4#,canonical,prefixcc
 merged.oak,IEV,http://purl.obolibrary.org/obo/IEV_,canonical,obo
 merged.oak,IEV,http://bio2rdf.org/iev:,prefix_alias,bioregistry
@@ -8872,6 +8873,7 @@ merged.oak,MIPMOD,https://bioregistry.io/mipmod:,prefix_alias,bioregistry
 merged.oak,MIPMOD,https://identifiers.org/mipmod/,prefix_alias,bioregistry
 merged.oak,MIPMOD,https://identifiers.org/mipmod:,prefix_alias,bioregistry
 merged.oak,MIPMOD,https://n2t.net/mipmod:,prefix_alias,bioregistry
+merged.oak,miprog,https://marineinfo.org/ns/progress#,canonical,prefixcc
 merged.oak,MIR,http://identifiers.org/MIR/,canonical,bioregistry
 merged.oak,MIR,http://bioregistry.io/mir:,prefix_alias,bioregistry
 merged.oak,MIR,http://identifiers.org/MIR:,prefix_alias,bioregistry
@@ -16126,7 +16128,7 @@ merged.oak,WBPhenotype,https://bio2rdf.org/wbphenotype:,prefix_alias,bioregistry
 merged.oak,WBPhenotype,https://bioregistry.io/WBPhenotype:,prefix_alias,bioregistry
 merged.oak,WBPhenotype,https://purl.obolibrary.org/obo/WBPhenotype_,prefix_alias,bioregistry
 merged.oak,WBPhenotype,https://www.ebi.ac.uk/ols/ontologies/wbphenotype/terms?iri=http://purl.obolibrary.org/obo/WBPhenotype_,prefix_alias,bioregistry
-merged.oak,wd,http://www.wikidata.org/entity/,namespace_alias,prefixcc
+merged.oak,wd,http://www.wikidata.org/entity/,canonical,prefixcc
 merged.oak,wde,http://www.wikidata.org/entity/,namespace_alias,prefixcc
 merged.oak,wdno,http://www.wikidata.org/prop/novalue/,canonical,prefixcc
 merged.oak,wdr,http://www.w3.org/2007/05/powder#,namespace_alias,prefixcc
@@ -16166,23 +16168,6 @@ merged.oak,wi,http://purl.org/ontology/wi/core#,canonical,prefixcc
 merged.oak,wiki,http://en.wikipedia.org/wiki/,namespace_alias,prefixcc
 merged.oak,wikibase,http://wikiba.se/ontology#,canonical,prefixcc
 merged.oak,WIKIDATA,http://identifiers.org/wikidata/,canonical,bioregistry
-merged.oak,WIKIDATA,http://bioregistry.io/WD_Entity:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://bioregistry.io/wd:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://bioregistry.io/wikidata:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://identifiers.org/wikidata:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://n2t.net/wikidata:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://scholia.toolforge.org/,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://www.wikidata.org/entity/,prefix_alias,bioregistry
-merged.oak,WIKIDATA,http://www.wikidata.org/wiki/,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://bioregistry.io/WD_Entity:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://bioregistry.io/wd:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://bioregistry.io/wikidata:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://identifiers.org/wikidata/,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://identifiers.org/wikidata:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://n2t.net/wikidata:,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://scholia.toolforge.org/,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://www.wikidata.org/entity/,prefix_alias,bioregistry
-merged.oak,WIKIDATA,https://www.wikidata.org/wiki/,prefix_alias,bioregistry
 merged.oak,WIKIDATA.PROPERTY,https://www.wikidata.org/wiki/Property:,canonical,bioregistry
 merged.oak,WIKIDATA.PROPERTY,http://bioregistry.io/wikidata.property:,prefix_alias,bioregistry
 merged.oak,WIKIDATA.PROPERTY,http://www.wikidata.org/wiki/Property:,prefix_alias,bioregistry

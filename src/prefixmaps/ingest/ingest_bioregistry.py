@@ -64,7 +64,6 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         "obofoundry",
         "miriam.legacy" if canonical_idorg else "miriam",
         "default",
-        "bioportal",
         "ols",
         "n2t",
     ]
@@ -82,6 +81,6 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         if record.prefix not in PROBLEMATIC_CURIE_PREFIX_SYNONYMS_RECORDS:
             for s in record.prefix_synonyms:
                 context.add_prefix(s, record.uri_prefix, preferred=preferred)
-        for s in record.uri_prefix_synonyms:
-            context.add_prefix(record.prefix, s, preferred=preferred)
+            for s in record.uri_prefix_synonyms:
+                context.add_prefix(record.prefix, s, preferred=preferred)
     return context

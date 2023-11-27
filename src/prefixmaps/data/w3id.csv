@@ -336,6 +336,7 @@ w3id,ejp-rd,https://w3id.org/ejp-rd/,canonical
 w3id,eke,https://w3id.org/eke/,canonical
 w3id,elementary,https://w3id.org/elementary/,canonical
 w3id,emerging,https://w3id.org/emerging/,canonical
+w3id,emmo,https://w3id.org/emmo/,canonical
 w3id,empathi,https://w3id.org/empathi/,canonical
 w3id,encode,https://w3id.org/encode/,canonical
 w3id,EnergyInformationModel,https://w3id.org/EnergyInformationModel/,canonical
@@ -739,6 +740,7 @@ w3id,omn,https://w3id.org/omn/,canonical
 w3id,omop,https://w3id.org/omop/,canonical
 w3id,onderwijs-vlaanderen,https://w3id.org/onderwijs-vlaanderen/,canonical
 w3id,onto4drone,https://w3id.org/onto4drone/,canonical
+w3id,ontobio,https://w3id.org/ontobio/,canonical
 w3id,ontoboldt,https://w3id.org/ontoboldt/,canonical
 w3id,ontocis,https://w3id.org/ontocis/,canonical
 w3id,ontocity,https://w3id.org/ontocity/,canonical
@@ -748,6 +750,7 @@ w3id,OntoDT-extended,https://w3id.org/OntoDT-extended/,canonical
 w3id,ontoeng,https://w3id.org/ontoeng/,canonical
 w3id,OntoExhibit,https://w3id.org/OntoExhibit/,canonical
 w3id,ontoexp,https://w3id.org/ontoexp/,canonical
+w3id,ontofnct,https://w3id.org/ontofnct/,canonical
 w3id,ontogpt,https://w3id.org/ontogpt/,canonical
 w3id,OntoGraphDB,https://w3id.org/OntoGraphDB/,canonical
 w3id,ontoim,https://w3id.org/ontoim/,canonical
@@ -826,6 +829,7 @@ w3id,pmd,https://w3id.org/pmd/,canonical
 w3id,pmlm,https://w3id.org/pmlm/,canonical
 w3id,pnv,https://w3id.org/pnv/,canonical
 w3id,PO2,https://w3id.org/PO2/,canonical
+w3id,podio,https://w3id.org/podio/,canonical
 w3id,polifonia,https://w3id.org/polifonia/,canonical
 w3id,pope,https://w3id.org/pope/,canonical
 w3id,poseidon,https://w3id.org/poseidon/,canonical
@@ -983,7 +987,6 @@ w3id,soya,https://w3id.org/soya/,canonical
 w3id,spar,https://w3id.org/spar/,canonical
 w3id,sparql-generate,https://w3id.org/sparql-generate/,canonical
 w3id,special,https://w3id.org/special/,canonical
-w3id,speech,https://w3id.org/speech/,canonical
 w3id,spew,https://w3id.org/spew/,canonical
 w3id,spice,https://w3id.org/spice/,canonical
 w3id,spm,https://w3id.org/spm/,canonical

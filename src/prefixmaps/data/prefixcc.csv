@@ -934,7 +934,7 @@ prefixcc,gfo,http://www.onto-med.de/ontologies/gfo.owl#,canonical
 prefixcc,gg,http://www.gemeentegeschiedenis.nl/gg-schema#,canonical
 prefixcc,ggbn,http://data.ggbn.org/schemas/ggbn/terms/,canonical
 prefixcc,ghga,http://w3id.org/ghga/,canonical
-prefixcc,gist,http://ontologies.semanticarts.com/gist/,canonical
+prefixcc,gist,https://ontologies.semanticarts.com/o/gistCore#,canonical
 prefixcc,giving,http://ontologi.es/giving#,canonical
 prefixcc,gl,http://schema.geolink.org/,canonical
 prefixcc,gldp,http://www.w3.org/ns/people#,canonical
@@ -1069,6 +1069,7 @@ prefixcc,idot,http://identifiers.org/idot/,canonical
 prefixcc,idpo,https://w3id.org/idpo#,canonical
 prefixcc,ids,https://w3id.org/idsa/core/,canonical
 prefixcc,idsc,https://w3id.org/idsa/code/,canonical
+prefixcc,ies,http://ies.data.gov.uk/ontology/ies4#,namespace_alias
 prefixcc,ies4,http://ies.data.gov.uk/ontology/ies4#,canonical
 prefixcc,ifc,http://ifcowl.openbimstandards.org/IFC2X3_Final#,canonical
 prefixcc,ifcowl,http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD2#,canonical
@@ -1417,6 +1418,7 @@ prefixcc,mil,http://rdf.muninn-project.org/ontologies/military#,canonical
 prefixcc,mime,https://www.iana.org/assignments/media-types/,canonical
 prefixcc,mindat,https://www.mindat.org/,canonical
 prefixcc,minim,http://purl.org/minim/minim#,canonical
+prefixcc,miprog,https://marineinfo.org/ns/progress#,canonical
 prefixcc,mir,http://marineinfo.org/ns/person/roles#,canonical
 prefixcc,misp,http://purl.org/cyber/misp#,canonical
 prefixcc,mit,http://purl.org/ontology/mo/mit#,canonical
