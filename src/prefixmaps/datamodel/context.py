@@ -25,8 +25,7 @@ INVERSE_PREFIX_EXPANSION_DICT = Mapping[NAMESPACE, PREFIX]
 PREFIX_RE = re.compile(r"^[\w\.]+$")
 NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 class StatusType(Enum):
