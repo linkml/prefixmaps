@@ -64,14 +64,13 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         "obofoundry",
         "miriam.legacy" if canonical_idorg else "miriam",
         "default",
-        "bioportal",
         "ols",
         "n2t",
     ]
-    records = bioregistry.get_extended_prefix_map(
+    converter = bioregistry.get_converter(
         uri_prefix_priority=priority, prefix_priority=prefix_priority
     )
-    for record in tqdm(records):
+    for record in tqdm(converter.records):
         if record.prefix in SKIP:
             continue
         if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):
@@ -82,7 +81,6 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         if record.prefix not in PROBLEMATIC_CURIE_PREFIX_SYNONYMS_RECORDS:
             for s in record.prefix_synonyms:
                 context.add_prefix(s, record.uri_prefix, preferred=preferred)
-        # TODO future, add URI prefix synonyms
-        # for s in record.uri_prefix_synonyms:
-        #     context.add_prefix(record.prefix, s, status=StatusType.namespace_alias, preferred=preferred)
+            for s in record.uri_prefix_synonyms:
+                context.add_prefix(record.prefix, s, preferred=preferred)
     return context

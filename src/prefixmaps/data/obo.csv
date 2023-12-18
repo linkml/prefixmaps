@@ -157,6 +157,7 @@ obo,OBCS,http://purl.obolibrary.org/obo/OBCS_,canonical
 obo,OBI,http://purl.obolibrary.org/obo/OBI_,canonical
 obo,OBIB,http://purl.obolibrary.org/obo/OBIB_,canonical
 obo,OBO_REL,http://purl.obolibrary.org/obo/OBO_REL_,canonical
+obo,OCCO,http://purl.obolibrary.org/obo/OCCO_,canonical
 obo,OGG,http://purl.obolibrary.org/obo/OGG_,canonical
 obo,OGI,http://purl.obolibrary.org/obo/OGI_,canonical
 obo,OGMS,http://purl.obolibrary.org/obo/OGMS_,canonical

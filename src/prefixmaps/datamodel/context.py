@@ -25,8 +25,7 @@ INVERSE_PREFIX_EXPANSION_DICT = Mapping[NAMESPACE, PREFIX]
 PREFIX_RE = re.compile(r"^[\w\.]+$")
 NAMESPACE_RE = re.compile(r"http[s]?://[\w\.\-\/]+[#/_:]$")
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 class StatusType(Enum):
@@ -70,6 +69,9 @@ class PrefixExpansion:
 
     status: StatusType
     """Indicates whether the expansion is canonical, a prefix alias, a namespace alias, or both."""
+
+    expansion_source: Optional[str] = None
+    """Indicates the source of the prefix expansion."""
 
     def canonical(self) -> bool:
         """
@@ -153,7 +155,7 @@ class Context:
         :return:
         """
         for pe in context.prefix_expansions:
-            self.add_prefix(pe.prefix, pe.namespace, pe.status)
+            self.add_prefix(pe.prefix, pe.namespace, pe.status, expansion_source=context.name)
 
     def add_prefix(
         self,
@@ -161,6 +163,7 @@ class Context:
         namespace: NAMESPACE,
         status: StatusType = StatusType.canonical,
         preferred: bool = False,
+        expansion_source: Optional[str] = None,
     ):
         """
         Adds a prefix expansion to this context.
@@ -176,6 +179,9 @@ class Context:
         :param namespace: namespace to be added
         :param status: the status of the prefix being added
         :param preferred:
+        :param expansion_source: An optional annotation to be used when merging contexts together.
+            The source will keep track of the original context that a given prefix
+            expansion came from. This is used in :meth:`Context.combine`.
         :return:
         """
         # TODO: check status
@@ -203,6 +209,7 @@ class Context:
                 prefix=prefix,
                 namespace=namespace,
                 status=status,
+                expansion_source=expansion_source,
             )
         )
 

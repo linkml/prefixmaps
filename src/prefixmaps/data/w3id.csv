@@ -204,6 +204,7 @@ w3id,cramp-fdp,https://w3id.org/cramp-fdp/,canonical
 w3id,credentials,https://w3id.org/credentials/,canonical
 w3id,credit,https://w3id.org/credit/,canonical
 w3id,cri,https://w3id.org/cri/,canonical
+w3id,cro,https://w3id.org/cro/,canonical
 w3id,cskg,https://w3id.org/cskg/,canonical
 w3id,cso,https://w3id.org/cso/,canonical
 w3id,csolink,https://w3id.org/csolink/,canonical
@@ -490,6 +491,7 @@ w3id,hpont,https://w3id.org/hpont/,canonical
 w3id,hso,https://w3id.org/hso/,canonical
 w3id,hsu-aut,https://w3id.org/hsu-aut/,canonical
 w3id,htad-fdp,https://w3id.org/htad-fdp/,canonical
+w3id,hto,https://w3id.org/hto/,canonical
 w3id,http,https://w3id.org/http/,canonical
 w3id,huml,https://w3id.org/huml/,canonical
 w3id,hydra,https://w3id.org/hydra/,canonical
@@ -515,6 +517,7 @@ w3id,idpo,https://w3id.org/idpo/,canonical
 w3id,idsa,https://w3id.org/idsa/,canonical
 w3id,ieee,https://w3id.org/ieee/,canonical
 w3id,ifc,https://w3id.org/ifc/,canonical
+w3id,ifcc,https://w3id.org/ifcc/,canonical
 w3id,ifcp,https://w3id.org/ifcp/,canonical
 w3id,iicongraph,https://w3id.org/iicongraph/,canonical
 w3id,iliad,https://w3id.org/iliad/,canonical
@@ -684,6 +687,7 @@ w3id,mtv,https://w3id.org/mtv/,canonical
 w3id,MULTI,https://w3id.org/MULTI/,canonical
 w3id,multidimensional-interface,https://w3id.org/multidimensional-interface/,canonical
 w3id,multidimensional-quantity,https://w3id.org/multidimensional-quantity/,canonical
+w3id,mumonut,https://w3id.org/mumonut/,canonical
 w3id,musco,https://w3id.org/musco/,canonical
 w3id,music-annotation,https://w3id.org/music-annotation/,canonical
 w3id,music-circle,https://w3id.org/music-circle/,canonical
@@ -738,9 +742,11 @@ w3id,oebDataFormats,https://w3id.org/oebDataFormats/,canonical
 w3id,oebDatasets,https://w3id.org/oebDatasets/,canonical
 w3id,oerbase,https://w3id.org/oerbase/,canonical
 w3id,ofo,https://w3id.org/ofo/,canonical
+w3id,ogc,https://w3id.org/ogc/,canonical
 w3id,oho,https://w3id.org/oho/,canonical
 w3id,okg,https://w3id.org/okg/,canonical
 w3id,okn,https://w3id.org/okn/,canonical
+w3id,okp4,https://w3id.org/okp4/,canonical
 w3id,olu,https://w3id.org/olu/,canonical
 w3id,omg,https://w3id.org/omg/,canonical
 w3id,omicron,https://w3id.org/omicron/,canonical
@@ -972,6 +978,7 @@ w3id,shp,https://w3id.org/shp/,canonical
 w3id,simpathic,https://w3id.org/simpathic/,canonical
 w3id,simulation,https://w3id.org/simulation/,canonical
 w3id,sip,https://w3id.org/sip/,canonical
+w3id,sirius,https://w3id.org/sirius/,canonical
 w3id,situannotate,https://w3id.org/situannotate/,canonical
 w3id,sketup,https://w3id.org/sketup/,canonical
 w3id,sketx,https://w3id.org/sketx/,canonical

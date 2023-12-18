@@ -554,6 +554,7 @@ prefixcc,delta,http://www.w3.org/2004/delta#,canonical
 prefixcc,demlab,http://www.demcare.eu/ontologies/demlab.owl#,canonical
 prefixcc,dentsci,https://w3id.org/skgo/dentsci#,canonical
 prefixcc,deo,http://purl.org/spar/deo/,canonical
+prefixcc,deonta,https://deonta.linkedmodel.org/deonta/,canonical
 prefixcc,deps,http://ontologi.es/doap-deps#,canonical
 prefixcc,derecho,http://purl.org/derecho#,canonical
 prefixcc,devuan,https://devuan.net.br/,canonical
@@ -935,7 +936,7 @@ prefixcc,gfo,http://www.onto-med.de/ontologies/gfo.owl#,canonical
 prefixcc,gg,http://www.gemeentegeschiedenis.nl/gg-schema#,canonical
 prefixcc,ggbn,http://data.ggbn.org/schemas/ggbn/terms/,canonical
 prefixcc,ghga,http://w3id.org/ghga/,canonical
-prefixcc,gist,http://ontologies.semanticarts.com/gist/,canonical
+prefixcc,gist,http://ontologies.semanticarts.com/gist#,canonical
 prefixcc,giving,http://ontologi.es/giving#,canonical
 prefixcc,gl,http://schema.geolink.org/,canonical
 prefixcc,gldp,http://www.w3.org/ns/people#,canonical
@@ -1077,6 +1078,7 @@ prefixcc,ifcowl,http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD2#,canonical
 prefixcc,igeo,http://rdf.insee.fr/def/geo#,canonical
 prefixcc,ignf,http://data.ign.fr/def/ignf#,canonical
 prefixcc,ii,http://sparql.cwrc.ca/ontologies/ii#,canonical
+prefixcc,iig,https://w3id.org/iicongraph/data/,canonical
 prefixcc,iiif,http://iiif.io/api/image/2#,canonical
 prefixcc,ilap,http://data.posccaesar.org/ilap/,canonical
 prefixcc,im,http://imgpedia.dcc.uchile.cl/resource/,canonical
@@ -1563,7 +1565,7 @@ prefixcc,nxs,http://www.neclimateus.org/,canonical
 prefixcc,nyt,http://data.nytimes.com/,canonical
 prefixcc,nytimes,http://data.nytimes.com/elements/,canonical
 prefixcc,oa,http://www.w3.org/ns/oa#,canonical
-prefixcc,oac,http://www.openannotation.org/ns/,canonical
+prefixcc,oac,https://w3id.org/oac#,canonical
 prefixcc,oad,http://lod.xdams.org/reload/oad/,canonical
 prefixcc,oae,http://www.ics.forth.gr/isl/oae/core#,canonical
 prefixcc,oan,http://data.lirmm.fr/ontologies/oan/,canonical
