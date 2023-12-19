@@ -166,6 +166,7 @@ w3id,clipc,https://w3id.org/clipc/,canonical
 w3id,clodg,https://w3id.org/clodg/,canonical
 w3id,CMECS,https://w3id.org/CMECS/,canonical
 w3id,cmip6dr,https://w3id.org/cmip6dr/,canonical
+w3id,cnco,https://w3id.org/cnco/,canonical
 w3id,cntf,https://w3id.org/cntf/,canonical
 w3id,cocoon,https://w3id.org/cocoon/,canonical
 w3id,codata,https://w3id.org/codata/,canonical
@@ -203,6 +204,7 @@ w3id,cramp-fdp,https://w3id.org/cramp-fdp/,canonical
 w3id,credentials,https://w3id.org/credentials/,canonical
 w3id,credit,https://w3id.org/credit/,canonical
 w3id,cri,https://w3id.org/cri/,canonical
+w3id,cro,https://w3id.org/cro/,canonical
 w3id,cskg,https://w3id.org/cskg/,canonical
 w3id,cso,https://w3id.org/cso/,canonical
 w3id,csolink,https://w3id.org/csolink/,canonical
@@ -252,6 +254,7 @@ w3id,demo-resources,https://w3id.org/demo-resources/,canonical
 w3id,DepressionFeature,https://w3id.org/DepressionFeature/,canonical
 w3id,devops-infra,https://w3id.org/devops-infra/,canonical
 w3id,dfd,https://w3id.org/dfd/,canonical
+w3id,DFDP,https://w3id.org/DFDP/,canonical
 w3id,dfo,https://w3id.org/dfo/,canonical
 w3id,dgarijo,https://w3id.org/dgarijo/,canonical
 w3id,dgaterms,https://w3id.org/dgaterms/,canonical
@@ -359,6 +362,7 @@ w3id,esw,https://w3id.org/esw/,canonical
 w3id,euro-nmd-kpis,https://w3id.org/euro-nmd-kpis/,canonical
 w3id,EUTaxO,https://w3id.org/EUTaxO/,canonical
 w3id,evdoxus,https://w3id.org/evdoxus/,canonical
+w3id,eventnotifications,https://w3id.org/eventnotifications/,canonical
 w3id,EVENTSKG-Dataset,https://w3id.org/EVENTSKG-Dataset/,canonical
 w3id,everycred,https://w3id.org/everycred/,canonical
 w3id,EVI,https://w3id.org/EVI/,canonical
@@ -487,6 +491,7 @@ w3id,hpont,https://w3id.org/hpont/,canonical
 w3id,hso,https://w3id.org/hso/,canonical
 w3id,hsu-aut,https://w3id.org/hsu-aut/,canonical
 w3id,htad-fdp,https://w3id.org/htad-fdp/,canonical
+w3id,hto,https://w3id.org/hto/,canonical
 w3id,http,https://w3id.org/http/,canonical
 w3id,huml,https://w3id.org/huml/,canonical
 w3id,hydra,https://w3id.org/hydra/,canonical
@@ -512,7 +517,9 @@ w3id,idpo,https://w3id.org/idpo/,canonical
 w3id,idsa,https://w3id.org/idsa/,canonical
 w3id,ieee,https://w3id.org/ieee/,canonical
 w3id,ifc,https://w3id.org/ifc/,canonical
+w3id,ifcc,https://w3id.org/ifcc/,canonical
 w3id,ifcp,https://w3id.org/ifcp/,canonical
+w3id,iicongraph,https://w3id.org/iicongraph/,canonical
 w3id,iliad,https://w3id.org/iliad/,canonical
 w3id,illusnip,https://w3id.org/illusnip/,canonical
 w3id,imec,https://w3id.org/imec/,canonical
@@ -650,6 +657,10 @@ w3id,mira,https://w3id.org/mira/,canonical
 w3id,mircat,https://w3id.org/mircat/,canonical
 w3id,mixs,https://w3id.org/mixs/,canonical
 w3id,mixs-6-2-rc,https://w3id.org/mixs-6-2-rc/,canonical
+w3id,mknd,https://w3id.org/mknd/,canonical
+w3id,mlsea,https://w3id.org/mlsea/,canonical
+w3id,mlsea-kg,https://w3id.org/mlsea-kg/,canonical
+w3id,mlso,https://w3id.org/mlso/,canonical
 w3id,mm,https://w3id.org/mm/,canonical
 w3id,mo,https://w3id.org/mo/,canonical
 w3id,mo-ld,https://w3id.org/mo-ld/,canonical
@@ -676,6 +687,7 @@ w3id,mtv,https://w3id.org/mtv/,canonical
 w3id,MULTI,https://w3id.org/MULTI/,canonical
 w3id,multidimensional-interface,https://w3id.org/multidimensional-interface/,canonical
 w3id,multidimensional-quantity,https://w3id.org/multidimensional-quantity/,canonical
+w3id,mumonut,https://w3id.org/mumonut/,canonical
 w3id,musco,https://w3id.org/musco/,canonical
 w3id,music-annotation,https://w3id.org/music-annotation/,canonical
 w3id,music-circle,https://w3id.org/music-circle/,canonical
@@ -730,9 +742,11 @@ w3id,oebDataFormats,https://w3id.org/oebDataFormats/,canonical
 w3id,oebDatasets,https://w3id.org/oebDatasets/,canonical
 w3id,oerbase,https://w3id.org/oerbase/,canonical
 w3id,ofo,https://w3id.org/ofo/,canonical
+w3id,ogc,https://w3id.org/ogc/,canonical
 w3id,oho,https://w3id.org/oho/,canonical
 w3id,okg,https://w3id.org/okg/,canonical
 w3id,okn,https://w3id.org/okn/,canonical
+w3id,okp4,https://w3id.org/okp4/,canonical
 w3id,olu,https://w3id.org/olu/,canonical
 w3id,omg,https://w3id.org/omg/,canonical
 w3id,omicron,https://w3id.org/omicron/,canonical
@@ -747,6 +761,7 @@ w3id,ontocity,https://w3id.org/ontocity/,canonical
 w3id,OntoDM-core-extended,https://w3id.org/OntoDM-core-extended/,canonical
 w3id,OntoDocRel,https://w3id.org/OntoDocRel/,canonical
 w3id,OntoDT-extended,https://w3id.org/OntoDT-extended/,canonical
+w3id,ontoeditor,https://w3id.org/ontoeditor/,canonical
 w3id,ontoeng,https://w3id.org/ontoeng/,canonical
 w3id,OntoExhibit,https://w3id.org/OntoExhibit/,canonical
 w3id,ontoexp,https://w3id.org/ontoexp/,canonical
@@ -831,6 +846,7 @@ w3id,pnv,https://w3id.org/pnv/,canonical
 w3id,PO2,https://w3id.org/PO2/,canonical
 w3id,podio,https://w3id.org/podio/,canonical
 w3id,polifonia,https://w3id.org/polifonia/,canonical
+w3id,polymat,https://w3id.org/polymat/,canonical
 w3id,pope,https://w3id.org/pope/,canonical
 w3id,poseidon,https://w3id.org/poseidon/,canonical
 w3id,poultryFarms4eepsa,https://w3id.org/poultryFarms4eepsa/,canonical
@@ -844,10 +860,12 @@ w3id,profileresourcerole,https://w3id.org/profileresourcerole/,canonical
 w3id,prohow,https://w3id.org/prohow/,canonical
 w3id,promis-proms,https://w3id.org/promis-proms/,canonical
 w3id,proteinkg65,https://w3id.org/proteinkg65/,canonical
+w3id,PROV-K,https://w3id.org/PROV-K/,canonical
 w3id,provcorp,https://w3id.org/provcorp/,canonical
 w3id,psnpbind,https://w3id.org/psnpbind/,canonical
 w3id,publiccode,https://w3id.org/publiccode/,canonical
 w3id,pvont,https://w3id.org/pvont/,canonical
+w3id,pygraft,https://w3id.org/pygraft/,canonical
 w3id,qb4solap,https://w3id.org/qb4solap/,canonical
 w3id,quality,https://w3id.org/quality/,canonical
 w3id,qudt,https://w3id.org/qudt/,canonical
@@ -908,6 +926,7 @@ w3id,rv-ontology,https://w3id.org/rv-ontology/,canonical
 w3id,rvo,https://w3id.org/rvo/,canonical
 w3id,s3n,https://w3id.org/s3n/,canonical
 w3id,saegroup,https://w3id.org/saegroup/,canonical
+w3id,salmon,https://w3id.org/salmon/,canonical
 w3id,salon,https://w3id.org/salon/,canonical
 w3id,sao,https://w3id.org/sao/,canonical
 w3id,saqi,https://w3id.org/saqi/,canonical
@@ -959,6 +978,7 @@ w3id,shp,https://w3id.org/shp/,canonical
 w3id,simpathic,https://w3id.org/simpathic/,canonical
 w3id,simulation,https://w3id.org/simulation/,canonical
 w3id,sip,https://w3id.org/sip/,canonical
+w3id,sirius,https://w3id.org/sirius/,canonical
 w3id,situannotate,https://w3id.org/situannotate/,canonical
 w3id,sketup,https://w3id.org/sketup/,canonical
 w3id,sketx,https://w3id.org/sketx/,canonical
@@ -1068,6 +1088,7 @@ w3id,UnderRepresentedWritersOntology,https://w3id.org/UnderRepresentedWritersOnt
 w3id,unified-engineering,https://w3id.org/unified-engineering/,canonical
 w3id,unileiden,https://w3id.org/unileiden/,canonical
 w3id,unit,https://w3id.org/unit/,canonical
+w3id,UniverseTBD,https://w3id.org/UniverseTBD/,canonical
 w3id,university,https://w3id.org/university/,canonical
 w3id,uom,https://w3id.org/uom/,canonical
 w3id,urban-iot,https://w3id.org/urban-iot/,canonical

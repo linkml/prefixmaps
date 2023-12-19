@@ -319,7 +319,7 @@ class Context:
                 #    f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace"
                 # )
                 logger.info(
-                    f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical namespace"
+                    f"namespace alias {expansion.namespace} => {expansion.prefix} is not a canonical expansion"
                 )
 
         return [
@@ -333,7 +333,11 @@ class Context:
         ]
 
     def as_converter(self) -> curies.Converter:
-        """Get a converter from this prefix map."""
+        """
+        Get a converter from this prefix map.
+
+        :return:
+        """
         extended_prefix_map = self.as_extended_prefix_map()
         return curies.Converter.from_extended_prefix_map(extended_prefix_map)
 

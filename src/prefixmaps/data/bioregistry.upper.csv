@@ -350,6 +350,7 @@ bioregistry,APOLLO_SV,https://bioregistry.io/apollosv:,prefix_alias
 bioregistry,APOLLO_SV,https://purl.obolibrary.org/obo/APOLLO_SV_,prefix_alias
 bioregistry,APOLLO_SV,https://purl.obolibrary.org/obo/apollo_sv/dev/apollo_sv.owl#APOLLO_SV_,prefix_alias
 bioregistry,APOLLO_SV,https://www.ebi.ac.uk/ols/ontologies/apollo_sv/terms?iri=http://purl.obolibrary.org/obo/APOLLO_SV_,prefix_alias
+bioregistry,apollosv,http://purl.obolibrary.org/obo/APOLLO_SV_,namespace_alias
 bioregistry,ARACHNOSERVER,http://identifiers.org/arachnoserver/,canonical
 bioregistry,ARACHNOSERVER,http://bio2rdf.org/arachnoserver:,prefix_alias
 bioregistry,ARACHNOSERVER,http://bioregistry.io/arachnoserver:,prefix_alias
@@ -1416,6 +1417,10 @@ bioregistry,CBIOPORTAL,https://identifiers.org/cbioportal/,prefix_alias
 bioregistry,CBIOPORTAL,https://identifiers.org/cbioportal:,prefix_alias
 bioregistry,CBIOPORTAL,https://n2t.net/cbioportal:,prefix_alias
 bioregistry,CBIOPORTAL,https://www.cbioportal.org/study/summary?id=,prefix_alias
+bioregistry,CC,https://creativecommons.org/ns#,canonical
+bioregistry,CC,http://bioregistry.io/cc:,prefix_alias
+bioregistry,CC,http://creativecommons.org/ns#,prefix_alias
+bioregistry,CC,https://bioregistry.io/cc:,prefix_alias
 bioregistry,CCDC,http://identifiers.org/ccdc/,canonical
 bioregistry,CCDC,http://bioregistry.io/ccdc:,prefix_alias
 bioregistry,CCDC,http://identifiers.org/ccdc:,prefix_alias
@@ -1844,6 +1849,7 @@ bioregistry,CIVIC.VID,https://identifiers.org/civic.vid:,prefix_alias
 bioregistry,CL,http://purl.obolibrary.org/obo/CL_,canonical
 bioregistry,CL,http://bio2rdf.org/cl:,prefix_alias
 bioregistry,CL,http://bioregistry.io/CL:,prefix_alias
+bioregistry,CL,http://cellxgene.cziscience.com/cellguide/CL_,prefix_alias
 bioregistry,CL,http://identifiers.org/CL/,prefix_alias
 bioregistry,CL,http://identifiers.org/CL:,prefix_alias
 bioregistry,CL,http://identifiers.org/cl/CL:,prefix_alias
@@ -1853,6 +1859,7 @@ bioregistry,CL,http://purl.bioontology.org/ontology/CL/CL:,prefix_alias
 bioregistry,CL,http://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/CL_,prefix_alias
 bioregistry,CL,https://bio2rdf.org/cl:,prefix_alias
 bioregistry,CL,https://bioregistry.io/CL:,prefix_alias
+bioregistry,CL,https://cellxgene.cziscience.com/cellguide/CL_,prefix_alias
 bioregistry,CL,https://identifiers.org/CL/,prefix_alias
 bioregistry,CL,https://identifiers.org/CL:,prefix_alias
 bioregistry,CL,https://identifiers.org/cl/CL:,prefix_alias
@@ -4966,6 +4973,7 @@ bioregistry,GRAMENE.GENE,https://identifiers.org/gramene.gene/,prefix_alias
 bioregistry,GRAMENE.GENE,https://identifiers.org/gramene.gene:,prefix_alias
 bioregistry,GRAMENE.GENE,https://n2t.net/gramene.gene:,prefix_alias
 bioregistry,GRAMENE.GENE,https://www.gramene.org/db/genes/search_gene?acc=,prefix_alias
+bioregistry,GRAMENE.GROWTHSTAGE,http://purl.obolibrary.org/obo/GRO_,namespace_alias
 bioregistry,GRAMENE.PROTEIN,http://identifiers.org/gramene.protein/,canonical
 bioregistry,GRAMENE.PROTEIN,http://bioregistry.io/GR_PROTEIN:,prefix_alias
 bioregistry,GRAMENE.PROTEIN,http://bioregistry.io/gramene.protein:,prefix_alias
@@ -6090,11 +6098,13 @@ bioregistry,INTERLEX,http://bioregistry.io/ILX:,prefix_alias
 bioregistry,INTERLEX,http://bioregistry.io/interlex:,prefix_alias
 bioregistry,INTERLEX,http://identifiers.org/ilx:,prefix_alias
 bioregistry,INTERLEX,http://scicrunch.org/scicrunch/interlex/view/ilx_,prefix_alias
+bioregistry,INTERLEX,http://uri.interlex.org/base/,prefix_alias
 bioregistry,INTERLEX,https://bioregistry.io/ILX:,prefix_alias
 bioregistry,INTERLEX,https://bioregistry.io/interlex:,prefix_alias
 bioregistry,INTERLEX,https://identifiers.org/ilx/,prefix_alias
 bioregistry,INTERLEX,https://identifiers.org/ilx:,prefix_alias
 bioregistry,INTERLEX,https://scicrunch.org/scicrunch/interlex/view/ilx_,prefix_alias
+bioregistry,INTERLEX,https://uri.interlex.org/base/,prefix_alias
 bioregistry,interpro,http://purl.obolibrary.org/obo/IPR_,canonical
 bioregistry,interpro,http://bio2rdf.org/interpro:,prefix_alias
 bioregistry,interpro,http://bioregistry.io/IP:,prefix_alias
@@ -6875,6 +6885,14 @@ bioregistry,MACIE,https://identifiers.org/macie:,prefix_alias
 bioregistry,MACIE,https://n2t.net/macie:,prefix_alias
 bioregistry,MACIE,https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/entry/getPage.pl?id=,prefix_alias
 bioregistry,MACIE,https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/MACiE/getPage.pl?id=,prefix_alias
+bioregistry,MAGGOT,http://identifiers.org/maggot/,canonical
+bioregistry,MAGGOT,http://bioregistry.io/maggot:,prefix_alias
+bioregistry,MAGGOT,http://identifiers.org/maggot:,prefix_alias
+bioregistry,MAGGOT,http://pmb-bordeaux.fr/maggot/metadata/,prefix_alias
+bioregistry,MAGGOT,https://bioregistry.io/maggot:,prefix_alias
+bioregistry,MAGGOT,https://identifiers.org/maggot/,prefix_alias
+bioregistry,MAGGOT,https://identifiers.org/maggot:,prefix_alias
+bioregistry,MAGGOT,https://pmb-bordeaux.fr/maggot/metadata/,prefix_alias
 bioregistry,MAIZEGDB,http://identifiers.org/maizegdb.locus/,namespace_alias
 bioregistry,MAIZEGDB.LOCUS,http://identifiers.org/maizegdb.locus/,canonical
 bioregistry,MAIZEGDB.LOCUS,http://bio2rdf.org/maizegdb:,prefix_alias
@@ -8562,12 +8580,15 @@ bioregistry,NIAEST,https://identifiers.org/niaest/,prefix_alias
 bioregistry,NIAEST,https://identifiers.org/niaest:,prefix_alias
 bioregistry,NIAEST,https://lgsun.grc.nia.nih.gov/cgi-bin/pro3?sname1=,prefix_alias
 bioregistry,NIAEST,https://n2t.net/niaest:,prefix_alias
+bioregistry,nif.cell,http://purl.obolibrary.org/obo/NIF_CELL_,namespace_alias
+bioregistry,nif.dysfunction,http://purl.obolibrary.org/obo/NIF_DYSFUNCTION_,namespace_alias
 bioregistry,NIF.EXT,http://uri.neuinfo.org/nif/nifstd/nifext_,canonical
 bioregistry,NIF.EXT,http://bioregistry.io/NIFEXT:,prefix_alias
 bioregistry,NIF.EXT,http://bioregistry.io/nif.ext:,prefix_alias
 bioregistry,NIF.EXT,https://bioregistry.io/NIFEXT:,prefix_alias
 bioregistry,NIF.EXT,https://bioregistry.io/nif.ext:,prefix_alias
 bioregistry,NIF.EXT,https://uri.neuinfo.org/nif/nifstd/nifext_,prefix_alias
+bioregistry,nif.grossanatomy,http://purl.obolibrary.org/obo/NIF_GROSSANATOMY_,namespace_alias
 bioregistry,NIF.STD,http://uri.neuinfo.org/nif/nifstd/,canonical
 bioregistry,NIF.STD,http://bioregistry.io/NIFSTD:,prefix_alias
 bioregistry,NIF.STD,http://bioregistry.io/nif.std:,prefix_alias
@@ -9230,6 +9251,10 @@ bioregistry,OPENALEX,https://openalex.org/,canonical
 bioregistry,OPENALEX,http://bioregistry.io/openalex:,prefix_alias
 bioregistry,OPENALEX,http://openalex.org/,prefix_alias
 bioregistry,OPENALEX,https://bioregistry.io/openalex:,prefix_alias
+bioregistry,OPENWEMI,https://dcmi.github.io/openwemi/ns#,canonical
+bioregistry,OPENWEMI,http://bioregistry.io/openwemi:,prefix_alias
+bioregistry,OPENWEMI,http://dcmi.github.io/openwemi/ns#,prefix_alias
+bioregistry,OPENWEMI,https://bioregistry.io/openwemi:,prefix_alias
 bioregistry,OPL,http://purl.obolibrary.org/obo/OPL_,canonical
 bioregistry,OPL,http://bioregistry.io/OPL:,prefix_alias
 bioregistry,OPL,http://www.ebi.ac.uk/ols/ontologies/opl/terms?iri=http://purl.obolibrary.org/obo/OPL_,prefix_alias
@@ -10825,6 +10850,10 @@ bioregistry,RDF,http://www.w3.org/1999/02/22-rdf-syntax-ns#,canonical
 bioregistry,RDF,http://bioregistry.io/rdf:,prefix_alias
 bioregistry,RDF,https://bioregistry.io/rdf:,prefix_alias
 bioregistry,RDF,https://www.w3.org/1999/02/22-rdf-syntax-ns#,prefix_alias
+bioregistry,RDFA,http://www.w3.org/ns/rdfa#,canonical
+bioregistry,RDFA,http://bioregistry.io/rdfa:,prefix_alias
+bioregistry,RDFA,https://bioregistry.io/rdfa:,prefix_alias
+bioregistry,RDFA,https://www.w3.org/ns/rdfa#,prefix_alias
 bioregistry,RDFS,http://www.w3.org/2000/01/rdf-schema#,canonical
 bioregistry,RDFS,http://bioregistry.io/rdfs:,prefix_alias
 bioregistry,RDFS,https://bioregistry.io/rdfs:,prefix_alias
@@ -12344,6 +12373,14 @@ bioregistry,TREEFAM,https://identifiers.org/treefam:,prefix_alias
 bioregistry,TREEFAM,https://n2t.net/treefam:,prefix_alias
 bioregistry,TREEFAM,https://www.treefam.org/cgi-bin/TFinfo.pl?ac=,prefix_alias
 bioregistry,TREEFAM,https://www.treefam.org/family/,prefix_alias
+bioregistry,TRICDB,http://identifiers.org/tricdb/,canonical
+bioregistry,TRICDB,http://biomeddb.org/Disease/Details?DISEASEID=,prefix_alias
+bioregistry,TRICDB,http://bioregistry.io/tricdb:,prefix_alias
+bioregistry,TRICDB,http://identifiers.org/tricdb:,prefix_alias
+bioregistry,TRICDB,https://biomeddb.org/Disease/Details?DISEASEID=,prefix_alias
+bioregistry,TRICDB,https://bioregistry.io/tricdb:,prefix_alias
+bioregistry,TRICDB,https://identifiers.org/tricdb/,prefix_alias
+bioregistry,TRICDB,https://identifiers.org/tricdb:,prefix_alias
 bioregistry,TRICHDB,http://identifiers.org/trichdb/,canonical
 bioregistry,TRICHDB,http://bioregistry.io/trichdb:,prefix_alias
 bioregistry,TRICHDB,http://identifiers.org/trichdb:,prefix_alias
@@ -12405,6 +12442,7 @@ bioregistry,Uber-anatomy ontology,http://purl.obolibrary.org/obo/UBERON_,namespa
 bioregistry,UBERON,http://purl.obolibrary.org/obo/UBERON_,canonical
 bioregistry,UBERON,http://bioregistry.io/UBERON:,prefix_alias
 bioregistry,UBERON,http://bioregistry.io/Uber-anatomy ontology:,prefix_alias
+bioregistry,UBERON,http://cellxgene.cziscience.com/cellguide/tissues/UBERON_,prefix_alias
 bioregistry,UBERON,http://identifiers.org/UBERON/,prefix_alias
 bioregistry,UBERON,http://identifiers.org/UBERON:,prefix_alias
 bioregistry,UBERON,http://identifiers.org/uberon/UBERON:,prefix_alias
@@ -12415,6 +12453,7 @@ bioregistry,UBERON,http://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http://p
 bioregistry,UBERON,http://www.ebi.ac.uk/ols4/ontologies/uberon/terms?obo_id=UBERON:,prefix_alias
 bioregistry,UBERON,https://bioregistry.io/UBERON:,prefix_alias
 bioregistry,UBERON,https://bioregistry.io/Uber-anatomy ontology:,prefix_alias
+bioregistry,UBERON,https://cellxgene.cziscience.com/cellguide/tissues/UBERON_,prefix_alias
 bioregistry,UBERON,https://identifiers.org/UBERON/,prefix_alias
 bioregistry,UBERON,https://identifiers.org/UBERON:,prefix_alias
 bioregistry,UBERON,https://identifiers.org/uberon/UBERON:,prefix_alias
