@@ -26,7 +26,7 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "bioportal": from_bioportal_file,
     "bioregistry.upper": from_bioregistry_upper,
     "bioregistry": from_bioregistry,
-    "prefixcc": from_prefixcc,
+    # "prefixcc": from_prefixcc,
     "w3id": from_w3id,
 }
 """Maps the name of a context to the python function that can generate it"""
