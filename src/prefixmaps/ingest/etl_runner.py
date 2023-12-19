@@ -7,6 +7,7 @@ import click
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import CONTEXT, Context
 from prefixmaps.ingest.ingest_bioportal import from_bioportal_file
+from prefixmaps.ingest.ingest_jsonld import from_prefixcc
 from prefixmaps.ingest.ingest_bioregistry import (
     from_bioregistry,
     from_bioregistry_upper,
@@ -25,14 +26,14 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "bioportal": from_bioportal_file,
     "bioregistry.upper": from_bioregistry_upper,
     "bioregistry": from_bioregistry,
-    # "prefixcc": from_prefixcc,
+    "prefixcc": from_prefixcc,
     "w3id": from_w3id,
 }
 """Maps the name of a context to the python function that can generate it"""
 
 COMBINED = {
     "merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
-    "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
+    "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper","prefixcc"],
 }
 """Contexts that remix other contexts. Order is significant, with the first listed having highest precedence."""
 

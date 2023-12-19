@@ -936,7 +936,7 @@ prefixcc,gfo,http://www.onto-med.de/ontologies/gfo.owl#,canonical
 prefixcc,gg,http://www.gemeentegeschiedenis.nl/gg-schema#,canonical
 prefixcc,ggbn,http://data.ggbn.org/schemas/ggbn/terms/,canonical
 prefixcc,ghga,http://w3id.org/ghga/,canonical
-prefixcc,gist,http://ontologies.semanticarts.com/gist#,canonical
+prefixcc,gist,https://ontologies.semanticarts.com/o/gistCore#,canonical
 prefixcc,giving,http://ontologi.es/giving#,canonical
 prefixcc,gl,http://schema.geolink.org/,canonical
 prefixcc,gldp,http://www.w3.org/ns/people#,canonical
