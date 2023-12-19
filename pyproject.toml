@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "prefixmaps"
-version = "0.1.8"
+version = "0.0.0"
 description = "A python library for retrieving semantic prefix maps"
 readme = "README.md"
 authors = ["cmungall <cjm@berkeleybop.org>"]
@@ -39,6 +39,11 @@ curies = ">=0.5.3"
 tox = "^4.11.3"
 pydantic = "^2.5"
 
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
+
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.2"
@@ -65,8 +70,8 @@ line-length = 100
 target-version = ["py39", "py310"]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.poetry.scripts]
 slurp-prefixmaps = "prefixmaps.ingest.etl_runner:cli"
