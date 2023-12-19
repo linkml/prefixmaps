@@ -7,12 +7,12 @@ import click
 from prefixmaps.data import data_path
 from prefixmaps.datamodel.context import CONTEXT, Context
 from prefixmaps.ingest.ingest_bioportal import from_bioportal_file
-from prefixmaps.ingest.ingest_jsonld import from_prefixcc
 from prefixmaps.ingest.ingest_bioregistry import (
     from_bioregistry,
     from_bioregistry_upper,
 )
 from prefixmaps.ingest.ingest_go import parse_go_xrefs_from_remote
+from prefixmaps.ingest.ingest_jsonld import from_prefixcc
 from prefixmaps.ingest.ingest_linkml import from_semweb_curated
 from prefixmaps.ingest.ingest_shacl import from_obo
 from prefixmaps.ingest.ingest_w3id import from_w3id
@@ -33,7 +33,7 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
 
 COMBINED = {
     "merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
-    "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper","prefixcc"],
+    "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
 }
 """Contexts that remix other contexts. Order is significant, with the first listed having highest precedence."""
 
