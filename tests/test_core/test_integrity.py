@@ -16,7 +16,7 @@ class TestIntegrity(unittest.TestCase):
         """Set up the test case with all contexts."""
         # We don't expect some merged contexts to pass all tests, see:
         # See: https://github.com/linkml/prefixmaps/issues/26
-        skip = {"merged", "merged.oak"}
+        skip = {"merged", "merged.oak", "merged.monarch"}
         self.contexts: Mapping[str, Context] = {
             key: load_context(key) for key, path in context_paths.items() if key not in skip
         }
