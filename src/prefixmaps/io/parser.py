@@ -40,6 +40,8 @@ def load_multi_context(names: List[CONTEXT], refresh=False) -> Context:
     :param refresh: if True, fetch from upstream
     :return:
     """
+    if len(names) == 1:
+        return load_context(names[0], refresh=refresh)
     name = "+".join(names)
     ctxt = Context(name)
     for n in names:

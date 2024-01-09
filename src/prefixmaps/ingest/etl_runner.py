@@ -33,6 +33,7 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
 
 COMBINED = {
     "merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
+    "merged.monarch": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
     "merged.oak": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
 }
 """Contexts that remix other contexts. Order is significant, with the first listed having highest precedence."""
