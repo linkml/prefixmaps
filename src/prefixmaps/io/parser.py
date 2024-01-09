@@ -41,7 +41,9 @@ def load_multi_context(names: List[CONTEXT], refresh=False) -> Context:
     :return:
     """
     name = "+".join(names)
-    ctxt = Context(name)
+    # Using the first context as the base, merging from empty context doesn't seem to work
+    ctxt = load_context(names.pop(), refresh=refresh)
+    ctxt.name = name
     for n in names:
         ctxt.combine(load_context(n, refresh=refresh))
     return ctxt
