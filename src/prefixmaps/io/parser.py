@@ -40,10 +40,10 @@ def load_multi_context(names: List[CONTEXT], refresh=False) -> Context:
     :param refresh: if True, fetch from upstream
     :return:
     """
+    if len(names) == 1:
+        return load_context(names[0], refresh=refresh)
     name = "+".join(names)
-    # Using the first context as the base, merging from empty context doesn't seem to work
-    ctxt = load_context(names.pop(), refresh=refresh)
-    ctxt.name = name
+    ctxt = Context(name)
     for n in names:
         ctxt.combine(load_context(n, refresh=refresh))
     return ctxt
