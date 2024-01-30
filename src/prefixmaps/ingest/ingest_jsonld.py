@@ -1,4 +1,5 @@
 """Generic JSON-LD ingests."""
+
 import json
 from typing import Any, Dict, List, Optional, TextIO, Union
 

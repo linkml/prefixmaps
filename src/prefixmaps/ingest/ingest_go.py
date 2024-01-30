@@ -1,4 +1,5 @@
 """Ingests the GO prefix registry."""
+
 from typing import TextIO, Union
 
 import requests

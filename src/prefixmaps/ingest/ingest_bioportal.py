@@ -1,4 +1,5 @@
 """Simple ETL from bioportal to prefixmaps."""
+
 from typing import Any, Dict, TextIO, Union
 
 from prefixmaps.data import data_path
