@@ -1,6 +1,7 @@
 """Tests core expansion logic and data.
 This serves as "checksums" on the underlying ingested data.
 """
+
 import unittest
 
 import prefixmaps

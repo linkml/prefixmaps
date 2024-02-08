@@ -1,4 +1,5 @@
 """Ingests from triples using the SHACL PrefixDeclarations data model."""
+
 from typing import Any, TextIO, Union
 
 import rdflib
