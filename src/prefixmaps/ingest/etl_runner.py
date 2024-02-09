@@ -1,4 +1,5 @@
 """ETL logic for retrieving and normalizing upstream contexts."""
+
 from pathlib import Path
 from typing import Callable, Dict, Mapping, Union
 
