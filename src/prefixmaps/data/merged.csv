@@ -12393,7 +12393,6 @@ merged,prviv,http://purl.org/net/provenance/integrity#,canonical,prefixcc
 merged,prvr,http://purl.org/ontology/prv/rules#,canonical,prefixcc
 merged,prvt,http://purl.org/net/provenance/types#,namespace_alias,prefixcc
 merged,prvtypes,http://purl.org/net/provenance/types#,canonical,prefixcc
-merged,przecieki,http://onlyfans.com/emiliaszymanska/,canonical,prefixcc
 merged,ps,https://w3id.org/payswarm#,canonical,prefixcc
 merged,PSCDB,http://identifiers.org/pscdb/,canonical,bioregistry
 merged,PSCDB,http://bioregistry.io/pscdb:,prefix_alias,bioregistry
@@ -15888,7 +15887,6 @@ merged,VECTORBASE,https://n2t.net/vectorbase:,prefix_alias,bioregistry
 merged,VECTORBASE,https://vectorbase.org/gene/,prefix_alias,bioregistry
 merged,VECTORBASE,https://vectorbase.org/vectorbase/app/record/gene/,prefix_alias,bioregistry
 merged,VECTORBASE,https://www.vectorbase.org/[?species_name]/Gene/Summary?db=core;g=,prefix_alias,bioregistry
-merged,veelana,http://onlyfans.com/veelana/,canonical,prefixcc
 merged,VEGBANK,http://identifiers.org/vegbank/,canonical,bioregistry
 merged,VEGBANK,http://bioregistry.io/vegbank:,prefix_alias,bioregistry
 merged,VEGBANK,http://identifiers.org/vegbank:,prefix_alias,bioregistry

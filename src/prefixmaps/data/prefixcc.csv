@@ -1943,7 +1943,6 @@ prefixcc,prviv,http://purl.org/net/provenance/integrity#,canonical
 prefixcc,prvr,http://purl.org/ontology/prv/rules#,canonical
 prefixcc,prvt,http://purl.org/net/provenance/types#,namespace_alias
 prefixcc,prvtypes,http://purl.org/net/provenance/types#,canonical
-prefixcc,przecieki,http://onlyfans.com/emiliaszymanska/,canonical
 prefixcc,ps,https://w3id.org/payswarm#,canonical
 prefixcc,psh,http://ns.inria.fr/probabilistic-shacl/,canonical
 prefixcc,pso,http://purl.org/spar/pso/,canonical
@@ -2829,7 +2828,6 @@ prefixcc,vcard2006,http://www.w3.org/2006/vcard/ns#,namespace_alias
 prefixcc,vcardx,http://buzzword.org.uk/rdf/vcardx#,canonical
 prefixcc,vcs,https://data.vlaanderen.be/ns/chemische_stof#,canonical
 prefixcc,vdpp,http://data.lirmm.fr/ontologies/vdpp#,canonical
-prefixcc,veelana,http://onlyfans.com/veelana/,canonical
 prefixcc,vehma,http://deductions.github.io/vehicule-management.owl.ttl#,canonical
 prefixcc,vehman,http://deductions.github.io/vehicule-management.owl.ttl#,namespace_alias
 prefixcc,veo,http://linkeddata.finki.ukim.mk/lod/ontology/veo#,canonical

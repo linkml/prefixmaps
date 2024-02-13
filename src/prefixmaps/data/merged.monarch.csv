@@ -7816,7 +7816,6 @@ merged.monarch,lds,https://solid.ti.rw.fau.de/public/ns/linked-data-structures#,
 merged.monarch,ldt,https://www.w3.org/ns/ldt#,canonical,prefixcc
 merged.monarch,ldvm,http://linked.opendata.cz/ontology/ldvm/,canonical,prefixcc
 merged.monarch,leak,http://data.ontotext.com/resource/leak/,canonical,prefixcc
-merged.monarch,leaks,https://onlyfans.com/chelxie/,canonical,prefixcc
 merged.monarch,led,http://led.kmi.open.ac.uk/term/,canonical,prefixcc
 merged.monarch,legal,http://www.w3.org/ns/legal#,canonical,prefixcc
 merged.monarch,LEI,http://identifiers.org/lei/,canonical,bioregistry
@@ -12394,7 +12393,6 @@ merged.monarch,prviv,http://purl.org/net/provenance/integrity#,canonical,prefixc
 merged.monarch,prvr,http://purl.org/ontology/prv/rules#,canonical,prefixcc
 merged.monarch,prvt,http://purl.org/net/provenance/types#,namespace_alias,prefixcc
 merged.monarch,prvtypes,http://purl.org/net/provenance/types#,canonical,prefixcc
-merged.monarch,przecieki,http://onlyfans.com/emiliaszymanska/,canonical,prefixcc
 merged.monarch,ps,https://w3id.org/payswarm#,canonical,prefixcc
 merged.monarch,PSCDB,http://identifiers.org/pscdb/,canonical,bioregistry
 merged.monarch,PSCDB,http://bioregistry.io/pscdb:,prefix_alias,bioregistry
@@ -15889,7 +15887,6 @@ merged.monarch,VECTORBASE,https://n2t.net/vectorbase:,prefix_alias,bioregistry
 merged.monarch,VECTORBASE,https://vectorbase.org/gene/,prefix_alias,bioregistry
 merged.monarch,VECTORBASE,https://vectorbase.org/vectorbase/app/record/gene/,prefix_alias,bioregistry
 merged.monarch,VECTORBASE,https://www.vectorbase.org/[?species_name]/Gene/Summary?db=core;g=,prefix_alias,bioregistry
-merged.monarch,veelana,http://onlyfans.com/veelana/,canonical,prefixcc
 merged.monarch,VEGBANK,http://identifiers.org/vegbank/,canonical,bioregistry
 merged.monarch,VEGBANK,http://bioregistry.io/vegbank:,prefix_alias,bioregistry
 merged.monarch,VEGBANK,http://identifiers.org/vegbank:,prefix_alias,bioregistry
