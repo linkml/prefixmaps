@@ -11753,6 +11753,10 @@ bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2022_07_31:,prefix_alias
 bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2022_09_01:,prefix_alias
 bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2022_12_31:,prefix_alias
 bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2023_02_28:,prefix_alias
+bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2023_03_01:,prefix_alias
+bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2023_09_01:,prefix_alias
+bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2023_10_01:,prefix_alias
+bioregistry,snomedct,http://bioregistry.io/SNOMEDCT_US_2023_11_01:,prefix_alias
 bioregistry,snomedct,http://bioregistry.io/SNOMED_CT:,prefix_alias
 bioregistry,snomedct,http://bioregistry.io/SNOMED_CT_US_2018_03_01:,prefix_alias
 bioregistry,snomedct,http://bioregistry.io/SNOWMEDCT:,prefix_alias
@@ -11790,6 +11794,10 @@ bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2022_07_31:,prefix_alias
 bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2022_09_01:,prefix_alias
 bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2022_12_31:,prefix_alias
 bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2023_02_28:,prefix_alias
+bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2023_03_01:,prefix_alias
+bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2023_09_01:,prefix_alias
+bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2023_10_01:,prefix_alias
+bioregistry,snomedct,https://bioregistry.io/SNOMEDCT_US_2023_11_01:,prefix_alias
 bioregistry,snomedct,https://bioregistry.io/SNOMED_CT:,prefix_alias
 bioregistry,snomedct,https://bioregistry.io/SNOMED_CT_US_2018_03_01:,prefix_alias
 bioregistry,snomedct,https://bioregistry.io/SNOWMEDCT:,prefix_alias
@@ -11819,6 +11827,10 @@ bioregistry,SNOMEDCT_US_2022_07_31,http://identifiers.org/snomedct/,namespace_al
 bioregistry,SNOMEDCT_US_2022_09_01,http://identifiers.org/snomedct/,namespace_alias
 bioregistry,SNOMEDCT_US_2022_12_31,http://identifiers.org/snomedct/,namespace_alias
 bioregistry,SNOMEDCT_US_2023_02_28,http://identifiers.org/snomedct/,namespace_alias
+bioregistry,SNOMEDCT_US_2023_03_01,http://identifiers.org/snomedct/,namespace_alias
+bioregistry,SNOMEDCT_US_2023_09_01,http://identifiers.org/snomedct/,namespace_alias
+bioregistry,SNOMEDCT_US_2023_10_01,http://identifiers.org/snomedct/,namespace_alias
+bioregistry,SNOMEDCT_US_2023_11_01,http://identifiers.org/snomedct/,namespace_alias
 bioregistry,SNOMEDCTCT,http://identifiers.org/snomedct/,namespace_alias
 bioregistry,SNOMEDCTCT_2018_03_01,http://identifiers.org/snomedct/,namespace_alias
 bioregistry,SNOMEDCTCT_2019_03_01,http://identifiers.org/snomedct/,namespace_alias
