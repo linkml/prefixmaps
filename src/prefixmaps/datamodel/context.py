@@ -1,5 +1,4 @@
 """Classes for managing individual Contexts."""
-import copy
 import logging
 import re
 from collections import defaultdict
@@ -268,7 +267,7 @@ class Context:
         if as_list:
             return list(res)
         else:
-            return copy.copy(res)
+            return res
 
     def namespaces(self, lower=False, force:bool = True, as_list:bool = True) -> Union[List[str], Set[str]]:
         """
@@ -292,7 +291,7 @@ class Context:
         if as_list:
             return list(res)
         else:
-            return copy.copy(res)
+            return res
 
 
     def as_dict(self) -> PREFIX_EXPANSION_DICT:
