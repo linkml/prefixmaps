@@ -97,7 +97,7 @@
 <p>Classes for managing individual Contexts.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.datamodel.context.</span></span><span class="sig-name descname"><span class="pre">Context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_expansions=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comments=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merged_from=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.datamodel.context.</span></span><span class="sig-name descname"><span class="pre">Context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_expansions=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comments=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merged_from=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_prefixes=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_prefixes_lower=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_namespaces=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_namespaces_lower=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>A context is a localized collection of prefix expansions.</p>
 <p>A context should be internally consistent:</p>
@@ -107,7 +107,7 @@
 <p>However, there is no guarantee that a context is consistent with other contexts.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.add_prefix">
-<span class="sig-name descname"><span class="pre">add_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StatusType.canonical</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preferred</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expansion_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.add_prefix" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StatusType.canonical</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preferred</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expansion_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.add_prefix" title="Permalink to this definition"></a></dt>
 <dd><p>Adds a prefix expansion to this context.</p>
 <p>The current context stays canonical. Additional prefixes
 added may be classified as non-canonical.</p>
@@ -124,6 +124,7 @@ UNLESS preferred=True</p>
 <li><p><strong>expansion_source</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – An optional annotation to be used when merging contexts together.
 The source will keep track of the original context that a given prefix
 expansion came from. This is used in <a class="reference internal" href="#prefixmaps.datamodel.context.Context.combine" title="prefixmaps.datamodel.context.Context.combine"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Context.combine()</span></code></a>.</p></li>
+<li><p><strong>force</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – if True, recompute namespaces and prefixes. default False.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -271,14 +272,18 @@ and the merged expansions are marked as non-canonical</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.namespaces">
-<span class="sig-name descname"><span class="pre">namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.namespaces" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.namespaces" title="Permalink to this definition"></a></dt>
 <dd><p>All unique namespaces in all prefix expansions</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>lower</strong> – if True, the namespace is normalized to lowercase.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lower</strong> – if True, the namespace is normalized to lowercase.</p></li>
+<li><p><strong>force</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – if True, recompute. if False, return cached</p></li>
+<li><p><strong>as_list</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – if True (default), return as a list. Otherwise a set</p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -294,14 +299,18 @@ and the merged expansions are marked as non-canonical</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="prefixmaps.datamodel.context.Context.prefixes">
-<span class="sig-name descname"><span class="pre">prefixes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.prefixes" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">prefixes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.datamodel.context.Context.prefixes" title="Permalink to this definition"></a></dt>
 <dd><p>All unique prefixes in all prefix expansions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>lower</strong> – if True, the prefix is normalized to lowercase.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lower</strong> – if True, the prefix is normalized to lowercase.</p></li>
+<li><p><strong>force</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – if True, recompute. if False, return cached</p></li>
+<li><p><strong>as_list</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – if True (default), return as a list. Otherwise a set</p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
