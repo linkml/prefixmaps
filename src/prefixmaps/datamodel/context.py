@@ -1,11 +1,11 @@
 """Classes for managing individual Contexts."""
-
+import copy
 import logging
 import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import List, Mapping, Optional
+from typing import List, Mapping, Optional, Set, Union
 
 import curies
 
@@ -143,6 +143,14 @@ class Context:
     merged_from: Optional[List[str]] = None
     upper: bool = None
     lower: bool = None
+    _prefixes: Optional[Set[str]] = None
+    """Private attr to speed up duplicate lookups"""
+    _prefixes_lower: Optional[Set[str]] = None
+    """Private attr to speed up duplicate lookups"""
+    _namespaces: Optional[Set[str]] = None
+    """Private attr to speed up duplicate lookups"""
+    _namespaces_lower: Optional[Set[str]] = None
+    """Private attr to speed up duplicate lookups"""
 
     def combine(self, context: "Context"):
         """
@@ -164,6 +172,7 @@ class Context:
         status: StatusType = StatusType.canonical,
         preferred: bool = False,
         expansion_source: Optional[str] = None,
+        force: bool = False
     ):
         """
         Adds a prefix expansion to this context.
@@ -182,9 +191,11 @@ class Context:
         :param expansion_source: An optional annotation to be used when merging contexts together.
             The source will keep track of the original context that a given prefix
             expansion came from. This is used in :meth:`Context.combine`.
+        :param force: if True, recompute namespaces and prefixes. default False.
         :return:
         """
         # TODO: check status
+        _prefix = prefix
         if not preferred:
             if self.upper:
                 prefix = prefix.upper()
@@ -192,8 +203,8 @@ class Context:
                     raise ValueError("Cannot set both upper AND lower")
             if self.lower:
                 prefix = prefix.lower()
-        prefixes = self.prefixes(lower=True)
-        namespaces = self.namespaces(lower=True)
+        prefixes = self.prefixes(lower=True, force=force, as_list=False)
+        namespaces = self.namespaces(lower=True, force=force, as_list=False)
         if prefix.lower() in prefixes:
             if namespace.lower() in namespaces:
                 return
@@ -203,6 +214,7 @@ class Context:
         else:
             if namespace.lower() in namespaces:
                 status = StatusType.namespace_alias
+
         self.prefix_expansions.append(
             PrefixExpansion(
                 context=self.name,
@@ -212,6 +224,10 @@ class Context:
                 expansion_source=expansion_source,
             )
         )
+        self._prefixes.add(_prefix)
+        self._prefixes_lower.add(prefix.lower())
+        self._namespaces.add(namespace)
+        self._namespaces_lower.add(namespace.lower())
 
     def filter(self, prefix: PREFIX = None, namespace: NAMESPACE = None):
         """
@@ -230,29 +246,54 @@ class Context:
             filtered_pes.append(pe)
         return filtered_pes
 
-    def prefixes(self, lower=False) -> List[str]:
+    def prefixes(self, lower=False, force:bool = True, as_list: bool = True) -> Union[List[str], Set[str]]:
         """
         All unique prefixes in all prefix expansions.
 
         :param lower: if True, the prefix is normalized to lowercase.
+        :param force: if True, recompute. if False, return cached
+        :param as_list: if True (default), return as a list. Otherwise a set
         :return:
         """
         if lower:
-            return list({pe.prefix.lower() for pe in self.prefix_expansions})
-        else:
-            return list({pe.prefix for pe in self.prefix_expansions})
+            if force or self._prefixes_lower is None:
+                self._prefixes_lower = {pe.prefix.lower() for pe in self.prefix_expansions}
+            res = self._prefixes_lower
 
-    def namespaces(self, lower=False) -> List[str]:
+        else:
+            if force or self._prefixes is None:
+                self._prefixes = {pe.prefix for pe in self.prefix_expansions}
+            res = self._prefixes
+
+        if as_list:
+            return list(res)
+        else:
+            return copy.copy(res)
+
+    def namespaces(self, lower=False, force:bool = True, as_list:bool = True) -> Union[List[str], Set[str]]:
         """
         All unique namespaces in all prefix expansions
 
         :param lower: if True, the namespace is normalized to lowercase.
+        :param force: if True, recompute. if False, return cached
+        :param as_list: if True (default), return as a list. Otherwise a set
         :return:
         """
         if lower:
-            return list({pe.namespace.lower() for pe in self.prefix_expansions})
+            if force or self._namespaces_lower is None:
+                self._namespaces_lower = {pe.namespace.lower() for pe in self.prefix_expansions}
+            res = self._namespaces_lower
+
         else:
-            return list({pe.namespace for pe in self.prefix_expansions})
+            if force or self._namespaces is None:
+                self._namespaces = {pe.namespace for pe in self.prefix_expansions}
+            res = self._namespaces
+
+        if as_list:
+            return list(res)
+        else:
+            return copy.copy(res)
+
 
     def as_dict(self) -> PREFIX_EXPANSION_DICT:
         """
