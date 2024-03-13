@@ -143,13 +143,13 @@ class Context:
     merged_from: Optional[List[str]] = None
     upper: bool = None
     lower: bool = None
-    _prefixes: Optional[Set[str]] = None
+    _prefixes: Set[str] = field(default_factory=set)
     """Private attr to speed up duplicate lookups"""
-    _prefixes_lower: Optional[Set[str]] = None
+    _prefixes_lower: Set[str] = field(default_factory=set)
     """Private attr to speed up duplicate lookups"""
-    _namespaces: Optional[Set[str]] = None
+    _namespaces: Set[str] = field(default_factory=set)
     """Private attr to speed up duplicate lookups"""
-    _namespaces_lower: Optional[Set[str]] = None
+    _namespaces_lower: Set[str] = field(default_factory=set)
     """Private attr to speed up duplicate lookups"""
 
     def combine(self, context: "Context"):
@@ -256,12 +256,12 @@ class Context:
         :return:
         """
         if lower:
-            if force or self._prefixes_lower is None:
+            if force or len(self._prefixes_lower) == 0:
                 self._prefixes_lower = {pe.prefix.lower() for pe in self.prefix_expansions}
             res = self._prefixes_lower
 
         else:
-            if force or self._prefixes is None:
+            if force or len(self._prefixes) == 0:
                 self._prefixes = {pe.prefix for pe in self.prefix_expansions}
             res = self._prefixes
 
@@ -280,12 +280,12 @@ class Context:
         :return:
         """
         if lower:
-            if force or self._namespaces_lower is None:
+            if force or len(self._namespaces_lower) == 0:
                 self._namespaces_lower = {pe.namespace.lower() for pe in self.prefix_expansions}
             res = self._namespaces_lower
 
         else:
-            if force or self._namespaces is None:
+            if force or len(self._namespaces) == 0:
                 self._namespaces = {pe.namespace for pe in self.prefix_expansions}
             res = self._namespaces
 
