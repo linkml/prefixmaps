@@ -1,4 +1,5 @@
 """Classes for managing individual Contexts."""
+
 import logging
 import re
 from collections import defaultdict
@@ -171,7 +172,7 @@ class Context:
         status: StatusType = StatusType.canonical,
         preferred: bool = False,
         expansion_source: Optional[str] = None,
-        force: bool = False
+        force: bool = False,
     ):
         """
         Adds a prefix expansion to this context.
@@ -245,7 +246,9 @@ class Context:
             filtered_pes.append(pe)
         return filtered_pes
 
-    def prefixes(self, lower=False, force:bool = True, as_list: bool = True) -> Union[List[str], Set[str]]:
+    def prefixes(
+        self, lower=False, force: bool = True, as_list: bool = True
+    ) -> Union[List[str], Set[str]]:
         """
         All unique prefixes in all prefix expansions.
 
@@ -269,7 +272,9 @@ class Context:
         else:
             return res
 
-    def namespaces(self, lower=False, force:bool = True, as_list:bool = True) -> Union[List[str], Set[str]]:
+    def namespaces(
+        self, lower=False, force: bool = True, as_list: bool = True
+    ) -> Union[List[str], Set[str]]:
         """
         All unique namespaces in all prefix expansions
 
@@ -292,7 +297,6 @@ class Context:
             return list(res)
         else:
             return res
-
 
     def as_dict(self) -> PREFIX_EXPANSION_DICT:
         """
