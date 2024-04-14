@@ -15,6 +15,7 @@ go,EMAPA,http://purl.obolibrary.org/obo/EMAPA_,canonical
 go,ENSEMBL,http://identifiers.org/ensembl/,canonical
 go,FB,http://identifiers.org/flybase/,canonical
 go,FBbt,http://purl.obolibrary.org/obo/FBbt_,canonical
+go,FBdv,http://purl.obolibrary.org/obo/FBdv_,canonical
 go,FMA,http://purl.obolibrary.org/obo/FMA_,canonical
 go,FYPO,http://purl.obolibrary.org/obo/FYPO_,canonical
 go,GeneDB,http://identifiers.org/genedb/,canonical

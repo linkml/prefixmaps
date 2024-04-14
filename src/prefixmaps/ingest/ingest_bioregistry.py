@@ -45,7 +45,7 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
     original namespaces. This can be disabled with ``canonical_idorg=False``.
 
     :param upper: if True, normalize prefix to uppercase
-                    unless a preferred form is stated
+                    unless a preferred form is stated, or it's in the SemWeb collection
     :param canonical_idorg: use the original/canonical identifiers.org PURLs
     :param filter_dubious: skip namespaces that do not match
                     strict namespace regular expression
@@ -71,6 +71,8 @@ def from_bioregistry(upper=False, canonical_idorg=True, filter_dubious=True) -> 
         uri_prefix_priority=priority, prefix_priority=prefix_priority
     )
     for record in tqdm(converter.records):
+        # TODO: auto-set preferred to lowercase for SemWeb collection
+        # See https://github.com/linkml/prefixmaps/issues/70
         if record.prefix in SKIP:
             continue
         if filter_dubious and not NAMESPACE_RE.match(record.uri_prefix):

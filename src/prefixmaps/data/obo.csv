@@ -81,6 +81,7 @@ obo,FOBI,http://purl.obolibrary.org/obo/FOBI_,canonical
 obo,FOODON,http://purl.obolibrary.org/obo/FOODON_,canonical
 obo,FOVT,http://purl.obolibrary.org/obo/FOVT_,canonical
 obo,FYPO,http://purl.obolibrary.org/obo/FYPO_,canonical
+obo,GALLONT,http://purl.obolibrary.org/obo/GALLONT_,canonical
 obo,GAZ,http://purl.obolibrary.org/obo/GAZ_,canonical
 obo,GECKO,http://purl.obolibrary.org/obo/GECKO_,canonical
 obo,GENEPIO,http://purl.obolibrary.org/obo/GENEPIO_,canonical
@@ -215,6 +216,7 @@ obo,SCDO,http://purl.obolibrary.org/obo/SCDO_,canonical
 obo,SEP,http://purl.obolibrary.org/obo/SEP_,canonical
 obo,SEPIO,http://purl.obolibrary.org/obo/SEPIO_,canonical
 obo,SIBO,http://purl.obolibrary.org/obo/SIBO_,canonical
+obo,SLSO,http://purl.obolibrary.org/obo/SLSO_,canonical
 obo,SO,http://purl.obolibrary.org/obo/SO_,canonical
 obo,SOPHARM,http://purl.obolibrary.org/obo/SOPHARM_,canonical
 obo,SPD,http://purl.obolibrary.org/obo/SPD_,canonical

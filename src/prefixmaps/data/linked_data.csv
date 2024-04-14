@@ -12,6 +12,8 @@ linkml,pav,http://purl.org/pav/,canonical
 linkml,prov,http://www.w3.org/ns/prov#,canonical
 linkml,qb,http://purl.org/linked-data/cube#,canonical
 linkml,qudt,http://qudt.org/schema/qudt/,canonical
+linkml,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,canonical
+linkml,rdfs,http://www.w3.org/2000/01/rdf-schema#,canonical
 linkml,schema,http://schema.org/,canonical
 linkml,sh,http://www.w3.org/ns/shacl#,canonical
 linkml,shex,http://www.w3.org/ns/shex#,canonical
