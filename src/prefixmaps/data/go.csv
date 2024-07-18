@@ -35,6 +35,7 @@ go,MaizeGDB_Locus,http://identifiers.org/maizegdb.locus/,canonical
 go,MetaCyc,http://identifiers.org/metacyc.reaction/,canonical
 go,MGI,http://identifiers.org/MGI/,canonical
 go,NCBIGene,http://identifiers.org/ncbigene/,canonical
+go,NCBITaxon,http://purl.obolibrary.org/obo/NCBITaxon_,canonical
 go,PANTHER,http://identifiers.org/panther.family/,canonical
 go,PATO,http://purl.obolibrary.org/obo/PATO_,canonical
 go,PlasmoDB,http://identifiers.org/plasmodb/,canonical
@@ -48,7 +49,6 @@ go,SGD,http://identifiers.org/sgd/,canonical
 go,SGN,http://identifiers.org/sgn/,canonical
 go,SO,http://purl.obolibrary.org/obo/SO_,canonical
 go,TAIR,http://identifiers.org/tair.locus/,canonical
-go,taxon,http://purl.obolibrary.org/obo/NCBITaxon_,canonical
 go,TGD,http://identifiers.org/tgd/,canonical
 go,TriTrypDB,http://identifiers.org/tritrypdb/,canonical
 go,UBERON,http://purl.obolibrary.org/obo/UBERON_,canonical

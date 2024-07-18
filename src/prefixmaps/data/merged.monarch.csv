@@ -15084,7 +15084,7 @@ merged.monarch,TAX,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bio
 merged.monarch,taxid,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged.monarch,taxo,http://purl.org/rss/1.0/modules/taxonomy/,canonical,prefixcc
 merged.monarch,taxon,http://purl.org/biodiversity/taxon/,prefix_alias,prefixcc
-merged.monarch,taxon,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,go
+merged.monarch,taxon,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged.monarch,taxonomy,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged.monarch,TaxonomyID,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged.monarch,TAXRANK,http://purl.obolibrary.org/obo/TAXRANK_,canonical,obo
