@@ -44,13 +44,13 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [[package]]
 name = "bioregistry"
-version = "0.10.201"
+version = "0.11.10"
 description = "Integrated registry of biological databases and nomenclatures"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "bioregistry-0.10.201-py3-none-any.whl", hash = "sha256:b5e0745b32f5991dfb48f0232d70141e8e1762ec65a98c8c0f81ee6d7347ecca"},
-    {file = "bioregistry-0.10.201.tar.gz", hash = "sha256:4d3c2a366f1a09a9777deec42598cd2321b1e18aa5888176063314a510e3f9e9"},
+    {file = "bioregistry-0.11.10-py3-none-any.whl", hash = "sha256:0af02ca586024f3791364dae2c04e03156e01df9b6d7eb7f3cb6be5682a40a2d"},
+    {file = "bioregistry-0.11.10.tar.gz", hash = "sha256:d3e155ba38d88f5e4a84a2d337c33109f3434f6b2e64a285eba14817ed5c4492"},
 ]
 
 [package.dependencies]
@@ -65,7 +65,7 @@ tqdm = "*"
 [package.extras]
 align = ["beautifulsoup4", "class-resolver", "defusedxml", "fairsharing-client (>=0.1.0)", "pandas", "pyyaml", "tabulate"]
 charts = ["jinja2", "matplotlib", "matplotlib-venn", "pandas", "seaborn"]
-docs = ["autodoc-pydantic", "sphinx", "sphinx-automodapi", "sphinx-click", "sphinx-rtd-theme"]
+docs = ["autodoc-pydantic", "sphinx (<7.3)", "sphinx-automodapi", "sphinx-click", "sphinx-rtd-theme"]
 export = ["ndex2", "pyyaml", "rdflib", "rdflib-jsonld"]
 gha = ["more-itertools"]
 health = ["click-default-group", "jinja2", "pandas", "pyyaml", "tabulate"]
@@ -1339,4 +1339,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "8412cb4a8c0642692ca736a4a58eda975f389efb25f9ee7b1e572e262737c08d"
+content-hash = "4dce1c177be35e6882ef462929066ef49dd39d3d4accf55b7861eac84cd313c7"
