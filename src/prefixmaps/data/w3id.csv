@@ -23,6 +23,7 @@ w3id,ad4gd,https://w3id.org/ad4gd/,canonical
 w3id,ADHD-KG,https://w3id.org/ADHD-KG/,canonical
 w3id,adso,https://w3id.org/adso/,canonical
 w3id,AEOLUSsmartApi,https://w3id.org/AEOLUSsmartApi/,canonical
+w3id,aerOS,https://w3id.org/aerOS/,canonical
 w3id,afarcloud,https://w3id.org/afarcloud/,canonical
 w3id,affectedBy,https://w3id.org/affectedBy/,canonical
 w3id,afo,https://w3id.org/afo/,canonical
@@ -31,7 +32,9 @@ w3id,agile-dm,https://w3id.org/agile-dm/,canonical
 w3id,agrochemicals-ontology,https://w3id.org/agrochemicals-ontology/,canonical
 w3id,aho,https://w3id.org/aho/,canonical
 w3id,ahso,https://w3id.org/ahso/,canonical
+w3id,aicat,https://w3id.org/aicat/,canonical
 w3id,aida,https://w3id.org/aida/,canonical
+w3id,aidgo,https://w3id.org/aidgo/,canonical
 w3id,aikg,https://w3id.org/aikg/,canonical
 w3id,aimaix,https://w3id.org/aimaix/,canonical
 w3id,aio,https://w3id.org/aio/,canonical
@@ -45,6 +48,7 @@ w3id,akflora,https://w3id.org/akflora/,canonical
 w3id,akn,https://w3id.org/akn/,canonical
 w3id,aktivgraph,https://w3id.org/aktivgraph/,canonical
 w3id,alkis,https://w3id.org/alkis/,canonical
+w3id,AlmesCore,https://w3id.org/AlmesCore/,canonical
 w3id,als-telemonitoring,https://w3id.org/als-telemonitoring/,canonical
 w3id,AmIFAIR,https://w3id.org/AmIFAIR/,canonical
 w3id,amlo,https://w3id.org/amlo/,canonical
@@ -62,6 +66,7 @@ w3id,arkid,https://w3id.org/arkid/,canonical
 w3id,arm,https://w3id.org/arm/,canonical
 w3id,arp,https://w3id.org/arp/,canonical
 w3id,art,https://w3id.org/art/,canonical
+w3id,arto,https://w3id.org/arto/,canonical
 w3id,asbingowl,https://w3id.org/asbingowl/,canonical
 w3id,asdkb,https://w3id.org/asdkb/,canonical
 w3id,asfe,https://w3id.org/asfe/,canonical
@@ -72,11 +77,14 @@ w3id,associations,https://w3id.org/associations/,canonical
 w3id,asx,https://w3id.org/asx/,canonical
 w3id,atomgraph,https://w3id.org/atomgraph/,canonical
 w3id,aufx,https://w3id.org/aufx/,canonical
+w3id,auscope-geochemistry-network,https://w3id.org/auscope-geochemistry-network/,canonical
 w3id,AWARE,https://w3id.org/AWARE/,canonical
 w3id,awslabs,https://w3id.org/awslabs/,canonical
+w3id,axone,https://w3id.org/axone/,canonical
 w3id,BadmintONTO,https://w3id.org/BadmintONTO/,canonical
 w3id,baf,https://w3id.org/baf/,canonical
 w3id,basyx,https://w3id.org/basyx/,canonical
+w3id,battinfo,https://w3id.org/battinfo/,canonical
 w3id,bbs,https://w3id.org/bbs/,canonical
 w3id,BCI-ontology,https://w3id.org/BCI-ontology/,canonical
 w3id,bcom,https://w3id.org/bcom/,canonical
@@ -84,12 +92,14 @@ w3id,bctt,https://w3id.org/bctt/,canonical
 w3id,bearchaeo,https://w3id.org/bearchaeo/,canonical
 w3id,beaware_ontology,https://w3id.org/beaware_ontology/,canonical
 w3id,bedrock,https://w3id.org/bedrock/,canonical
+w3id,beo,https://w3id.org/beo/,canonical
 w3id,bero,https://w3id.org/bero/,canonical
 w3id,BESDUI,https://w3id.org/BESDUI/,canonical
 w3id,besocial,https://w3id.org/besocial/,canonical
 w3id,bestr,https://w3id.org/bestr/,canonical
 w3id,bgv-fdp,https://w3id.org/bgv-fdp/,canonical
 w3id,bibma,https://w3id.org/bibma/,canonical
+w3id,big-map,https://w3id.org/big-map/,canonical
 w3id,BIGOWL,https://w3id.org/BIGOWL/,canonical
 w3id,BIGOWL4DQ,https://w3id.org/BIGOWL4DQ/,canonical
 w3id,BIGOWLAlgorithm,https://w3id.org/BIGOWLAlgorithm/,canonical
@@ -136,11 +146,13 @@ w3id,cc,https://w3id.org/cc/,canonical
 w3id,ccso,https://w3id.org/ccso/,canonical
 w3id,cd2h,https://w3id.org/cd2h/,canonical
 w3id,cdc,https://w3id.org/cdc/,canonical
+w3id,cde,https://w3id.org/cde/,canonical
 w3id,CDO,https://w3id.org/CDO/,canonical
 w3id,CDRIO,https://w3id.org/CDRIO/,canonical
 w3id,cdt,https://w3id.org/cdt/,canonical
 w3id,ce,https://w3id.org/ce/,canonical
 w3id,cedar,https://w3id.org/cedar/,canonical
+w3id,CEIR,https://w3id.org/CEIR/,canonical
 w3id,CEMontology,https://w3id.org/CEMontology/,canonical
 w3id,cenpat-gilia,https://w3id.org/cenpat-gilia/,canonical
 w3id,CEON,https://w3id.org/CEON/,canonical
@@ -155,7 +167,7 @@ w3id,charity-organization,https://w3id.org/charity-organization/,canonical
 w3id,charta77,https://w3id.org/charta77/,canonical
 w3id,chaudron,https://w3id.org/chaudron/,canonical
 w3id,chemrof,https://w3id.org/chemrof/,canonical
-w3id,chevie,https://w3id.org/chevie/,canonical
+w3id,CHeVIE,https://w3id.org/CHeVIE/,canonical
 w3id,CHFDM,https://w3id.org/CHFDM/,canonical
 w3id,ChliAO,https://w3id.org/ChliAO/,canonical
 w3id,cis,https://w3id.org/cis/,canonical
@@ -165,6 +177,7 @@ w3id,cit,https://w3id.org/cit/,canonical
 w3id,citedcat-ap,https://w3id.org/citedcat-ap/,canonical
 w3id,citizenship,https://w3id.org/citizenship/,canonical
 w3id,cityofthings,https://w3id.org/cityofthings/,canonical
+w3id,CityOWL,https://w3id.org/CityOWL/,canonical
 w3id,cityspin,https://w3id.org/cityspin/,canonical
 w3id,ckgg,https://w3id.org/ckgg/,canonical
 w3id,clarin_el_dictionary,https://w3id.org/clarin_el_dictionary/,canonical
@@ -178,6 +191,8 @@ w3id,cmd,https://w3id.org/cmd/,canonical
 w3id,CMECS,https://w3id.org/CMECS/,canonical
 w3id,cmip6dr,https://w3id.org/cmip6dr/,canonical
 w3id,cnco,https://w3id.org/cnco/,canonical
+w3id,cno,https://w3id.org/cno/,canonical
+w3id,cnr-ispc,https://w3id.org/cnr-ispc/,canonical
 w3id,cntf,https://w3id.org/cntf/,canonical
 w3id,cocoon,https://w3id.org/cocoon/,canonical
 w3id,codata,https://w3id.org/codata/,canonical
@@ -197,6 +212,7 @@ w3id,consolid,https://w3id.org/consolid/,canonical
 w3id,contentdesc,https://w3id.org/contentdesc/,canonical
 w3id,convology,https://w3id.org/convology/,canonical
 w3id,coops-uk,https://w3id.org/coops-uk/,canonical
+w3id,cop,https://w3id.org/cop/,canonical
 w3id,corekb,https://w3id.org/corekb/,canonical
 w3id,coreo,https://w3id.org/coreo/,canonical
 w3id,coscine,https://w3id.org/coscine/,canonical
@@ -223,6 +239,7 @@ w3id,csolink,https://w3id.org/csolink/,canonical
 w3id,cspdo,https://w3id.org/cspdo/,canonical
 w3id,ctdl,https://w3id.org/ctdl/,canonical
 w3id,cto,https://w3id.org/cto/,canonical
+w3id,ctp,https://w3id.org/ctp/,canonical
 w3id,ctsr-fdp,https://w3id.org/ctsr-fdp/,canonical
 w3id,culco,https://w3id.org/culco/,canonical
 w3id,CulturalKnowledgeGraph,https://w3id.org/CulturalKnowledgeGraph/,canonical
@@ -265,6 +282,7 @@ w3id,DEMETER_ontologies,https://w3id.org/DEMETER_ontologies/,canonical
 w3id,demo-resources,https://w3id.org/demo-resources/,canonical
 w3id,DepressionFeature,https://w3id.org/DepressionFeature/,canonical
 w3id,devops-infra,https://w3id.org/devops-infra/,canonical
+w3id,dfc,https://w3id.org/dfc/,canonical
 w3id,dfd,https://w3id.org/dfd/,canonical
 w3id,DFDP,https://w3id.org/DFDP/,canonical
 w3id,dfo,https://w3id.org/dfo/,canonical
@@ -272,12 +290,14 @@ w3id,dgarijo,https://w3id.org/dgarijo/,canonical
 w3id,dgassist,https://w3id.org/dgassist/,canonical
 w3id,dgaterms,https://w3id.org/dgaterms/,canonical
 w3id,dggs,https://w3id.org/dggs/,canonical
+w3id,dharc,https://w3id.org/dharc/,canonical
 w3id,dhj,https://w3id.org/dhj/,canonical
 w3id,dice-research,https://w3id.org/dice-research/,canonical
 w3id,did,https://w3id.org/did/,canonical
 w3id,did-resolution,https://w3id.org/did-resolution/,canonical
 w3id,didcomm,https://w3id.org/didcomm/,canonical
 w3id,diga,https://w3id.org/diga/,canonical
+w3id,digibatt,https://w3id.org/digibatt/,canonical
 w3id,digitalconstruction,https://w3id.org/digitalconstruction/,canonical
 w3id,digitalpeople,https://w3id.org/digitalpeople/,canonical
 w3id,DigiTwin,https://w3id.org/DigiTwin/,canonical
@@ -315,9 +335,12 @@ w3id,dsa,https://w3id.org/dsa/,canonical
 w3id,dsd,https://w3id.org/dsd/,canonical
 w3id,dso,https://w3id.org/dso/,canonical
 w3id,dspace,https://w3id.org/dspace/,canonical
+w3id,dst,https://w3id.org/dst/,canonical
 w3id,dstv,https://w3id.org/dstv/,canonical
 w3id,dsv,https://w3id.org/dsv/,canonical
+w3id,dsv-dap,https://w3id.org/dsv-dap/,canonical
 w3id,dsv-ontology,https://w3id.org/dsv-ontology/,canonical
+w3id,dt,https://w3id.org/dt/,canonical
 w3id,dts,https://w3id.org/dts/,canonical
 w3id,duchenne-fdp,https://w3id.org/duchenne-fdp/,canonical
 w3id,duchenne-proms,https://w3id.org/duchenne-proms/,canonical
@@ -335,6 +358,7 @@ w3id,ecodigit,https://w3id.org/ecodigit/,canonical
 w3id,ecsel-dr,https://w3id.org/ecsel-dr/,canonical
 w3id,ecsel-dr-prc-PMV,https://w3id.org/ecsel-dr-prc-PMV/,canonical
 w3id,ecsel-dr-sn-SSP,https://w3id.org/ecsel-dr-sn-SSP/,canonical
+w3id,edc,https://w3id.org/edc/,canonical
 w3id,edfo,https://w3id.org/edfo/,canonical
 w3id,EDH_Ctagged,https://w3id.org/EDH_Ctagged/,canonical
 w3id,edu-sharing,https://w3id.org/edu-sharing/,canonical
@@ -378,6 +402,7 @@ w3id,esbm,https://w3id.org/esbm/,canonical
 w3id,esim,https://w3id.org/esim/,canonical
 w3id,ESO,https://w3id.org/ESO/,canonical
 w3id,esw,https://w3id.org/esw/,canonical
+w3id,EUREF-HDC,https://w3id.org/EUREF-HDC/,canonical
 w3id,euro-nmd-kpis,https://w3id.org/euro-nmd-kpis/,canonical
 w3id,EUTaxO,https://w3id.org/EUTaxO/,canonical
 w3id,evdoxus,https://w3id.org/evdoxus/,canonical
@@ -401,10 +426,12 @@ w3id,ExpO,https://w3id.org/ExpO/,canonical
 w3id,express,https://w3id.org/express/,canonical
 w3id,EXTVARTRANS,https://w3id.org/EXTVARTRANS/,canonical
 w3id,fair,https://w3id.org/fair/,canonical
+w3id,FAIR-academic,https://w3id.org/FAIR-academic/,canonical
 w3id,FAIR-Champion-Harvester,https://w3id.org/FAIR-Champion-Harvester/,canonical
 w3id,FAIR-course-UT,https://w3id.org/FAIR-course-UT/,canonical
 w3id,fair-enough,https://w3id.org/fair-enough/,canonical
 w3id,fair-genomes,https://w3id.org/fair-genomes/,canonical
+w3id,fair4ml,https://w3id.org/fair4ml/,canonical
 w3id,FAIR_COVID19,https://w3id.org/FAIR_COVID19/,canonical
 w3id,FAIR_eva,https://w3id.org/FAIR_eva/,canonical
 w3id,FAIR_Evaluator,https://w3id.org/FAIR_Evaluator/,canonical
@@ -436,9 +463,11 @@ w3id,fkresearch,https://w3id.org/fkresearch/,canonical
 w3id,flashcards,https://w3id.org/flashcards/,canonical
 w3id,flex,https://w3id.org/flex/,canonical
 w3id,flp,https://w3id.org/flp/,canonical
+w3id,fmo,https://w3id.org/fmo/,canonical
 w3id,foam,https://w3id.org/foam/,canonical
 w3id,fog,https://w3id.org/fog/,canonical
 w3id,folia,https://w3id.org/folia/,canonical
+w3id,fom,https://w3id.org/fom/,canonical
 w3id,food,https://w3id.org/food/,canonical
 w3id,foodallergen,https://w3id.org/foodallergen/,canonical
 w3id,foodie,https://w3id.org/foodie/,canonical
@@ -457,6 +486,7 @@ w3id,ftm,https://w3id.org/ftm/,canonical
 w3id,FTP,https://w3id.org/FTP/,canonical
 w3id,ftr,https://w3id.org/ftr/,canonical
 w3id,function,https://w3id.org/function/,canonical
+w3id,fuskg,https://w3id.org/fuskg/,canonical
 w3id,g0v,https://w3id.org/g0v/,canonical
 w3id,ga4gh,https://w3id.org/ga4gh/,canonical
 w3id,gaia-x,https://w3id.org/gaia-x/,canonical
@@ -482,14 +512,17 @@ w3id,geotime,https://w3id.org/geotime/,canonical
 w3id,gerbil,https://w3id.org/gerbil/,canonical
 w3id,GerPS-onto,https://w3id.org/GerPS-onto/,canonical
 w3id,gff,https://w3id.org/gff/,canonical
+w3id,gfo,https://w3id.org/gfo/,canonical
 w3id,gicentre,https://w3id.org/gicentre/,canonical
 w3id,GISOntology4Renovation,https://w3id.org/GISOntology4Renovation/,canonical
 w3id,gizmo,https://w3id.org/gizmo/,canonical
 w3id,glmo,https://w3id.org/glmo/,canonical
 w3id,globalise,https://w3id.org/globalise/,canonical
 w3id,glosis,https://w3id.org/glosis/,canonical
+w3id,GNSS-BE-REPO,https://w3id.org/GNSS-BE-REPO/,canonical
 w3id,gom,https://w3id.org/gom/,canonical
 w3id,gpo,https://w3id.org/gpo/,canonical
+w3id,gptto,https://w3id.org/gptto/,canonical
 w3id,Green-AI-Ontology,https://w3id.org/Green-AI-Ontology/,canonical
 w3id,greycite,https://w3id.org/greycite/,canonical
 w3id,gso,https://w3id.org/gso/,canonical
@@ -497,6 +530,7 @@ w3id,gub,https://w3id.org/gub/,canonical
 w3id,GVTPDOnto,https://w3id.org/GVTPDOnto/,canonical
 w3id,GVTPDOntology,https://w3id.org/GVTPDOntology/,canonical
 w3id,hacid,https://w3id.org/hacid/,canonical
+w3id,hadids,https://w3id.org/hadids/,canonical
 w3id,haf,https://w3id.org/haf/,canonical
 w3id,haf-dev,https://w3id.org/haf-dev/,canonical
 w3id,halo-ontology,https://w3id.org/halo-ontology/,canonical
@@ -533,6 +567,7 @@ w3id,iacs,https://w3id.org/iacs/,canonical
 w3id,iadb,https://w3id.org/iadb/,canonical
 w3id,iadopt,https://w3id.org/iadopt/,canonical
 w3id,iaw,https://w3id.org/iaw/,canonical
+w3id,iberz,https://w3id.org/iberz/,canonical
 w3id,ibp,https://w3id.org/ibp/,canonical
 w3id,ic,https://w3id.org/ic/,canonical
 w3id,icddl,https://w3id.org/icddl/,canonical
@@ -558,9 +593,11 @@ w3id,imec,https://w3id.org/imec/,canonical
 w3id,imgpedia,https://w3id.org/imgpedia/,canonical
 w3id,imkg,https://w3id.org/imkg/,canonical
 w3id,inbio,https://w3id.org/inbio/,canonical
+w3id,indonesia-history,https://w3id.org/indonesia-history/,canonical
 w3id,inesdata,https://w3id.org/inesdata/,canonical
 w3id,inmevo,https://w3id.org/inmevo/,canonical
 w3id,inrupt,https://w3id.org/inrupt/,canonical
+w3id,instructie,https://w3id.org/instructie/,canonical
 w3id,interactions,https://w3id.org/interactions/,canonical
 w3id,interont,https://w3id.org/interont/,canonical
 w3id,ioc,https://w3id.org/ioc/,canonical
@@ -572,16 +609,19 @@ w3id,iotf,https://w3id.org/iotf/,canonical
 w3id,ipsoeu,https://w3id.org/ipsoeu/,canonical
 w3id,iqb,https://w3id.org/iqb/,canonical
 w3id,irnerio,https://w3id.org/irnerio/,canonical
+w3id,irnerio-mosaico,https://w3id.org/irnerio-mosaico/,canonical
 w3id,isa,https://w3id.org/isa/,canonical
 w3id,isample,https://w3id.org/isample/,canonical
 w3id,isCharacterisedBy,https://w3id.org/isCharacterisedBy/,canonical
 w3id,iSeeOnto,https://w3id.org/iSeeOnto/,canonical
 w3id,isil,https://w3id.org/isil/,canonical
+w3id,isoprops,https://w3id.org/isoprops/,canonical
 w3id,italia,https://w3id.org/italia/,canonical
 w3id,itil,https://w3id.org/itil/,canonical
 w3id,ixo,https://w3id.org/ixo/,canonical
 w3id,JazzOntology,https://w3id.org/JazzOntology/,canonical
 w3id,jhercher,https://w3id.org/jhercher/,canonical
+w3id,jicamarca,https://w3id.org/jicamarca/,canonical
 w3id,jp-cos,https://w3id.org/jp-cos/,canonical
 w3id,jp-textbook,https://w3id.org/jp-textbook/,canonical
 w3id,json-ld-patch,https://w3id.org/json-ld-patch/,canonical
@@ -683,6 +723,7 @@ w3id,medred,https://w3id.org/medred/,canonical
 w3id,medtag,https://w3id.org/medtag/,canonical
 w3id,meta,https://w3id.org/meta/,canonical
 w3id,meta-share,https://w3id.org/meta-share/,canonical
+w3id,metabelgica,https://w3id.org/metabelgica/,canonical
 w3id,metadocencia,https://w3id.org/metadocencia/,canonical
 w3id,metamodeling,https://w3id.org/metamodeling/,canonical
 w3id,mex,https://w3id.org/mex/,canonical
@@ -699,6 +740,7 @@ w3id,mircat,https://w3id.org/mircat/,canonical
 w3id,mixs,https://w3id.org/mixs/,canonical
 w3id,mixs-6-2-rc,https://w3id.org/mixs-6-2-rc/,canonical
 w3id,mknd,https://w3id.org/mknd/,canonical
+w3id,mlao,https://w3id.org/mlao/,canonical
 w3id,mlsea,https://w3id.org/mlsea/,canonical
 w3id,mlsea-kg,https://w3id.org/mlsea-kg/,canonical
 w3id,mlseascape,https://w3id.org/mlseascape/,canonical
@@ -749,6 +791,7 @@ w3id,nellrdf,https://w3id.org/nellrdf/,canonical
 w3id,nen2660,https://w3id.org/nen2660/,canonical
 w3id,neptis,https://w3id.org/neptis/,canonical
 w3id,netbeheer,https://w3id.org/netbeheer/,canonical
+w3id,netzsch,https://w3id.org/netzsch/,canonical
 w3id,neural-electronic-interface-ontology,https://w3id.org/neural-electronic-interface-ontology/,canonical
 w3id,neural-sparql-machines,https://w3id.org/neural-sparql-machines/,canonical
 w3id,neurodisk,https://w3id.org/neurodisk/,canonical
@@ -770,8 +813,10 @@ w3id,np,https://w3id.org/np/,canonical
 w3id,ns,https://w3id.org/ns/,canonical
 w3id,nsd,https://w3id.org/nsd/,canonical
 w3id,nsdra,https://w3id.org/nsdra/,canonical
+w3id,nsk,https://w3id.org/nsk/,canonical
 w3id,nta8035,https://w3id.org/nta8035/,canonical
 w3id,nwo-research-fields,https://w3id.org/nwo-research-fields/,canonical
+w3id,nxdg,https://w3id.org/nxdg/,canonical
 w3id,oac,https://w3id.org/oac/,canonical
 w3id,oak,https://w3id.org/oak/,canonical
 w3id,obda,https://w3id.org/obda/,canonical
@@ -797,6 +842,7 @@ w3id,okg,https://w3id.org/okg/,canonical
 w3id,okn,https://w3id.org/okn/,canonical
 w3id,okp4,https://w3id.org/okp4/,canonical
 w3id,olu,https://w3id.org/olu/,canonical
+w3id,omega-x,https://w3id.org/omega-x/,canonical
 w3id,omg,https://w3id.org/omg/,canonical
 w3id,omicron,https://w3id.org/omicron/,canonical
 w3id,omn,https://w3id.org/omn/,canonical
@@ -831,6 +877,8 @@ w3id,ontosoft,https://w3id.org/ontosoft/,canonical
 w3id,ontosoft-vff,https://w3id.org/ontosoft-vff/,canonical
 w3id,ontouml,https://w3id.org/ontouml/,canonical
 w3id,ontouml-models,https://w3id.org/ontouml-models/,canonical
+w3id,ontove,https://w3id.org/ontove/,canonical
+w3id,ontox,https://w3id.org/ontox/,canonical
 w3id,oop,https://w3id.org/oop/,canonical
 w3id,OOSMP,https://w3id.org/OOSMP/,canonical
 w3id,ooxml,https://w3id.org/ooxml/,canonical
@@ -851,12 +899,14 @@ w3id,orca-x,https://w3id.org/orca-x/,canonical
 w3id,orcidio,https://w3id.org/orcidio/,canonical
 w3id,ore,https://w3id.org/ore/,canonical
 w3id,organization,https://w3id.org/organization/,canonical
+w3id,orka,https://w3id.org/orka/,canonical
 w3id,orphadata,https://w3id.org/orphadata/,canonical
 w3id,OSCD,https://w3id.org/OSCD/,canonical
 w3id,osdu,https://w3id.org/osdu/,canonical
 w3id,oseg,https://w3id.org/oseg/,canonical
 w3id,ost,https://w3id.org/ost/,canonical
 w3id,ovama-proms,https://w3id.org/ovama-proms/,canonical
+w3id,OWLChangeOntology,https://w3id.org/OWLChangeOntology/,canonical
 w3id,OWLToOAS,https://w3id.org/OWLToOAS/,canonical
 w3id,OWLunit,https://w3id.org/OWLunit/,canonical
 w3id,own,https://w3id.org/own/,canonical
@@ -880,6 +930,7 @@ w3id,periscope,https://w3id.org/periscope/,canonical
 w3id,permafrost,https://w3id.org/permafrost/,canonical
 w3id,pet,https://w3id.org/pet/,canonical
 w3id,pfeepsa,https://w3id.org/pfeepsa/,canonical
+w3id,pghdprovo,https://w3id.org/pghdprovo/,canonical
 w3id,pgp,https://w3id.org/pgp/,canonical
 w3id,phuse,https://w3id.org/phuse/,canonical
 w3id,phydit,https://w3id.org/phydit/,canonical
@@ -888,6 +939,7 @@ w3id,pkd4wod,https://w3id.org/pkd4wod/,canonical
 w3id,pkg,https://w3id.org/pkg/,canonical
 w3id,plasma,https://w3id.org/plasma/,canonical
 w3id,platoon,https://w3id.org/platoon/,canonical
+w3id,plattform-i40,https://w3id.org/plattform-i40/,canonical
 w3id,plegma_labs,https://w3id.org/plegma_labs/,canonical
 w3id,plp,https://w3id.org/plp/,canonical
 w3id,pm,https://w3id.org/pm/,canonical
@@ -899,6 +951,7 @@ w3id,podio,https://w3id.org/podio/,canonical
 w3id,polifonia,https://w3id.org/polifonia/,canonical
 w3id,polymat,https://w3id.org/polymat/,canonical
 w3id,polyneme,https://w3id.org/polyneme/,canonical
+w3id,pomega,https://w3id.org/pomega/,canonical
 w3id,pope,https://w3id.org/pope/,canonical
 w3id,poseidon,https://w3id.org/poseidon/,canonical
 w3id,poultryFarms4eepsa,https://w3id.org/poultryFarms4eepsa/,canonical
@@ -923,6 +976,7 @@ w3id,quality,https://w3id.org/quality/,canonical
 w3id,qudt,https://w3id.org/qudt/,canonical
 w3id,quid,https://w3id.org/quid/,canonical
 w3id,r74n,https://w3id.org/r74n/,canonical
+w3id,radx,https://w3id.org/radx/,canonical
 w3id,rai,https://w3id.org/rai/,canonical
 w3id,rail,https://w3id.org/rail/,canonical
 w3id,rains,https://w3id.org/rains/,canonical
@@ -995,6 +1049,7 @@ w3id,sbeo,https://w3id.org/sbeo/,canonical
 w3id,scc,https://w3id.org/scc/,canonical
 w3id,scdv,https://w3id.org/scdv/,canonical
 w3id,scholarlydata,https://w3id.org/scholarlydata/,canonical
+w3id,scs,https://w3id.org/scs/,canonical
 w3id,sdc,https://w3id.org/sdc/,canonical
 w3id,SDEBM,https://w3id.org/SDEBM/,canonical
 w3id,sdids,https://w3id.org/sdids/,canonical
@@ -1024,6 +1079,7 @@ w3id,semsys,https://w3id.org/semsys/,canonical
 w3id,semtk,https://w3id.org/semtk/,canonical
 w3id,seneca,https://w3id.org/seneca/,canonical
 w3id,sense,https://w3id.org/sense/,canonical
+w3id,sensotwin,https://w3id.org/sensotwin/,canonical
 w3id,sentitrack,https://w3id.org/sentitrack/,canonical
 w3id,seo,https://w3id.org/seo/,canonical
 w3id,seovoc,https://w3id.org/seovoc/,canonical
@@ -1044,6 +1100,7 @@ w3id,sketup,https://w3id.org/sketup/,canonical
 w3id,sketx,https://w3id.org/sketx/,canonical
 w3id,skg,https://w3id.org/skg/,canonical
 w3id,skgo,https://w3id.org/skgo/,canonical
+w3id,skz,https://w3id.org/skz/,canonical
 w3id,slo,https://w3id.org/slo/,canonical
 w3id,sm,https://w3id.org/sm/,canonical
 w3id,smarcql,https://w3id.org/smarcql/,canonical
@@ -1053,6 +1110,7 @@ w3id,smartenvironment,https://w3id.org/smartenvironment/,canonical
 w3id,smartflanders,https://w3id.org/smartflanders/,canonical
 w3id,smetzger,https://w3id.org/smetzger/,canonical
 w3id,smi,https://w3id.org/smi/,canonical
+w3id,sml,https://w3id.org/sml/,canonical
 w3id,SocDOnt,https://w3id.org/SocDOnt/,canonical
 w3id,sociallink,https://w3id.org/sociallink/,canonical
 w3id,socomp,https://w3id.org/socomp/,canonical
@@ -1084,6 +1142,7 @@ w3id,srr,https://w3id.org/srr/,canonical
 w3id,srt,https://w3id.org/srt/,canonical
 w3id,sskg,https://w3id.org/sskg/,canonical
 w3id,sssom,https://w3id.org/sssom/,canonical
+w3id,ssv,https://w3id.org/ssv/,canonical
 w3id,stahl,https://w3id.org/stahl/,canonical
 w3id,stap,https://w3id.org/stap/,canonical
 w3id,stargate-h2020,https://w3id.org/stargate-h2020/,canonical
@@ -1118,6 +1177,7 @@ w3id,td,https://w3id.org/td/,canonical
 w3id,tdy,https://w3id.org/tdy/,canonical
 w3id,teamingai,https://w3id.org/teamingai/,canonical
 w3id,tec-toolkit,https://w3id.org/tec-toolkit/,canonical
+w3id,tekniker,https://w3id.org/tekniker/,canonical
 w3id,termcat-ld,https://w3id.org/termcat-ld/,canonical
 w3id,tern,https://w3id.org/tern/,canonical
 w3id,terror,https://w3id.org/terror/,canonical
@@ -1131,8 +1191,11 @@ w3id,tinyml-schema,https://w3id.org/tinyml-schema/,canonical
 w3id,todo,https://w3id.org/todo/,canonical
 w3id,token,https://w3id.org/token/,canonical
 w3id,tonto,https://w3id.org/tonto/,canonical
+w3id,toolhub,https://w3id.org/toolhub/,canonical
 w3id,top-level,https://w3id.org/top-level/,canonical
+w3id,topologicpy,https://w3id.org/topologicpy/,canonical
 w3id,traceability,https://w3id.org/traceability/,canonical
+w3id,tractusx,https://w3id.org/tractusx/,canonical
 w3id,transmodel,https://w3id.org/transmodel/,canonical
 w3id,tree,https://w3id.org/tree/,canonical
 w3id,trek,https://w3id.org/trek/,canonical
@@ -1148,12 +1211,14 @@ w3id,tvprogr,https://w3id.org/tvprogr/,canonical
 w3id,tvstationjp,https://w3id.org/tvstationjp/,canonical
 w3id,twins,https://w3id.org/twins/,canonical
 w3id,uco,https://w3id.org/uco/,canonical
+w3id,udo,https://w3id.org/udo/,canonical
 w3id,ufo,https://w3id.org/ufo/,canonical
 w3id,uh-linked-data,https://w3id.org/uh-linked-data/,canonical
 w3id,um,https://w3id.org/um/,canonical
 w3id,umms,https://w3id.org/umms/,canonical
 w3id,un,https://w3id.org/un/,canonical
 w3id,UnderRepresentedWritersOntology,https://w3id.org/UnderRepresentedWritersOntology/,canonical
+w3id,unife,https://w3id.org/unife/,canonical
 w3id,unified-engineering,https://w3id.org/unified-engineering/,canonical
 w3id,unileiden,https://w3id.org/unileiden/,canonical
 w3id,unit,https://w3id.org/unit/,canonical
@@ -1165,6 +1230,7 @@ w3id,uri4uri,https://w3id.org/uri4uri/,canonical
 w3id,usability,https://w3id.org/usability/,canonical
 w3id,user,https://w3id.org/user/,canonical
 w3id,usgs,https://w3id.org/usgs/,canonical
+w3id,utopia,https://w3id.org/utopia/,canonical
 w3id,uva,https://w3id.org/uva/,canonical
 w3id,vacceval,https://w3id.org/vacceval/,canonical
 w3id,vaccination,https://w3id.org/vaccination/,canonical
@@ -1173,6 +1239,7 @@ w3id,vair,https://w3id.org/vair/,canonical
 w3id,valueflows,https://w3id.org/valueflows/,canonical
 w3id,var,https://w3id.org/var/,canonical
 w3id,vc,https://w3id.org/vc/,canonical
+w3id,vc-barcodes,https://w3id.org/vc-barcodes/,canonical
 w3id,vc-http-api,https://w3id.org/vc-http-api/,canonical
 w3id,vc-refresh-service,https://w3id.org/vc-refresh-service/,canonical
 w3id,vc-revocation-list-2020,https://w3id.org/vc-revocation-list-2020/,canonical
@@ -1218,6 +1285,7 @@ w3id,widoco,https://w3id.org/widoco/,canonical
 w3id,wikidated,https://w3id.org/wikidated/,canonical
 w3id,wikimind,https://w3id.org/wikimind/,canonical
 w3id,wimuq,https://w3id.org/wimuq/,canonical
+w3id,wine,https://w3id.org/wine/,canonical
 w3id,wings,https://w3id.org/wings/,canonical
 w3id,wm,https://w3id.org/wm/,canonical
 w3id,wmo,https://w3id.org/wmo/,canonical
