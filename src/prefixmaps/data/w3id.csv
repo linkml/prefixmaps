@@ -58,6 +58,7 @@ w3id,annett-o,https://w3id.org/annett-o/,canonical
 w3id,aoi,https://w3id.org/aoi/,canonical
 w3id,APD,https://w3id.org/APD/,canonical
 w3id,apn,https://w3id.org/apn/,canonical
+w3id,APTO,https://w3id.org/APTO/,canonical
 w3id,aqfo,https://w3id.org/aqfo/,canonical
 w3id,arco,https://w3id.org/arco/,canonical
 w3id,ardo,https://w3id.org/ardo/,canonical
@@ -67,6 +68,7 @@ w3id,arm,https://w3id.org/arm/,canonical
 w3id,arp,https://w3id.org/arp/,canonical
 w3id,art,https://w3id.org/art/,canonical
 w3id,arto,https://w3id.org/arto/,canonical
+w3id,aruna,https://w3id.org/aruna/,canonical
 w3id,asbingowl,https://w3id.org/asbingowl/,canonical
 w3id,asdkb,https://w3id.org/asdkb/,canonical
 w3id,asfe,https://w3id.org/asfe/,canonical
@@ -120,6 +122,8 @@ w3id,bloxberg,https://w3id.org/bloxberg/,canonical
 w3id,bmat,https://w3id.org/bmat/,canonical
 w3id,BMO,https://w3id.org/BMO/,canonical
 w3id,bmontology,https://w3id.org/bmontology/,canonical
+w3id,bmp,https://w3id.org/bmp/,canonical
+w3id,bog,https://w3id.org/bog/,canonical
 w3id,book,https://w3id.org/book/,canonical
 w3id,bop,https://w3id.org/bop/,canonical
 w3id,bot,https://w3id.org/bot/,canonical
@@ -160,6 +164,7 @@ w3id,cerif,https://w3id.org/cerif/,canonical
 w3id,cerrotti,https://w3id.org/cerrotti/,canonical
 w3id,certainty_nanopubs,https://w3id.org/certainty_nanopubs/,canonical
 w3id,cevo,https://w3id.org/cevo/,canonical
+w3id,cff,https://w3id.org/cff/,canonical
 w3id,chainpoint,https://w3id.org/chainpoint/,canonical
 w3id,chalkgrp,https://w3id.org/chalkgrp/,canonical
 w3id,character-computing,https://w3id.org/character-computing/,canonical
@@ -187,6 +192,7 @@ w3id,cld,https://w3id.org/cld/,canonical
 w3id,clinga,https://w3id.org/clinga/,canonical
 w3id,clipc,https://w3id.org/clipc/,canonical
 w3id,clodg,https://w3id.org/clodg/,canonical
+w3id,cluedo4KG,https://w3id.org/cluedo4KG/,canonical
 w3id,cmd,https://w3id.org/cmd/,canonical
 w3id,CMECS,https://w3id.org/CMECS/,canonical
 w3id,cmip6dr,https://w3id.org/cmip6dr/,canonical
@@ -197,6 +203,7 @@ w3id,cntf,https://w3id.org/cntf/,canonical
 w3id,cocoon,https://w3id.org/cocoon/,canonical
 w3id,codata,https://w3id.org/codata/,canonical
 w3id,codemeta,https://w3id.org/codemeta/,canonical
+w3id,codemetasoft,https://w3id.org/codemetasoft/,canonical
 w3id,codo,https://w3id.org/codo/,canonical
 w3id,ColActDOnt,https://w3id.org/ColActDOnt/,canonical
 w3id,combining-linking-techniques,https://w3id.org/combining-linking-techniques/,canonical
@@ -251,6 +258,7 @@ w3id,d2kg,https://w3id.org/d2kg/,canonical
 w3id,d2s,https://w3id.org/d2s/,canonical
 w3id,dao,https://w3id.org/dao/,canonical
 w3id,daselab,https://w3id.org/daselab/,canonical
+w3id,data-fw,https://w3id.org/data-fw/,canonical
 w3id,Data-Maturity,https://w3id.org/Data-Maturity/,canonical
 w3id,data2services,https://w3id.org/data2services/,canonical
 w3id,datamart,https://w3id.org/datamart/,canonical
@@ -268,6 +276,7 @@ w3id,dco,https://w3id.org/dco/,canonical
 w3id,DCRI-ont,https://w3id.org/DCRI-ont/,canonical
 w3id,DCRI-ont-spe,https://w3id.org/DCRI-ont-spe/,canonical
 w3id,DCRI-voc,https://w3id.org/DCRI-voc/,canonical
+w3id,dcs-se-extension,https://w3id.org/dcs-se-extension/,canonical
 w3id,dcso,https://w3id.org/dcso/,canonical
 w3id,dcx,https://w3id.org/dcx/,canonical
 w3id,ddb,https://w3id.org/ddb/,canonical
@@ -285,6 +294,7 @@ w3id,devops-infra,https://w3id.org/devops-infra/,canonical
 w3id,dfc,https://w3id.org/dfc/,canonical
 w3id,dfd,https://w3id.org/dfd/,canonical
 w3id,DFDP,https://w3id.org/DFDP/,canonical
+w3id,dfgfo,https://w3id.org/dfgfo/,canonical
 w3id,dfo,https://w3id.org/dfo/,canonical
 w3id,dgarijo,https://w3id.org/dgarijo/,canonical
 w3id,dgassist,https://w3id.org/dgassist/,canonical
@@ -313,15 +323,18 @@ w3id,DLTOntology,https://w3id.org/DLTOntology/,canonical
 w3id,dm4eepsa,https://w3id.org/dm4eepsa/,canonical
 w3id,dmi,https://w3id.org/dmi/,canonical
 w3id,dmo,https://w3id.org/dmo/,canonical
+w3id,dmpqv,https://w3id.org/dmpqv/,canonical
 w3id,dmscope-fdp,https://w3id.org/dmscope-fdp/,canonical
 w3id,DnD5eCharacter,https://w3id.org/DnD5eCharacter/,canonical
 w3id,do4kg,https://w3id.org/do4kg/,canonical
+w3id,dob,https://w3id.org/dob/,canonical
 w3id,DockerPedia,https://w3id.org/DockerPedia/,canonical
 w3id,docmaps,https://w3id.org/docmaps/,canonical
 w3id,documents,https://w3id.org/documents/,canonical
 w3id,DOLCE,https://w3id.org/DOLCE/,canonical
 w3id,dosdp,https://w3id.org/dosdp/,canonical
 w3id,dot,https://w3id.org/dot/,canonical
+w3id,doves,https://w3id.org/doves/,canonical
 w3id,dpcat,https://w3id.org/dpcat/,canonical
 w3id,dpp,https://w3id.org/dpp/,canonical
 w3id,dppo,https://w3id.org/dppo/,canonical
@@ -331,6 +344,7 @@ w3id,dqts,https://w3id.org/dqts/,canonical
 w3id,dream-lab,https://w3id.org/dream-lab/,canonical
 w3id,drinventor,https://w3id.org/drinventor/,canonical
 w3id,drone,https://w3id.org/drone/,canonical
+w3id,drp,https://w3id.org/drp/,canonical
 w3id,dsa,https://w3id.org/dsa/,canonical
 w3id,dsd,https://w3id.org/dsd/,canonical
 w3id,dso,https://w3id.org/dso/,canonical
@@ -386,6 +400,7 @@ w3id,emmo-maeo,https://w3id.org/emmo-maeo/,canonical
 w3id,empathi,https://w3id.org/empathi/,canonical
 w3id,encode,https://w3id.org/encode/,canonical
 w3id,EnergyInformationModel,https://w3id.org/EnergyInformationModel/,canonical
+w3id,enershare,https://w3id.org/enershare/,canonical
 w3id,engrd,https://w3id.org/engrd/,canonical
 w3id,enigma,https://w3id.org/enigma/,canonical
 w3id,env,https://w3id.org/env/,canonical
@@ -396,12 +411,14 @@ w3id,ep-plan,https://w3id.org/ep-plan/,canonical
 w3id,epont,https://w3id.org/epont/,canonical
 w3id,epsilonitalia,https://w3id.org/epsilonitalia/,canonical
 w3id,ereefs,https://w3id.org/ereefs/,canonical
+w3id,ERKNet,https://w3id.org/ERKNet/,canonical
 w3id,erkreg-fdp,https://w3id.org/erkreg-fdp/,canonical
 w3id,ern-euro-nmd-fdp,https://w3id.org/ern-euro-nmd-fdp/,canonical
 w3id,esbm,https://w3id.org/esbm/,canonical
 w3id,esim,https://w3id.org/esim/,canonical
 w3id,ESO,https://w3id.org/ESO/,canonical
 w3id,esw,https://w3id.org/esw/,canonical
+w3id,etap,https://w3id.org/etap/,canonical
 w3id,EUREF-HDC,https://w3id.org/EUREF-HDC/,canonical
 w3id,euro-nmd-kpis,https://w3id.org/euro-nmd-kpis/,canonical
 w3id,EUTaxO,https://w3id.org/EUTaxO/,canonical
@@ -437,6 +454,7 @@ w3id,FAIR_eva,https://w3id.org/FAIR_eva/,canonical
 w3id,FAIR_Evaluator,https://w3id.org/FAIR_Evaluator/,canonical
 w3id,FAIR_Tests,https://w3id.org/FAIR_Tests/,canonical
 w3id,FAIR_Training_LDP,https://w3id.org/FAIR_Training_LDP/,canonical
+w3id,fairchecker,https://w3id.org/fairchecker/,canonical
 w3id,faircookbook,https://w3id.org/faircookbook/,canonical
 w3id,fairjupyter,https://w3id.org/fairjupyter/,canonical
 w3id,FAIROS,https://w3id.org/FAIROS/,canonical
@@ -485,6 +503,7 @@ w3id,fst,https://w3id.org/fst/,canonical
 w3id,ftm,https://w3id.org/ftm/,canonical
 w3id,FTP,https://w3id.org/FTP/,canonical
 w3id,ftr,https://w3id.org/ftr/,canonical
+w3id,fuel,https://w3id.org/fuel/,canonical
 w3id,function,https://w3id.org/function/,canonical
 w3id,fuskg,https://w3id.org/fuskg/,canonical
 w3id,g0v,https://w3id.org/g0v/,canonical
@@ -493,6 +512,8 @@ w3id,gaia-x,https://w3id.org/gaia-x/,canonical
 w3id,games,https://w3id.org/games/,canonical
 w3id,gas,https://w3id.org/gas/,canonical
 w3id,GasInformationModel,https://w3id.org/GasInformationModel/,canonical
+w3id,GayCities,https://w3id.org/GayCities/,canonical
+w3id,GayLesbianBisexualTVCharacters,https://w3id.org/GayLesbianBisexualTVCharacters/,canonical
 w3id,gba,https://w3id.org/gba/,canonical
 w3id,gbo,https://w3id.org/gbo/,canonical
 w3id,GConsent,https://w3id.org/GConsent/,canonical
@@ -524,6 +545,7 @@ w3id,gom,https://w3id.org/gom/,canonical
 w3id,gpo,https://w3id.org/gpo/,canonical
 w3id,gptto,https://w3id.org/gptto/,canonical
 w3id,Green-AI-Ontology,https://w3id.org/Green-AI-Ontology/,canonical
+w3id,Greens,https://w3id.org/Greens/,canonical
 w3id,greycite,https://w3id.org/greycite/,canonical
 w3id,gso,https://w3id.org/gso/,canonical
 w3id,gub,https://w3id.org/gub/,canonical
@@ -540,6 +562,7 @@ w3id,hclscg,https://w3id.org/hclscg/,canonical
 w3id,hdgi,https://w3id.org/hdgi/,canonical
 w3id,hdruk,https://w3id.org/hdruk/,canonical
 w3id,health-schemas,https://w3id.org/health-schemas/,canonical
+w3id,hefquin,https://w3id.org/hefquin/,canonical
 w3id,helis,https://w3id.org/helis/,canonical
 w3id,hero,https://w3id.org/hero/,canonical
 w3id,HHT,https://w3id.org/HHT/,canonical
@@ -587,6 +610,7 @@ w3id,ifc,https://w3id.org/ifc/,canonical
 w3id,ifcc,https://w3id.org/ifcc/,canonical
 w3id,ifcp,https://w3id.org/ifcp/,canonical
 w3id,iicongraph,https://w3id.org/iicongraph/,canonical
+w3id,IIoT,https://w3id.org/IIoT/,canonical
 w3id,iliad,https://w3id.org/iliad/,canonical
 w3id,illusnip,https://w3id.org/illusnip/,canonical
 w3id,imec,https://w3id.org/imec/,canonical
@@ -597,13 +621,13 @@ w3id,indonesia-history,https://w3id.org/indonesia-history/,canonical
 w3id,inesdata,https://w3id.org/inesdata/,canonical
 w3id,inmevo,https://w3id.org/inmevo/,canonical
 w3id,inrupt,https://w3id.org/inrupt/,canonical
+w3id,inspireOnts,https://w3id.org/inspireOnts/,canonical
 w3id,instructie,https://w3id.org/instructie/,canonical
 w3id,interactions,https://w3id.org/interactions/,canonical
 w3id,interont,https://w3id.org/interont/,canonical
 w3id,ioc,https://w3id.org/ioc/,canonical
 w3id,iomust,https://w3id.org/iomust/,canonical
 w3id,iot,https://w3id.org/iot/,canonical
-w3id,iot-tta,https://w3id.org/iot-tta/,canonical
 w3id,iotd,https://w3id.org/iotd/,canonical
 w3id,iotf,https://w3id.org/iotf/,canonical
 w3id,ipsoeu,https://w3id.org/ipsoeu/,canonical
@@ -620,6 +644,7 @@ w3id,italia,https://w3id.org/italia/,canonical
 w3id,itil,https://w3id.org/itil/,canonical
 w3id,ixo,https://w3id.org/ixo/,canonical
 w3id,JazzOntology,https://w3id.org/JazzOntology/,canonical
+w3id,jelly,https://w3id.org/jelly/,canonical
 w3id,jhercher,https://w3id.org/jhercher/,canonical
 w3id,jicamarca,https://w3id.org/jicamarca/,canonical
 w3id,jp-cos,https://w3id.org/jp-cos/,canonical
@@ -649,10 +674,13 @@ w3id,kouigenjimonogatari,https://w3id.org/kouigenjimonogatari/,canonical
 w3id,kpionto,https://w3id.org/kpionto/,canonical
 w3id,kpxl,https://w3id.org/kpxl/,canonical
 w3id,ksa,https://w3id.org/ksa/,canonical
+w3id,kw,https://w3id.org/kw/,canonical
 w3id,kxu,https://w3id.org/kxu/,canonical
 w3id,l4dr,https://w3id.org/l4dr/,canonical
 w3id,la,https://w3id.org/la/,canonical
 w3id,laas-iot,https://w3id.org/laas-iot/,canonical
+w3id,laderr,https://w3id.org/laderr/,canonical
+w3id,lara,https://w3id.org/lara/,canonical
 w3id,latuli,https://w3id.org/latuli/,canonical
 w3id,launuts,https://w3id.org/launuts/,canonical
 w3id,lbd,https://w3id.org/lbd/,canonical
@@ -710,8 +738,10 @@ w3id,lustre,https://w3id.org/lustre/,canonical
 w3id,Mach30,https://w3id.org/Mach30/,canonical
 w3id,madmp,https://w3id.org/madmp/,canonical
 w3id,makg,https://w3id.org/makg/,canonical
+w3id,malke,https://w3id.org/malke/,canonical
 w3id,mapvowl,https://w3id.org/mapvowl/,canonical
 w3id,mare,https://w3id.org/mare/,canonical
+w3id,matolab,https://w3id.org/matolab/,canonical
 w3id,mbl,https://w3id.org/mbl/,canonical
 w3id,mdc-docs,https://w3id.org/mdc-docs/,canonical
 w3id,mdo,https://w3id.org/mdo/,canonical
@@ -729,6 +759,7 @@ w3id,metamodeling,https://w3id.org/metamodeling/,canonical
 w3id,mex,https://w3id.org/mex/,canonical
 w3id,mgkb,https://w3id.org/mgkb/,canonical
 w3id,mica,https://w3id.org/mica/,canonical
+w3id,micoll-map,https://w3id.org/micoll-map/,canonical
 w3id,midas-catalog,https://w3id.org/midas-catalog/,canonical
 w3id,midas-metadata,https://w3id.org/midas-metadata/,canonical
 w3id,mifesto,https://w3id.org/mifesto/,canonical
@@ -761,6 +792,7 @@ w3id,montolo,https://w3id.org/montolo/,canonical
 w3id,moody,https://w3id.org/moody/,canonical
 w3id,moont,https://w3id.org/moont/,canonical
 w3id,MoRe-SFB1475,https://w3id.org/MoRe-SFB1475/,canonical
+w3id,moro,https://w3id.org/moro/,canonical
 w3id,mosaic,https://w3id.org/mosaic/,canonical
 w3id,mpilhlt,https://w3id.org/mpilhlt/,canonical
 w3id,MQIO,https://w3id.org/MQIO/,canonical
@@ -782,6 +814,7 @@ w3id,music-circle,https://w3id.org/music-circle/,canonical
 w3id,musico,https://w3id.org/musico/,canonical
 w3id,musow,https://w3id.org/musow/,canonical
 w3id,n2t,https://w3id.org/n2t/,canonical
+w3id,nanolinks,https://w3id.org/nanolinks/,canonical
 w3id,nanoweb,https://w3id.org/nanoweb/,canonical
 w3id,national-ocean-council,https://w3id.org/national-ocean-council/,canonical
 w3id,navigation_menu,https://w3id.org/navigation_menu/,canonical
@@ -826,12 +859,15 @@ w3id,obpa,https://w3id.org/obpa/,canonical
 w3id,obpd,https://w3id.org/obpd/,canonical
 w3id,oc,https://w3id.org/oc/,canonical
 w3id,occ,https://w3id.org/occ/,canonical
+w3id,ocedo,https://w3id.org/ocedo/,canonical
 w3id,OCL-SOP,https://w3id.org/OCL-SOP/,canonical
 w3id,ocqa,https://w3id.org/ocqa/,canonical
 w3id,ocs,https://w3id.org/ocs/,canonical
+w3id,ocsm,https://w3id.org/ocsm/,canonical
 w3id,ODE_AM,https://w3id.org/ODE_AM/,canonical
 w3id,odi,https://w3id.org/odi/,canonical
 w3id,odissei,https://w3id.org/odissei/,canonical
+w3id,ods,https://w3id.org/ods/,canonical
 w3id,oebDataFormats,https://w3id.org/oebDataFormats/,canonical
 w3id,oebDatasets,https://w3id.org/oebDatasets/,canonical
 w3id,oerbase,https://w3id.org/oerbase/,canonical
@@ -851,6 +887,7 @@ w3id,onderwijs-vlaanderen,https://w3id.org/onderwijs-vlaanderen/,canonical
 w3id,onto4drone,https://w3id.org/onto4drone/,canonical
 w3id,ontobio,https://w3id.org/ontobio/,canonical
 w3id,ontoboldt,https://w3id.org/ontoboldt/,canonical
+w3id,ontobpr,https://w3id.org/ontobpr/,canonical
 w3id,ontocis,https://w3id.org/ontocis/,canonical
 w3id,ontocity,https://w3id.org/ontocity/,canonical
 w3id,OntoDM-core-extended,https://w3id.org/OntoDM-core-extended/,canonical
@@ -861,9 +898,11 @@ w3id,ontoeng,https://w3id.org/ontoeng/,canonical
 w3id,OntoExhibit,https://w3id.org/OntoExhibit/,canonical
 w3id,ontoexp,https://w3id.org/ontoexp/,canonical
 w3id,ontofnct,https://w3id.org/ontofnct/,canonical
+w3id,ontogen,https://w3id.org/ontogen/,canonical
 w3id,ontogpt,https://w3id.org/ontogpt/,canonical
 w3id,OntoGraphDB,https://w3id.org/OntoGraphDB/,canonical
 w3id,ontoim,https://w3id.org/ontoim/,canonical
+w3id,ontoindire,https://w3id.org/ontoindire/,canonical
 w3id,ontolink,https://w3id.org/ontolink/,canonical
 w3id,ontomlc,https://w3id.org/ontomlc/,canonical
 w3id,ontoology,https://w3id.org/ontoology/,canonical
@@ -884,6 +923,7 @@ w3id,OOSMP,https://w3id.org/OOSMP/,canonical
 w3id,ooxml,https://w3id.org/ooxml/,canonical
 w3id,openbadges,https://w3id.org/openbadges/,canonical
 w3id,opencare,https://w3id.org/opencare/,canonical
+w3id,openebench,https://w3id.org/openebench/,canonical
 w3id,openeduhub,https://w3id.org/openeduhub/,canonical
 w3id,openfooddata,https://w3id.org/openfooddata/,canonical
 w3id,opengtsc,https://w3id.org/opengtsc/,canonical
@@ -904,6 +944,7 @@ w3id,orphadata,https://w3id.org/orphadata/,canonical
 w3id,OSCD,https://w3id.org/OSCD/,canonical
 w3id,osdu,https://w3id.org/osdu/,canonical
 w3id,oseg,https://w3id.org/oseg/,canonical
+w3id,oso,https://w3id.org/oso/,canonical
 w3id,ost,https://w3id.org/ost/,canonical
 w3id,ovama-proms,https://w3id.org/ovama-proms/,canonical
 w3id,OWLChangeOntology,https://w3id.org/OWLChangeOntology/,canonical
@@ -932,11 +973,13 @@ w3id,pet,https://w3id.org/pet/,canonical
 w3id,pfeepsa,https://w3id.org/pfeepsa/,canonical
 w3id,pghdprovo,https://w3id.org/pghdprovo/,canonical
 w3id,pgp,https://w3id.org/pgp/,canonical
+w3id,pharmaccess,https://w3id.org/pharmaccess/,canonical
 w3id,phuse,https://w3id.org/phuse/,canonical
 w3id,phydit,https://w3id.org/phydit/,canonical
 w3id,pizza2,https://w3id.org/pizza2/,canonical
 w3id,pkd4wod,https://w3id.org/pkd4wod/,canonical
 w3id,pkg,https://w3id.org/pkg/,canonical
+w3id,pko,https://w3id.org/pko/,canonical
 w3id,plasma,https://w3id.org/plasma/,canonical
 w3id,platoon,https://w3id.org/platoon/,canonical
 w3id,plattform-i40,https://w3id.org/plattform-i40/,canonical
@@ -986,6 +1029,7 @@ w3id,rbeepsa,https://w3id.org/rbeepsa/,canonical
 w3id,rc,https://w3id.org/rc/,canonical
 w3id,rd-fairmetrics,https://w3id.org/rd-fairmetrics/,canonical
 w3id,rd-fairness-tests,https://w3id.org/rd-fairness-tests/,canonical
+w3id,rdf-connect,https://w3id.org/rdf-connect/,canonical
 w3id,rdf-spreadsheet,https://w3id.org/rdf-spreadsheet/,canonical
 w3id,rdfbones,https://w3id.org/rdfbones/,canonical
 w3id,rdfp,https://w3id.org/rdfp/,canonical
@@ -1004,6 +1048,7 @@ w3id,requirement-ontology,https://w3id.org/requirement-ontology/,canonical
 w3id,research-technology-readiness-levels,https://w3id.org/research-technology-readiness-levels/,canonical
 w3id,reseo,https://w3id.org/reseo/,canonical
 w3id,reshare,https://w3id.org/reshare/,canonical
+w3id,resiliont,https://w3id.org/resiliont/,canonical
 w3id,resource2vec,https://w3id.org/resource2vec/,canonical
 w3id,respond,https://w3id.org/respond/,canonical
 w3id,resriskonto,https://w3id.org/resriskonto/,canonical
@@ -1013,6 +1058,7 @@ w3id,rgom,https://w3id.org/rgom/,canonical
 w3id,rhonda,https://w3id.org/rhonda/,canonical
 w3id,ride2rail,https://w3id.org/ride2rail/,canonical
 w3id,rights-vocabulary,https://w3id.org/rights-vocabulary/,canonical
+w3id,rio,https://w3id.org/rio/,canonical
 w3id,risk,https://w3id.org/risk/,canonical
 w3id,riskman,https://w3id.org/riskman/,canonical
 w3id,riskonto,https://w3id.org/riskonto/,canonical
@@ -1060,6 +1106,7 @@ w3id,se,https://w3id.org/se/,canonical
 w3id,sea-lod,https://w3id.org/sea-lod/,canonical
 w3id,SeaChange,https://w3id.org/SeaChange/,canonical
 w3id,seas,https://w3id.org/seas/,canonical
+w3id,sebi,https://w3id.org/sebi/,canonical
 w3id,security,https://w3id.org/security/,canonical
 w3id,sedimark,https://w3id.org/sedimark/,canonical
 w3id,segittur,https://w3id.org/segittur/,canonical
@@ -1099,6 +1146,7 @@ w3id,situannotate,https://w3id.org/situannotate/,canonical
 w3id,sketup,https://w3id.org/sketup/,canonical
 w3id,sketx,https://w3id.org/sketx/,canonical
 w3id,skg,https://w3id.org/skg/,canonical
+w3id,skg-if,https://w3id.org/skg-if/,canonical
 w3id,skgo,https://w3id.org/skgo/,canonical
 w3id,skz,https://w3id.org/skz/,canonical
 w3id,slo,https://w3id.org/slo/,canonical
@@ -1106,6 +1154,7 @@ w3id,sm,https://w3id.org/sm/,canonical
 w3id,smarcql,https://w3id.org/smarcql/,canonical
 w3id,smart-sensing,https://w3id.org/smart-sensing/,canonical
 w3id,smartcare-fdp,https://w3id.org/smartcare-fdp/,canonical
+w3id,smartedge,https://w3id.org/smartedge/,canonical
 w3id,smartenvironment,https://w3id.org/smartenvironment/,canonical
 w3id,smartflanders,https://w3id.org/smartflanders/,canonical
 w3id,smetzger,https://w3id.org/smetzger/,canonical
@@ -1172,6 +1221,7 @@ w3id,t-sita,https://w3id.org/t-sita/,canonical
 w3id,tangpoem,https://w3id.org/tangpoem/,canonical
 w3id,tao,https://w3id.org/tao/,canonical
 w3id,tate-skos,https://w3id.org/tate-skos/,canonical
+w3id,tav,https://w3id.org/tav/,canonical
 w3id,tawc,https://w3id.org/tawc/,canonical
 w3id,td,https://w3id.org/td/,canonical
 w3id,tdy,https://w3id.org/tdy/,canonical
@@ -1183,6 +1233,7 @@ w3id,tern,https://w3id.org/tern/,canonical
 w3id,terror,https://w3id.org/terror/,canonical
 w3id,testalod,https://w3id.org/testalod/,canonical
 w3id,testlink,https://w3id.org/testlink/,canonical
+w3id,ThAO,https://w3id.org/ThAO/,canonical
 w3id,thor,https://w3id.org/thor/,canonical
 w3id,tib,https://w3id.org/tib/,canonical
 w3id,timebank,https://w3id.org/timebank/,canonical
@@ -1224,6 +1275,7 @@ w3id,unileiden,https://w3id.org/unileiden/,canonical
 w3id,unit,https://w3id.org/unit/,canonical
 w3id,UniverseTBD,https://w3id.org/UniverseTBD/,canonical
 w3id,university,https://w3id.org/university/,canonical
+w3id,unocs,https://w3id.org/unocs/,canonical
 w3id,uom,https://w3id.org/uom/,canonical
 w3id,urban-iot,https://w3id.org/urban-iot/,canonical
 w3id,uri4uri,https://w3id.org/uri4uri/,canonical
@@ -1259,8 +1311,13 @@ w3id,vocab,https://w3id.org/vocab/,canonical
 w3id,vocabulary,https://w3id.org/vocabulary/,canonical
 w3id,voic,https://w3id.org/voic/,canonical
 w3id,voldemortkg,https://w3id.org/voldemortkg/,canonical
+w3id,vpa,https://w3id.org/vpa/,canonical
+w3id,VRTI,https://w3id.org/VRTI/,canonical
 w3id,vsat,https://w3id.org/vsat/,canonical
 w3id,vsm,https://w3id.org/vsm/,canonical
+w3id,vvi,https://w3id.org/vvi/,canonical
+w3id,vvr,https://w3id.org/vvr/,canonical
+w3id,vvt,https://w3id.org/vvt/,canonical
 w3id,w2share,https://w3id.org/w2share/,canonical
 w3id,w4ra,https://w3id.org/w4ra/,canonical
 w3id,wallet,https://w3id.org/wallet/,canonical
@@ -1299,6 +1356,7 @@ w3id,xd,https://w3id.org/xd/,canonical
 w3id,xfsc,https://w3id.org/xfsc/,canonical
 w3id,xmal,https://w3id.org/xmal/,canonical
 w3id,yago,https://w3id.org/yago/,canonical
+w3id,yang,https://w3id.org/yang/,canonical
 w3id,yarrrml,https://w3id.org/yarrrml/,canonical
 w3id,ylu,https://w3id.org/ylu/,canonical
 w3id,yxl,https://w3id.org/yxl/,canonical
