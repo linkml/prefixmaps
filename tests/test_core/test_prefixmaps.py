@@ -182,7 +182,6 @@ class TextPrefixMaps(unittest.TestCase):
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
 
-
     def test_synonyms(self):
         # prefixmaps prioritizes GO prefix resolution over bioregistry in terms of adding canonical tags.
         canonical = "PMID:1234"
