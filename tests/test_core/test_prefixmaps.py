@@ -182,12 +182,10 @@ class TextPrefixMaps(unittest.TestCase):
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
 
-    # def test_meta(self):
-    #     ctxts = load_contexts_meta()
-    # print(ctxts)
 
     def test_synonyms(self):
-        canonical = "PUBMED:1234"
+        # prefixmaps prioritizes GO prefix resolution over bioregistry in terms of adding canonical tags.
+        canonical = "PMID:1234"
         converter = prefixmaps.load_converter("merged")
         # TODO "pmid:1234", "pubmed:1234"
         others = ["PMID:1234", "MEDLINE:1234", canonical]
