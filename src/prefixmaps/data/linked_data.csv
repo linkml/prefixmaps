@@ -4,6 +4,7 @@ linkml,biolink,https://w3id.org/biolink/vocab/,canonical
 linkml,dcterms,http://purl.org/dc/terms/,canonical
 linkml,foaf,http://xmlns.com/foaf/0.1/,canonical
 linkml,linkml,https://w3id.org/linkml/,canonical
+linkml,NANDO,http://identifiers.org/NANDO:,canonical
 linkml,NCIThesaurus,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,canonical
 linkml,oboInOwl,http://www.geneontology.org/formats/oboInOwl#,canonical
 linkml,oslc,http://open-services.net/ns/core#,canonical

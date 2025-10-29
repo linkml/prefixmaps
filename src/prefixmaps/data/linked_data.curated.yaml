@@ -23,5 +23,6 @@ prefixes:
   shex: http://www.w3.org/ns/shex#
   biolink: https://w3id.org/biolink/vocab/
   foaf: http://xmlns.com/foaf/0.1/
+  NANDO: "http://identifiers.org/NANDO:"
 
 
