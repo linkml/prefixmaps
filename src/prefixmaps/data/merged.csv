@@ -30,6 +30,7 @@ merged,4DN.REPLICATE,https://data.4dnucleome.org/experiment-set-replicates/,cano
 merged,4DN.REPLICATE,http://bioregistry.io/4dn.replicate:,prefix_alias,bioregistry
 merged,4DN.REPLICATE,http://data.4dnucleome.org/experiment-set-replicates/,prefix_alias,bioregistry
 merged,4DN.REPLICATE,https://bioregistry.io/4dn.replicate:,prefix_alias,bioregistry
+merged,a11y,http://idpf.org/epub/vocab/package/a11y/#,canonical,prefixcc
 merged,aair,http://xmlns.notu.be/aair#,canonical,prefixcc
 merged,AAO,http://purl.obolibrary.org/obo/AAO_,canonical,obo
 merged,AAO,http://bio2rdf.org/aao:,prefix_alias,bioregistry
@@ -243,6 +244,7 @@ merged,AGROVOC,https://aims.fao.org/aos/agrovoc/,prefix_alias,bioregistry
 merged,AGROVOC,https://aims.fao.org/aos/agrovoc/c_,prefix_alias,bioregistry
 merged,AGROVOC,https://bioregistry.io/agrovoc:,prefix_alias,bioregistry
 merged,ags,https://id.agschemas.org/,canonical,prefixcc
+merged,aicat,http://w3id.org/aicat#,canonical,prefixcc
 merged,aifb,http://www.aifb.kit.edu/id/,canonical,prefixcc
 merged,aigp,http://swat.cse.lehigh.edu/resources/onto/aigp.owl#,canonical,prefixcc
 merged,aiiso,http://purl.org/vocab/aiiso/schema#,canonical,prefixcc
@@ -263,7 +265,9 @@ merged,AISM,http://www.ebi.ac.uk/ols/ontologies/aism/terms?iri=http://purl.oboli
 merged,AISM,https://bioregistry.io/AISM:,prefix_alias,bioregistry
 merged,AISM,https://purl.obolibrary.org/obo/AISM_,prefix_alias,bioregistry
 merged,AISM,https://www.ebi.ac.uk/ols/ontologies/aism/terms?iri=http://purl.obolibrary.org/obo/AISM_,prefix_alias,bioregistry
+merged,aiup,http://w3id.org/aiup#,canonical,prefixcc
 merged,aix,https://w3id.org/aix#,canonical,prefixcc
+merged,akco,https://purl.archive.org/akco#,canonical,prefixcc
 merged,aksw,http://aksw.org/,canonical,prefixcc
 merged,akt,http://www.aktors.org/ontology/portal#,canonical,prefixcc
 merged,aktivesa,http://sa.aktivespace.org/ontologies/aktivesa#,canonical,prefixcc
@@ -473,6 +477,7 @@ merged,ARBA,https://www.uniprot.org/arba/,namespace_alias,bioregistry
 merged,arch,http://purl.org/archival/vocab/arch#,canonical,prefixcc
 merged,archdesc,http://archdesc.info/archEvent#,canonical,prefixcc
 merged,archivo,https://archivo.dbpedia.org/onto#,canonical,prefixcc
+merged,arco,https://w3id.org/arco/ontology/arco/,canonical,prefixcc
 merged,ARDB,http://identifiers.org/ardb/,canonical,bioregistry
 merged,ARDB,http://ardb.cbcb.umd.edu/cgi/search.cgi?db=L&amp;field=ni&amp;term=,prefix_alias,bioregistry
 merged,ARDB,http://bioregistry.io/ardb:,prefix_alias,bioregistry
@@ -485,7 +490,7 @@ merged,ARDB,https://identifiers.org/ardb:,prefix_alias,bioregistry
 merged,ARDB,https://n2t.net/ardb:,prefix_alias,bioregistry
 merged,arecipe,http://purl.org/amicroformat/arecipe/,canonical,prefixcc
 merged,arena,https://solid.ti.rw.fau.de/public/ns/arena#,canonical,prefixcc
-merged,arg,http://rdfs.org/sioc/argument#,canonical,prefixcc
+merged,arg,http://spinrdf.org/arg#,canonical,prefixcc
 merged,ARK,http://identifiers.org/ARK/,canonical,bioregistry
 merged,ARK,http://bioregistry.io/ark:,prefix_alias,bioregistry
 merged,ARK,http://identifiers.org/ARK:,prefix_alias,bioregistry
@@ -579,6 +584,7 @@ merged,ASAP,https://identifiers.org/asap:,prefix_alias,bioregistry
 merged,ASAP,https://n2t.net/asap:,prefix_alias,bioregistry
 merged,asawoo,http://liris.cnrs.fr/asawoo/,canonical,prefixcc
 merged,asb,https://w3id.org/asbingowl/core#,canonical,prefixcc
+merged,aschema,https://schema.ld.admin.ch/,namespace_alias,prefixcc
 merged,ASCL,http://identifiers.org/ascl/,canonical,bioregistry
 merged,ASCL,http://ascl.net/,prefix_alias,bioregistry
 merged,ASCL,http://bioregistry.io/ascl:,prefix_alias,bioregistry
@@ -727,6 +733,7 @@ merged,auto,http://auto.schema.org/,canonical,prefixcc
 merged,awol,http://bblfish.net/work/atom-owl/2006-06-06/#,canonical,prefixcc
 merged,aws,http://purl.oclc.org/NET/ssnx/meteo/aws#,canonical,prefixcc
 merged,az,https://w3id.org/people/az/,canonical,prefixcc
+merged,azo,https://linkeddata.cultureelerfgoed.nl/def/azo/,canonical,prefixcc
 merged,b2bo,http://purl.org/b2bo#,canonical,prefixcc
 merged,b2rpubchem,http://bio2rdf.org/ns/ns/ns/pubchem#,canonical,prefixcc
 merged,b3kat,http://lod.b3kat.de/title/,canonical,prefixcc
@@ -775,6 +782,8 @@ merged,BACTIBASE,https://bioregistry.io/bactibase:,prefix_alias,bioregistry
 merged,baf,https://w3id.org/baf#,canonical,prefixcc
 merged,bag,https://bag2.basisregistraties.overheid.nl/bag/def/,canonical,prefixcc
 merged,bag2,http://bag.basisregistraties.overheid.nl/def/bag#,canonical,prefixcc
+merged,bam,http://vtw.elsevier.com/data/voc/ns/bam-vtw-1/,canonical,prefixcc
+merged,bambara,http://example.org/bambara#,canonical,prefixcc
 merged,BAO,http://identifiers.org/bao/,canonical,bioregistry
 merged,BAO,http://bioportal.bioontology.org/ontologies/BAO/bao:BAO_,prefix_alias,bioregistry
 merged,BAO,http://bioregistry.io/BAO:,prefix_alias,bioregistry
@@ -1415,6 +1424,7 @@ merged,bleadapter,http://vocab.rapidthings.eu/ns/ble/adapter.ttl#,canonical,pref
 merged,blt,http://www.bl.uk/schemas/bibliographic/blterms#,canonical,prefixcc
 merged,bm,http://bio2rdf.org/,namespace_alias,prefixcc
 merged,bmo,http://collection.britishmuseum.org/id/ontology/,canonical,prefixcc
+merged,BMONT,http://purl.obolibrary.org/obo/BMONT_,canonical,obo
 merged,bmp,http://w3id.org/bmp#,canonical,prefixcc
 merged,BMRB,http://identifiers.org/bmrb/,canonical,bioregistry
 merged,BMRB,http://bioregistry.io/bmrb:,prefix_alias,bioregistry
@@ -1430,6 +1440,7 @@ merged,bner,http://datos.bne.es/resource/,namespace_alias,prefixcc
 merged,bnf,http://www.w3.org/2000/10/swap/grammar/bnf#,canonical,prefixcc
 merged,bng,https://w3id.org/dob/voc/epsg-27700#,canonical,prefixcc
 merged,bob,http://good.dad/meaning/bob#,canonical,prefixcc
+merged,bodi,http://w3id.org/bodi#,canonical,prefixcc
 merged,BOLD.TAXONOMY,http://identifiers.org/bold.taxonomy/,canonical,bioregistry
 merged,BOLD.TAXONOMY,http://bio2rdf.org/bold:,prefix_alias,bioregistry
 merged,BOLD.TAXONOMY,http://bioregistry.io/bold.taxonomy:,prefix_alias,bioregistry
@@ -1519,6 +1530,7 @@ merged,BTO,https://purl.obolibrary.org/obo/BTO_,prefix_alias,bioregistry
 merged,BTO,https://www.brenda-enzymes.org/ontology.php?ontology_id=3&id_go=,prefix_alias,bioregistry
 merged,BTO,https://www.ebi.ac.uk/ols/ontologies/bto/terms?iri=http://purl.obolibrary.org/obo/BTO_,prefix_alias,bioregistry
 merged,bto,http://w3id.org/emmo-bto/bto#,prefix_alias,prefixcc
+merged,bu,http://borhan-onto.ir/ontology/upper#,canonical,prefixcc
 merged,BUGBASE.EXPT,http://identifiers.org/bugbase.expt/,canonical,bioregistry
 merged,BUGBASE.EXPT,http://bioregistry.io/bugbase.expt:,prefix_alias,bioregistry
 merged,BUGBASE.EXPT,http://bugs.sgul.ac.uk/bugsbase/tabs/experiment.php?action=view&expt_id=,prefix_alias,bioregistry
@@ -1779,6 +1791,7 @@ merged,CDD,https://identifiers.org/cdd/,prefix_alias,bioregistry
 merged,CDD,https://identifiers.org/cdd:,prefix_alias,bioregistry
 merged,CDD,https://n2t.net/cdd:,prefix_alias,bioregistry
 merged,CDD,https://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=,prefix_alias,bioregistry
+merged,cdi,http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/,canonical,prefixcc
 merged,cdm,http://publications.europa.eu/ontology/cdm#,canonical,prefixcc
 merged,CDNO,http://purl.obolibrary.org/obo/CDNO_,canonical,obo
 merged,CDNO,http://bioregistry.io/CDNO:,prefix_alias,bioregistry
@@ -1798,6 +1811,7 @@ merged,CDPD,https://n2t.net/cdpd:,prefix_alias,bioregistry
 merged,CDPD,https://webprod3.hc-sc.gc.ca/dpd-bdpp/info.do?lang=eng&code=,prefix_alias,bioregistry
 merged,cdt,https://w3id.org/cdt/,canonical,prefixcc
 merged,cdtype,http://purl.org/cld/cdtype/,canonical,prefixcc
+merged,ce,https://purl.org/cityexplorer#,canonical,prefixcc
 merged,CELL_MODEL_PASSPORT,https://cellmodelpassports.sanger.ac.uk/passports/,canonical,bioregistry
 merged,CELL_MODEL_PASSPORT,http://bioregistry.io/cell_model_passport:,prefix_alias,bioregistry
 merged,CELL_MODEL_PASSPORT,http://cellmodelpassports.sanger.ac.uk/passports/,prefix_alias,bioregistry
@@ -1864,6 +1878,7 @@ merged,CEMO,https://bioregistry.io/cemo:,prefix_alias,bioregistry
 merged,CEMO,https://purl.obolibrary.org/obo/cemo.owl#,prefix_alias,bioregistry
 merged,centrifuge,http://purl.org/twc/vocab/centrifuge#,canonical,prefixcc
 merged,ceo,https://linkeddata.cultureelerfgoed.nl/def/ceo#,canonical,prefixcc
+merged,ceon,http://w3id.org/CEON/,canonical,prefixcc
 merged,ceosp,https://linkeddata.cultureelerfgoed.nl/def/ceosp/,canonical,prefixcc
 merged,ceox,https://linkeddata.cultureelerfgoed.nl/def/ceox#,canonical,prefixcc
 merged,CEPH,http://purl.obolibrary.org/obo/CEPH_,canonical,obo
@@ -1881,6 +1896,7 @@ merged,ceterms,http://purl.org/ctdl/terms/,canonical,prefixcc
 merged,cex,http://purl.org/weso/ontology/computex#,canonical,prefixcc
 merged,cf,http://mmisw.org/ont/cf/parameter/,canonical,prefixcc
 merged,cff,http://purl.oclc.org/NET/ssnx/cf/cf-feature#,canonical,prefixcc
+merged,cfg,http://server.topbraidlive.org/web/2009/config#,canonical,prefixcc
 merged,cfp,http://sw.deri.org/2005/08/conf/cfp.owl#,canonical,prefixcc
 merged,cfrl,http://linkeddata.finki.ukim.mk/lod/ontology/cfrl#,canonical,prefixcc
 merged,CGD,http://identifiers.org/cgd/,canonical,go
@@ -1949,6 +1965,7 @@ merged,CHEBI,https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:,prefix_alias
 merged,CHEBI,https://www.ebi.ac.uk/ols/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_,prefix_alias,bioregistry
 merged,CHEBIID,http://purl.obolibrary.org/obo/CHEBI_,namespace_alias,bioregistry
 merged,check,http://pornhub.com/,canonical,prefixcc
+merged,checks,https://data.digichecks.eu/def/,canonical,prefixcc
 merged,CHEMBL,http://identifiers.org/chembl/,canonical,bioregistry
 merged,CHEMBL,http://bio2rdf.org/chembl:,prefix_alias,bioregistry
 merged,CHEMBL,http://bioregistry.io/ChEMBL-Targets:,prefix_alias,bioregistry
@@ -2552,6 +2569,7 @@ merged,CO_370,https://cropontology.org/rdf/CO_370:,canonical,bioregistry
 merged,CO_370,http://bioregistry.io/CO_370:,prefix_alias,bioregistry
 merged,CO_370,http://cropontology.org/rdf/CO_370:,prefix_alias,bioregistry
 merged,CO_370,https://bioregistry.io/CO_370:,prefix_alias,bioregistry
+merged,coar,http://purl.org/coar/resource_type/,canonical,prefixcc
 merged,COB,http://purl.obolibrary.org/obo/COB_,canonical,obo
 merged,COB,http://bioregistry.io/COB:,prefix_alias,bioregistry
 merged,COB,http://www.ebi.ac.uk/ols/ontologies/cob/terms?iri=http://purl.obolibrary.org/obo/COB_,prefix_alias,bioregistry
@@ -2565,6 +2583,7 @@ merged,COCONUT,https://bioregistry.io/coconut:,prefix_alias,bioregistry
 merged,cocoon,https://w3id.org/cocoon/v1.0#,canonical,prefixcc
 merged,coda,http://art.uniroma2.it/coda/contracts/,canonical,prefixcc
 merged,code,http://telegraphis.net/ontology/measurement/code#,canonical,prefixcc
+merged,codemeta,https://codemeta.github.io/terms/,canonical,prefixcc
 merged,coeus,http://bioinformatics.ua.pt/coeus/,canonical,prefixcc
 merged,COG,http://identifiers.org/cog/,canonical,bioregistry
 merged,COG,http://bio2rdf.org/cog:,prefix_alias,bioregistry
@@ -2702,8 +2721,8 @@ merged,contax,https://w3id.org/con-tax#,canonical,prefixcc
 merged,content,http://purl.org/rss/1.0/modules/content/,canonical,prefixcc
 merged,contry,http://dbpedia.org/resource/Lyon#,canonical,prefixcc
 merged,contsem,http://contsem.unizar.es/def/sector-publico/contratacion#,canonical,prefixcc
-merged,conv,http://purl.org/twc/vocab/conversion/,canonical,prefixcc
-merged,conversion,http://purl.org/twc/vocab/conversion/,namespace_alias,prefixcc
+merged,conv,http://purl.org/twc/vocab/conversion/,namespace_alias,prefixcc
+merged,conversion,http://purl.org/twc/vocab/conversion/,canonical,prefixcc
 merged,coo,http://purl.org/coo/ns#,canonical,prefixcc
 merged,coos,http://id.unece.org/def/coos#,canonical,prefixcc
 merged,copyright,http://rhizomik.net/ontologies/copyrightonto.owl#,namespace_alias,prefixcc
@@ -2771,6 +2790,7 @@ merged,COSMIC,https://identifiers.org/cosmic/,prefix_alias,bioregistry
 merged,COSMIC,https://identifiers.org/cosmic:,prefix_alias,bioregistry
 merged,COSMIC,https://n2t.net/cosmic:,prefix_alias,bioregistry
 merged,cosmo,http://purl.org/ontology/cosmo#,canonical,prefixcc
+merged,coso,http://w3id.org/coso/v1/contaminoso#,canonical,prefixcc
 merged,coswot,https://w3id.org/coswot/,canonical,prefixcc
 merged,coun,http://www.daml.org/2001/09/countries/iso-3166-ont#,canonical,prefixcc
 merged,countries,http://eulersharp.sourceforge.net/2003/03swap/countries#,canonical,prefixcc
@@ -2832,8 +2852,10 @@ merged,CRATES,http://bioregistry.io/crates:,prefix_alias,bioregistry
 merged,CRATES,http://crates.io/crates/,prefix_alias,bioregistry
 merged,CRATES,https://bioregistry.io/crates:,prefix_alias,bioregistry
 merged,crcr,https://credit.niso.org/contributor-roles/,canonical,prefixcc
+merged,crdt,https://vocab.noeldemartin.com/crdt/,canonical,prefixcc
 merged,cred,https://www.w3.org/2018/credentials#,canonical,prefixcc
 merged,credit,https://credit.niso.org/,canonical,prefixcc
+merged,creon,http://purl.org/creon/,canonical,prefixcc
 merged,crime,http://purl.org/vocab/reloc/,canonical,prefixcc
 merged,CRISP,http://purl.bioontology.org/ontology/CSP/,namespace_alias,bioregistry
 merged,CRISP THESAURUS,http://purl.bioontology.org/ontology/CSP/,namespace_alias,bioregistry
@@ -2933,6 +2955,8 @@ merged,CSP,https://bioregistry.io/csp:,prefix_alias,bioregistry
 merged,CSP,https://purl.bioontology.org/ontology/CSP/,prefix_alias,bioregistry
 merged,csp,http://vocab.deri.ie/csp#,prefix_alias,prefixcc
 merged,CSP2005,http://purl.bioontology.org/ontology/CSP/,namespace_alias,bioregistry
+merged,csr,http://purl.org/org/iode/po/voc/cruise-summary-reports#,canonical,prefixcc
+merged,csro,https://w3id.org/csro/ontology#,canonical,prefixcc
 merged,CST,http://identifiers.org/cst/,canonical,bioregistry
 merged,CST,http://bioregistry.io/cst:,prefix_alias,bioregistry
 merged,CST,http://identifiers.org/cst:,prefix_alias,bioregistry
@@ -3155,6 +3179,7 @@ merged,DATF,https://identifiers.org/datf/,prefix_alias,bioregistry
 merged,DATF,https://identifiers.org/datf:,prefix_alias,bioregistry
 merged,DATF,https://n2t.net/datf:,prefix_alias,bioregistry
 merged,DATF,https://planttfdb.cbi.pku.edu.cn/tf.php?sp=Ath&did=,prefix_alias,bioregistry
+merged,datmm,http://id.nlm.nih.gov/datmm/,canonical,prefixcc
 merged,dave,http://theme-e.adaptcentre.ie/dave#,canonical,prefixcc
 merged,dawgt,http://www.w3.org/2001/sw/DataAccess/tests/test-dawg#,canonical,prefixcc
 merged,days,http://ontologi.es/days#,canonical,prefixcc
@@ -3228,6 +3253,7 @@ merged,DBLP.AUTHOR,https://dblp.org/pid/,canonical,bioregistry
 merged,DBLP.AUTHOR,http://bioregistry.io/dblp.author:,prefix_alias,bioregistry
 merged,DBLP.AUTHOR,http://dblp.org/pid/,prefix_alias,bioregistry
 merged,DBLP.AUTHOR,https://bioregistry.io/dblp.author:,prefix_alias,bioregistry
+merged,dblpdocu,https://dblp.org/rdf/docu/#,canonical,prefixcc
 merged,dbm,http://purl.org/net/dbm/ontology#,canonical,prefixcc
 merged,dbms,http://www.openlinksw.com/ontology/dbms-app-ontology#,canonical,prefixcc
 merged,dbnary,http://kaiko.getalp.org/dbnary#,canonical,prefixcc
@@ -3238,6 +3264,7 @@ merged,DBO,https://bioregistry.io/dbo:,prefix_alias,bioregistry
 merged,dbonto,http://dbepedia.org/ontology/,canonical,prefixcc
 merged,dbowl,http://ontology.cybershare.utep.edu/dbowl/relational-to-ontology-mapping-primitive.owl#,canonical,prefixcc
 merged,dbp,http://dbpedia.org/property/,canonical,prefixcc
+merged,dbpde,http://de.dbpedia.org/property/,canonical,prefixcc
 merged,dbpedia,http://dbpedia.org/resource/,canonical,prefixcc
 merged,dbpedia2,http://dbpedia.org/property/,namespace_alias,prefixcc
 merged,dbpediaowl,http://dbpedia.org/owl/,canonical,prefixcc
@@ -3330,6 +3357,7 @@ merged,dcat,https://bioregistry.io/dcat:,prefix_alias,bioregistry
 merged,dcat,https://www.w3.org/ns/dcat#,prefix_alias,bioregistry
 merged,dcatap,http://data.europa.eu/r5r/,canonical,prefixcc
 merged,dcatapit,http://dati.gov.it/onto/dcatapit#,canonical,prefixcc
+merged,dcatde,http://dcat-ap.de/def/dcatde/,canonical,prefixcc
 merged,dcatnl,http://standaarden.overheid.nl/dcatnl/terms/,canonical,prefixcc
 merged,dcatno,https://data.norge.no/vocabulary/dcatno#,canonical,prefixcc
 merged,dcb,http://dbpedia.org/resource/Category:,namespace_alias,prefixcc
@@ -3392,6 +3420,7 @@ merged,DDPHENO,https://bioregistry.io/DDPHENO:,prefix_alias,bioregistry
 merged,DDPHENO,https://purl.obolibrary.org/obo/DDPHENO_,prefix_alias,bioregistry
 merged,DDPHENO,https://www.ebi.ac.uk/ols/ontologies/ddpheno/terms?iri=http://purl.obolibrary.org/obo/DDPHENO_,prefix_alias,bioregistry
 merged,dead,http://utpl.edu.ec/sbc/data/,canonical,prefixcc
+merged,debias,http://data.europa.eu/c4p/data/,canonical,prefixcc
 merged,DEBIO,https://biopragmatics.github.io/debio/,canonical,bioregistry
 merged,DEBIO,http://biopragmatics.github.io/debio/,prefix_alias,bioregistry
 merged,DEBIO,http://bioregistry.io/DeBiO:,prefix_alias,bioregistry
@@ -3513,6 +3542,7 @@ merged,DICOM,http://bioregistry.io/dicom:,prefix_alias,bioregistry
 merged,DICOM,https://bioregistry.io/dicom:,prefix_alias,bioregistry
 merged,DICOM,https://dicom.nema.org/resources/ontology/DCM/,prefix_alias,bioregistry
 merged,dicom,http://purl.org/healthcarevocab/v1#,prefix_alias,prefixcc
+merged,dictionary,https://standards.buildingsmart.org/DataDictionary/,canonical,prefixcc
 merged,dictyBase,http://identifiers.org/dictybase.gene/,canonical,go
 merged,DICTYBASE,http://dictybase.org/gene/,prefix_alias,bioregistry
 merged,DICTYBASE,http://bio2rdf.org/dictybase:,prefix_alias,bioregistry
@@ -3782,6 +3812,7 @@ merged,DPO,https://bioregistry.io/DPO:,prefix_alias,bioregistry
 merged,DPO,https://purl.obolibrary.org/obo/FBcv_,prefix_alias,bioregistry
 merged,DPO,https://www.ebi.ac.uk/ols/ontologies/dpo/terms?iri=http://purl.obolibrary.org/obo/FBcv_,prefix_alias,bioregistry
 merged,DPO,http://purl.obolibrary.org/obo/FBcv_,namespace_alias,bioregistry
+merged,dprod,https://ekgf.github.io/dprod/,canonical,prefixcc
 merged,dprov,http://promsns.org/def/do#,canonical,prefixcc
 merged,DPV,http://identifiers.org/dpv/,canonical,bioregistry
 merged,DPV,http://bio2rdf.org/dpvweb:,prefix_alias,bioregistry
@@ -3797,6 +3828,7 @@ merged,DPV,https://n2t.net/dpv:,prefix_alias,bioregistry
 merged,DPV,https://www.dpvweb.net/dpv/showdpv.php?dpvno=,prefix_alias,bioregistry
 merged,dpv,http://www.w3.org/ns/dpv#,prefix_alias,prefixcc
 merged,dq,http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#,canonical,prefixcc
+merged,dqa,https://w3id.org/DQA#,canonical,prefixcc
 merged,dqc,http://semwebquality.org/ontologies/dq-constraints#,canonical,prefixcc
 merged,dqm,http://purl.org/dqm-vocabulary/v1/dqm#,canonical,prefixcc
 merged,dqv,http://www.w3.org/ns/dqv#,canonical,prefixcc
@@ -3834,6 +3866,7 @@ merged,DRAGONDB.PROTEIN,https://bioregistry.io/dragondb.protein:,prefix_alias,bi
 merged,DRAGONDB.PROTEIN,https://identifiers.org/dragondb.protein/,prefix_alias,bioregistry
 merged,DRAGONDB.PROTEIN,https://identifiers.org/dragondb.protein:,prefix_alias,bioregistry
 merged,DRAGONDB.PROTEIN,https://n2t.net/dragondb.protein:,prefix_alias,bioregistry
+merged,drammar,http://www.purl.org/drammar#,canonical,prefixcc
 merged,DRDUKE,https://phytochem.nal.usda.gov/phytochem/chemicals/show/,canonical,bioregistry
 merged,DRDUKE,http://bioregistry.io/drduke:,prefix_alias,bioregistry
 merged,DRDUKE,http://phytochem.nal.usda.gov/phytochem/chemicals/show/,prefix_alias,bioregistry
@@ -3947,6 +3980,7 @@ merged,ds,http://purl.org/ctic/dcat#,canonical,prefixcc
 merged,dsd,https://w3id.org/dsd#,canonical,prefixcc
 merged,dsfv,http://sws.ifi.uio.no/vocab/dsf/henriwi/dsf#,canonical,prefixcc
 merged,dsi,https://data.dsi.omgeving.vlaanderen.be/ns/dsi#,canonical,prefixcc
+merged,dsio,https://ptb.de/si#,canonical,prefixcc
 merged,DSMZ,https://www.dsmz.de/collection/catalogue/details/culture/,canonical,bioregistry
 merged,DSMZ,http://bioregistry.io/DSMZCellDive:,prefix_alias,bioregistry
 merged,DSMZ,http://bioregistry.io/dsmz:,prefix_alias,bioregistry
@@ -3969,11 +4003,14 @@ merged,DSSTOX_GENERIC_SID,http://identifiers.org/pubchem.substance/,namespace_al
 merged,dsv,https://w3id.org/dsv#,canonical,prefixcc
 merged,dsw,http://purl.org/dsw/,canonical,prefixcc
 merged,dt,http://w3id.org/dt#,canonical,prefixcc
+merged,dtk,https://data.wikitrek.org/entity/,canonical,prefixcc
+merged,dtkt,https://data.wikitrek.org/prop/direct/,canonical,prefixcc
 merged,DTO,http://www.drugtargetontology.org/dto/DTO_,canonical,bioregistry
 merged,DTO,http://bioregistry.io/dto:,prefix_alias,bioregistry
 merged,DTO,https://bioregistry.io/dto:,prefix_alias,bioregistry
 merged,DTO,https://www.drugtargetontology.org/dto/DTO_,prefix_alias,bioregistry
 merged,dto,http://www.datatourisme.fr/ontology/core/1.0#,prefix_alias,prefixcc
+merged,dtool,https://devtoolkit.space/ontology#,canonical,prefixcc
 merged,dtype,http://www.linkedmodel.org/schema/dtype#,canonical,prefixcc
 merged,dul,http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#,canonical,prefixcc
 merged,dummy,http://hello.com/,canonical,prefixcc
@@ -4354,6 +4391,7 @@ merged,ei2a,http://opendata.aragon.es/def/ei2a#,canonical,prefixcc
 merged,ekaw,http://data.semanticweb.org/conference/ekaw/2012/complete/,canonical,prefixcc
 merged,elec,http://purl.org/ctic/sector-publico/elecciones#,canonical,prefixcc
 merged,eli,http://data.europa.eu/eli/ontology#,canonical,prefixcc
+merged,eliasempre,https://eliasempresas.com/,canonical,prefixcc
 merged,ELM,http://identifiers.org/elm/,canonical,bioregistry
 merged,ELM,http://bioregistry.io/elm:,prefix_alias,bioregistry
 merged,ELM,http://elm.eu.org/instances.html?q=,prefix_alias,bioregistry
@@ -4364,8 +4402,10 @@ merged,ELM,https://elm.eu.org/instances.html?q=,prefix_alias,bioregistry
 merged,ELM,https://identifiers.org/elm/,prefix_alias,bioregistry
 merged,ELM,https://identifiers.org/elm:,prefix_alias,bioregistry
 merged,ELM,https://n2t.net/elm:,prefix_alias,bioregistry
+merged,elm,http://data.europa.eu/snb/model/elm/,prefix_alias,prefixcc
 merged,elod,http://linkedeconomy.org/ontology#,canonical,prefixcc
 merged,elog,http://eulersharp.sourceforge.net/2003/03swap/log-rules#,namespace_alias,prefixcc
+merged,elsst,https://elsst.cessda.eu/id/,canonical,prefixcc
 merged,EMAP,http://purl.obolibrary.org/obo/EMAP_,canonical,obo
 merged,EMAP,http://bio2rdf.org/emap.ontology:,prefix_alias,bioregistry
 merged,EMAP,http://bioregistry.io/EMAP:,prefix_alias,bioregistry
@@ -4446,6 +4486,7 @@ merged,ENCODE,https://identifiers.org/encode:,prefix_alias,bioregistry
 merged,ENCODE,https://n2t.net/encode:,prefix_alias,bioregistry
 merged,ENCODE,https://www.encodeproject.org/,prefix_alias,bioregistry
 merged,ENCODE,https://www.encodeproject.org/biosamples/,prefix_alias,bioregistry
+merged,encom,https://semanticweb.inesctec.pt/ontologies/encom/,canonical,prefixcc
 merged,ends,http://labs.mondeca.com/vocab/endpointStatus#,canonical,prefixcc
 merged,enhancer,http://stanbol.apache.org/ontology/enhancer/enhancer#,canonical,prefixcc
 merged,ENM,http://purl.enanomapper.org/onto/ENM_,canonical,bioregistry
@@ -4652,8 +4693,8 @@ merged,EPO,http://bioregistry.io/EPO:,prefix_alias,bioregistry
 merged,EPO,https://bioregistry.io/EPO:,prefix_alias,bioregistry
 merged,EPO,https://purl.obolibrary.org/obo/EPO_,prefix_alias,bioregistry
 merged,epo,http://data.europa.eu/a4g/ontology#,prefix_alias,prefixcc
-merged,eppl,https://w3id.org/ep-plan#,namespace_alias,prefixcc
-merged,epplan,https://w3id.org/ep-plan#,canonical,prefixcc
+merged,eppl,https://w3id.org/ep-plan#,canonical,prefixcc
+merged,epplan,https://w3id.org/ep-plan#,namespace_alias,prefixcc
 merged,eppo,https://gd.eppo.int/taxon/,canonical,prefixcc
 merged,eprints,http://eprints.org/ontology/,canonical,prefixcc
 merged,eproc,http://10.0.3.120/download/eproc_FORN_v02.owl#,canonical,prefixcc
@@ -4761,7 +4802,7 @@ merged,EUPATH,https://www.ebi.ac.uk/ols/ontologies/eupath/terms?iri=http://purl.
 merged,eupont,http://elite.polito.it/ontologies/eupont.owl#,canonical,prefixcc
 merged,eurio,http://data.europa.eu/s66#,canonical,prefixcc
 merged,eurlex,http://eur-lex.publicdata.eu/ontology/,canonical,prefixcc
-merged,eurostat,http://wifo5-04.informatik.uni-mannheim.de/eurostat/resource/eurostat/,canonical,prefixcc
+merged,eurostat,http://dd.eionet.europa.eu/vocabulary/eurostat/,canonical,prefixcc
 merged,eurovoc,http://eurovoc.europa.eu/,canonical,prefixcc
 merged,eustd,http://eurostat.linked-statistics.org/data#,canonical,prefixcc
 merged,euvoc,http://publications.europa.eu/ontology/euvoc#,canonical,prefixcc
@@ -4778,6 +4819,7 @@ merged,event,http://purl.org/NET/c4dm/event.owl#,canonical,prefixcc
 merged,events,http://eulersharp.sourceforge.net/2003/03swap/event#,canonical,prefixcc
 merged,evident,http://purl.org/net/evident#,canonical,prefixcc
 merged,evopat,http://ns.aksw.org/Evolution/,canonical,prefixcc
+merged,evorao,http://w3id.org/evorao/,canonical,prefixcc
 merged,evset,http://dsnotify.org/vocab/eventset/0.1/,canonical,prefixcc
 merged,ewg,http://ethoinformatics.org/,canonical,prefixcc
 merged,ex,http://example.org/,canonical,prefixcc
@@ -4814,6 +4856,7 @@ merged,EXAC.VARIANT,https://n2t.net/exac.variant:,prefix_alias,bioregistry
 merged,example,http://www.example.org/rdf#,canonical,prefixcc
 merged,exekg,https://raw.githubusercontent.com/nsai-uio/ExeKGOntology/main/ds_exeKGOntology.ttl#,canonical,prefixcc
 merged,exif,http://www.w3.org/2003/12/exif/ns#,canonical,prefixcc
+merged,EXMO,http://purl.obolibrary.org/obo/EXMO_,canonical,obo
 merged,ExO,http://purl.obolibrary.org/obo/ExO_,canonical,obo
 merged,ExO,http://bioregistry.io/ExO:,prefix_alias,bioregistry
 merged,ExO,http://www.ebi.ac.uk/ols/ontologies/exo/terms?iri=http://purl.obolibrary.org/obo/ExO_,prefix_alias,bioregistry
@@ -4848,6 +4891,7 @@ merged,FACEBASE,https://identifiers.org/facebase:,prefix_alias,bioregistry
 merged,FACEBASE,https://n2t.net/facebase:,prefix_alias,bioregistry
 merged,FACEBASE,https://www.facebase.org/data/record/#1/isa:dataset/accession=,prefix_alias,bioregistry
 merged,factbook,http://wifo5-04.informatik.uni-mannheim.de/factbook/ns#,canonical,prefixcc
+merged,fair4ml,https://w3id.org/fair4ml#,canonical,prefixcc
 merged,FAIRSHARING,http://identifiers.org/fairsharing/,canonical,bioregistry
 merged,FAIRSHARING,http://bioregistry.io/fairsharing:,prefix_alias,bioregistry
 merged,FAIRSHARING,http://fairsharing.org/,prefix_alias,bioregistry
@@ -5172,6 +5216,7 @@ merged,FPLX,https://n2t.net/fplx:,prefix_alias,bioregistry
 merged,FPLX,https://sorgerlab.github.io/famplex/,prefix_alias,bioregistry
 merged,fpr,http://www.filmstandards.org/schemas/filmportal_relations#,canonical,prefixcc
 merged,fr,https://w3id.org/fr/def/core#,canonical,prefixcc
+merged,frac,http://www.w3.org/ns/lemon/frac#,canonical,prefixcc
 merged,frad,http://iflastandards.info/ns/fr/frad/,canonical,prefixcc
 merged,frame,http://www.ontologydesignpatterns.org/ont/framenet/abox/frame/,canonical,prefixcc
 merged,FRAPO,http://purl.org/cerif/frapo/,canonical,bioregistry
@@ -5193,6 +5238,7 @@ merged,FRBRER,https://iflastandards.info/ns/fr/frbr/frbrer/,prefix_alias,bioregi
 merged,frbroo,http://iflastandards.info/ns/fr/frbr/frbroo/,canonical,prefixcc
 merged,fred,http://www.ontologydesignpatterns.org/ont/fred/domain.owl#,canonical,prefixcc
 merged,freebase,http://rdf.freebase.com/ns/,canonical,prefixcc
+merged,freespins,https://bohoaff.com/a34fd6fba/,canonical,prefixcc
 merged,freq,http://purl.org/cld/freq/,canonical,prefixcc
 merged,fresnel,http://www.w3.org/2004/09/fresnel#,canonical,prefixcc
 merged,frgeo,http://rdf.insee.fr/geo/,canonical,prefixcc
@@ -5216,6 +5262,9 @@ merged,FSNP,https://n2t.net/fsnp:,prefix_alias,bioregistry
 merged,fso,https://w3id.org/fso#,canonical,prefixcc
 merged,fssp,http://linkeddata.fssprus.ru/resource/,canonical,prefixcc
 merged,ftcontent,http://www.ft.com/ontology/content/,canonical,prefixcc
+merged,fti,http://franz.com/ns/allegrograph/2.2/textindex/,canonical,prefixcc
+merged,ftr,https://w3id.org/ftr#,canonical,prefixcc
+merged,fugas,https://onlyfans.com/sammuwuu/,canonical,prefixcc
 merged,fun,http://w3id.org/sparql-generate/fn/,canonical,prefixcc
 merged,func,http://www.w3.org/2007/rif-builtin-function#,canonical,prefixcc
 merged,FUNCBASE.FLY,http://identifiers.org/funcbase.fly/,canonical,bioregistry
@@ -5284,6 +5333,7 @@ merged,FUNGIDB,https://identifiers.org/fungidb/,prefix_alias,bioregistry
 merged,FUNGIDB,https://identifiers.org/fungidb:,prefix_alias,bioregistry
 merged,FUNGIDB,https://n2t.net/fungidb:,prefix_alias,bioregistry
 merged,fuseki,http://jena.apache.org/fuseki#,canonical,prefixcc
+merged,fwo,https://w3id.org/foodwaste/ontology#,canonical,prefixcc
 merged,fx,http://sparql.xyz/facade-x/ns/,canonical,prefixcc
 merged,FYPO,http://purl.obolibrary.org/obo/FYPO_,canonical,obo
 merged,FYPO,http://bioregistry.io/FYPO:,prefix_alias,bioregistry
@@ -5493,6 +5543,7 @@ merged,GENETREE,https://n2t.net/genetree:,prefix_alias,bioregistry
 merged,GENETREE,https://www.ensembl.org/Multi/GeneTree/Image?db=core;gt=,prefix_alias,bioregistry
 merged,GENETREE,https://www.ensemblgenomes.org/id-genetree/,prefix_alias,bioregistry
 merged,genewiki,http://identifiers.org/ncbigene/,namespace_alias,bioregistry
+merged,genex,http://purl.org/genex#,canonical,prefixcc
 merged,GENO,http://purl.obolibrary.org/obo/GENO_,canonical,obo
 merged,GENO,http://bioregistry.io/GENO:,prefix_alias,bioregistry
 merged,GENO,http://www.ebi.ac.uk/ols/ontologies/geno/terms?iri=http://purl.obolibrary.org/obo/GENO_,prefix_alias,bioregistry
@@ -5537,7 +5588,6 @@ merged,GEO,https://identifiers.org/geo:,prefix_alias,bioregistry
 merged,GEO,https://n2t.net/geo:,prefix_alias,bioregistry
 merged,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=,prefix_alias,bioregistry
 merged,GEO,https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=,prefix_alias,bioregistry
-merged,geo,http://www.opengis.net/ont/geosparql#,prefix_alias,prefixcc
 merged,geo7,https://www.geo7.ch/,canonical,prefixcc
 merged,geocontext,http://www.geocontext.org/publ/2013/vocab#,canonical,prefixcc
 merged,geod,http://vocab.lenka.no/geo-deling#,namespace_alias,prefixcc
@@ -5580,8 +5630,9 @@ merged,geor,http://www.opengis.net/def/rule/geosparql/,canonical,prefixcc
 merged,georss,http://www.georss.org/georss/,canonical,prefixcc
 merged,geos,http://www.telegraphis.net/ontology/geography/geography#,canonical,prefixcc
 merged,geosp,http://rdf.geospecies.org/ont/geospecies#,namespace_alias,prefixcc
-merged,geosparql,http://www.opengis.net/ont/geosparql#,namespace_alias,prefixcc
+merged,geosparql,http://www.opengis.net/ont/geosparql#,canonical,prefixcc
 merged,geospecies,http://rdf.geospecies.org/ont/geospecies#,canonical,prefixcc
+merged,geosrs,https://w3id.org/geosrs#,canonical,prefixcc
 merged,geovocab,http://geovocab.org/,canonical,prefixcc
 merged,geovoid,http://purl.org/geovocamp/ontology/geovoid/,canonical,prefixcc
 merged,germplasm,http://purl.org/germplasm/terms#,canonical,prefixcc
@@ -5613,7 +5664,7 @@ merged,GIARDIADB,https://giardiadb.org/giardiadb/showRecord.do?name=GeneRecordCl
 merged,GIARDIADB,https://identifiers.org/giardiadb/,prefix_alias,bioregistry
 merged,GIARDIADB,https://identifiers.org/giardiadb:,prefix_alias,bioregistry
 merged,GIARDIADB,https://n2t.net/giardiadb:,prefix_alias,bioregistry
-merged,gist,http://ontologies.semanticarts.com/gist#,canonical,prefixcc
+merged,gist,https://ontologies.semanticarts.com/o/gistCore#,canonical,prefixcc
 merged,GITHUB,http://identifiers.org/github/,canonical,bioregistry
 merged,GITHUB,http://bioregistry.io/github:,prefix_alias,bioregistry
 merged,GITHUB,http://github.com/,prefix_alias,bioregistry
@@ -5957,6 +6008,7 @@ merged,GOLDBOOK,http://dx.doi.org/10.1351/goldbook.,prefix_alias,bioregistry
 merged,GOLDBOOK,http://goldbook.iupac.org/terms/view/,prefix_alias,bioregistry
 merged,GOLDBOOK,https://bioregistry.io/goldbook:,prefix_alias,bioregistry
 merged,GOLDBOOK,https://dx.doi.org/10.1351/goldbook.,prefix_alias,bioregistry
+merged,golem,https://w3id.org/golem/ontology#,canonical,prefixcc
 merged,gom,https://w3id.org/gom#,canonical,prefixcc
 merged,gomf,http://purl.obolibrary.org/obo/GO_,namespace_alias,bioregistry
 merged,gomfid,http://purl.obolibrary.org/obo/GO_,namespace_alias,bioregistry
@@ -6072,6 +6124,7 @@ merged,GRAMENE.TAXONOMY,https://identifiers.org/gramene.taxonomy/GR_tax:,prefix_
 merged,GRAMENE.TAXONOMY,https://identifiers.org/gramene.taxonomy:,prefix_alias,bioregistry
 merged,GRAMENE.TAXONOMY,https://n2t.net/gramene.taxonomy:,prefix_alias,bioregistry
 merged,granatum,http://chem.deri.ie/granatum/,canonical,prefixcc
+merged,graphql,https://graphql.org/,canonical,prefixcc
 merged,GRASSBASE,https://www.kew.org/data/grasses-db/www/,canonical,bioregistry
 merged,GRASSBASE,http://bioregistry.io/grassbase:,prefix_alias,bioregistry
 merged,GRASSBASE,http://www.kew.org/data/grasses-db/www/,prefix_alias,bioregistry
@@ -6139,6 +6192,7 @@ merged,GRO,https://n2t.net/gramene.growthstage:,prefix_alias,bioregistry
 merged,GRO,https://purl.obolibrary.org/obo/GRO_,prefix_alias,bioregistry
 merged,GRO,https://www.gramene.org/db/ontology/search?id=,prefix_alias,bioregistry
 merged,GRO,https://www.gramene.org/db/ontology/search?id=GRO:,prefix_alias,bioregistry
+merged,gro,http://www.bootstrep.eu/ontology/GRO#,prefix_alias,prefixcc
 merged,GRO-CPGA,http://purl.obolibrary.org/obo/GRO_,namespace_alias,bioregistry
 merged,grs,http://www.georss.org/georss/,namespace_alias,prefixcc
 merged,grscicoll,https://www.gbif.org/grscicoll/collection/,canonical,prefixcc
@@ -6155,6 +6209,7 @@ merged,GRSDB,https://identifiers.org/grsdb/,prefix_alias,bioregistry
 merged,GRSDB,https://identifiers.org/grsdb:,prefix_alias,bioregistry
 merged,GRSDB,https://n2t.net/grsdb:,prefix_alias,bioregistry
 merged,gs1,https://ref.gs1.org/voc/,canonical,prefixcc
+merged,gsn,https://w3id.org/OntoGSN/ontology#,canonical,prefixcc
 merged,gso,http://www.w3.org/2006/gen/ont#,canonical,prefixcc
 merged,gsp,http://www.opengis.net/ont/geosparql#,namespace_alias,prefixcc
 merged,GSSO,http://purl.obolibrary.org/obo/GSSO_,canonical,obo
@@ -6664,7 +6719,7 @@ merged,HP,https://identifiers.org/hp/HP:,prefix_alias,bioregistry
 merged,HP,https://n2t.net/hp:,prefix_alias,bioregistry
 merged,HP,https://purl.obolibrary.org/obo/HP_,prefix_alias,bioregistry
 merged,HP,https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http://purl.obolibrary.org/obo/HP_,prefix_alias,bioregistry
-merged,hp,http://purl.org/voc/hp/,prefix_alias,prefixcc
+merged,hp,http://pictogram.tokyo/vocabulary#,prefix_alias,prefixcc
 merged,HPA,http://identifiers.org/hpa/,canonical,bioregistry
 merged,HPA,http://bio2rdf.org/hpa:,prefix_alias,bioregistry
 merged,HPA,http://bioregistry.io/hpa:,prefix_alias,bioregistry
@@ -6827,6 +6882,7 @@ merged,ic,http://imi.go.jp/ns/core/rdf#,canonical,prefixcc
 merged,ical,http://www.w3.org/2002/12/cal/ical#,canonical,prefixcc
 merged,icaltzd,http://www.w3.org/2002/12/cal/icaltzd#,canonical,prefixcc
 merged,icane,http://www.icane.es/opendata/vocab#,canonical,prefixcc
+merged,icd,http://purl.bioontology.org/ontology/ICD9CM/,prefix_alias,prefixcc
 merged,ICD,http://identifiers.org/icd/,namespace_alias,bioregistry
 merged,ICD-10,http://identifiers.org/icd/,namespace_alias,bioregistry
 merged,ICD10,http://identifiers.org/icd/,canonical,bioregistry
@@ -7062,6 +7118,7 @@ merged,IGSR,https://bioregistry.io/igsr:,prefix_alias,bioregistry
 merged,ii,http://sparql.cwrc.ca/ontologies/ii#,canonical,prefixcc
 merged,iig,https://w3id.org/iicongraph/data/,canonical,prefixcc
 merged,iiif,http://iiif.io/api/image/2#,canonical,prefixcc
+merged,iirds,http://iirds.tekom.de/iirds#,canonical,prefixcc
 merged,ilap,http://data.posccaesar.org/ilap/,canonical,prefixcc
 merged,ILX,http://identifiers.org/ilx/,namespace_alias,bioregistry
 merged,im,http://imgpedia.dcc.uchile.cl/resource/,canonical,prefixcc
@@ -7435,6 +7492,7 @@ merged,ISFINDER,https://identifiers.org/isfinder:,prefix_alias,bioregistry
 merged,ISFINDER,https://n2t.net/isfinder:,prefix_alias,bioregistry
 merged,ISFINDER,https://www-is.biotoul.fr/index.html?is_special_name=,prefix_alias,bioregistry
 merged,ISFINDER,https://www-is.biotoul.fr/scripts/ficheIS.php?name=,prefix_alias,bioregistry
+merged,ishi,https://w3id.org/ishikawa-diagram-ontology#,canonical,prefixcc
 merged,isi,http://purl.org/ontology/is/inst/,canonical,prefixcc
 merged,isidore,http://www.rechercheisidore.fr/class/,canonical,prefixcc
 merged,ISNI,http://identifiers.org/isni/,canonical,bioregistry
@@ -7484,6 +7542,7 @@ merged,istex,https://data.istex.fr/ontology/istex#,canonical,prefixcc
 merged,iswc,http://annotation.semanticweb.org/2004/iswc#,canonical,prefixcc
 merged,it,http://www.influencetracker.com/ontology#,canonical,prefixcc
 merged,italy,http://data.kasabi.com/dataset/italy/schema/,canonical,prefixcc
+merged,itandrec,http://www.semanticweb.org/pedri/ontologies/2025/3/IntelligentTourismAndRecommendations#,canonical,prefixcc
 merged,itcat,http://th-brandenburg.de/ns/itcat#,canonical,prefixcc
 merged,itcrdf,http://www.w3.org/2005/11/its/rdf#,namespace_alias,prefixcc
 merged,iter,http://w3id.org/sparql-generate/iter/,canonical,prefixcc
@@ -7554,6 +7613,9 @@ merged,IUPHAR_LIGAND_ID,http://identifiers.org/iuphar.ligand/,namespace_alias,bi
 merged,IUPHARFAM,http://identifiers.org/iuphar.family/,namespace_alias,bioregistry
 merged,IUPHAROBJ,http://identifiers.org/iuphar.receptor/,namespace_alias,bioregistry
 merged,ja,http://jena.hpl.hp.com/2005/11/Assembler#,canonical,prefixcc
+merged,jabel54303,https://softwarehorsepower.com/product/brand24/,canonical,prefixcc
+merged,jats,http://jats.nlm.nih.gov/,canonical,prefixcc
+merged,jav,https://www.niso.org/schemas/jav/1.0/,canonical,prefixcc
 merged,java,http://www.w3.org/2007/uwa/context/java.owl#,canonical,prefixcc
 merged,JAX,https://www.jax.org/strain/,canonical,bioregistry
 merged,JAX,http://bioregistry.io/jax:,prefix_alias,bioregistry
@@ -7892,6 +7954,7 @@ merged,KNAPSACK,https://kanaya.naist.jp/knapsack_jsp/information.jsp?word=,prefi
 merged,KNAPSACK,https://n2t.net/knapsack:,prefix_alias,bioregistry
 merged,KNAPSACK,https://www.knapsackfamily.com/knapsack_core/information.php?sname=C_ID&word=,prefix_alias,bioregistry
 merged,KNAPSACK,https://www.knapsackfamily.com/knapsack_core/information.php?word=,prefix_alias,bioregistry
+merged,know,https://know.dev/,canonical,prefixcc
 merged,knows,http://semantic.komc/usu/2020/knows#,canonical,prefixcc
 merged,koko,https://seznam.cz/,canonical,prefixcc
 merged,kokot,http://www.koko.t/,canonical,prefixcc
@@ -8024,6 +8087,7 @@ merged,li,http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#,canonical,
 merged,lib,http://purl.org/library/,namespace_alias,prefixcc
 merged,libeas,https://w3id.org/libeas#,canonical,prefixcc
 merged,library,http://purl.org/library/,canonical,prefixcc
+merged,libro,https://www.librorum.fr/ontology/,canonical,prefixcc
 merged,LICEBASE,http://identifiers.org/licebase/,canonical,bioregistry
 merged,LICEBASE,http://bioregistry.io/licebase:,prefix_alias,bioregistry
 merged,LICEBASE,http://identifiers.org/licebase:,prefix_alias,bioregistry
@@ -8125,6 +8189,7 @@ merged,LINCS.SMALLMOLECULE,https://identifiers.org/lincs.smallmolecule:,prefix_a
 merged,LINCS.SMALLMOLECULE,https://lincsportal.ccs.miami.edu/SmallMolecules/#/view/,prefix_alias,bioregistry
 merged,LINCS.SMALLMOLECULE,https://n2t.net/lincs.smallmolecule:,prefix_alias,bioregistry
 merged,LINCS_LDP,http://identifiers.org/lincs.cell/,namespace_alias,bioregistry
+merged,lindas,https://ld.admin.ch/,canonical,prefixcc
 merged,lindt,http://purl.org/NET/lindt#,canonical,prefixcc
 merged,ling,http://purl.org/voc/ling/,canonical,prefixcc
 merged,LINGUIST,http://identifiers.org/linguist/,canonical,bioregistry
@@ -8309,6 +8374,7 @@ merged,lt,http://diplomski.nelakolundzija.org/LTontology.rdf#,canonical,prefixcc
 merged,lu,http://www.ontologydesignpatterns.org/ont/framenet/abox/lu/,canonical,prefixcc
 merged,luc,http://www.ontotext.com/owlim/lucene#,canonical,prefixcc
 merged,ludo,http://ns.inria.fr/ludo/v1#,canonical,prefixcc
+merged,luffy,http://google.com/,canonical,prefixcc
 merged,luigiusai,https://www.luigiusai.it/wp#,canonical,prefixcc
 merged,lv,http://purl.org/lobid/lv#,canonical,prefixcc
 merged,lv2,http://lv2plug.in/ns/lv2core/,canonical,prefixcc
@@ -8423,6 +8489,7 @@ merged,MAO,http://bioregistry.io/MAO:,prefix_alias,bioregistry
 merged,MAO,https://bio2rdf.org/mao:,prefix_alias,bioregistry
 merged,MAO,https://bioregistry.io/MAO:,prefix_alias,bioregistry
 merged,MAO,https://purl.obolibrary.org/obo/MAO_,prefix_alias,bioregistry
+merged,mao,https://domestic-beethoven.eu/ontology/1.0/music-annotation-ontology.ttl#,prefix_alias,prefixcc
 merged,marc,http://www.loc.gov/MARC21/slim/,canonical,prefixcc
 merged,marcgt,https://id.loc.gov/vocabulary/marcgt/,canonical,prefixcc
 merged,marcrel,http://id.loc.gov/vocabulary/relators/,canonical,prefixcc
@@ -9187,6 +9254,7 @@ merged,MIRO,http://www.ebi.ac.uk/ols/ontologies/miro/terms?iri=http://purl.oboli
 merged,MIRO,https://bioregistry.io/MIRO:,prefix_alias,bioregistry
 merged,MIRO,https://purl.obolibrary.org/obo/MIRO_,prefix_alias,bioregistry
 merged,MIRO,https://www.ebi.ac.uk/ols/ontologies/miro/terms?iri=http://purl.obolibrary.org/obo/MIRO_,prefix_alias,bioregistry
+merged,miron,https://stgermain.ebsi.umontreal.ca/miron/,canonical,prefixcc
 merged,MIRTARBASE,http://identifiers.org/mirtarbase/,canonical,bioregistry
 merged,MIRTARBASE,http://bioregistry.io/mirtarbase:,prefix_alias,bioregistry
 merged,MIRTARBASE,http://identifiers.org/mirtarbase:,prefix_alias,bioregistry
@@ -9571,6 +9639,7 @@ merged,MULTICELLDS.SNAPSHOT,http://multicellds.org/MultiCellDB/,namespace_alias,
 merged,multionto,http://purl.org/net/multionto/,canonical,prefixcc
 merged,munc,http://ns.inria.fr/munc#,canonical,prefixcc
 merged,muni,http://vocab.linkeddata.es/urbanismo-infraestructuras/territorio#,canonical,prefixcc
+merged,muno,https://purl.org/muno/onto/,canonical,prefixcc
 merged,muo,http://purl.oclc.org/NET/muo/muo#,canonical,prefixcc
 merged,mus,http://data.doremus.org/ontology#,canonical,prefixcc
 merged,musi,http://i-na-reg.musikinstrumentenbau.eu/ns/musi/,canonical,prefixcc
@@ -9675,6 +9744,7 @@ merged,myprefix,http://myprefix.org/,canonical,prefixcc
 merged,myspace,http://purl.org/ontology/myspace#,canonical,prefixcc
 merged,myspo,http://purl.org/ontology/myspace#,namespace_alias,prefixcc
 merged,mysql,http://web-semantics.org/ns/mysql/,canonical,prefixcc
+merged,myv,http://www.example.com/myvData/,canonical,prefixcc
 merged,MZSPEC,http://identifiers.org/MZSPEC/,canonical,bioregistry
 merged,MZSPEC,http://bioregistry.io/mzspec:,prefix_alias,bioregistry
 merged,MZSPEC,http://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/ShowObservedSpectrum?usi=mzspec:,prefix_alias,bioregistry
@@ -9695,9 +9765,9 @@ merged,nace2,http://data.europa.eu/ux2/nace2/,canonical,prefixcc
 merged,nalt,https://lod.nal.usda.gov/nalt/,canonical,prefixcc
 merged,name,http://example.org/name#,canonical,prefixcc
 merged,namespaces,https://vg.no/,canonical,prefixcc
-merged,NANDO,http://identifiers.org/NANDO/,canonical,bioregistry
+merged,NANDO,http://identifiers.org/NANDO:,canonical,linkml
+merged,NANDO,http://identifiers.org/NANDO/,prefix_alias,bioregistry
 merged,NANDO,http://bioregistry.io/nando:,prefix_alias,bioregistry
-merged,NANDO,http://identifiers.org/NANDO:,prefix_alias,bioregistry
 merged,NANDO,http://identifiers.org/nando/NANDO:,prefix_alias,bioregistry
 merged,NANDO,http://nanbyodata.jp/disease/NANDO:,prefix_alias,bioregistry
 merged,NANDO,https://bioregistry.io/nando:,prefix_alias,bioregistry
@@ -10062,6 +10132,7 @@ merged,NCIT_Thesaurus,http://purl.obolibrary.org/obo/NCIT_,namespace_alias,biore
 merged,NCIThesaurus,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,canonical,linkml
 merged,NCITm,http://purl.obolibrary.org/obo/NCIT_,namespace_alias,bioregistry
 merged,NCITt,http://purl.obolibrary.org/obo/NCIT_,namespace_alias,bioregistry
+merged,ncl,https://w3id.org/NCL/ontology/,canonical,prefixcc
 merged,nco,http://www.semanticdesktop.org/ontologies/2007/03/22/nco#,canonical,prefixcc
 merged,NCRO,http://purl.obolibrary.org/obo/NCRO_,canonical,obo
 merged,NCRO,http://bioregistry.io/NCRO:,prefix_alias,bioregistry
@@ -10497,6 +10568,7 @@ merged,NORINE,https://identifiers.org/norine/,prefix_alias,bioregistry
 merged,NORINE,https://identifiers.org/norine:,prefix_alias,bioregistry
 merged,NORINE,https://n2t.net/norine:,prefix_alias,bioregistry
 merged,norse,https://w3id.org/aksw/norse#,canonical,prefixcc
+merged,northwind,http://demo.openlinksw.com/schemas/Northwind/,canonical,prefixcc
 merged,nosql,http://purl.org/db/nosql#,canonical,prefixcc
 merged,notify,http://www.w3.org/ns/solid/notifications#,canonical,prefixcc
 merged,NOVUS,https://www.novusbio.com/products/,canonical,bioregistry
@@ -10504,6 +10576,7 @@ merged,NOVUS,http://bioregistry.io/novus:,prefix_alias,bioregistry
 merged,NOVUS,http://www.novusbio.com/products/,prefix_alias,bioregistry
 merged,NOVUS,https://bioregistry.io/novus:,prefix_alias,bioregistry
 merged,np,http://www.nanopub.org/nschema#,canonical,prefixcc
+merged,npc,https://purl.org/npc#,canonical,prefixcc
 merged,npdv,http://sws.ifi.uio.no/vocab/npd#,canonical,prefixcc
 merged,npg,http://ns.nature.com/terms/,canonical,prefixcc
 merged,npgd,http://ns.nature.com/datasets/,canonical,prefixcc
@@ -10513,6 +10586,7 @@ merged,NPM,https://www.npmjs.com/package/,canonical,bioregistry
 merged,NPM,http://bioregistry.io/npm:,prefix_alias,bioregistry
 merged,NPM,http://www.npmjs.com/package/,prefix_alias,bioregistry
 merged,NPM,https://bioregistry.io/npm:,prefix_alias,bioregistry
+merged,npo,https://w3id.org/NPO/ontology/,canonical,prefixcc
 merged,nprl,http://data.nobelprize.org/resource/laureate/,canonical,prefixcc
 merged,nrl,http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#,canonical,prefixcc
 merged,nrv,http://ns.inria.fr/nrv#,canonical,prefixcc
@@ -10523,6 +10597,7 @@ merged,nsd,https://w3id.org/nsd#,canonical,prefixcc
 merged,nsg,https://neuroshapes.org/,canonical,prefixcc
 merged,nsl,http://purl.org/ontology/storyline/,canonical,prefixcc
 merged,nsogi,http://prefix.cc/nsogi:,canonical,prefixcc
+merged,nsprov,http://www.w3.org/ns/prov#,namespace_alias,prefixcc
 merged,nt,http://ns.inria.fr/nicetag/2010/09/09/voc#,canonical,prefixcc
 merged,ntag,http://ns.inria.fr/nicetag/2010/09/09/voc#,namespace_alias,prefixcc
 merged,ntp,https://schema.finto.fi/ntp#,canonical,prefixcc
@@ -10549,6 +10624,7 @@ merged,nutscode,http://data.europa.eu/nuts/code/,canonical,prefixcc
 merged,nxp,http://purl.org/nxp/schema/v1/,prefix_alias,prefixcc
 merged,NXP,http://identifiers.org/nextprot/,namespace_alias,bioregistry
 merged,nxs,http://www.neclimateus.org/,canonical,prefixcc
+merged,nyanneko,https://nyanneko.com/,canonical,prefixcc
 merged,nyon,https://w3id.org/def/nyon#,canonical,prefixcc
 merged,nyt,http://data.nytimes.com/,canonical,prefixcc
 merged,nytimes,http://data.nytimes.com/elements/,canonical,prefixcc
@@ -10675,6 +10751,7 @@ merged,occult,http://data.totl.net/occult/,canonical,prefixcc
 merged,occupation,http://nikunj.org/ontology/occupatioin#,canonical,prefixcc
 merged,ocd,http://dati.camera.it/ocd/,canonical,prefixcc
 merged,ocds,http://purl.org/onto-ocds/ocds#,canonical,prefixcc
+merged,och,http://w3id.org/def/och/,canonical,prefixcc
 merged,OCI,http://identifiers.org/oci/,canonical,bioregistry
 merged,OCI,http://bioregistry.io/oci:,prefix_alias,bioregistry
 merged,OCI,http://identifiers.org/oci:,prefix_alias,bioregistry
@@ -10765,7 +10842,7 @@ merged,odv,http://reference.data.gov.uk/def/organogram/,canonical,prefixcc
 merged,odw,http://odw.tw/,canonical,prefixcc
 merged,oecc,http://www.oegov.org/core/owl/cc#,canonical,prefixcc
 merged,oecd,http://oecd.270a.info/dataset/,canonical,prefixcc
-merged,oeo,http://openenergy-platform.org/ontology/oeo/,canonical,prefixcc
+merged,oeo,https://openenergyplatform.org/ontology/oeo/,canonical,prefixcc
 merged,oeso,http://www.opensilex.org/vocabularies/oeso#,canonical,prefixcc
 merged,of,http://owlrep.eu01.aws.af.cm/fridge#,canonical,prefixcc
 merged,ofn,http://www.ontotext.com/sparql/functions/,canonical,prefixcc
@@ -11038,6 +11115,7 @@ merged,ONE,https://purl.obolibrary.org/obo/ONE_,prefix_alias,bioregistry
 merged,ONE,https://www.ebi.ac.uk/ols/ontologies/one/terms?iri=http://purl.obolibrary.org/obo/ONE_,prefix_alias,bioregistry
 merged,one,https://bioportal.bioontology.org/ontologies/ONE/,prefix_alias,prefixcc
 merged,onisep,http://rdf.onisep.fr/resource/,canonical,prefixcc
+merged,onlyfans,https://cutt.ly/3ry8LMcK/,canonical,prefixcc
 merged,ONS,http://purl.obolibrary.org/obo/ONS_,canonical,obo
 merged,ONS,http://bioregistry.io/ONS:,prefix_alias,bioregistry
 merged,ONS,http://www.ebi.ac.uk/ols/ontologies/ons/terms?iri=http://purl.obolibrary.org/obo/ONS_,prefix_alias,bioregistry
@@ -11141,9 +11219,11 @@ merged,oplecrm,http://www.openlinksw.com/ontology/ecrm#,canonical,prefixcc
 merged,oplfeat,http://www.openlinksw.com/ontology/features#,canonical,prefixcc
 merged,oplgit,http://www.openlinksw.com/schemas/github#,canonical,prefixcc
 merged,oplgp,http://www.openlinksw.com/schemas/googleplus#,canonical,prefixcc
+merged,oplic,http://www.openlinksw.com/ontology/licenses#,namespace_alias,prefixcc
 merged,oplli,http://www.openlinksw.com/schemas/linkedin#,canonical,prefixcc
 merged,opllic,http://www.openlinksw.com/ontology/licenses#,canonical,prefixcc
 merged,opllog,http://www.openlinksw.com/ontology/logging#,canonical,prefixcc
+merged,oplmark,http://www.openlinksw.com/ontology/market#,namespace_alias,prefixcc
 merged,oplmarket,http://www.openlinksw.com/ontology/market#,namespace_alias,prefixcc
 merged,oplmkt,http://www.openlinksw.com/ontology/market#,canonical,prefixcc
 merged,oplog,http://www.openlinksw.com/schemas/opengraph#,canonical,prefixcc
@@ -11180,6 +11260,7 @@ merged,oprovo,http://openprovenance.org/ontology#,canonical,prefixcc
 merged,ops,https://w3id.org/ops#,canonical,prefixcc
 merged,opus,http://lsdis.cs.uga.edu/projects/semdis/opus#,canonical,prefixcc
 merged,opwn,http://www.ontologyportal.org/WordNet.owl#,canonical,prefixcc
+merged,oqs,http://purl.org/nsoluti/oqs#,canonical,prefixcc
 merged,or,http://openresearch.org/vocab/,canonical,prefixcc
 merged,orca,http://geni-orca.renci.org/owl/topology.owl#,canonical,prefixcc
 merged,ORCID,http://identifiers.org/orcid/,canonical,bioregistry
@@ -11393,7 +11474,7 @@ merged,OTL,https://urgi.versailles.inra.fr/OryzaTagLine/cgi-bin/general_mutant.p
 merged,otl,https://w3id.org/opentrafficlights#,prefix_alias,prefixcc
 merged,otrl,https://w3id.org/oseg/ont/otrl#,canonical,prefixcc
 merged,ottr,http://ns.ottr.xyz/templates#,canonical,prefixcc
-merged,ou,http://opendata.unex.es/def/ontouniversidad#,canonical,prefixcc
+merged,ou,https://opendata.unex.es/def/ontouniversidad#,canonical,prefixcc
 merged,oup,http://purl.org/ontology-use-patterns#,canonical,prefixcc
 merged,out,http://ontologies.hypios.com/out#,canonical,prefixcc
 merged,output,http://volt-name.space/vocab/output#,canonical,prefixcc
@@ -11445,6 +11526,7 @@ merged,P3DB.SITE,https://identifiers.org/p3db.site/,prefix_alias,bioregistry
 merged,P3DB.SITE,https://identifiers.org/p3db.site:,prefix_alias,bioregistry
 merged,P3DB.SITE,https://n2t.net/p3db.site:,prefix_alias,bioregistry
 merged,p3p,http://www.w3.org/2002/01/p3prdfv1#,canonical,prefixcc
+merged,pa,http://vtw.elsevier.com/data/ns/properties/PromotionalAccess-1/,canonical,prefixcc
 merged,paam,https://lod.mediathek-tanz-theater.de/schema/paam/,canonical,prefixcc
 merged,PACKAGIST,https://packagist.org/packages/,canonical,bioregistry
 merged,PACKAGIST,http://bioregistry.io/packagist:,prefix_alias,bioregistry
@@ -11537,6 +11619,7 @@ merged,PASS2,https://identifiers.org/pass2/,prefix_alias,bioregistry
 merged,PASS2,https://identifiers.org/pass2:,prefix_alias,bioregistry
 merged,PASS2,https://n2t.net/pass2:,prefix_alias,bioregistry
 merged,passim,http://data.lirmm.fr/ontologies/passim#,canonical,prefixcc
+merged,passport,https://nepalpassport.gov.np/,canonical,prefixcc
 merged,pat,http://purl.org/hpi/patchr#,canonical,prefixcc
 merged,PATENT,http://identifiers.org/google.patent/,namespace_alias,bioregistry
 merged,PATHBANK,https://pathbank.org/view/,canonical,bioregistry
@@ -11851,6 +11934,7 @@ merged,perscido,https://perscido.univ-grenoble-alpes.fr/,canonical,prefixcc
 merged,persee,http://data.persee.fr/ontology/persee_ontology/,canonical,prefixcc
 merged,person,http://www.w3.org/ns/person#,canonical,prefixcc
 merged,persoon,http://data.vlaanderen.be/ns/persoon#,canonical,prefixcc
+merged,pes,https://semanticweb.inesctec.pt/ontologies/pes/,canonical,prefixcc
 merged,PESTICIDEINFO,https://www.pesticideinfo.org/chemical/,canonical,bioregistry
 merged,PESTICIDEINFO,http://bioregistry.io/pesticideinfo:,prefix_alias,bioregistry
 merged,PESTICIDEINFO,http://www.pesticideinfo.org/chemical/,prefix_alias,bioregistry
@@ -12088,7 +12172,8 @@ merged,PHYTOZOME.LOCUS,https://identifiers.org/phytozome.locus:,prefix_alias,bio
 merged,PHYTOZOME.LOCUS,https://n2t.net/phytozome.locus:,prefix_alias,bioregistry
 merged,PHYTOZOME.LOCUS,https://www.phytozome.net/genePage.php?crown&method=0&search=1&detail=1&searchText=locusname:,prefix_alias,bioregistry
 merged,pic,http://www.ipaw.info/ns/picaso#,canonical,prefixcc
-merged,pico,https://data.cbg.nl/pico#,canonical,prefixcc
+merged,pico,https://personsincontext.org/model#,canonical,prefixcc
+merged,picom,https://personsincontext.org/model#,namespace_alias,prefixcc
 merged,pid,http://permid.org/ontology/organization/,prefix_alias,prefixcc
 merged,PID,http://identifiers.org/pid.pathway/,namespace_alias,bioregistry
 merged,PID.PATHWAY,http://identifiers.org/pid.pathway/,canonical,bioregistry
@@ -12107,7 +12192,7 @@ merged,PID.PATHWAY,https://n2t.net/pid.pathway:,prefix_alias,bioregistry
 merged,PID.PATHWAY,https://pid.nci.nih.gov/search/pathway_landing.shtml?what=graphic&jpg=on&pathway_id=,prefix_alias,bioregistry
 merged,piero,http://reactionontology.org/piero/,canonical,prefixcc
 merged,PIGQTLDB,http://identifiers.org/qtldb/,namespace_alias,bioregistry
-merged,pim,http://www.w3.org/ns/pim/space#,canonical,prefixcc
+merged,pim,http://www.w3.org/ns/pim/space#,namespace_alias,prefixcc
 merged,pimo,http://www.semanticdesktop.org/ontologies/2007/11/01/pimo#,canonical,prefixcc
 merged,PINA,http://identifiers.org/uniprot/,namespace_alias,bioregistry
 merged,pineapple,http://hexananas.com/pineapple#,canonical,prefixcc
@@ -12138,6 +12223,7 @@ merged,PIRSF,https://n2t.net/pirsf:,prefix_alias,bioregistry
 merged,PIRSF,https://pir.georgetown.edu/cgi-bin/ipcSF?id=,prefix_alias,bioregistry
 merged,PIRSF,https://proteininformationresource.org/cgi-bin/ipcSF?id=,prefix_alias,bioregistry
 merged,pit,http://data.elsevier.com/vocabulary/ElsevierPubItemTypes/,canonical,prefixcc
+merged,piveau,https://piveau.eu/ns/voc#,namespace_alias,prefixcc
 merged,pizza,http://www.co-ode.org/ontologies/pizza/pizza.owl#,canonical,prefixcc
 merged,PKDB,http://identifiers.org/pkdb/,canonical,bioregistry
 merged,PKDB,http://bioregistry.io/pkdb:,prefix_alias,bioregistry
@@ -12297,6 +12383,7 @@ merged,PMR.WORKSPACE,https://identifiers.org/pmr.workspace/,prefix_alias,bioregi
 merged,PMR.WORKSPACE,https://identifiers.org/pmr.workspace:,prefix_alias,bioregistry
 merged,PMR.WORKSPACE,https://models.physiomeproject.org/workspace/,prefix_alias,bioregistry
 merged,pmt,http://tipsy.googlecode.com/svn/trunk/vocab/pmt#,canonical,prefixcc
+merged,pmw,http://ponymusic.wiki/ns#,canonical,prefixcc
 merged,pna,http://data.press.net/ontology/asset/,canonical,prefixcc
 merged,pnc,http://data.press.net/ontology/classification/,canonical,prefixcc
 merged,pne,http://data.press.net/ontology/event/,canonical,prefixcc
@@ -12338,6 +12425,7 @@ merged,POCKETOME,https://identifiers.org/pocketome:,prefix_alias,bioregistry
 merged,POCKETOME,https://n2t.net/pocketome:,prefix_alias,bioregistry
 merged,pod,https://project-open-data.cio.gov/v1.1/schema/#,canonical,prefixcc
 merged,poder,http://poderopedia.com/vocab/,canonical,prefixcc
+merged,podio,http://w3id.org/podio#,canonical,prefixcc
 merged,pois,http://purl.oclc.org/POIS/vcblr#,canonical,prefixcc
 merged,poke,https://pokemonkg.org/ontology#,canonical,prefixcc
 merged,pol,http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#,canonical,prefixcc
@@ -12381,6 +12469,7 @@ merged,powla,http://purl.org/powla/powla.owl#,canonical,prefixcc
 merged,pp,http://peoplesplaces.de/ontology#,canonical,prefixcc
 merged,ppeer,http://parliament.uk/ontologies/peerage/,canonical,prefixcc
 merged,pplan,http://purl.org/net/p-plan#,canonical,prefixcc
+merged,ppm,https://mestergruppen.no/ontologies/projectproductionmanagement/,canonical,prefixcc
 merged,ppn,http://parliament.uk/ontologies/person-name/,canonical,prefixcc
 merged,PPO,http://purl.obolibrary.org/obo/PPO_,canonical,obo
 merged,PPO,http://bioregistry.io/PPO:,prefix_alias,bioregistry
@@ -12828,13 +12917,14 @@ merged,PUBMED,http://identifiers.org/pubmed/,namespace_alias,bioregistry
 merged,puc,http://purl.org/NET/puc#,canonical,prefixcc
 merged,puelia,http://kwijibo.talis.com/vocabs/puelia#,canonical,prefixcc
 merged,puml,http://plantuml.com/ontology#,canonical,prefixcc
+merged,pur,http://prismstandard.org/namespaces/prismusagerights/2.1/,canonical,prefixcc
 merged,purl,http://www.purl.org/,canonical,prefixcc
 merged,PuRO,http://purl.org/spar/pro/,canonical,bioregistry
 merged,PuRO,http://bioregistry.io/PuRO:,prefix_alias,bioregistry
 merged,PuRO,https://bioregistry.io/PuRO:,prefix_alias,bioregistry
 merged,PuRO,https://purl.org/spar/pro/,prefix_alias,bioregistry
 merged,push,http://www.w3.org/2007/uwa/context/push.owl#,canonical,prefixcc
-merged,pv,http://ns.inria.fr/provoc#,canonical,prefixcc
+merged,pv,https://piveau.eu/ns/voc#,canonical,prefixcc
 merged,pvcs,http://purl.org/twc/vocab/pvcs#,canonical,prefixcc
 merged,PW,http://purl.obolibrary.org/obo/PW_,canonical,obo
 merged,PW,http://bio2rdf.org/pw:,prefix_alias,bioregistry
@@ -12892,6 +12982,7 @@ merged,qb,https://bioregistry.io/qb:,prefix_alias,bioregistry
 merged,qb,https://purl.org/linked-data/cube#,prefix_alias,bioregistry
 merged,qb4o,http://purl.org/olap#,canonical,prefixcc
 merged,qbe,http://citydata.wu.ac.at/qb-equations#,canonical,prefixcc
+merged,qcy,https://qaecy.com/dev/ont#,canonical,prefixcc
 merged,qdoslf,http://foaf.qdos.com/lastfm/schema/,canonical,prefixcc
 merged,qk,http://qudt.org/vocab/quantitykind/,canonical,prefixcc
 merged,qkdv,http://qudt.org/vocab/dimensionvector/,canonical,prefixcc
@@ -12956,6 +13047,7 @@ merged,QTLDB,https://www.animalgenome.org/cgi-bin/QTLdb/OA/qdetails?QTL_ID=,pref
 merged,QTLDB,https://www.animalgenome.org/cgi-bin/QTLdb/SS/qdetails?QTL_ID=,prefix_alias,bioregistry
 merged,qu,http://purl.oclc.org/NET/ssnx/qu/qu#,canonical,prefixcc
 merged,quak,http://dev.w3.org/cvsweb/2000/quacken/vocab#,canonical,prefixcc
+merged,qualityze,https://www.qualityze.com/document-management/,canonical,prefixcc
 merged,quantities,http://eulersharp.sourceforge.net/2003/03swap/quantitiesExtension#,canonical,prefixcc
 merged,quantity,http://qudt.org/schema/quantity#,canonical,prefixcc
 merged,qud,http://qudt.org/1.1/schema/qudt#,namespace_alias,prefixcc
@@ -13142,6 +13234,7 @@ merged,RDFA,http://www.w3.org/ns/rdfa#,canonical,bioregistry
 merged,RDFA,http://bioregistry.io/rdfa:,prefix_alias,bioregistry
 merged,RDFA,https://bioregistry.io/rdfa:,prefix_alias,bioregistry
 merged,RDFA,https://www.w3.org/ns/rdfa#,prefix_alias,bioregistry
+merged,rdfc,https://w3id.org/rdf-connect#,canonical,prefixcc
 merged,rdfdata,http://rdf.data-vocabulary.org/rdf.xml#,canonical,prefixcc
 merged,rdfdf,http://www.openlinksw.com/virtrdf-data-formats#,canonical,prefixcc
 merged,rdfg,http://www.w3.org/2004/03/trix/rdfg-1/,canonical,prefixcc
@@ -13225,6 +13318,7 @@ merged,refexo,http://purl.jp/bio/01/refexo#,canonical,prefixcc
 merged,refseq,http://identifiers.org/ncbiprotein/,namespace_alias,bioregistry
 merged,REFSEQ_PROT,http://identifiers.org/ncbiprotein/,namespace_alias,bioregistry
 merged,reg,http://purl.org/linked-data/registry#,canonical,prefixcc
+merged,regcomp,https://regulacomp.unige.ch/ns/regcomp#,canonical,prefixcc
 merged,regorg,http://www.w3.org/ns/regorg#,namespace_alias,prefixcc
 merged,rei,http://www.w3.org/2004/06/rei#,canonical,prefixcc
 merged,rel,http://purl.org/vocab/relationship/,canonical,prefixcc
@@ -13233,6 +13327,7 @@ merged,religion,http://rdf.muninn-project.org/ontologies/religion#,canonical,pre
 merged,reloc,https://w3id.org/reloc#,canonical,prefixcc
 merged,remetca,http://www.purl.org/net/remetca#,canonical,prefixcc
 merged,remus,http://www.semanticweb.org/ontologies/2010/6/Ontology1279614123500.owl#,canonical,prefixcc
+merged,reno,https://w3id.org/reno#,canonical,prefixcc
 merged,rep,http://www.openrdf.org/config/repository#,canonical,prefixcc
 merged,REPEATSDB.PROTEIN,http://identifiers.org/uniprot/,namespace_alias,bioregistry
 merged,REPEATSDB.STRUCTURE,http://identifiers.org/repeatsdb.structure/,canonical,bioregistry
@@ -13421,7 +13516,9 @@ merged,rich,http://rdf.data-vocabulary.org/,canonical,prefixcc
 merged,rico,https://www.ica.org/standards/RiC/ontology#,canonical,prefixcc
 merged,rif,http://www.w3.org/2007/rif#,canonical,prefixcc
 merged,rimmf,http://rimmf.com/vocab/,canonical,prefixcc
+merged,ris,http://research-info-systems.com/schema/ris/,canonical,prefixcc
 merged,risk,https://www.w3id.org/risk#,canonical,prefixcc
+merged,riskman,https://w3id.org/riskman/ontology#,canonical,prefixcc
 merged,RISM,http://identifiers.org/rism/,canonical,bioregistry
 merged,RISM,http://bioregistry.io/rism:,prefix_alias,bioregistry
 merged,RISM,http://identifiers.org/rism:,prefix_alias,bioregistry
@@ -13438,6 +13535,7 @@ merged,rlog,http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#,canonica
 merged,rls,https://w3id.org/lovcube/ns/relovstats#,canonical,prefixcc
 merged,rm,http://jazz.net/ns/rm#,canonical,prefixcc
 merged,rml,http://w3id.org/rml/,canonical,prefixcc
+merged,rmle,https://w3id.org/imec/rml/ns/extensions#,canonical,prefixcc
 merged,rmlt,http://semweb.mmlab.be/ns/rml-target#,canonical,prefixcc
 merged,rmo,http://eatld.et.tu-dresden.de/rmo#,canonical,prefixcc
 merged,RNACENTRAL,http://identifiers.org/rnacentral/,canonical,bioregistry
@@ -13734,7 +13832,7 @@ merged,SASBDB,https://www.sasbdb.org/data/,prefix_alias,bioregistry
 merged,saws,http://purl.org/saws/ontology#,canonical,prefixcc
 merged,sawsdl,http://www.w3.org/ns/sawsdl#,canonical,prefixcc
 merged,saxon,http://saxon.sf.net/,canonical,prefixcc
-merged,say,http://example.org/say/,canonical,prefixcc
+merged,say,https://say.data.gift/ns/,canonical,prefixcc
 merged,sbench,http://swat.cse.lehigh.edu/onto/univ-bench.owl#,canonical,prefixcc
 merged,SBO,http://purl.obolibrary.org/obo/SBO_,canonical,obo
 merged,SBO,http://bio2rdf.org/sbo:,prefix_alias,bioregistry
@@ -13760,7 +13858,7 @@ merged,SBO,https://www.ebi.ac.uk/ols/ontologies/sbo/terms?iri=http://purl.obolib
 merged,SBO,https://www.ebi.ac.uk/ols4/ontologies/sbo/terms?obo_id=SBO:,prefix_alias,bioregistry
 merged,SBO,https://www.ebi.ac.uk/sbo/main/,prefix_alias,bioregistry
 merged,SBO,https://www.ebi.ac.uk/sbo/main/SBO:,prefix_alias,bioregistry
-merged,sc,http://purl.org/science/owl/sciencecommons/,canonical,prefixcc
+merged,sc,https://schema.org/,namespace_alias,prefixcc
 merged,scco,http://rdf.ebi.ac.uk/terms/surechembl#,canonical,prefixcc
 merged,SCDO,http://purl.obolibrary.org/obo/SCDO_,canonical,obo
 merged,SCDO,http://bioregistry.io/SCDO:,prefix_alias,bioregistry
@@ -13768,6 +13866,7 @@ merged,SCDO,http://www.ebi.ac.uk/ols/ontologies/scdo/terms?iri=http://purl.oboli
 merged,SCDO,https://bioregistry.io/SCDO:,prefix_alias,bioregistry
 merged,SCDO,https://purl.obolibrary.org/obo/SCDO_,prefix_alias,bioregistry
 merged,SCDO,https://www.ebi.ac.uk/ols/ontologies/scdo/terms?iri=http://purl.obolibrary.org/obo/SCDO_,prefix_alias,bioregistry
+merged,scdt,http://w3id.org/awslabs/neptune/SPARQL-CDTs/,canonical,prefixcc
 merged,SCHEM,https://biopragmatics.github.io/providers/schem/,canonical,bioregistry
 merged,SCHEM,http://biopragmatics.github.io/providers/schem/,prefix_alias,bioregistry
 merged,SCHEM,http://bioregistry.io/schem:,prefix_alias,bioregistry
@@ -13864,7 +13963,7 @@ merged,SCTID,http://identifiers.org/snomedct/,namespace_alias,bioregistry
 merged,SCTID_2010_1_31,http://identifiers.org/snomedct/,namespace_alias,bioregistry
 merged,scufl2,http://ns.taverna.org.uk/2010/scufl2#,canonical,prefixcc
 merged,scv,http://purl.org/NET/scovo#,namespace_alias,prefixcc
-merged,sd,http://www.w3.org/ns/sparql-service-description#,canonical,prefixcc
+merged,sd,https://w3id.org/okn/o/sd#,canonical,prefixcc
 merged,SDBS,http://identifiers.org/sdbs/,canonical,bioregistry
 merged,SDBS,http://bioregistry.io/sdbs:,prefix_alias,bioregistry
 merged,SDBS,http://identifiers.org/sdbs:,prefix_alias,bioregistry
@@ -13966,6 +14065,7 @@ merged,SEMION,http://www.semion.io/Author/,prefix_alias,bioregistry
 merged,SEMION,https://bioregistry.io/semion:,prefix_alias,bioregistry
 merged,semiot,http://w3id.org/semiot/ontologies/semiot#,canonical,prefixcc
 merged,semsur,http://purl.org/SemSur/,canonical,prefixcc
+merged,semts,https://w3id.org/semts/ontology#,canonical,prefixcc
 merged,semtweet,http://semantictweet.com/,canonical,prefixcc
 merged,sense,https://w3id.org/sense#,canonical,prefixcc
 merged,SENSO,http://purl.dataone.org/odo/SENSO_,canonical,bioregistry
@@ -14083,7 +14183,7 @@ merged,shsh,http://www.w3.org/ns/shacl-shacl#,canonical,prefixcc
 merged,shui,https://vocab.eccenca.com/shui/,canonical,prefixcc
 merged,shv,http://ns.aksw.org/spatialHierarchy/,canonical,prefixcc
 merged,shw,http://paul.staroch.name/thesis/SmartHomeWeather.owl#,canonical,prefixcc
-merged,si,http://sisteminformasi.com/,canonical,prefixcc
+merged,si,https://si-digital-framework.org/SI#,canonical,prefixcc
 merged,SIBO,http://purl.obolibrary.org/obo/SIBO_,canonical,obo
 merged,SIBO,http://bioregistry.io/SIBO:,prefix_alias,bioregistry
 merged,SIBO,http://www.ebi.ac.uk/ols/ontologies/sibo/terms?iri=http://purl.obolibrary.org/obo/SIBO_,prefix_alias,bioregistry
@@ -14148,8 +14248,10 @@ merged,sioca,http://rdfs.org/sioc/actions#,canonical,prefixcc
 merged,siocserv,http://rdfs.org/sioc/services#,canonical,prefixcc
 merged,sioct,http://rdfs.org/sioc/types#,canonical,prefixcc
 merged,sioctypes,http://rdfs.org/sioc/types#,namespace_alias,prefixcc
+merged,sip,https://purl.semanticip.org/linked-data/,canonical,prefixcc
 merged,sirene,https://sireneld.io/vocab/sirene#,canonical,prefixcc
 merged,sirext,http://t.me/sirextt/247:,canonical,prefixcc
+merged,sis,https://ptb.de/sis/,canonical,prefixcc
 merged,sism,http://purl.oclc.org/NET/sism/0.1/,canonical,prefixcc
 merged,SISU,http://identifiers.org/sisu/,canonical,bioregistry
 merged,SISU,http://bioregistry.io/sisu:,prefix_alias,bioregistry
@@ -14265,6 +14367,7 @@ merged,SMPDB,https://identifiers.org/smpdb:,prefix_alias,bioregistry
 merged,SMPDB,https://n2t.net/smpdb:,prefix_alias,bioregistry
 merged,SMPDB,https://smpdb.ca/view/,prefix_alias,bioregistry
 merged,smxm,http://smxm.ga/,canonical,prefixcc
+merged,sn,https://purl.org/supply-network/onto#,canonical,prefixcc
 merged,snac,http://socialarchive.iath.virginia.edu/,canonical,prefixcc
 merged,SNAP,http://www.ifomis.org/bfo/1.1/snap#,canonical,bioregistry
 merged,SNAP,http://bio2rdf.org/snap:,prefix_alias,bioregistry
@@ -14665,7 +14768,7 @@ merged,SP_KW,https://www.uniprot.org/keywords/,namespace_alias,bioregistry
 merged,SP_SL,https://www.uniprot.org/locations/,namespace_alias,bioregistry
 merged,SP_VAR,http://purl.uniprot.org/annotation/VAR_,namespace_alias,bioregistry
 merged,spa,https://paul.ti.rw.fau.de/~jo00defe/voc/spa#,canonical,prefixcc
-merged,space,http://purl.org/net/schemas/space/,canonical,prefixcc
+merged,space,http://www.w3.org/ns/pim/space#,canonical,prefixcc
 merged,spacerel,http://data.ordnancesurvey.co.uk/ontology/spatialrelations/,canonical,prefixcc
 merged,span,http://www.ifomis.org/bfo/1.1/span#,canonical,prefixcc
 merged,sparql,http://www.w3.org/ns/sparql#,canonical,prefixcc
@@ -14767,6 +14870,7 @@ merged,SSSOM,https://w3id.org/sssom/,canonical,bioregistry
 merged,SSSOM,http://bioregistry.io/sssom:,prefix_alias,bioregistry
 merged,SSSOM,http://w3id.org/sssom/,prefix_alias,bioregistry
 merged,SSSOM,https://bioregistry.io/sssom:,prefix_alias,bioregistry
+merged,ssv,https://w3id.org/ssv/,canonical,prefixcc
 merged,st,http://ns.inria.fr/sparql-template/,canonical,prefixcc
 merged,stac,http://securitytoolbox.appspot.com/stac#,canonical,prefixcc
 merged,stanford,http://purl.org/olia/stanford.owl#,canonical,prefixcc
@@ -14885,6 +14989,7 @@ merged,SUGARBIND,https://identifiers.org/sugarbind/,prefix_alias,bioregistry
 merged,SUGARBIND,https://identifiers.org/sugarbind:,prefix_alias,bioregistry
 merged,SUGARBIND,https://n2t.net/sugarbind:,prefix_alias,bioregistry
 merged,SUGARBIND,https://sugarbind.expasy.org/,prefix_alias,bioregistry
+merged,sulo,https://w3id.org/sulo/,canonical,prefixcc
 merged,summa,http://purl.org/voc/summa/,canonical,prefixcc
 merged,SUPFAM,http://identifiers.org/supfam/,canonical,bioregistry
 merged,SUPFAM,http://bio2rdf.org/superfamily:,prefix_alias,bioregistry
@@ -15109,7 +15214,6 @@ merged,tavprov,http://ns.taverna.org.uk/2012/tavernaprov/,canonical,prefixcc
 merged,TAX,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged,taxid,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged,taxo,http://purl.org/rss/1.0/modules/taxonomy/,canonical,prefixcc
-merged,taxon,http://purl.org/biodiversity/taxon/,prefix_alias,prefixcc
 merged,taxon,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged,taxonomy,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
 merged,TaxonomyID,http://purl.obolibrary.org/obo/NCBITaxon_,namespace_alias,bioregistry
@@ -15186,6 +15290,7 @@ merged,TGD,https://ciliate.org/index.php/feature/details/,prefix_alias,bioregist
 merged,TGD,https://identifiers.org/tgd/,prefix_alias,bioregistry
 merged,TGD,https://identifiers.org/tgd:,prefix_alias,bioregistry
 merged,TGD,https://n2t.net/tgd:,prefix_alias,bioregistry
+merged,tgfm,http://purl.org/terminology-guide-for-move/testvocab/,canonical,prefixcc
 merged,tgm,http://id.loc.gov/vocabulary/graphicMaterials/,canonical,prefixcc
 merged,TGMA,http://purl.obolibrary.org/obo/TGMA_,canonical,obo
 merged,TGMA,http://bio2rdf.org/tgma:,prefix_alias,bioregistry
@@ -15311,7 +15416,7 @@ merged,tr,http://www.thomsonreuters.com/,canonical,prefixcc
 merged,trackback,http://madskills.com/public/xml/rss/module/trackback/,canonical,prefixcc
 merged,traffic,http://www.sensormeasurement.appspot.com/ont/transport/traffic#,canonical,prefixcc
 merged,trait,http://contextus.net/ontology/ontomedia/ext/common/trait#,canonical,prefixcc
-merged,trak,https://trakmetamodel.sourceforge.io/vocab/rdf-schema.rdf#,canonical,prefixcc
+merged,trak,https://purl.org/trak/elements/,canonical,prefixcc
 merged,TRANS,http://purl.obolibrary.org/obo/TRANS_,canonical,obo
 merged,TRANS,http://bio2rdf.org/pt:,prefix_alias,bioregistry
 merged,TRANS,http://bioregistry.io/TRANS:,prefix_alias,bioregistry
@@ -15361,6 +15466,7 @@ merged,TREEFAM,https://www.treefam.org/cgi-bin/TFinfo.pl?ac=,prefix_alias,bioreg
 merged,TREEFAM,https://www.treefam.org/family/,prefix_alias,bioregistry
 merged,TreeGrafter,http://identifiers.org/panther.family/,namespace_alias,go
 merged,trek,https://w3id.org/trek/,canonical,prefixcc
+merged,tribont,https://w3id.org/tribont/core#,canonical,prefixcc
 merged,TRICDB,http://identifiers.org/tricdb/,canonical,bioregistry
 merged,TRICDB,http://biomeddb.org/Disease/Details?DISEASEID=,prefix_alias,bioregistry
 merged,TRICDB,http://bioregistry.io/tricdb:,prefix_alias,bioregistry
@@ -15396,6 +15502,7 @@ merged,TRITRYPDB,https://tritrypdb.org/tritrypdb/app/record/gene/,prefix_alias,b
 merged,TRITRYPDB,https://tritrypdb.org/tritrypdb/showRecord.do?name=GeneRecordClasses.GeneRecordClass&source_id=,prefix_alias,bioregistry
 merged,tro,https://w3id.org/TRO/,canonical,prefixcc
 merged,tsdc,https://w3id.org/oseg/ont/tsdc/core#,canonical,prefixcc
+merged,tsdcr,http://w3id.org/oseg/ont/tsdc/requirements#,canonical,prefixcc
 merged,tsdcreq,https://w3id.org/oseg/ont/tsdc/req#,canonical,prefixcc
 merged,tsioc,http://rdfs.org/sioc/types#,namespace_alias,prefixcc
 merged,tsn,http://purl.org/net/tsn#,canonical,prefixcc
@@ -15436,6 +15543,7 @@ merged,ttp,http://eample.com/test#,canonical,prefixcc
 merged,ttrpg,https://w3id.org/TTRpg#,canonical,prefixcc
 merged,TUBERCULIST,http://identifiers.org/myco.tuber/,namespace_alias,bioregistry
 merged,tui,http://data.ifs.tuwien.ac.at/study/resource/,canonical,prefixcc
+merged,turism,http://turism.com/,canonical,prefixcc
 merged,turismo,http://idi.fundacionctic.org/cruzar/turismo#,canonical,prefixcc
 merged,tvc,http://www.essepuntato.it/2012/04/tvc/,canonical,prefixcc
 merged,tw,http://tw.rpi.edu/schema/,canonical,prefixcc
@@ -15452,6 +15560,7 @@ merged,TXPO,https://www.ebi.ac.uk/ols/ontologies/txpo/terms?iri=http://purl.obol
 merged,type,https://webiomed.ai/blog/obzor-rossiiskikh-sistem-podderzhki-priniatiia-vrachebnykh-reshenii/,canonical,prefixcc
 merged,tzont,http://www.w3.org/2006/timezone#,canonical,prefixcc
 merged,ub,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#,canonical,prefixcc
+merged,ubbont,http://data.ub.uib.no/ontology/,canonical,prefixcc
 merged,Uber-anatomy ontology,http://purl.obolibrary.org/obo/UBERON_,namespace_alias,bioregistry
 merged,UBERON,http://purl.obolibrary.org/obo/UBERON_,canonical,obo
 merged,UBERON,http://bioregistry.io/UBERON:,prefix_alias,bioregistry
@@ -15621,6 +15730,7 @@ merged,UMLS_CUI,http://identifiers.org/umls/,namespace_alias,bioregistry
 merged,UMLSSG,https://uts.nlm.nih.gov/uts/umls/semantic-network/,namespace_alias,bioregistry
 merged,un,http://www.w3.org/2007/ont/unit#,canonical,prefixcc
 merged,undata,http://citydata.wu.ac.at/Linked-UNData/data/,canonical,prefixcc
+merged,unesco,http://vocabularies.unesco.org/thesaurus/,canonical,prefixcc
 merged,uneskos,http://purl.org/voc/uneskos#,canonical,prefixcc
 merged,uni,http://purl.org/weso/uni/uni.html#,canonical,prefixcc
 merged,UNIGENE,http://identifiers.org/unigene/,canonical,bioregistry
@@ -16341,6 +16451,7 @@ merged,vitro,http://vitro.mannlib.cornell.edu/ns/vitro/public#,canonical,prefixc
 merged,vivo,http://vivoweb.org/ontology/core#,namespace_alias,prefixcc
 merged,vl,https://version.link/,canonical,prefixcc
 merged,vlueprint,https://vlueprint.org/schema/,canonical,prefixcc
+merged,vm,http://visual-meaning.com/rdf/,canonical,prefixcc
 merged,VMHGENE,http://identifiers.org/vmhgene/,canonical,bioregistry
 merged,VMHGENE,http://bioregistry.io/vmhgene:,prefix_alias,bioregistry
 merged,VMHGENE,http://identifiers.org/vmhgene:,prefix_alias,bioregistry
@@ -16411,6 +16522,7 @@ merged,vplan,http://www.ifs.tuwien.ac.at/~miksa/ontologies/VPlan.owl#,canonical,
 merged,vr,https://www.w3.org/2018/credentials/v1/,canonical,prefixcc
 merged,vra,http://purl.org/vra/,canonical,prefixcc
 merged,vrank,http://purl.org/voc/vrank#,canonical,prefixcc
+merged,vrti,https://www.w3id.org/virtual-treasury/ontology#,canonical,prefixcc
 merged,vs,http://www.w3.org/2003/06/sw-vocab-status/ns#,canonical,prefixcc
 merged,VSAO,http://purl.obolibrary.org/obo/VSAO_,canonical,obo
 merged,VSAO,http://bio2rdf.org/vao:,prefix_alias,bioregistry
@@ -16451,6 +16563,11 @@ merged,VTO,https://bioregistry.io/VTO:,prefix_alias,bioregistry
 merged,VTO,https://purl.obolibrary.org/obo/VTO_,prefix_alias,bioregistry
 merged,VTO,https://www.ebi.ac.uk/ols/ontologies/vto/terms?iri=http://purl.obolibrary.org/obo/VTO_,prefix_alias,bioregistry
 merged,vvo,http://purl.org/vvo/ns#,canonical,prefixcc
+merged,vwdms,https://vwdmsweb.wob.vw.vwg/groupdms/?docbase=vwdms&locateId=,canonical,prefixcc
+merged,vwgw,https://group-wiki.wob.vw.vwg/wikis/pages/viewpage.action?pageId=,canonical,prefixcc
+merged,vwlap,https://vwgroup.leanix.net/Volkswagen/factsheet/Application/,canonical,prefixcc
+merged,vwlid,https://vwgroup.leanix.net/Volkswagen/external/leanixId/,canonical,prefixcc
+merged,vwlpr,https://vwgroup.leanix.net/Volkswagen/factsheet/Process/,canonical,prefixcc
 merged,VZ,http://identifiers.org/viralzone/,namespace_alias,bioregistry
 merged,w3,http://www.w3.org/,canonical,prefixcc
 merged,w3cgeo,http://www.w3.org/2003/01/geo/wgs84_pos#,namespace_alias,prefixcc
@@ -16547,6 +16664,7 @@ merged,wgspos,http://www.w3.org/2003/01/geo/wgs84_pos#,namespace_alias,prefixcc
 merged,whisky,http://vocab.org/whisky/terms/,canonical,prefixcc
 merged,who,http://www.who.int/vocab/ontology#,canonical,prefixcc
 merged,whois,http://www.kanzaki.com/ns/whois#,canonical,prefixcc
+merged,whu,http://bdi.whu.edu.cn/,canonical,prefixcc
 merged,whyis,http://vocab.rpi.edu/whyis/,canonical,prefixcc
 merged,wi,http://purl.org/ontology/wi/core#,canonical,prefixcc
 merged,wiki,http://en.wikipedia.org/wiki/,namespace_alias,prefixcc
@@ -16613,6 +16731,7 @@ merged,wn31,http://wordnet-rdf.princeton.edu/wn31/,canonical,prefixcc
 merged,wno,http://wordnet-rdf.princeton.edu/ontology#,namespace_alias,prefixcc
 merged,wnschema,http://www.cogsci.princeton.edu/~wn/schema/,canonical,prefixcc
 merged,wo,http://purl.org/ontology/wo/,canonical,prefixcc
+merged,womo,https://w3id.org/womo#,canonical,prefixcc
 merged,won,https://w3id.org/won/core#,canonical,prefixcc
 merged,wordmap,http://purl.org/net/ns/wordmap#,canonical,prefixcc
 merged,wordnet,http://wordnet-rdf.princeton.edu/ontology#,canonical,prefixcc
@@ -16794,7 +16913,7 @@ merged,XML,https://bioregistry.io/xml:,prefix_alias,bioregistry
 merged,XML,https://www.w3.org/XML/1998/namespace,prefix_alias,bioregistry
 merged,XML,https://www.w3.org/XML/1998/namespace#,prefix_alias,bioregistry
 merged,xml,http://www.w3.org/XML/1998/namespace/,prefix_alias,prefixcc
-merged,xmlns,http://xmlns.com/foaf/0.1/,namespace_alias,prefixcc
+merged,xmlns,http://www.w3.org/2021/XMLSchema#,canonical,prefixcc
 merged,xmls,http://www.w3.org/2001/XMLSchema#,namespace_alias,prefixcc
 merged,xmp,http://ns.adobe.com/xap/1.0/,canonical,prefixcc
 merged,XPO,http://purl.obolibrary.org/obo/XPO_,canonical,obo

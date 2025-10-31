@@ -16,6 +16,7 @@ obo,BCGO,http://purl.obolibrary.org/obo/BCGO_,canonical
 obo,BCO,http://purl.obolibrary.org/obo/BCO_,canonical
 obo,BFO,http://purl.obolibrary.org/obo/BFO_,canonical
 obo,BILA,http://purl.obolibrary.org/obo/BILA_,canonical
+obo,BMONT,http://purl.obolibrary.org/obo/BMONT_,canonical
 obo,BOOTSTREP,http://purl.obolibrary.org/obo/BOOTSTREP_,canonical
 obo,BSPO,http://purl.obolibrary.org/obo/BSPO_,canonical
 obo,BTO,http://purl.obolibrary.org/obo/BTO_,canonical
@@ -66,6 +67,7 @@ obo,EPO,http://purl.obolibrary.org/obo/EPO_,canonical
 obo,ERO,http://purl.obolibrary.org/obo/ERO_,canonical
 obo,EUPATH,http://purl.obolibrary.org/obo/EUPATH_,canonical
 obo,EV,http://purl.obolibrary.org/obo/EV_,canonical
+obo,EXMO,http://purl.obolibrary.org/obo/EXMO_,canonical
 obo,ExO,http://purl.obolibrary.org/obo/ExO_,canonical
 obo,FAO,http://purl.obolibrary.org/obo/FAO_,canonical
 obo,FBbi,http://purl.obolibrary.org/obo/FBbi_,canonical
