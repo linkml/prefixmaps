@@ -1,5 +1,6 @@
 context,prefix,namespace,status
 prefixcc,a11y,http://idpf.org/epub/vocab/package/a11y/#,canonical
+prefixcc,aaao,https://ontology.swissartresearch.net/aaao/,canonical
 prefixcc,aair,http://xmlns.notu.be/aair#,canonical
 prefixcc,aao,http://purl.obolibrary.org/obo/AAO_,canonical
 prefixcc,aapi,http://rdf.alchemyapi.com/rdf/v1/s/aapi-schema#,canonical
@@ -43,6 +44,7 @@ prefixcc,afn,http://jena.apache.org/ARQ/function#,canonical
 prefixcc,afpo,http://purl.obolibrary.org/obo/AfPO_,canonical
 prefixcc,afr,http://purl.allotrope.org/ontologies/result#,canonical
 prefixcc,after,http://rds.posccaesar.org/ontology/plm/ds/,canonical
+prefixcc,afy,https://w3id.org/afy#,canonical
 prefixcc,agent,http://eulersharp.sourceforge.net/2003/03swap/agent#,canonical
 prefixcc,agents,http://eulersharp.sourceforge.net/2003/03swap/agent#,namespace_alias
 prefixcc,agetec,http://www.agetec.org/,canonical
@@ -111,6 +113,7 @@ prefixcc,arch,http://purl.org/archival/vocab/arch#,canonical
 prefixcc,archdesc,http://archdesc.info/archEvent#,canonical
 prefixcc,archivo,https://archivo.dbpedia.org/onto#,canonical
 prefixcc,arco,https://w3id.org/arco/ontology/arco/,canonical
+prefixcc,ard,https://www.stratcom.mil/ontologies/electromagnetic-spectrum/adversary-radar-detection-ontology/,canonical
 prefixcc,arecipe,http://purl.org/amicroformat/arecipe/,canonical
 prefixcc,arena,https://solid.ti.rw.fau.de/public/ns/arena#,canonical
 prefixcc,arg,http://spinrdf.org/arg#,canonical
@@ -164,7 +167,7 @@ prefixcc,bambara,http://example.org/bambara#,canonical
 prefixcc,bao,http://www.bioassayontology.org/bao#,canonical
 prefixcc,basic,http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#,canonical
 prefixcc,batmanont,http://emmo.info/emmo/application/bmo#,canonical
-prefixcc,battery,https://w3id.org/emmo/domain/battery#,canonical
+prefixcc,battery,https://w3id.org/emmo/domain/battery/battery#,canonical
 prefixcc,bau,https://terminology.fraunhofer.de/voc/bau#,canonical
 prefixcc,bb,http://www.snik.eu/ontology/bb/,canonical
 prefixcc,bbc,http://www.bbc.co.uk/ontologies/news/,canonical
@@ -200,7 +203,7 @@ prefixcc,bevon,http://rdfs.co/bevon/,canonical
 prefixcc,bf,http://id.loc.gov/ontologies/bibframe/,canonical
 prefixcc,bflc,http://id.loc.gov/ontologies/bflc/,canonical
 prefixcc,bfo,http://purl.obolibrary.org/obo/,namespace_alias
-prefixcc,bgcat,http://bg.dbpedia.org/resource/Категория:,canonical
+prefixcc,bgcat,http://bg.dbpedia.org/resource/?????????:,canonical
 prefixcc,bgdbp,http://bg.dbpedia.org/property/,canonical
 prefixcc,bgdbr,http://bg.dbpedia.org/resource/,canonical
 prefixcc,bgn,http://bibliograph.net/schemas/,canonical
@@ -249,10 +252,12 @@ prefixcc,bmo,http://collection.britishmuseum.org/id/ontology/,canonical
 prefixcc,bmont,http://purl.obolibrary.org/obo/BMONT_,canonical
 prefixcc,bmp,http://w3id.org/bmp#,canonical
 prefixcc,bn,http://babelnet.org/rdf/,canonical
+prefixcc,bnd,https://data.banenor.no/data/,canonical
 prefixcc,bne,http://datos.bne.es/resource/,canonical
 prefixcc,bner,http://datos.bne.es/resource/,namespace_alias
 prefixcc,bnf,http://www.w3.org/2000/10/swap/grammar/bnf#,canonical
 prefixcc,bng,https://w3id.org/dob/voc/epsg-27700#,canonical
+prefixcc,bno,https://data.banenor.no/ontology/,canonical
 prefixcc,bob,http://good.dad/meaning/bob#,canonical
 prefixcc,bodi,http://w3id.org/bodi#,canonical
 prefixcc,book,http://purl.org/NET/book/vocab#,canonical
@@ -415,9 +420,9 @@ prefixcc,coin,http://purl.org/court/def/2009/coin#,canonical
 prefixcc,colao,http://purl.obolibrary.org/obo/COLAO_,canonical
 prefixcc,cold,http://purl.org/configurationontology#,canonical
 prefixcc,coll,http://purl.org/co/,canonical
-prefixcc,com,http://purl.org/commerce#,canonical
+prefixcc,com,http://purl.org/commerce#,namespace_alias
 prefixcc,comm,http://vocab.resc.info/communication#,canonical
-prefixcc,commerce,http://search.yahoo.com/searchmonkey/commerce/,canonical
+prefixcc,commerce,http://purl.org/commerce#,canonical
 prefixcc,common,http://www.w3.org/2007/uwa/context/common.owl#,canonical
 prefixcc,commons,http://commons.psi.enakting.org/def/,canonical
 prefixcc,comp,http://semweb.mmlab.be/ns/rml-compression#,canonical
@@ -605,6 +610,7 @@ prefixcc,dcatde,http://dcat-ap.de/def/dcatde/,canonical
 prefixcc,dcatnl,http://standaarden.overheid.nl/dcatnl/terms/,canonical
 prefixcc,dcatno,https://data.norge.no/vocabulary/dcatno#,canonical
 prefixcc,dcb,http://dbpedia.org/resource/Category:,namespace_alias
+prefixcc,dccs,https://ptb.de/dccs/,canonical
 prefixcc,dce,http://purl.org/dc/elements/1.1/,canonical
 prefixcc,dcid,https://datacommons.org/browser/,canonical
 prefixcc,dcite,http://purl.org/spar/datacite/,canonical
@@ -710,9 +716,11 @@ prefixcc,dpl,http://dbpedialite.org/things/,canonical
 prefixcc,dpla,http://dp.la/info/developers/map/,canonical
 prefixcc,dpn,http://purl.org/dpn#,canonical
 prefixcc,dpo,http://purl.obolibrary.org/obo/FBcv_,canonical
+prefixcc,dpp,https://ns.verisav.fr/dpp#,canonical
 prefixcc,dprod,https://ekgf.github.io/dprod/,canonical
 prefixcc,dprov,http://promsns.org/def/do#,canonical
 prefixcc,dpv,http://www.w3.org/ns/dpv#,canonical
+prefixcc,dpvpd,https://w3id.org/dpv/pd#,canonical
 prefixcc,dq,http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#,canonical
 prefixcc,dqa,https://w3id.org/DQA#,canonical
 prefixcc,dqc,http://semwebquality.org/ontologies/dq-constraints#,canonical
@@ -845,8 +853,8 @@ prefixcc,ep,http://eprints.org/ontology/,namespace_alias
 prefixcc,epcis,https://ns.gs1.org/epcis/,canonical
 prefixcc,epio,http://purl.obolibrary.org/obo/EPIO_,canonical
 prefixcc,epo,http://data.europa.eu/a4g/ontology#,canonical
-prefixcc,eppl,https://w3id.org/ep-plan#,canonical
-prefixcc,epplan,https://w3id.org/ep-plan#,namespace_alias
+prefixcc,eppl,https://w3id.org/ep-plan#,namespace_alias
+prefixcc,epplan,https://w3id.org/ep-plan#,canonical
 prefixcc,eppo,https://gd.eppo.int/taxon/,canonical
 prefixcc,eprints,http://eprints.org/ontology/,canonical
 prefixcc,eproc,http://10.0.3.120/download/eproc_FORN_v02.owl#,canonical
@@ -1067,12 +1075,13 @@ prefixcc,generiek,https://data.vlaanderen.be/ns/generiek#,canonical
 prefixcc,genex,http://purl.org/genex#,canonical
 prefixcc,geno,http://purl.obolibrary.org/obo/GENO_,canonical
 prefixcc,genre,http://sparql.cwrc.ca/ontologies/genre#,canonical
-prefixcc,geo,http://www.w3.org/2003/01/geo/wgs84_pos#,canonical
+prefixcc,geo,http://www.opengis.net/ont/geosparql#,canonical
 prefixcc,geo7,https://www.geo7.ch/,canonical
 prefixcc,geocontext,http://www.geocontext.org/publ/2013/vocab#,canonical
 prefixcc,geod,http://vocab.lenka.no/geo-deling#,namespace_alias
 prefixcc,geodata,http://sws.geonames.org/,canonical
 prefixcc,geodcat,http://data.europa.eu/930/,canonical
+prefixcc,geodcatap,http://data.europa.eu/930/,namespace_alias
 prefixcc,geoes,http://geo.linkeddata.es/ontology/,canonical
 prefixcc,geof,http://www.opengis.net/def/function/geosparql/,canonical
 prefixcc,geofabric,http://linked.data.gov.au/def/geofabric#,canonical
@@ -1089,7 +1098,7 @@ prefixcc,geor,http://www.opengis.net/def/rule/geosparql/,canonical
 prefixcc,georss,http://www.georss.org/georss/,canonical
 prefixcc,geos,http://www.telegraphis.net/ontology/geography/geography#,canonical
 prefixcc,geosp,http://rdf.geospecies.org/ont/geospecies#,namespace_alias
-prefixcc,geosparql,http://www.opengis.net/ont/geosparql#,canonical
+prefixcc,geosparql,http://www.opengis.net/ont/geosparql#,namespace_alias
 prefixcc,geospecies,http://rdf.geospecies.org/ont/geospecies#,canonical
 prefixcc,geosrs,https://w3id.org/geosrs#,canonical
 prefixcc,geovocab,http://geovocab.org/,canonical
@@ -1157,7 +1166,7 @@ prefixcc,gsp,http://www.opengis.net/ont/geosparql#,namespace_alias
 prefixcc,gsso,http://purl.obolibrary.org/obo/GSSO_,canonical
 prefixcc,gt,https://vocab.eccenca.com/geniustex/,canonical
 prefixcc,gtfs,http://vocab.gtfs.org/terms#,canonical
-prefixcc,gtm,https://www.goudatijdmachine.nl/def/,canonical
+prefixcc,gtm,https://www.goudatijdmachine.nl/def#,canonical
 prefixcc,gts,http://resource.geosciml.org/ontology/timescale/gts#,canonical
 prefixcc,guez,http://guez.fr/,canonical
 prefixcc,gufo,http://purl.org/nemo/gufo#,canonical
@@ -1202,6 +1211,7 @@ prefixcc,hni,https://collectiedata.hetnieuweinstituut.nl/,canonical
 prefixcc,hola,https://moodle.insa-lyon.fr/course/view.php?id=,canonical
 prefixcc,holding,http://purl.org/ontology/holding#,canonical
 prefixcc,hom,http://purl.obolibrary.org/obo/HOM_,canonical
+prefixcc,homoit,https://homosaurus.org/v4/,canonical
 prefixcc,hops,https://rdf.ag/o/hops#,canonical
 prefixcc,hosp,http://health.data.gov/def/hospital/,canonical
 prefixcc,hospital,http://www.agfa.com/w3c/2009/hospital#,canonical
@@ -1259,6 +1269,7 @@ prefixcc,idot,http://identifiers.org/idot/,canonical
 prefixcc,idpo,https://w3id.org/idpo#,canonical
 prefixcc,ids,https://w3id.org/idsa/core/,canonical
 prefixcc,idsc,https://w3id.org/idsa/code/,canonical
+prefixcc,idtype,https://data.elsevier.com/e/identifier/,canonical
 prefixcc,ies,http://ies.data.gov.uk/ontology/ies4#,namespace_alias
 prefixcc,ies4,http://ies.data.gov.uk/ontology/ies4#,canonical
 prefixcc,iev,http://www.inoh.org/ontology-viewer/cgi-bin/InohOVAttr.php?type=IEV&id=,canonical
@@ -1348,6 +1359,7 @@ prefixcc,itops,https://vocab.eccenca.com/itops/,canonical
 prefixcc,its,http://www.w3.org/2005/11/its/rdf#,namespace_alias
 prefixcc,itsmo,http://ontology.it/itsmo/v1#,canonical
 prefixcc,itsrdf,http://www.w3.org/2005/11/its/rdf#,canonical
+prefixcc,iut,https://cours.iut-orsay.fr/,canonical
 prefixcc,ja,http://jena.hpl.hp.com/2005/11/Assembler#,canonical
 prefixcc,jabel54303,https://softwarehorsepower.com/product/brand24/,canonical
 prefixcc,jats,http://jats.nlm.nih.gov/,canonical
@@ -1415,8 +1427,8 @@ prefixcc,lark1,http://users.utcluj.ro/~raluca/ontology/Ontology1279614123500.owl
 prefixcc,lastfm,http://purl.org/ontology/last-fm/,namespace_alias
 prefixcc,latitude,https://www.w3.org/2006/vcard/ns#,canonical
 prefixcc,lawd,http://lawd.info/ontology/,canonical
-prefixcc,lbds,https://w3id.org/lbdserver#,namespace_alias
-prefixcc,lbdserver,https://w3id.org/lbdserver#,canonical
+prefixcc,lbds,https://w3id.org/lbdserver#,canonical
+prefixcc,lbdserver,https://w3id.org/lbdserver#,namespace_alias
 prefixcc,lblodlg,http://data.lblod.info/vocabularies/leidinggevenden/,canonical
 prefixcc,lc,http://semweb.mmlab.be/ns/linkedconnections#,canonical
 prefixcc,lcdr,http://ns.lucid-project.org/revision/,canonical
@@ -1441,13 +1453,14 @@ prefixcc,lds,https://solid.ti.rw.fau.de/public/ns/linked-data-structures#,canoni
 prefixcc,ldt,https://www.w3.org/ns/ldt#,canonical
 prefixcc,ldvm,http://linked.opendata.cz/ontology/ldvm/,canonical
 prefixcc,leak,http://maco.com/,canonical
-prefixcc,leaks,https://cuzin.com/,canonical
+prefixcc,leaks,https://onlyfans.com/chelxie/,canonical
 prefixcc,led,http://led.kmi.open.ac.uk/term/,canonical
 prefixcc,legal,http://www.w3.org/ns/legal#,canonical
 prefixcc,lemon,http://lemon-model.net/lemon#,canonical
 prefixcc,lemonuby,http://lemon-model.net/lexica/uby/,canonical
 prefixcc,lepao,http://purl.obolibrary.org/obo/LEPAO_,canonical
 prefixcc,lesa,http://hadatac.org/ont/lesa#,canonical
+prefixcc,let,http://uispin.org/let#,canonical
 prefixcc,lex,http://purl.org/lex#,canonical
 prefixcc,lexcz,http://purl.org/lex/cz#,canonical
 prefixcc,lexicog,http://www.w3.org/ns/lemon/lexicog#,canonical
@@ -1560,6 +1573,7 @@ prefixcc,lswmo,http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-modelling.owl
 prefixcc,lswpm,http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-lifemapper-parameters.owl#,canonical
 prefixcc,lt,http://diplomski.nelakolundzija.org/LTontology.rdf#,canonical
 prefixcc,lu,http://www.ontologydesignpatterns.org/ont/framenet/abox/lu/,canonical
+prefixcc,lubm,http://swat.cse.lehigh.edu/onto/univ-bench.owl#,namespace_alias
 prefixcc,luc,http://www.ontotext.com/owlim/lucene#,canonical
 prefixcc,ludo,http://ns.inria.fr/ludo/v1#,canonical
 prefixcc,luffy,http://google.com/,canonical
@@ -1615,6 +1629,7 @@ prefixcc,mccv,http://purl.jp/bio/10/mccv#,canonical
 prefixcc,mco,http://purl.obolibrary.org/obo/MCO_,canonical
 prefixcc,mcro,https://www.ebi.ac.uk/ols4/ontologies/mcro/classes?obo_id=MCRO:,canonical
 prefixcc,md,http://www.w3.org/ns/md#,canonical
+prefixcc,mdcat,https://w3id.org/mobilitydcat-ap#,canonical
 prefixcc,mdcs,https://mdcs.monumentenkennis.nl/damageatlas/ontology#,canonical
 prefixcc,mdi,http://w3id.org/multidimensional-interface/ontology#,canonical
 prefixcc,mdont,http://ont.matchdeck.com/,canonical
@@ -1693,6 +1708,7 @@ prefixcc,mocanal,http://www.semanticweb.org/asow/ontologies/2013/9/untitled-onto
 prefixcc,mod,http://www.isibang.ac.in/ns/mod#,canonical
 prefixcc,mods,http://www.loc.gov/mods/v3#,canonical
 prefixcc,modsci,https://w3id.org/skgo/modsci#,canonical
+prefixcc,modsrdf,http://www.loc.gov/mods/rdf/v1#,canonical
 prefixcc,mohammad,http://manesht.ir/,canonical
 prefixcc,mondo,http://purl.obolibrary.org/obo/,namespace_alias
 prefixcc,money,http://purl.org/net/rdf-money/,canonical
@@ -1760,7 +1776,7 @@ prefixcc,ncbi,https://www.ncbi.nlm.nih.gov/,canonical
 prefixcc,ncbigene,http://identifiers.org/ncbigene/,canonical
 prefixcc,ncbitaxon,http://purl.obolibrary.org/obo/NCBITaxon_,canonical
 prefixcc,ncicp,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,namespace_alias
-prefixcc,ncit,https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=,canonical
+prefixcc,ncit,http://purl.obolibrary.org/obo/NCIT_,canonical
 prefixcc,ncl,https://w3id.org/NCL/ontology/,canonical
 prefixcc,nco,http://www.semanticdesktop.org/ontologies/2007/03/22/nco#,canonical
 prefixcc,ncro,http://purl.obolibrary.org/obo/NCRO_,canonical
@@ -1935,6 +1951,7 @@ prefixcc,omb,http://purl.org/ontomedia/ext/common/being#,canonical
 prefixcc,omc,http://purl.org/ontomedia/ext/common/bestiary#,canonical
 prefixcc,omdoc,http://omdoc.org/ontology/,canonical
 prefixcc,ome,http://purl.org/ontomedia/core/expression#,canonical
+prefixcc,omekas,http://omeka.org/s/vocabs/o#,canonical
 prefixcc,omg,https://w3id.org/omg#,canonical
 prefixcc,omiabis,http://purl.obolibrary.org/obo/OMIABIS_,canonical
 prefixcc,omim,http://purl.bioontology.org/ontology/OMIM/,canonical
@@ -2048,6 +2065,7 @@ prefixcc,osgeom,http://data.ordnancesurvey.co.uk/ontology/geometry/,canonical
 prefixcc,osh,https://w3id.org/oseg/ont/osh#,canonical
 prefixcc,oslc,http://open-services.net/ns/core#,canonical
 prefixcc,oslo,http://purl.org/oslo/ns/localgov#,canonical
+prefixcc,osmkey,https://www.openstreetmap.org/wiki/Key:,canonical
 prefixcc,osmm,https://www.openstreetmap.org/meta/,canonical
 prefixcc,osmnode,https://www.openstreetmap.org/node/,canonical
 prefixcc,osmo,https://purl.org/vimmp/osmo#,canonical
@@ -2137,6 +2155,7 @@ prefixcc,pext,http://www.ontotext.com/proton/protonext#,canonical
 prefixcc,pf,http://jena.hpl.hp.com/ARQ/property#,canonical
 prefixcc,pfeepsa,https://w3id.org/pfeepsa#,canonical
 prefixcc,pgdso,http://purl.obolibrary.org/obo/PGDSO_,canonical
+prefixcc,pghdprovo,https://w3id.org/pghdprovo#,canonical
 prefixcc,pgo,http://ii.uwb.edu.pl/pgo#,canonical
 prefixcc,pgterms,http://www.gutenberg.org/2009/pgterms/,canonical
 prefixcc,pgxo,http://pgxo.loria.fr/,canonical
@@ -2173,6 +2192,7 @@ prefixcc,planet,http://dbpedia.org/,namespace_alias
 prefixcc,planp,http://purl.obolibrary.org/obo/PLANP_,canonical
 prefixcc,plant,http://example.org/plant/,canonical
 prefixcc,plasma,https://w3id.org/plasma#,canonical
+prefixcc,plato,https://w3id.org/plato#,canonical
 prefixcc,play,http://uriplay.org/spec/ontology/#,canonical
 prefixcc,ple,http://pleiades.stoa.org/places/,canonical
 prefixcc,plg,http://parliament.uk/ontologies/legislation/,canonical
@@ -2285,7 +2305,7 @@ prefixcc,puc,http://purl.org/NET/puc#,canonical
 prefixcc,puelia,http://kwijibo.talis.com/vocabs/puelia#,canonical
 prefixcc,puml,http://plantuml.com/ontology#,canonical
 prefixcc,pur,http://prismstandard.org/namespaces/prismusagerights/2.1/,canonical
-prefixcc,purl,http://www.purl.org/,canonical
+prefixcc,purl,http://purl.org/dc/terms/,namespace_alias
 prefixcc,push,http://www.w3.org/2007/uwa/context/push.owl#,canonical
 prefixcc,pv,https://piveau.eu/ns/voc#,canonical
 prefixcc,pvcs,http://purl.org/twc/vocab/pvcs#,canonical
@@ -2326,6 +2346,7 @@ prefixcc,rad,http://www.w3.org/ns/rad#,canonical
 prefixcc,radar,http://www.radar-projekt.org/display/,canonical
 prefixcc,radion,http://www.w3.org/ns/radion#,canonical
 prefixcc,rail,http://ontologi.es/rail/vocab#,canonical
+prefixcc,railml3,http://ontology.railml.org/railml3#,canonical
 prefixcc,rami,http://iais.fraunhofer.de/vocabs/rami#,canonical
 prefixcc,ramon,http://rdfdata.eionet.europa.eu/ramon/ontology/,canonical
 prefixcc,rank,http://www.ontotext.com/owlim/RDFRank#,canonical
@@ -2443,6 +2464,7 @@ prefixcc,rdfp,https://w3id.org/rdfp/,canonical
 prefixcc,rdfs,http://www.w3.org/2000/01/rdf-schema#,canonical
 prefixcc,rdfsharp,https://rdfsharp.codeplex.com/,canonical
 prefixcc,rdl,http://data.posccaesar.org/rdl/,canonical
+prefixcc,rdm,https://terms.codata.org/rdmt/,canonical
 prefixcc,rdo,http://purl.org/rdo/ns#,canonical
 prefixcc,rdrel,http://rdvocab.info/RDARelationshipsWEMI/,canonical
 prefixcc,re,http://www.w3.org/2000/10/swap/reason#,canonical
@@ -2546,6 +2568,7 @@ prefixcc,rss,http://purl.org/rss/1.0/,canonical
 prefixcc,rssynd,http://web.resource.org/rss/1.0/modules/syndication/,canonical
 prefixcc,rsx,http://rdf4j.org/shacl-extensions#,canonical
 prefixcc,rtedurp,http://purl.org/eduo/rtedurp/,canonical
+prefixcc,rtm,http://ontology.railml.org/railtopomodel#,canonical
 prefixcc,rto,https://w3id.org/rail/topo#,canonical
 prefixcc,ru,http://purl.org/imbi/ru-meta.owl#,canonical
 prefixcc,ruian,https://data.cssz.cz/ontology/ruian/,canonical
@@ -2586,7 +2609,7 @@ prefixcc,sawsdl,http://www.w3.org/ns/sawsdl#,canonical
 prefixcc,saxon,http://saxon.sf.net/,canonical
 prefixcc,say,https://say.data.gift/ns/,canonical
 prefixcc,sbench,http://swat.cse.lehigh.edu/onto/univ-bench.owl#,canonical
-prefixcc,sbo,http://purl.obolibrary.org/obo/SBO_,canonical
+prefixcc,sbo,https://paul.ti.rw.fau.de/~jo00defe/ble/sbo#,canonical
 prefixcc,sc,https://schema.org/,canonical
 prefixcc,scco,http://rdf.ebi.ac.uk/terms/surechembl#,canonical
 prefixcc,scdo,http://purl.obolibrary.org/obo/SCDO_,canonical
@@ -2622,6 +2645,7 @@ prefixcc,sdmxcode,http://purl.org/linked-data/sdmx/2009/code#,canonical
 prefixcc,sdmxd,http://purl.org/linked-data/sdmx/2009/dimension#,namespace_alias
 prefixcc,sdmxdim,http://purl.org/linked-data/sdmx/2009/dimension#,canonical
 prefixcc,sdmxm,http://purl.org/linked-data/sdmx/2009/measure#,canonical
+prefixcc,sdn,https://ontology.seadatanet.org/#,canonical
 prefixcc,sdo,https://schema.org/,namespace_alias
 prefixcc,sds,https://w3id.org/sds#,canonical
 prefixcc,sdshare,http://www.sdshare.org/2012/extension/,canonical
@@ -2965,6 +2989,7 @@ prefixcc,spin,http://spinrdf.org/spin#,canonical
 prefixcc,spl,http://spinrdf.org/spl#,canonical
 prefixcc,spo,https://w3id.org/steel/ProcessOntology/,namespace_alias
 prefixcc,sport,http://purl.org/ontology/sport/,canonical
+prefixcc,spot,https://w3id.org/spot#,canonical
 prefixcc,spt,http://spitfire-project.eu/ontology/ns/,canonical
 prefixcc,spv,http://completeness.inf.unibz.it/sp-vocab#,canonical
 prefixcc,spvqa,https://bmake.th-brandenburg.de/spv#,canonical
@@ -3011,6 +3036,7 @@ prefixcc,stroke,https://mre.zcu.cz/ontology/stroke.owl#,namespace_alias
 prefixcc,studiop,http://purl.org/resource/pilatesstudio/,canonical
 prefixcc,stx,http://purl.org/cyber/stix#,canonical
 prefixcc,sty,http://purl.bioontology.org/ontology/STY/,canonical
+prefixcc,submit,https://ns.verisav.fr/dpp#,namespace_alias
 prefixcc,sulo,https://w3id.org/sulo/,canonical
 prefixcc,summa,http://purl.org/voc/summa/,canonical
 prefixcc,sure,http://ns.inria.fr/sure#,canonical
@@ -3048,6 +3074,7 @@ prefixcc,sylld,http://www.semanticweb.org/syllabus/data/,canonical
 prefixcc,symp,http://purl.obolibrary.org/obo/SYMP_,canonical
 prefixcc,sysont,http://ns.ontowiki.net/SysOnt/,canonical
 prefixcc,system,http://www.univalle.edu.co/ontologies/System#,canonical
+prefixcc,sz,https://github.com/senzing-garage/sz-semantics/wiki/ns#,canonical
 prefixcc,t4fs,http://purl.obolibrary.org/obo/T4FS_,canonical
 prefixcc,tac,http://ns.bergnet.org/tac/0.1/triple-access-control#,canonical
 prefixcc,tadirah,http://tadirah.dariah.eu/vocab/,canonical
@@ -3068,6 +3095,7 @@ prefixcc,taxref,http://taxref.mnhn.fr/lod/taxon/,canonical
 prefixcc,taxrefprop,http://taxref.mnhn.fr/lod/property/,canonical
 prefixcc,tb,https://w3id.org/timebank#,canonical
 prefixcc,tblcard,http://www.w3.org/People/Berners-Lee/card#,canonical
+prefixcc,tbs,http://topbraid.org/tbs#,canonical
 prefixcc,tcga,http://purl.org/tcga/core#,canonical
 prefixcc,tci,https://w3id.org/lbs/tci#,canonical
 prefixcc,td,https://www.w3.org/2019/wot/td#,canonical
@@ -3082,12 +3110,14 @@ prefixcc,tei,http://www.tei-c.org/ns/1.0/,canonical
 prefixcc,telix,http://purl.org/telix#,canonical
 prefixcc,telmap,http://purl.org/telmap/,canonical
 prefixcc,tempo,http://purl.org/tempo/,canonical
+prefixcc,tensor,https://w3id.org/rdf-tensor/vocab#,canonical
 prefixcc,termdat,https://register.ld.admin.ch/termdat/,canonical
 prefixcc,tern,http://w3id.org/tern/ontologies/tern/,canonical
 prefixcc,test,https://test4.example.com/,canonical
 prefixcc,test2,http://this.invalid/test2#,canonical
 prefixcc,text,http://jena.apache.org/text#,canonical
 prefixcc,textgrid,https://textgridrep.org/,canonical
+prefixcc,tfn,https://w3id.org/time-fn#,canonical
 prefixcc,tg,https://triplydb.com/Triply/tg/def/,canonical
 prefixcc,tgc,http://www.hds.utc.fr/tg#,canonical
 prefixcc,tgfm,http://purl.org/terminology-guide-for-move/testvocab/,canonical
@@ -3250,6 +3280,7 @@ prefixcc,viso,http://purl.org/viso/,canonical
 prefixcc,vitro,http://vitro.mannlib.cornell.edu/ns/vitro/public#,canonical
 prefixcc,vivo,http://vivoweb.org/ontology/core#,namespace_alias
 prefixcc,vl,https://version.link/,canonical
+prefixcc,vlaanderen,https://data.vlaanderen.be/ns/,canonical
 prefixcc,vlueprint,https://vlueprint.org/schema/,canonical
 prefixcc,vm,http://visual-meaning.com/rdf/,canonical
 prefixcc,vmm,http://spi-fm.uca.es/spdef/models/genericTools/vmm/1.0#,canonical
@@ -3342,7 +3373,7 @@ prefixcc,wfn,http://webofcode.org/wfn/,canonical
 prefixcc,wfont,https://w3id.org/wfont#,canonical
 prefixcc,wfprov,http://purl.org/wf4ever/wfprov#,canonical
 prefixcc,wfs,http://schemas.opengis.net/wfs/,canonical
-prefixcc,wgs,http://www.w3.org/2003/01/geo/wgs84_pos#,namespace_alias
+prefixcc,wgs,http://www.w3.org/2003/01/geo/wgs84_pos#,canonical
 prefixcc,wgs84,http://www.w3.org/2003/01/geo/wgs84_pos#,namespace_alias
 prefixcc,wgspos,http://www.w3.org/2003/01/geo/wgs84_pos#,namespace_alias
 prefixcc,whisky,http://vocab.org/whisky/terms/,canonical
