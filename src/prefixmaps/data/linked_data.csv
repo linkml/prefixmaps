@@ -1,12 +1,14 @@
 context,prefix,namespace,status
 linkml,bibo,http://purl.org/ontology/bibo/,canonical
 linkml,biolink,https://w3id.org/biolink/vocab/,canonical
+linkml,dcmitype,http://purl.org/dc/dcmitype/,canonical
 linkml,dcterms,http://purl.org/dc/terms/,canonical
 linkml,foaf,http://xmlns.com/foaf/0.1/,canonical
 linkml,linkml,https://w3id.org/linkml/,canonical
 linkml,NANDO,http://identifiers.org/NANDO:,canonical
 linkml,NCIThesaurus,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#,canonical
 linkml,oboInOwl,http://www.geneontology.org/formats/oboInOwl#,canonical
+linkml,odrl,http://www.w3.org/ns/odrl/2/,canonical
 linkml,oslc,http://open-services.net/ns/core#,canonical
 linkml,owl,http://www.w3.org/2002/07/owl#,canonical
 linkml,pav,http://purl.org/pav/,canonical
@@ -21,5 +23,8 @@ linkml,shex,http://www.w3.org/ns/shex#,canonical
 linkml,skos,http://www.w3.org/2004/02/skos/core#,canonical
 linkml,skosxl,http://www.w3.org/2008/05/skos-xl#,canonical
 linkml,swrl,http://www.w3.org/2003/11/swrl#,canonical
+linkml,time,http://www.w3.org/2006/time#,canonical
 linkml,vann,https://vocab.org/vann/,canonical
+linkml,wgs,http://www.w3.org/2003/01/geo/wgs84_pos#,canonical
+linkml,xml,http://www.w3.org/XML/1998/namespace,canonical
 linkml,xsd,http://www.w3.org/2001/XMLSchema#,canonical

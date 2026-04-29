@@ -24,5 +24,12 @@ prefixes:
   biolink: https://w3id.org/biolink/vocab/
   foaf: http://xmlns.com/foaf/0.1/
   NANDO: "http://identifiers.org/NANDO:"
-
-
+  # W3C / OGC standard semantic-web prefixes (lowercase canonical forms).
+  # Without these, bioregistry.upper overrides them with uppercase variants
+  # (ODRL, TIME, WGS84) or they have no canonical entry in the merged context.
+  # See https://github.com/linkml/prefixmaps/issues/70
+  odrl: http://www.w3.org/ns/odrl/2/
+  time: http://www.w3.org/2006/time#
+  dcmitype: http://purl.org/dc/dcmitype/
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
+  xml: http://www.w3.org/XML/1998/namespace
