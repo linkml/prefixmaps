@@ -31,6 +31,18 @@ EXPECTED_LINKED_DATA = [
 """Expected LinkedData namespaces. These are highly stable and it is vital that this library gives
 correct results since these are frequently used in application logic"""
 
+# Standard W3C / OGC semantic-web prefixes that MUST remain lowercase.
+# Regression guard for https://github.com/linkml/prefixmaps/issues/70 —
+# without the curated overrides in linked_data, bioregistry.upper would
+# promote these to UPPERCASE.
+EXPECTED_W3C_SEMWEB_PREFIXES = [
+    ("odrl", "http://www.w3.org/ns/odrl/2/"),
+    ("time", "http://www.w3.org/2006/time#"),
+    ("dcmitype", "http://purl.org/dc/dcmitype/"),
+    ("wgs", "http://www.w3.org/2003/01/geo/wgs84_pos#"),
+    ("xml", "http://www.w3.org/XML/1998/namespace"),
+]
+
 EXPECTED_PREFIX_CC = [
     ("owl", "http://www.w3.org/2002/07/owl#"),
     ("foaf", "http://xmlns.com/foaf/0.1/"),
@@ -165,6 +177,31 @@ class TextPrefixMaps(unittest.TestCase):
         for pfx, exp in EXPECTED_OBO + EXPECTED_PREFIX_CC + EXPECTED_OTHER:
             self.assertEqual(pm[pfx], exp)
             self.assertEqual(pmi[exp], pfx)
+
+    def test_w3c_semweb_prefixes_in_linked_data(self):
+        """Regression test for issue #70: W3C/OGC prefixes must be lowercase."""
+        ctxt = self.linked_data_context
+        pm = ctxt.as_dict()
+        pmi = ctxt.as_inverted_dict()
+        for pfx, exp in EXPECTED_W3C_SEMWEB_PREFIXES:
+            with self.subTest(prefix=pfx):
+                self.assertIn(pfx, pm, f"prefix {pfx!r} missing from linked_data context")
+                self.assertEqual(pm[pfx], exp)
+                self.assertEqual(pmi[exp], pfx)
+
+    def test_w3c_semweb_prefixes_in_dyn_merged(self):
+        """Regression test for issue #70: merged context must use lowercase W3C prefixes."""
+        ctxt = self.dyn_merged_context
+        pm = ctxt.as_dict()
+        pmi = ctxt.as_inverted_dict()
+        for pfx, exp in EXPECTED_W3C_SEMWEB_PREFIXES:
+            with self.subTest(prefix=pfx):
+                self.assertIn(pfx, pm, f"prefix {pfx!r} missing from dynamic merged context")
+                self.assertEqual(pm[pfx], exp)
+                self.assertEqual(
+                    pmi[exp], pfx,
+                    f"expected canonical prefix {pfx!r} for {exp}, got {pmi.get(exp)!r}"
+                )
 
     def test_prefixcc(self):
         ctxt = self.prefixcc_context
