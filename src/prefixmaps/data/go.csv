@@ -53,7 +53,7 @@ go,RO,http://purl.obolibrary.org/obo/RO_,canonical
 go,SGD,http://identifiers.org/sgd/,canonical
 go,SGN,http://identifiers.org/sgn/,canonical
 go,SO,http://purl.obolibrary.org/obo/SO_,canonical
-go,TAIR,http://identifiers.org/tair.locus/,canonical
+go,TAIR,https://registry.identifiers.org/registry/tair.name/,canonical
 go,TC,http://identifiers.org/tcdb/,canonical
 go,TGD,http://identifiers.org/tgd/,canonical
 go,TreeGrafter,http://identifiers.org/panther.family/,namespace_alias
@@ -67,4 +67,5 @@ go,WB,http://identifiers.org/wormbase/,canonical
 go,WBls,http://purl.obolibrary.org/obo/WBls_,canonical
 go,WBPhenotype,http://purl.obolibrary.org/obo/WBPhenotype_,canonical
 go,Xenbase,http://identifiers.org/xenbase/,canonical
+go,ZFA,http://purl.obolibrary.org/obo/ZFA_,canonical
 go,ZFIN,http://identifiers.org/zfin/,canonical
