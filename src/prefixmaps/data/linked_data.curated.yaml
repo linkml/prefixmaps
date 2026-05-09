@@ -33,3 +33,4 @@ prefixes:
   dcmitype: http://purl.org/dc/dcmitype/
   wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
   xml: http://www.w3.org/XML/1998/namespace
+  ICD10CM: "http://purl.bioontology.org/ontology/ICD10CM/"

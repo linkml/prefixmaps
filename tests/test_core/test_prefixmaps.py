@@ -199,8 +199,9 @@ class TextPrefixMaps(unittest.TestCase):
                 self.assertIn(pfx, pm, f"prefix {pfx!r} missing from dynamic merged context")
                 self.assertEqual(pm[pfx], exp)
                 self.assertEqual(
-                    pmi[exp], pfx,
-                    f"expected canonical prefix {pfx!r} for {exp}, got {pmi.get(exp)!r}"
+                    pmi[exp],
+                    pfx,
+                    f"expected canonical prefix {pfx!r} for {exp}, got {pmi.get(exp)!r}",
                 )
 
     def test_prefixcc(self):
