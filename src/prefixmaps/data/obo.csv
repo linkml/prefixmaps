@@ -186,6 +186,7 @@ obo,ORNASEQ,http://purl.obolibrary.org/obo/ORNASEQ_,canonical
 obo,OVAE,http://purl.obolibrary.org/obo/OVAE_,canonical
 obo,PAO,http://purl.obolibrary.org/obo/PAO_,canonical
 obo,PATO,http://purl.obolibrary.org/obo/PATO_,canonical
+obo,PBPKO,http://purl.obolibrary.org/obo/PBPKO_,canonical
 obo,PCL,http://purl.obolibrary.org/obo/PCL_,canonical
 obo,PCO,http://purl.obolibrary.org/obo/PCO_,canonical
 obo,PD_ST,http://purl.obolibrary.org/obo/PD_ST_,canonical
@@ -201,6 +202,7 @@ obo,PO,http://purl.obolibrary.org/obo/PO_,canonical
 obo,PORO,http://purl.obolibrary.org/obo/PORO_,canonical
 obo,PPO,http://purl.obolibrary.org/obo/PPO_,canonical
 obo,PR,http://purl.obolibrary.org/obo/PR_,canonical
+obo,PREFER,http://purl.obolibrary.org/obo/PREFER_,canonical
 obo,PROCO,http://purl.obolibrary.org/obo/PROCO_,canonical
 obo,PROPREO,http://purl.obolibrary.org/obo/PROPREO_,canonical
 obo,PSDO,http://purl.obolibrary.org/obo/PSDO_,canonical
