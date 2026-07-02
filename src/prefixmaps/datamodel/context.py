@@ -107,10 +107,8 @@ class PrefixExpansion:
         if not PREFIX_RE.match(self.prefix):
             messages.append(f"prefix {self.prefix} does not match {PREFIX_RE}")
         if not NAMESPACE_RE.match(self.namespace):
-            messages.append(
-                f"namespace {self.namespace} does not match {NAMESPACE_RE}\
-                (prefix: {self.prefix})"
-            )
+            messages.append(f"namespace {self.namespace} does not match {NAMESPACE_RE}\
+                (prefix: {self.prefix})")
         return messages
 
 
