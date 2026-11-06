@@ -381,7 +381,11 @@ class Context:
         :return:
         """
         extended_prefix_map = self.as_extended_prefix_map()
-        return curies.Converter.from_extended_prefix_map(extended_prefix_map)
+        # curies' strict check compares every pair of records, which takes 15-25 seconds
+        # per merged context, see https://github.com/linkml/prefixmaps/issues/75.
+        # Only run it when a linear scan finds duplicates, so curies raises its usual error.
+        strict = _has_duplicates(extended_prefix_map)
+        return curies.Converter.from_extended_prefix_map(extended_prefix_map, strict=strict)
 
     def validate(self, canonical_only=True) -> List[str]:
         """
@@ -398,3 +402,26 @@ class Context:
         # namespaces = self.namespaces(lower=True)
         # prefixes = self.namespaces(lower=True)
         return messages
+
+
+def _has_duplicates(records: List[curies.Record]) -> bool:
+    """
+    Check whether any two records share a prefix or a URI prefix.
+
+    This finds the same duplicates as curies' strict check, but in linear time.
+
+    :param records: records of an extended prefix map
+    :return: True if a prefix or URI prefix appears in more than one record
+    """
+    prefixes = set()
+    uri_prefixes = set()
+    for record in records:
+        record_prefixes = {record.prefix, *record.prefix_synonyms}
+        record_uri_prefixes = {record.uri_prefix, *record.uri_prefix_synonyms}
+        if not prefixes.isdisjoint(record_prefixes):
+            return True
+        if not uri_prefixes.isdisjoint(record_uri_prefixes):
+            return True
+        prefixes |= record_prefixes
+        uri_prefixes |= record_uri_prefixes
+    return False

@@ -14,11 +14,12 @@ class TestIntegrity(unittest.TestCase):
 
     def setUp(self) -> None:
         """Set up the test case with all contexts."""
-        # We don't expect some merged contexts to pass all tests, see:
-        # See: https://github.com/linkml/prefixmaps/issues/26
+        self.contexts: Mapping[str, Context] = {key: load_context(key) for key in context_paths}
+        # We don't expect merged contexts to pass the alias tests, see:
+        # https://github.com/linkml/prefixmaps/issues/26
         skip = {"merged", "merged.oak", "merged.monarch"}
-        self.contexts: Mapping[str, Context] = {
-            key: load_context(key) for key, path in context_paths.items() if key not in skip
+        self.alias_contexts: Mapping[str, Context] = {
+            key: context for key, context in self.contexts.items() if key not in skip
         }
 
     def test_unique_canonical_prefix(self):
@@ -56,7 +57,7 @@ class TestIntegrity(unittest.TestCase):
 
     def test_prefix_aliases(self):
         """Test that namespace aliases have a valid prefix."""
-        for key, context in self.contexts.items():
+        for key, context in self.alias_contexts.items():
             with self.subTest(key=key):
                 canonical_prefixes = {
                     expansion.prefix
@@ -78,7 +79,7 @@ class TestIntegrity(unittest.TestCase):
 
     def test_namespace_aliases(self):
         """Test that prefix aliases have a valid namespace."""
-        for key, context in self.contexts.items():
+        for key, context in self.alias_contexts.items():
             with self.subTest(key=key):
                 canonical_namespaces = {
                     expansion.namespace: expansion.prefix
