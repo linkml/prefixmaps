@@ -54,7 +54,8 @@ def load_context(name: CONTEXT, refresh=False) -> Context:
     Loads a context by name from standard location
 
     :param name:
-    :param refresh: if True, fetch from upstream
+    :param refresh: if True, fetch from upstream. prefix.cc is not curated, so it always
+        comes from the bundled snapshot, see https://github.com/linkml/prefixmaps/issues/61
     :return:
     """
     if refresh:
