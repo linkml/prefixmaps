@@ -229,3 +229,13 @@ class TextPrefixMaps(unittest.TestCase):
         for curie in others:
             with self.subTest(curie=curie):
                 self.assertEqual(canonical, converter.standardize_curie(curie))
+
+    def test_curated_phenotype_prefix(self):
+        """PHENOTYPE is curated in linked_data, so it reaches every merged context."""
+        curie = "PHENOTYPE:1001742"
+        uri = "https://w3id.org/monarch-initiative/entity/PHENOTYPE_1001742"
+        for name in ["linked_data", "merged", "merged.monarch", "merged.oak"]:
+            with self.subTest(context=name):
+                converter = prefixmaps.load_converter(name)
+                self.assertEqual(uri, converter.expand(curie))
+                self.assertEqual(curie, converter.compress(uri))

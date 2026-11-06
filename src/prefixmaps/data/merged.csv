@@ -12121,6 +12121,7 @@ merged,PHENOLEXPLORER,https://identifiers.org/phenolexplorer/,prefix_alias,biore
 merged,PHENOLEXPLORER,https://identifiers.org/phenolexplorer:,prefix_alias,bioregistry
 merged,PHENOLEXPLORER,https://n2t.net/phenolexplorer:,prefix_alias,bioregistry
 merged,PHENOLEXPLORER,https://phenol-explorer.eu/foods/,prefix_alias,bioregistry
+merged,PHENOTYPE,https://w3id.org/monarch-initiative/entity/PHENOTYPE_,canonical,linkml
 merged,PHENX,https://www.phenxtoolkit.org/protocols/view/,canonical,bioregistry
 merged,PHENX,http://bioregistry.io/phenx:,prefix_alias,bioregistry
 merged,PHENX,http://bioregistry.io/phenxtoolkit:,prefix_alias,bioregistry

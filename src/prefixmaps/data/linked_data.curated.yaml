@@ -33,3 +33,6 @@ prefixes:
   dcmitype: http://purl.org/dc/dcmitype/
   wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
   xml: http://www.w3.org/XML/1998/namespace
+  # Phenotype classes minted by uphenotizer and imported by PHENIO
+  # (https://github.com/monarch-initiative/uphenotizer)
+  PHENOTYPE: https://w3id.org/monarch-initiative/entity/PHENOTYPE_
