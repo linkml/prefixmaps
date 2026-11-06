@@ -133,6 +133,8 @@ converter = load_converter("obo", refresh=True)
 
 This will perform a fetch from http://obofoundry.org/registry/obo_prefixes.ttl
 
+prefix.cc is the exception: `refresh=True` still uses the bundled prefix.cc data, because prefix.cc is not curated (see [Refreshing the Data](#refreshing-the-data)).
+
 ## Context Metadata
 
 See [contexts.curated.yaml](src/prefixmaps/data/contexts.curated.yaml)
@@ -171,6 +173,11 @@ The data can be refreshed in several ways:
     ```shell
     make etl
     ```
+
+prefix.cc is not refreshed by default, because it has no curation and spam keeps reappearing there (see [#61](https://github.com/linkml/prefixmaps/issues/61)).
+To fix a semantic web prefix, add it to [linked_data.curated.yaml](https://github.com/linkml/prefixmaps/blob/main/src/prefixmaps/data/linked_data.curated.yaml), which takes precedence over prefix.cc in the merged contexts.
+To download prefix.cc anyway, run `slurp-prefixmaps --refresh-prefixcc`, and review the rows it prints and the resulting CSV diff before committing.
+prefix.cc entries that must never be imported are listed in [prefixcc.excluded.yaml](https://github.com/linkml/prefixmaps/blob/main/src/prefixmaps/data/prefixcc.excluded.yaml).
 
 TODO: make a github action that auto-releases new versions
 

@@ -126,6 +126,8 @@ ctxt = load_context("obo", refresh=True)
 
 This will perform a fetch from http://obofoundry.org/registry/obo_prefixes.ttl
 
+prefix.cc is the exception: `refresh=True` still uses the bundled prefix.cc data, because prefix.cc is not curated.
+
 ## Context Metadata
 
 See [contexts.curated.yaml](src/prefixmaps/data/contexts.curated.yaml)
@@ -145,6 +147,11 @@ These can be regenerated using:
 ```
 make etl
 ```
+
+prefix.cc is not refreshed by default, because it has no curation and spam keeps reappearing there.
+To fix a semantic web prefix, add it to `linked_data.curated.yaml`, which takes precedence over prefix.cc in the merged contexts.
+To download prefix.cc anyway, run `slurp-prefixmaps --refresh-prefixcc`, and review the rows it prints and the resulting CSV diff before committing.
+prefix.cc entries that must never be imported are listed in `prefixcc.excluded.yaml`.
 
 TODO: make a github action that auto-released new versions
 

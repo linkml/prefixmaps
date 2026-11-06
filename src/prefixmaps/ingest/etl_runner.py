@@ -13,7 +13,7 @@ from prefixmaps.ingest.ingest_bioregistry import (
     from_bioregistry_upper,
 )
 from prefixmaps.ingest.ingest_go import parse_go_xrefs_from_remote
-from prefixmaps.ingest.ingest_jsonld import from_prefixcc
+from prefixmaps.ingest.ingest_jsonld import from_prefixcc, from_prefixcc_snapshot
 from prefixmaps.ingest.ingest_linkml import from_semweb_curated
 from prefixmaps.ingest.ingest_shacl import from_obo
 from prefixmaps.ingest.ingest_w3id import from_w3id
@@ -27,10 +27,13 @@ CONTEXTS: Mapping[str, Callable[[], Context]] = {
     "bioportal": from_bioportal_file,
     "bioregistry.upper": from_bioregistry_upper,
     "bioregistry": from_bioregistry,
-    "prefixcc": from_prefixcc,
+    "prefixcc": from_prefixcc_snapshot,
     "w3id": from_w3id,
 }
-"""Maps the name of a context to the python function that can generate it"""
+"""Maps the name of a context to the python function that can generate it.
+
+prefix.cc is frozen, see https://github.com/linkml/prefixmaps/issues/61. Pass
+``refresh_prefixcc=True`` to :func:`run_etl` to download it again."""
 
 COMBINED = {
     "merged": ["obo", "go", "linked_data", "bioregistry.upper", "prefixcc"],
@@ -49,6 +52,8 @@ def load_context_from_source(context: CONTEXT) -> Context:
     - An atomic context (e.g. obo, linked_data)
     - A conbined context (which remixes existing contexts)
 
+    prefix.cc is the exception: it comes from the bundled snapshot, see :data:`CONTEXTS`.
+
     :param context: unique handle of the context
     :return:
     """
@@ -63,14 +68,16 @@ def load_context_from_source(context: CONTEXT) -> Context:
         raise ValueError(f"No such context: {context}")
 
 
-def run_etl(output_directory: Union[str, Path]) -> None:
+def run_etl(output_directory: Union[str, Path], refresh_prefixcc: bool = False) -> None:
     """
     Runs the complete ETL pipeline.
 
-    All contexts are refreshed from upstream sources, and written to the output directory,
-    as CSV.
+    All contexts except prefix.cc are refreshed from upstream sources, and written to the
+    output directory, as CSV.
 
     :param output_directory:
+    :param refresh_prefixcc: if True, also download prefix.cc and print what changed.
+        prefix.cc has no curation, so review those changes before committing them.
     :return:
     """
     # contexts = load_contexts_meta()
@@ -81,6 +88,10 @@ def run_etl(output_directory: Union[str, Path]) -> None:
     contexts: Dict[str, Context] = {
         name: context_getter() for name, context_getter in CONTEXTS.items()
     }
+    if refresh_prefixcc:
+        snapshot = contexts["prefixcc"]
+        contexts["prefixcc"] = from_prefixcc()
+        echo_changes(snapshot, contexts["prefixcc"])
 
     # Create merged contexts
     for merged_name, names in COMBINED.items():
@@ -95,6 +106,21 @@ def run_etl(output_directory: Union[str, Path]) -> None:
             context_to_file(context, file, include_expansion_source=context.name in COMBINED)
 
 
+def echo_changes(old: Context, new: Context) -> None:
+    """
+    Prints the prefix expansions that were added (+) or removed (-) between two versions of a
+    context. Changes that this causes in merged contexts only show up in their CSV diffs.
+
+    :param old:
+    :param new:
+    :return:
+    """
+    old_rows = {(pe.prefix, pe.namespace, pe.status.value) for pe in old.prefix_expansions}
+    new_rows = {(pe.prefix, pe.namespace, pe.status.value) for pe in new.prefix_expansions}
+    for row in sorted(old_rows ^ new_rows, key=lambda row: (row[0].casefold(), row)):
+        click.echo(f"{'+' if row in new_rows else '-'} {new.name} {' '.join(row)}")
+
+
 @click.command
 @click.option(
     "-d",
@@ -103,8 +129,13 @@ def run_etl(output_directory: Union[str, Path]) -> None:
     type=Path,
     help="Path to directory where CSVs are stored",
 )
-def cli(output_directory):
-    run_etl(output_directory)
+@click.option(
+    "--refresh-prefixcc",
+    is_flag=True,
+    help="Also download prefix.cc, which is uncurated, and print what changed for review",
+)
+def cli(output_directory, refresh_prefixcc):
+    run_etl(output_directory, refresh_prefixcc=refresh_prefixcc)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,22 @@
+# prefix.cc entries that are never imported, because they are spam or broken.
+#
+# prefix.cc has no curation and spam keeps reappearing there, see
+# https://github.com/linkml/prefixmaps/issues/61 and https://github.com/cygri/prefix.cc/issues/42
+# tests/test_core/test_prefixcc_exclusions.py checks that no bundled context contains them.
+
+# Namespaces on these hosts, or on their subdomains, are dropped.
+hosts:
+  compliancequest.com: software product page, not a vocabulary
+  cuzin.com: spam
+  cutt.ly: URL shortener used for spam
+  faptica.com: spam
+  onlyfans.com: spam
+  pornhub.com: spam
+  qualityze.com: spam, see https://github.com/cygri/prefix.cc/issues/42
+  rankrage.de: SEO agency spam
+  teste.com: placeholder test entries
+
+# These prefixes are dropped, whatever their namespace.
+prefixes:
+  bgcat: namespace corrupted upstream (its Cyrillic characters are replaced by "?")
+  leaks: only ever used for spam, see https://github.com/cygri/prefix.cc/issues/42
