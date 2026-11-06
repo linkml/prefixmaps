@@ -33,3 +33,6 @@ prefixes:
   dcmitype: http://purl.org/dc/dcmitype/
   wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
   xml: http://www.w3.org/XML/1998/namespace
+  # Bioregistry's URI format for ICD-10-CM. Its icd.codes provider, which older bioregistry
+  # releases made canonical, has been dead since 2025-07 and is marked "gone" upstream.
+  ICD10CM: https://www.icd10data.com/search?s=
