@@ -229,3 +229,23 @@ class TextPrefixMaps(unittest.TestCase):
         for curie in others:
             with self.subTest(curie=curie):
                 self.assertEqual(canonical, converter.standardize_curie(curie))
+
+    def test_curated_icd10cm_prefix(self):
+        """ICD10CM is curated in linked_data to follow Bioregistry's URI format.
+
+        Older bioregistry releases made the dead icd.codes namespace canonical, see #80.
+        """
+        canonical = "https://www.icd10data.com/search?s="
+        for name in ["linked_data", "merged", "merged.monarch", "merged.oak"]:
+            with self.subTest(context=name):
+                ctxt = load_context(name)
+                self.assertEqual(canonical, ctxt.as_dict()["ICD10CM"])
+                self.assertEqual("ICD10CM", ctxt.as_inverted_dict()[canonical])
+        # the dead icd.codes namespace and the BioPortal PURL stay as aliases
+        aliases = {
+            pe.namespace
+            for pe in self.dyn_merged_context.prefix_expansions
+            if pe.prefix == "ICD10CM" and pe.status == StatusType.prefix_alias
+        }
+        self.assertIn("https://icd.codes/icd10cm/", aliases)
+        self.assertIn("http://purl.bioontology.org/ontology/ICD10CM/", aliases)
