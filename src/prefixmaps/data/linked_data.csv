@@ -12,6 +12,7 @@ linkml,odrl,http://www.w3.org/ns/odrl/2/,canonical
 linkml,oslc,http://open-services.net/ns/core#,canonical
 linkml,owl,http://www.w3.org/2002/07/owl#,canonical
 linkml,pav,http://purl.org/pav/,canonical
+linkml,PHENOTYPE,https://w3id.org/monarch-initiative/entity/PHENOTYPE_,canonical
 linkml,prov,http://www.w3.org/ns/prov#,canonical
 linkml,qb,http://purl.org/linked-data/cube#,canonical
 linkml,qudt,http://qudt.org/schema/qudt/,canonical

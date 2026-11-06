@@ -12130,6 +12130,7 @@ merged.monarch,PHENOLEXPLORER,https://identifiers.org/phenolexplorer/,prefix_ali
 merged.monarch,PHENOLEXPLORER,https://identifiers.org/phenolexplorer:,prefix_alias,bioregistry
 merged.monarch,PHENOLEXPLORER,https://n2t.net/phenolexplorer:,prefix_alias,bioregistry
 merged.monarch,PHENOLEXPLORER,https://phenol-explorer.eu/foods/,prefix_alias,bioregistry
+merged.monarch,PHENOTYPE,https://w3id.org/monarch-initiative/entity/PHENOTYPE_,canonical,linkml
 merged.monarch,PHENX,https://www.phenxtoolkit.org/protocols/view/,canonical,bioregistry
 merged.monarch,PHENX,http://bioregistry.io/phenx:,prefix_alias,bioregistry
 merged.monarch,PHENX,http://bioregistry.io/phenxtoolkit:,prefix_alias,bioregistry
