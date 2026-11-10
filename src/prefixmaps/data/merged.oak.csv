@@ -6932,7 +6932,8 @@ merged.oak,ICD10,https://icdcodelookup.com/icd-10/codes/,prefix_alias,bioregistr
 merged.oak,ICD10,https://identifiers.org/icd/,prefix_alias,bioregistry
 merged.oak,ICD10,https://identifiers.org/icd:,prefix_alias,bioregistry
 merged.oak,ICD10,https://n2t.net/icd:,prefix_alias,bioregistry
-merged.oak,ICD10CM,https://icd.codes/icd10cm/,canonical,bioregistry
+merged.oak,ICD10CM,https://www.icd10data.com/search?s=,canonical,linkml
+merged.oak,ICD10CM,https://icd.codes/icd10cm/,prefix_alias,bioregistry
 merged.oak,ICD10CM,http://bioregistry.io/ICD10CM:,prefix_alias,bioregistry
 merged.oak,ICD10CM,http://icd.codes/icd10cm/,prefix_alias,bioregistry
 merged.oak,ICD10CM,http://purl.bioontology.org/ontology/ICD10CM/,prefix_alias,bioregistry
