@@ -111,12 +111,10 @@
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
 <p>to use in combination with <a class="reference external" href="https://github.com/cthoyt/curies">curies</a> library:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">prefixmaps.io.parser</span> <span class="kn">import</span> <span class="n">load_multi_context</span>
-<span class="kn">from</span> <span class="nn">curies</span> <span class="kn">import</span> <span class="n">Converter</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">prefixmaps.io.parser</span> <span class="kn">import</span> <span class="n">load_context</span><span class="p">,</span> <span class="n">load_multi_context</span>
 
 <span class="n">context</span> <span class="o">=</span> <span class="n">load_multi_context</span><span class="p">([</span><span class="s2">&quot;obo&quot;</span><span class="p">,</span> <span class="s2">&quot;bioregistry.upper&quot;</span><span class="p">,</span> <span class="s2">&quot;linked_data&quot;</span><span class="p">,</span> <span class="s2">&quot;prefixcc&quot;</span><span class="p">])</span>
-<span class="n">extended_prefix_map</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_extended_prefix_map</span><span class="p">()</span>
-<span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
+<span class="n">converter</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_converter</span><span class="p">()</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;CHEBI:1&quot;</span><span class="p">)</span>
 <span class="s1">&#39;http://purl.obolibrary.org/obo/CHEBI_1&#39;</span>
@@ -137,8 +135,7 @@
 </ul>
 <p>If we prioritize prefix.cc the OBO prefix is ignored:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ctxt</span> <span class="o">=</span> <span class="n">load_multi_context</span><span class="p">([</span><span class="s2">&quot;prefixcc&quot;</span><span class="p">,</span> <span class="s2">&quot;obo&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">extended_prefix_map</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_extended_prefix_map</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">ctxt</span><span class="o">.</span><span class="n">as_converter</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;GEO:1&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;geo:1&quot;</span><span class="p">)</span>
 <span class="go">&#39;http://www.opengis.net/ont/geosparql#1&#39;</span>
@@ -147,8 +144,7 @@
 <p>Even though prefix expansion is case sensitive, we intentionally block conflicts that differ only in case.</p>
 <p>If we push bioregistry at the start of the list then GEOGEO can be used as the prefix for the OBO ontology</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ctxt</span> <span class="o">=</span> <span class="n">load_multi_context</span><span class="p">([</span><span class="s2">&quot;bioregistry&quot;</span><span class="p">,</span> <span class="s2">&quot;prefixcc&quot;</span><span class="p">,</span> <span class="s2">&quot;obo&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">extended_prefix_map</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_extended_prefix_map</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">ctxt</span><span class="o">.</span><span class="n">as_converter</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;geo:1&quot;</span><span class="p">)</span>
 <span class="go">&#39;http://identifiers.org/geo/1&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;GEO:1&quot;</span><span class="p">)</span>
@@ -159,10 +155,7 @@
 <p>Note that from the OBO perspective, GEOGEO is non-canonical</p>
 <p>We get similar results using the upper-normalized variant of bioregistry:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ctxt</span> <span class="o">=</span> <span class="n">load_multi_context</span><span class="p">([</span><span class="s2">&quot;bioregistry.upper&quot;</span><span class="p">,</span> <span class="s2">&quot;prefixcc&quot;</span><span class="p">,</span> <span class="s2">&quot;obo&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">extended_prefix_map</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_extended_prefix_map</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">ctxt</span><span class="o">.</span><span class="n">as_converter</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;GEO:1&quot;</span><span class="p">)</span>
 <span class="go">&#39;http://identifiers.org/geo/1&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;geo:1&quot;</span><span class="p">)</span>
@@ -172,8 +165,7 @@
 </div>
 <p>Users of OBO ontologies will want to place OBO at the start of the list:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ctxt</span> <span class="o">=</span> <span class="n">load_multi_context</span><span class="p">([</span><span class="s2">&quot;obo&quot;</span><span class="p">,</span> <span class="s2">&quot;bioregistry.upper&quot;</span><span class="p">,</span> <span class="s2">&quot;prefixcc&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">extended_prefix_map</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_extended_prefix_map</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">ctxt</span><span class="o">.</span><span class="n">as_converter</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;geo:1&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;GEO:1&quot;</span><span class="p">)</span>
 <span class="go">&#39;http://purl.obolibrary.org/obo/GEO_1&#39;</span>
@@ -185,8 +177,7 @@ a major limitation as there is no canonical semantic rendering of NCBI
 GEO. This could be added in future with a unique OBO prefix.</p>
 <p>You can use the ready-made “merged” prefix set, which prioritizes OBO:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ctxt</span> <span class="o">=</span> <span class="n">load_context</span><span class="p">(</span><span class="s2">&quot;merged&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">extended_prefix_map</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">as_extended_prefix_map</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">Converter</span><span class="o">.</span><span class="n">from_extended_prefix_map</span><span class="p">(</span><span class="n">extended_prefix_map</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span> <span class="o">=</span> <span class="n">ctxt</span><span class="o">.</span><span class="n">as_converter</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;GEOGEO:1&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">converter</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s2">&quot;GEO:1&quot;</span><span class="p">)</span>
 <span class="go">&#39;http://purl.obolibrary.org/obo/GEO_1&#39;</span>
@@ -203,6 +194,7 @@ of reproducibility, but it means if a new ontology or prefix is added to an upst
 </pre></div>
 </div>
 <p>This will perform a fetch from http://obofoundry.org/registry/obo_prefixes.ttl</p>
+<p>prefix.cc is the exception: <code class="docutils literal notranslate"><span class="pre">refresh=True</span></code> still uses the bundled prefix.cc data, because prefix.cc is not curated.</p>
 </section>
 </section>
 <section id="context-metadata">
@@ -221,6 +213,10 @@ of reproducibility, but it means if a new ontology or prefix is added to an upst
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">etl</span>
 </pre></div>
 </div>
+<p>prefix.cc is not refreshed by default, because it has no curation and spam keeps reappearing there.
+To fix a semantic web prefix, add it to <code class="docutils literal notranslate"><span class="pre">linked_data.curated.yaml</span></code>, which takes precedence over prefix.cc in the merged contexts.
+To download prefix.cc anyway, run <code class="docutils literal notranslate"><span class="pre">slurp-prefixmaps</span> <span class="pre">--refresh-prefixcc</span></code>, and review the rows it prints and the resulting CSV diff before committing.
+prefix.cc entries that must never be imported are listed in <code class="docutils literal notranslate"><span class="pre">prefixcc.excluded.yaml</span></code>.</p>
 <p>TODO: make a github action that auto-released new versions</p>
 </section>
 <section id="requesting-new-prefixes">
@@ -241,7 +237,7 @@ different prefix maps. Request changes upstream.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Chris Mungall.</p>
+    <p>&#169; Copyright 2026, Chris Mungall.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

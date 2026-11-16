@@ -218,12 +218,72 @@ exclude the most egregious entries, and prioritize more official sources. Howeve
 there are still no guarantees as to quality.</p>
 <p>Longer term we should focus on the curated linked_data.yaml file, and
 moving this to bioregistry.</p>
+<p>Spam and broken entries listed in prefixcc.excluded.yaml are dropped.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.from_prefixcc_snapshot">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">from_prefixcc_snapshot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.from_prefixcc_snapshot" title="Permalink to this definition"></a></dt>
+<dd><p>Loads the prefix.cc snapshot bundled with this package.</p>
+<p>prefix.cc has no curation, so it is not refreshed by default, see
+<a class="reference external" href="https://github.com/linkml/prefixmaps/issues/61">https://github.com/linkml/prefixmaps/issues/61</a>. To fix a semweb prefix, add it to
+linked_data.curated.yaml, which takes precedence over prefix.cc in merged contexts.</p>
+<p>Entries listed in prefixcc.excluded.yaml are still dropped, so a new exclusion takes
+effect on the next ETL run. Canonical expansions come first, so that merging the
+snapshot gives the same statuses as merging a fresh download. That relies on prefix.cc
+having no prefix aliases, which holds because its prefixes are unique and lowercase.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="prefixmaps.datamodel.html#prefixmaps.datamodel.context.Context" title="prefixmaps.datamodel.context.Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">Context</span></code></a></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.is_excluded_from_prefixcc">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">is_excluded_from_prefixcc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.is_excluded_from_prefixcc" title="Permalink to this definition"></a></dt>
+<dd><p>Checks whether a prefix.cc entry is excluded by its prefix or by its namespace’s host.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prefix</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – </p></li>
+<li><p><strong>namespace</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – </p></li>
+<li><p><strong>exclusions</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span>) – as returned by <a class="reference internal" href="#prefixmaps.ingest.ingest_jsonld.load_prefixcc_exclusions" title="prefixmaps.ingest.ingest_jsonld.load_prefixcc_exclusions"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_prefixcc_exclusions()</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the entry must not be imported</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="prefixmaps.ingest.ingest_jsonld.load_prefixcc_exclusions">
+<span class="sig-prename descclassname"><span class="pre">prefixmaps.ingest.ingest_jsonld.</span></span><span class="sig-name descname"><span class="pre">load_prefixcc_exclusions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PosixPath('/home/runner/work/prefixmaps/prefixmaps/src/prefixmaps/data/prefixcc.excluded.yaml')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.ingest.ingest_jsonld.load_prefixcc_exclusions" title="Permalink to this definition"></a></dt>
+<dd><p>Loads the prefix.cc entries that are never imported.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></span>) – the exclusions file</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Mapping</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the excluded <code class="docutils literal notranslate"><span class="pre">hosts</span></code> and <code class="docutils literal notranslate"><span class="pre">prefixes</span></code>, each mapped to the reason</p>
 </dd>
 </dl>
 </dd></dl>
@@ -290,7 +350,7 @@ moving this to bioregistry.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Chris Mungall.</p>
+    <p>&#169; Copyright 2026, Chris Mungall.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

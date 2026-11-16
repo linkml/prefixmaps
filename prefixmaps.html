@@ -171,6 +171,9 @@
 <li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_file"><code class="docutils literal notranslate"><span class="pre">from_jsonld_context_file()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_jsonld_context_url"><code class="docutils literal notranslate"><span class="pre">from_jsonld_context_url()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_prefixcc"><code class="docutils literal notranslate"><span class="pre">from_prefixcc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.from_prefixcc_snapshot"><code class="docutils literal notranslate"><span class="pre">from_prefixcc_snapshot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.is_excluded_from_prefixcc"><code class="docutils literal notranslate"><span class="pre">is_excluded_from_prefixcc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="prefixmaps.ingest.html#prefixmaps.ingest.ingest_jsonld.load_prefixcc_exclusions"><code class="docutils literal notranslate"><span class="pre">load_prefixcc_exclusions()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="prefixmaps.ingest.html#module-prefixmaps.ingest.ingest_linkml">prefixmaps.ingest.ingest_linkml module</a><ul>
@@ -343,8 +346,8 @@ and the merged expansions are marked as non-canonical</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>prefix</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – </p></li>
-<li><p><strong>namespace</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – </p></li>
+<li><p><strong>prefix</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – </p></li>
+<li><p><strong>namespace</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -533,7 +536,7 @@ RDF triples. It is almost always bad practice to use them as such.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="prefixmaps.StatusType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">StatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.StatusType" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">prefixmaps.</span></span><span class="sig-name descname"><span class="pre">StatusType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prefixmaps.StatusType" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>Classification of prefix expansions.</p>
 <p>Note that only canonical mappings are exposed to the users of the library. However,
@@ -573,7 +576,8 @@ purposes of debugging.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – </p></li>
-<li><p><strong>refresh</strong> – if True, fetch from upstream</p></li>
+<li><p><strong>refresh</strong> – if True, fetch from upstream. prefix.cc is not curated, so it always
+comes from the bundled snapshot, see <a class="reference external" href="https://github.com/linkml/prefixmaps/issues/61">https://github.com/linkml/prefixmaps/issues/61</a></p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -630,7 +634,7 @@ purposes of debugging.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Chris Mungall.</p>
+    <p>&#169; Copyright 2026, Chris Mungall.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
